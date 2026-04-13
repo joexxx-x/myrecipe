@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>Meal Plan</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { font-size: 16px; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+    background: #0f0f0f;
+    color: #e8e8e8;
+    min-height: 100dvh;
+    -webkit-font-smoothing: antialiased;
+    padding: 0;
+  }
+
+  /* ── Header ── */
+  .header {
+    background: #1a1a1a;
+    border-bottom: 1px solid #2a2a2a;
+    padding: 16px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  .header h1 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+  }
+  .header .subtitle {
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 4px;
+  }
+
+  /* ── Current Meal Hero ── */
+  .hero {
+    padding: 32px 20px;
+    text-align: center;
+  }
+  .hero .meal-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #4CAF50;
+    margin-bottom: 8px;
+  }
+  .hero .meal-name {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 16px;
+    line-height: 1.3;
+  }
+  .hero .cook-btn {
+    display: inline-block;
+    background: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 14px 36px;
+    border-radius: 12px;
+    transition: background 0.15s;
+  }
+  .hero .cook-btn:hover { background: #45a049; }
+  .hero .cook-btn:active { background: #3d8b40; }
+
+  .hero .no-meal {
+    color: #666;
+    font-size: 1rem;
+    padding: 20px 0;
+  }
+
+  /* ── Schedule List ── */
+  .schedule {
+    padding: 0 20px 40px;
+  }
+  .schedule h2 {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #555;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #1e1e1e;
+  }
+  .day-group {
+    margin-bottom: 24px;
+  }
+  .day-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 10px;
+  }
+  .meal-card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 16px;
+    background: #171717;
+    border: 1px solid #222;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.15s, background 0.15s;
+  }
+  .meal-card:hover { border-color: #333; background: #1c1c1c; }
+  .meal-card:active { background: #202020; }
+  .meal-card.current { border-color: #4CAF50; border-width: 2px; }
+
+  .meal-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+  .meal-card.current .meal-icon { background: #1a2e1a; }
+
+  .meal-info { flex: 1; min-width: 0; }
+  .meal-info .meal-type {
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #666;
+  }
+  .meal-card.current .meal-info .meal-type { color: #4CAF50; }
+  .meal-info .meal-title {
+    font-size: 0.95rem;
+    color: #ccc;
+    margin-top: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .meal-card .arrow {
+    color: #444;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+  .meal-card.past {
+    opacity: 0.4;
+  }
+
+  /* ── Empty state ── */
+  .empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: #555;
+  }
+  .empty-state .icon { font-size: 2.5rem; margin-bottom: 16px; }
+  .empty-state p { font-size: 0.95rem; line-height: 1.5; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Meal Plan</h1>
+  <div class="subtitle" id="headerDate"></div>
+</div>
+
+<div class="hero" id="hero"></div>
+<div class="schedule" id="schedule"></div>
+
+<script>
+// ── Config ──
+const MEAL_WINDOWS = {
+  breakfast: { start: 5, end: 11 },   // 5am – 10:59am
+  lunch:     { start: 11, end: 15 },   // 11am – 2:59pm
+  dinner:    { start: 15, end: 23 }    // 3pm – 10:59pm
+};
+
+const MEAL_ICONS = {
+  breakfast: "🌅",
+  lunch: "☀️",
+  dinner: "🌙"
+};
+
+const MEAL_ORDER = ["breakfast", "lunch", "dinner"];
+
+// ── Load manifest ──
+async function loadMeals() {
+  try {
+    const resp = await fetch('meals.json?_=' + Date.now());
+    if (!resp.ok) throw new Error('No meals.json found');
+    return await resp.json();
+  } catch (e) {
+    return [];
+  }
+}
+
+// ── Time logic ──
+function getCurrentMealType(now) {
+  const hour = now.getHours();
+  for (const [type, window] of Object.entries(MEAL_WINDOWS)) {
+    if (hour >= window.start && hour < window.end) return type;
+  }
+  return null;
+}
+
+function getDateStr(date) {
+  const y = date.getFullYear();
+  const m = String(date.getMonth() + 1).padStart(2, '0');
+  const d = String(date.getDate()).padStart(2, '0');
+  return `${y}-${m}-${d}`;
+}
+
+function formatDayLabel(dateStr, today) {
+  if (dateStr === today) return "Today";
+  const d = new Date(dateStr + 'T12:00:00');
+  const tomorrow = new Date(today + 'T12:00:00');
+  tomorrow.setDate(tomorrow.getDate() + 1);
+  if (dateStr === getDateStr(tomorrow)) return "Tomorrow";
+  return d.toLocaleDateString('en-IE', { weekday: 'long', day: 'numeric', month: 'short' });
+}
+
+function isPast(dateStr, mealType, todayStr, currentMealType) {
+  if (dateStr < todayStr) return true;
+  if (dateStr > todayStr) return false;
+  // Same day — compare meal order
+  const mealIdx = MEAL_ORDER.indexOf(mealType);
+  const currentIdx = MEAL_ORDER.indexOf(currentMealType);
+  if (currentIdx === -1) return false;
+  return mealIdx < currentIdx;
+}
+
+// ── Render ──
+async function render() {
+  const meals = await loadMeals();
+  const now = new Date();
+  const todayStr = getDateStr(now);
+  const currentMealType = getCurrentMealType(now);
+
+  // Header date
+  document.getElementById('headerDate').textContent =
+    now.toLocaleDateString('en-IE', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+
+  if (meals.length === 0) {
+    document.getElementById('hero').innerHTML = `
+      <div class="empty-state">
+        <div class="icon">🍽️</div>
+        <p>No meals planned yet.<br>Ask Claude to plan your meals!</p>
+      </div>`;
+    document.getElementById('schedule').innerHTML = '';
+    return;
+  }
+
+  // Find current meal
+  const currentMeal = meals.find(m => m.date === todayStr && m.meal === currentMealType);
+
+  // Hero section
+  const hero = document.getElementById('hero');
+  if (currentMeal) {
+    hero.innerHTML = `
+      <div class="meal-label">Now: ${currentMeal.meal}</div>
+      <div class="meal-name">${esc(currentMeal.name)}</div>
+      <a href="${currentMeal.file}" class="cook-btn">Open Cook Mode</a>
+    `;
+  } else {
+    // Find next upcoming meal
+    const upcoming = meals.find(m => {
+      if (m.date > todayStr) return true;
+      if (m.date === todayStr) {
+        return MEAL_ORDER.indexOf(m.meal) >= MEAL_ORDER.indexOf(currentMealType || 'breakfast');
+      }
+      return false;
+    });
+    if (upcoming) {
+      const label = upcoming.date === todayStr
+        ? `Up next: ${upcoming.meal}`
+        : `${formatDayLabel(upcoming.date, todayStr)} · ${upcoming.meal}`;
+      hero.innerHTML = `
+        <div class="meal-label">${label}</div>
+        <div class="meal-name">${esc(upcoming.name)}</div>
+        <a href="${upcoming.file}" class="cook-btn">Open Cook Mode</a>
+      `;
+    } else {
+      hero.innerHTML = `<div class="no-meal">No more meals planned</div>`;
+    }
+  }
+
+  // Group by date
+  const grouped = {};
+  meals.forEach(m => {
+    if (!grouped[m.date]) grouped[m.date] = [];
+    grouped[m.date].push(m);
+  });
+
+  // Render schedule
+  const scheduleEl = document.getElementById('schedule');
+  let html = '<h2>Full Schedule</h2>';
+
+  Object.keys(grouped).sort().forEach(date => {
+    const dayMeals = grouped[date].sort((a, b) =>
+      MEAL_ORDER.indexOf(a.meal) - MEAL_ORDER.indexOf(b.meal)
+    );
+    html += `<div class="day-group">`;
+    html += `<div class="day-label">${formatDayLabel(date, todayStr)}</div>`;
+
+    dayMeals.forEach(m => {
+      const isCurrent = (m.date === todayStr && m.meal === currentMealType);
+      const past = isPast(m.date, m.meal, todayStr, currentMealType);
+      const cls = isCurrent ? 'current' : past ? 'past' : '';
+      html += `
+        <a href="${m.file}" class="meal-card ${cls}">
+          <div class="meal-icon">${MEAL_ICONS[m.meal] || '🍽️'}</div>
+          <div class="meal-info">
+            <div class="meal-type">${m.meal}</div>
+            <div class="meal-title">${esc(m.name)}</div>
+          </div>
+          <div class="arrow">›</div>
+        </a>`;
+    });
+
+    html += `</div>`;
+  });
+
+  scheduleEl.innerHTML = html;
+}
+
+function esc(s) {
+  const d = document.createElement('div');
+  d.textContent = s || '';
+  return d.innerHTML;
+}
+
+render();
+</script>
+</body>
+</html>

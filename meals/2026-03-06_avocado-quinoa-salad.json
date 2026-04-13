@@ -1,0 +1,38 @@
+{
+  "name": "Avocado & Quinoa Salad with Edamame & Cranberries",
+  "source": "https://www.lighter.world/recipe/56c49690f83f55a2e4d91965?ref=discover",
+  "date": "2026-03-06",
+  "base_servings": 2,
+  "scaled_servings": 2,
+  "prep_time_min": 10,
+  "cook_time_min": 15,
+  "tags": ["quick", "vegetarian", "high-protein", "salad"],
+  "modifications": "No scaling — dinner for 2 only.",
+  "ingredients": [
+    { "name": "quinoa", "amount": 170, "unit": "g", "category": "grains" },
+    { "name": "edamame (shelled)", "amount": 150, "unit": "g", "category": "protein" },
+    { "name": "avocado", "amount": 1, "unit": "pcs", "category": "produce" },
+    { "name": "spinach", "amount": 120, "unit": "g", "category": "produce" },
+    { "name": "dried cranberries", "amount": 3, "unit": "tbsp", "category": "pantry" },
+    { "name": "sunflower seeds", "amount": 3, "unit": "tbsp", "category": "pantry" },
+    { "name": "lemon", "amount": 0.5, "unit": "pcs", "category": "produce" },
+    { "name": "mustard", "amount": 1, "unit": "tsp", "category": "pantry" },
+    { "name": "olive oil", "amount": 1, "unit": "tbsp", "category": "pantry" },
+    { "name": "salt", "amount": 1, "unit": "to taste", "category": "pantry" },
+    { "name": "black pepper", "amount": 1, "unit": "to taste", "category": "pantry" }
+  ],
+  "steps": [
+    "Cook the quinoa: add to a pot with double the volume of water. Bring to a boil, reduce to low, cover and simmer 15–20 minutes until water is absorbed. Fluff with a fork.",
+    "Thaw the edamame by warming on the stove or in the microwave.",
+    "Make the dressing: whisk together olive oil, lemon juice, mustard, salt and pepper. Add lemon zest for extra flavour.",
+    "Halve and slice the avocado. In a large bowl, combine cooked quinoa, spinach, edamame, dried cranberries, sunflower seeds and avocado. Pour dressing over and toss gently."
+  ],
+  "nutrition_per_serving": {
+    "calories": 520,
+    "protein_g": 22,
+    "carbs_g": 58,
+    "fat_g": 23,
+    "source": "estimated — no scaling, same as base recipe"
+  },
+  "notes": "Dinner only (2 servings). Protein is lighter at 22g — consider a protein shake or Greek yogurt snack to supplement."
+}

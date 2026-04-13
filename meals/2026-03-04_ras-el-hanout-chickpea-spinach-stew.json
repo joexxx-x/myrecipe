@@ -1,0 +1,42 @@
+{
+  "name": "Ras el Hanout Chickpea and Spinach Stew",
+  "source": "https://cooking.nytimes.com/recipes/1027119-ras-el-hanout-chickpea-and-spinach-stew",
+  "date": "2026-03-04",
+  "base_servings": 2,
+  "scaled_servings": 4,
+  "prep_time_min": 5,
+  "cook_time_min": 25,
+  "tags": ["quick", "one-pot", "vegetarian", "mediterranean", "high-fibre", "batch-friendly", "weeknight"],
+  "modifications": "Scaled from 2 to 4 servings (batch: dinner for 2 + next-day office lunches for 2). Serve over rice for extra calories.",
+  "ingredients": [
+    { "name": "canned chickpeas (drained and rinsed)", "amount": 1200, "unit": "g", "category": "protein", "note": "about 3 x 400g cans" },
+    { "name": "spinach leaves", "amount": 150, "unit": "g", "category": "produce" },
+    { "name": "garlic cloves (minced)", "amount": 4, "unit": "pcs", "category": "produce" },
+    { "name": "tomato paste", "amount": 3, "unit": "tbsp", "category": "pantry" },
+    { "name": "ras el hanout", "amount": 1, "unit": "tbsp", "category": "pantry" },
+    { "name": "vegetable stock", "amount": 240, "unit": "ml", "category": "pantry" },
+    { "name": "soy sauce", "amount": 1, "unit": "tbsp", "category": "pantry" },
+    { "name": "olive oil", "amount": 2, "unit": "tbsp", "category": "pantry" },
+    { "name": "fine sea salt", "amount": 0.5, "unit": "tsp", "category": "pantry" },
+    { "name": "harissa paste", "amount": 1, "unit": "tbsp", "category": "pantry" },
+    { "name": "olive oil (for harissa oil)", "amount": 3, "unit": "tbsp", "category": "pantry" },
+    { "name": "Greek yogurt (for serving)", "amount": 120, "unit": "g", "category": "dairy" },
+    { "name": "rice (for serving)", "amount": 300, "unit": "g", "category": "grains" }
+  ],
+  "steps": [
+    "Cook rice according to package instructions (300g for 4 servings).",
+    "Heat 2 tablespoons olive oil in a large pot over medium. Add the garlic and ras el hanout, stir until fragrant, about 1 minute. Add the tomato paste and cook, stirring constantly, until it darkens slightly, about 2 minutes.",
+    "Add the stock, soy sauce and salt. Bring to a boil, reduce heat to medium-low, cover and cook 10 minutes until sauce darkens and flavours meld.",
+    "Add the chickpeas and simmer until warmed through and soft, about 10 minutes. Add the spinach and stir until wilted, about 3 minutes. Taste and adjust salt. Add a splash of stock or water if too thick.",
+    "Make the harissa oil: mix 3 tablespoons olive oil with the harissa paste in a small bowl.",
+    "Serve warm over rice with a dollop of Greek yogurt and a drizzle of harissa oil. Pack 2 portions for tomorrow's lunches."
+  ],
+  "nutrition_per_serving": {
+    "calories": 530,
+    "protein_g": 24,
+    "carbs_g": 57,
+    "fat_g": 22,
+    "source": "estimated — same per-serving as base recipe (nutrition scales linearly). Stew only, not including rice side."
+  },
+  "notes": "Batch cook — dinner tonight + office lunches tomorrow. Rice adds ~200 kcal per serving."
+}

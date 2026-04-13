@@ -1,0 +1,38 @@
+[
+  {
+    "date": "2026-04-11",
+    "meal": "dinner",
+    "name": "Kung Pao Chicken",
+    "file": "meals/2026-04-11_dinner_kung-pao-chicken.html"
+  },
+  {
+    "date": "2026-04-12",
+    "meal": "lunch",
+    "name": "Gourmet Sourdough Chicken & Avocado Sandwich",
+    "file": "meals/2026-04-12_lunch_sourdough-chicken-avocado-sandwich.html"
+  },
+  {
+    "date": "2026-04-12",
+    "meal": "dinner",
+    "name": "Lemony Orzo with Asparagus & Sardines",
+    "file": "meals/2026-04-12_dinner_lemony-orzo-asparagus.html"
+  },
+  {
+    "date": "2026-04-13",
+    "meal": "dinner",
+    "name": "Red Curry Lentils With Sweet Potatoes and Spinach",
+    "file": "meals/2026-04-13_dinner_red-curry-lentils.html"
+  },
+  {
+    "date": "2026-04-14",
+    "meal": "dinner",
+    "name": "Ras el Hanout Chickpea and Spinach Stew",
+    "file": "meals/2026-04-14_dinner_ras-el-hanout-chickpea-spinach-stew.html"
+  },
+  {
+    "date": "2026-04-15",
+    "meal": "dinner",
+    "name": "Kung Pao Tofu",
+    "file": "meals/2026-04-15_dinner_kung-pao-tofu.html"
+  }
+]
