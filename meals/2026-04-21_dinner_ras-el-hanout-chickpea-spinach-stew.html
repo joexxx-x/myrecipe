@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Spinach One-Pot Pasta with Sardines — Cook Mode</title>
+<title>Ras el Hanout Chickpea &amp; Spinach Stew — Cook Mode</title>
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   html { font-size: 16px; -webkit-text-size-adjust: 100%; }
@@ -107,11 +107,11 @@
 <body>
 
 <div class="header">
-  <h1>Spinach One-Pot Pasta with Sardines</h1>
+  <h1>Ras el Hanout Chickpea &amp; Spinach Stew</h1>
   <div class="meta">
     <span>4 servings</span>
     <span>5m prep</span>
-    <span>15m cook</span>
+    <span>25m cook</span>
     <div class="wake-lock-indicator" id="wakeLock" title="Screen wake lock"></div>
   </div>
 </div>
@@ -158,39 +158,44 @@
 
 <script>
 const RECIPE = {
-  name: "Spinach One-Pot Pasta with Sardines",
+  name: "Ras el Hanout Chickpea & Spinach Stew",
   servings: "4",
   prep_time: "5",
-  cook_time: "15",
+  cook_time: "25",
   steps: [
-    { text: "Bring a large pot of salted water to a boil. Add the pasta and cook until just shy of al dente, about 1 minute less than package instructions. Reserve 240ml pasta water.", timer: null },
-    { text: "Place the spinach in a large colander in the sink. Drain the pasta over the spinach to wilt it. Drizzle with a little olive oil and stir to prevent sticking.", timer: null },
-    { text: "Wipe out the pot and place over medium-high heat. Add 2 tablespoons olive oil and the anchovies \u2014 careful, it may splatter. Stir until anchovies dissolve, about 30 seconds.", timer: null },
-    { text: "Break the drained sardines into large chunks and add to the pot. Toss gently for 30 seconds to warm through.", timer: null },
-    { text: "Pour the pasta and spinach back into the pot. Add the Parmesan and red pepper flakes. Stir until a glossy sauce forms and the spinach fully wilts, 1 to 2 minutes. Add reserved pasta water a tablespoon at a time if dry.", timer: { label: "Toss pasta", min: 2, sec: 0 } },
-    { text: "Squeeze the lemon over everything. Taste and season with more salt or lemon as needed. Serve with extra Parmesan if desired.", timer: null }
+    { text: "Heat 2 tablespoons olive oil in a large pot over medium. Add the garlic and ras el hanout, stir until fragrant, about 1 minute. Add the tomato paste and cook, stirring constantly, until it darkens slightly, about 2 minutes.", timer: { label: "Bloom spices", min: 3, sec: 0 } },
+    { text: "Add the stock, soy sauce and salt. Bring to a boil, reduce heat to medium-low, cover and cook 10 minutes until sauce darkens and flavours meld.", timer: { label: "Simmer base", min: 10, sec: 0 } },
+    { text: "Add the chickpeas and simmer until warmed through and soft, about 10 minutes. Add the spinach and stir until wilted, about 3 minutes. Taste and adjust salt. Add a splash of stock or water if too thick.", timer: { label: "Chickpeas", min: 13, sec: 0 } },
+    { text: "Make the harissa oil: mix 3 tablespoons olive oil with the harissa paste in a small bowl.", timer: null },
+    { text: "Serve warm with a dollop of Greek yogurt, a drizzle of harissa oil, and rice or crusty bread on the side. Pack lunches for tomorrow!", timer: null }
   ],
   ingredients: [
     { category: "Protein", items: [
-      { amount: "240g", name: "canned sardines in olive oil (2 tins, drained)" },
-      { amount: "6", name: "oil-packed anchovies" }
+      { amount: "1.2kg", name: "canned chickpeas, drained and rinsed (about 3 x 400g cans)" }
     ]},
     { category: "Produce", items: [
-      { amount: "450g", name: "spinach (mature or baby)" },
-      { amount: "1", name: "lemon" }
+      { amount: "150g", name: "spinach leaves" },
+      { amount: "4 cloves", name: "garlic, minced" },
+      { amount: "1/2", name: "lime (for juice, to taste)" }
     ]},
     { category: "Dairy", items: [
-      { amount: "60g", name: "Parmesan (grated)" }
+      { amount: "120g", name: "Greek yogurt" }
     ]},
     { category: "Pantry", items: [
-      { amount: "3 tbsp", name: "olive oil" },
-      { amount: "1/2 tsp", name: "red pepper flakes" }
+      { amount: "3 tbsp", name: "tomato paste" },
+      { amount: "3 tsp", name: "ras el hanout" },
+      { amount: "240ml", name: "vegetable stock" },
+      { amount: "3 tsp", name: "soy sauce" },
+      { amount: "2 tbsp", name: "olive oil (for stew)" },
+      { amount: "3 tbsp", name: "olive oil (for harissa oil)" },
+      { amount: "3 tsp", name: "harissa paste" },
+      { amount: "1/2 tsp", name: "fine sea salt" }
     ]},
     { category: "Grains", items: [
-      { amount: "350g", name: "short pasta (orecchiette or fusilli)" }
+      { amount: "to serve", name: "steamed rice or crusty bread" }
     ]}
   ],
-  nutrition: { calories: 630, protein: 41, carbs: 71, fat: 20 }
+  nutrition: { calories: 530, protein: 24, carbs: 57, fat: 22 }
 };
 
 let timers = [];

@@ -5,31 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Roasted Fish &amp; Leeks Vinaigrette — Cook Mode</title>
+<title>Three-Cup Chicken — Cook Mode</title>
 <style>
-  /* ── Reset & Base ── */
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   html { font-size: 16px; -webkit-text-size-adjust: 100%; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
-    background: #0f0f0f;
-    color: #e8e8e8;
-    min-height: 100dvh;
-    overflow-x: hidden;
-    -webkit-font-smoothing: antialiased;
-  }
+  body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif; background: #0f0f0f; color: #e8e8e8; min-height: 100dvh; overflow-x: hidden; -webkit-font-smoothing: antialiased; }
 
-  .header {
-    background: #1a1a1a;
-    border-bottom: 1px solid #2a2a2a;
-    padding: 12px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-  }
+  .header { background: #1a1a1a; border-bottom: 1px solid #2a2a2a; padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; }
   .header h1 { font-size: 1.1rem; font-weight: 600; color: #fff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; flex: 1; margin-right: 12px; }
   .header .meta { font-size: 0.8rem; color: #888; white-space: nowrap; display: flex; gap: 12px; }
   .header .meta span { display: inline-flex; align-items: center; gap: 4px; }
@@ -125,11 +107,11 @@
 <body>
 
 <div class="header">
-  <h1>Roasted Fish &amp; Leeks Vinaigrette</h1>
+  <h1>Three-Cup Chicken</h1>
   <div class="meta">
     <span>4 servings</span>
     <span>10m prep</span>
-    <span>35m cook</span>
+    <span>22m cook</span>
     <div class="wake-lock-indicator" id="wakeLock" title="Screen wake lock"></div>
   </div>
 </div>
@@ -176,38 +158,38 @@
 
 <script>
 const RECIPE = {
-  name: "Roasted Fish & Leeks Vinaigrette",
+  name: "Three-Cup Chicken",
   servings: "4",
   prep_time: "10",
-  cook_time: "35",
+  cook_time: "22",
   steps: [
-    { text: "Heat oven to 200\u00b0C (400\u00b0F). Start cooking rice (300g dry) according to package instructions.", timer: null },
-    { text: "Place the sliced leeks in a large bowl of cold water and swish to release dirt. Lift out, drain in a colander, and pat dry with a towel.", timer: null },
-    { text: "Spread the leeks on a sheet pan with the capers and 3 tablespoons olive oil. Season with 1/4 tsp salt. Toss well. Roast for 15 minutes, tossing halfway, until tender and starting to crisp.", timer: { label: "Roast leeks", min: 15, sec: 0 } },
-    { text: "Pat fish fillets dry. Drizzle with olive oil, season with 1/2 tsp salt and 1/4 tsp pepper. Make room on the pan, place fish evenly. Roast 10\u201312 minutes until fish flakes easily with a fork.", timer: { label: "Roast fish", min: 10, sec: 0 } },
-    { text: "While fish roasts, make the vinaigrette: whisk together remaining 3 tbsp olive oil, shallot, red wine vinegar, parsley, whole-grain mustard, 1/4 tsp salt and pepper.", timer: null },
-    { text: "Transfer fish and leeks to plates. Spoon vinaigrette over the top. Serve with rice. Pack 2 portions for tomorrow\u2019s lunches.", timer: null }
+    { text: "Heat a wok over high heat. Add 2 tablespoons sesame oil and heat until shimmering. Add the ginger coins, garlic cloves, scallion pieces and dried chillies. Cook, stirring, until fragrant and starting to colour, about 2 minutes.", timer: { label: "Aromatics", min: 2, sec: 0 } },
+    { text: "Push the aromatics to the sides of the wok and add the remaining 1 tablespoon sesame oil. Add the chicken pieces in a single layer and cook, stirring occasionally, until browned and crisping at the edges, 5–7 minutes.", timer: { label: "Brown chicken", min: 6, sec: 0 } },
+    { text: "Sprinkle in the sugar and stir to coat. Pour in the rice wine and soy sauce, then bring to a boil. Reduce heat to medium-low and simmer, uncovered, until the sauce has reduced and thickened to a glaze, about 15 minutes.", timer: { label: "Simmer & glaze", min: 15, sec: 0 } },
+    { text: "Turn off the heat. Add the Thai basil and stir through until just wilted. Taste and adjust seasoning. Serve immediately over steamed rice.", timer: null }
   ],
   ingredients: [
     { category: "Protein", items: [
-      { amount: "680g", name: "white fish fillets (cod or halibut, ~170g each)" }
+      { amount: "900g", name: "boneless chicken thighs, skin-off, cut into bite-size pieces" }
     ]},
     { category: "Produce", items: [
-      { amount: "2", name: "medium leeks (white and light green parts, sliced)" },
-      { amount: "1 tbsp", name: "shallot (minced)" },
-      { amount: "1 tbsp", name: "fresh parsley (minced)" }
+      { amount: "30g", name: "fresh ginger, peeled and sliced into coins" },
+      { amount: "12 cloves", name: "garlic, peeled" },
+      { amount: "4", name: "scallions, trimmed and cut into 1-inch pieces" },
+      { amount: "40g", name: "fresh Thai basil leaves" }
     ]},
     { category: "Pantry", items: [
-      { amount: "90ml", name: "extra-virgin olive oil" },
-      { amount: "2 tbsp", name: "capers (drained)" },
-      { amount: "1 tbsp", name: "red wine vinegar" },
-      { amount: "1 tsp", name: "whole-grain mustard" }
+      { amount: "3 tbsp", name: "sesame oil" },
+      { amount: "3", name: "dried red chillies (or 1 tsp red pepper flakes)" },
+      { amount: "1 tbsp", name: "light brown sugar" },
+      { amount: "120ml", name: "rice wine (Shaoxing or Taiwanese mijiu)" },
+      { amount: "60ml", name: "light soy sauce" }
     ]},
     { category: "Grains", items: [
-      { amount: "300g", name: "rice" }
+      { amount: "to serve", name: "steamed white rice" }
     ]}
   ],
-  nutrition: { calories: 640, protein: 38, carbs: 66, fat: 24 }
+  nutrition: { calories: 632, protein: 40, carbs: 10, fat: 48 }
 };
 
 let timers = [];

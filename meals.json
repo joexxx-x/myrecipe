@@ -1,32 +1,26 @@
 [
   {
-    "date": "2026-04-14",
-    "meal": "dinner",
-    "name": "Kung Pao Tofu",
-    "file": "meals/2026-04-14_dinner_kung-pao-tofu.html"
-  },
-  {
-    "date": "2026-04-16",
-    "meal": "dinner",
-    "name": "Kung Pao Chicken",
-    "file": "meals/2026-04-16_dinner_kung-pao-chicken.html"
-  },
-  {
-    "date": "2026-04-17",
-    "meal": "dinner",
-    "name": "Roasted Fish & Leeks Vinaigrette",
-    "file": "meals/2026-04-17_dinner_roasted-fish-leeks-vinaigrette.html"
-  },
-  {
-    "date": "2026-04-18",
-    "meal": "dinner",
-    "name": "Spinach One-Pot Pasta with Sardines",
-    "file": "meals/2026-04-18_dinner_spinach-one-pot-pasta-sardines.html"
-  },
-  {
     "date": "2026-04-19",
     "meal": "dinner",
     "name": "Lemony Orzo with Asparagus & Sardines",
     "file": "meals/2026-04-19_dinner_lemony-orzo-asparagus-sardines.html"
+  },
+  {
+    "date": "2026-04-20",
+    "meal": "dinner",
+    "name": "Three-Cup Chicken",
+    "file": "meals/2026-04-20_dinner_three-cup-chicken.html"
+  },
+  {
+    "date": "2026-04-21",
+    "meal": "dinner",
+    "name": "Ras el Hanout Chickpea & Spinach Stew",
+    "file": "meals/2026-04-21_dinner_ras-el-hanout-chickpea-spinach-stew.html"
+  },
+  {
+    "date": "2026-04-22",
+    "meal": "dinner",
+    "name": "Salmon & Cherry Tomato Curry",
+    "file": "meals/2026-04-22_dinner_salmon-cherry-tomato-curry.html"
   }
 ]
