@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Three-Cup Chicken — Cook Mode</title>
+<title>Kung Pao Tofu — Cook Mode</title>
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   html { font-size: 16px; -webkit-text-size-adjust: 100%; }
@@ -107,11 +107,11 @@
 <body>
 
 <div class="header">
-  <h1>Three-Cup Chicken</h1>
+  <h1>Kung Pao Tofu</h1>
   <div class="meta">
     <span>4 servings</span>
-    <span>10m prep</span>
-    <span>22m cook</span>
+    <span>30m prep</span>
+    <span>30m cook</span>
     <div class="wake-lock-indicator" id="wakeLock" title="Screen wake lock"></div>
   </div>
 </div>
@@ -158,38 +158,50 @@
 
 <script>
 const RECIPE = {
-  name: "Three-Cup Chicken",
+  name: "Kung Pao Tofu",
   servings: "4",
-  prep_time: "10",
-  cook_time: "22",
+  prep_time: "30",
+  cook_time: "30",
   steps: [
-    { text: "Heat a wok over high heat. Add 2 tablespoons sesame oil and heat until shimmering. Add the ginger coins, garlic cloves, scallion pieces and dried chillies. Cook, stirring, until fragrant and starting to colour, about 2 minutes.", timer: { label: "Aromatics", min: 2, sec: 0 } },
-    { text: "Push the aromatics to the sides of the wok and add the remaining 1 tablespoon sesame oil. Add the chicken pieces in a single layer and cook, stirring occasionally, until browned and crisping at the edges, 5–7 minutes.", timer: { label: "Brown chicken", min: 6, sec: 0 } },
-    { text: "Sprinkle in the sugar and stir to coat. Pour in the rice wine and soy sauce, then bring to a boil. Reduce heat to medium-low and simmer, uncovered, until the sauce has reduced and thickened to a glaze, about 15 minutes.", timer: { label: "Simmer & glaze", min: 15, sec: 0 } },
-    { text: "Turn off the heat. Add the Thai basil and stir through until just wilted. Taste and adjust seasoning. Serve immediately over steamed rice.", timer: null }
+    { text: "Drain the tofu, wrap in a clean kitchen towel, place on a plate and weigh down with a cast-iron skillet or heavy object. Press for at least 10 minutes (up to 1 hour for best results). Start your rice now.", timer: { label: "Press tofu", min: 10, sec: 0 } },
+    { text: "Make the sauce: in a medium bowl, whisk together soy sauce, brown sugar, hoisin, rice wine, vinegar, sesame oil, white pepper, garlic, ginger, 2 teaspoons cornstarch and 80ml water until smooth. Set aside.", timer: null },
+    { text: "Unwrap the pressed tofu and cut into 3/4-inch cubes. Season with a pinch of salt, then toss to coat in the 30g cornstarch.", timer: null },
+    { text: "Heat enough neutral oil to coat the bottom of a large cast-iron skillet over medium-high. When shimmering, add tofu in a single layer. Cook until one side is golden and crisp, about 3 minutes. Flip and cook the other side, another 3 minutes. Remove with a slotted spoon to a plate.", timer: { label: "Crisp tofu", min: 6, sec: 0 } },
+    { text: "Add red bell pepper, celery and scallions to the skillet. Cook, stirring occasionally, until the pepper softens slightly and the veg chars at the edges, about 4 minutes. Add Sichuan peppercorns and dried chiles; cook until fragrant, 1 minute.", timer: { label: "Veg + chiles", min: 5, sec: 0 } },
+    { text: "Return the tofu to the pan and pour in the sauce. Stir to coat everything and let the sauce simmer and thicken, about 2 minutes. Finish with peanuts and cilantro, stir once more, then serve immediately over rice.", timer: { label: "Sauce thicken", min: 2, sec: 0 } }
   ],
   ingredients: [
     { category: "Protein", items: [
-      { amount: "900g", name: "boneless chicken thighs, skin-off, cut into bite-size pieces" }
+      { amount: "396g", name: "extra-firm tofu" }
     ]},
     { category: "Produce", items: [
-      { amount: "30g", name: "fresh ginger, peeled and sliced into coins" },
-      { amount: "12 cloves", name: "garlic, peeled" },
-      { amount: "4", name: "scallions, trimmed and cut into 1-inch pieces" },
-      { amount: "40g", name: "fresh Thai basil leaves" }
+      { amount: "3 cloves", name: "garlic, finely grated" },
+      { amount: "1 inch", name: "fresh ginger, peeled and finely grated" },
+      { amount: "1", name: "red bell pepper, cut into 1/2-inch squares" },
+      { amount: "2 stalks", name: "celery, cut into 1/4-inch slices" },
+      { amount: "4", name: "scallions, cut into 1-inch chunks" },
+      { amount: "15g", name: "fresh cilantro, roughly chopped" }
     ]},
     { category: "Pantry", items: [
-      { amount: "3 tbsp", name: "sesame oil" },
-      { amount: "3", name: "dried red chillies (or 1 tsp red pepper flakes)" },
-      { amount: "1 tbsp", name: "light brown sugar" },
-      { amount: "120ml", name: "rice wine (Shaoxing or Taiwanese mijiu)" },
-      { amount: "60ml", name: "light soy sauce" }
+      { amount: "30g", name: "cornstarch (for coating tofu)" },
+      { amount: "60ml", name: "soy sauce" },
+      { amount: "2 tbsp", name: "brown sugar" },
+      { amount: "2 tbsp", name: "hoisin sauce" },
+      { amount: "2 tbsp", name: "rice wine or sake" },
+      { amount: "1 tbsp", name: "black vinegar (or rice wine vinegar)" },
+      { amount: "2 tsp", name: "toasted sesame oil" },
+      { amount: "2 tsp", name: "cornstarch (for sauce)" },
+      { amount: "1/2 tsp", name: "white pepper" },
+      { amount: "1 tsp", name: "Sichuan peppercorns (optional)" },
+      { amount: "4", name: "dried chiles (Tianjin or chiles de arbol), crushed" },
+      { amount: "50g", name: "roasted peanuts" },
+      { amount: "3 tbsp", name: "neutral oil (grapeseed or vegetable)" }
     ]},
     { category: "Grains", items: [
       { amount: "to serve", name: "steamed white rice" }
     ]}
   ],
-  nutrition: { calories: 632, protein: 40, carbs: 10, fat: 48 }
+  nutrition: { calories: 313, protein: 17, carbs: 23, fat: 17 }
 };
 
 let timers = [];
