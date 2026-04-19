@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Kung Pao Tofu — Cook Mode</title>
+<title>Grain Bowl with Sardines &amp; Sauce Moyo — Cook Mode</title>
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   html { font-size: 16px; -webkit-text-size-adjust: 100%; }
@@ -107,11 +107,11 @@
 <body>
 
 <div class="header">
-  <h1>Kung Pao Tofu</h1>
+  <h1>Grain Bowl with Sardines &amp; Sauce Moyo</h1>
   <div class="meta">
     <span>4 servings</span>
-    <span>30m prep</span>
-    <span>30m cook</span>
+    <span>10m prep</span>
+    <span>10m cook</span>
     <div class="wake-lock-indicator" id="wakeLock" title="Screen wake lock"></div>
   </div>
 </div>
@@ -158,50 +158,37 @@
 
 <script>
 const RECIPE = {
-  name: "Kung Pao Tofu",
+  name: "Grain Bowl with Sardines & Sauce Moyo",
   servings: "4",
-  prep_time: "30",
-  cook_time: "30",
+  prep_time: "10",
+  cook_time: "10",
   steps: [
-    { text: "Drain the tofu, wrap in a clean kitchen towel, place on a plate and weigh down with a cast-iron skillet or heavy object. Press for at least 10 minutes (up to 1 hour for best results). Start your rice now.", timer: { label: "Press tofu", min: 10, sec: 0 } },
-    { text: "Make the sauce: in a medium bowl, whisk together soy sauce, brown sugar, hoisin, rice wine, vinegar, sesame oil, white pepper, garlic, ginger, 2 teaspoons cornstarch and 80ml water until smooth. Set aside.", timer: null },
-    { text: "Unwrap the pressed tofu and cut into 3/4-inch cubes. Season with a pinch of salt, then toss to coat in the 30g cornstarch.", timer: null },
-    { text: "Heat enough neutral oil to coat the bottom of a large cast-iron skillet over medium-high. When shimmering, add tofu in a single layer. Cook until one side is golden and crisp, about 3 minutes. Flip and cook the other side, another 3 minutes. Remove with a slotted spoon to a plate.", timer: { label: "Crisp tofu", min: 6, sec: 0 } },
-    { text: "Add red bell pepper, celery and scallions to the skillet. Cook, stirring occasionally, until the pepper softens slightly and the veg chars at the edges, about 4 minutes. Add Sichuan peppercorns and dried chiles; cook until fragrant, 1 minute.", timer: { label: "Veg + chiles", min: 5, sec: 0 } },
-    { text: "Return the tofu to the pan and pour in the sauce. Stir to coat everything and let the sauce simmer and thicken, about 2 minutes. Finish with peanuts and cilantro, stir once more, then serve immediately over rice.", timer: { label: "Sauce thicken", min: 2, sec: 0 } }
+    { text: "Combine the red onion, garlic, lime juice and 1 tsp salt in a small bowl. Let sit for 5–10 minutes to mellow the raw bite.", timer: { label: "Mellow onion", min: 7, sec: 0 } },
+    { text: "Bring 360ml water and 1 tsp salt to a boil in a saucepan with a lid. Stir in the fonio and 2 tablespoons olive oil, cover, reduce to low. Cook until water is absorbed, about 3 minutes. Turn off heat and steam, covered, for 1 minute. Fluff with a fork. (If using couscous or quinoa, follow package directions.)", timer: { label: "Cook fonio", min: 4, sec: 0 } },
+    { text: "Stir the tomatoes, green pepper, habanero, remaining 2 tablespoons olive oil and a generous grind of black pepper into the onion mixture. Taste and adjust lime juice and salt — this is the sauce moyo.", timer: null },
+    { text: "Divide the fonio between 4 bowls. Lay the sardines on top and drizzle the sardine oil from the tin over. Spoon the sauce moyo generously on top. Serve immediately, or cover and refrigerate up to 2 days for office lunch.", timer: null }
   ],
   ingredients: [
     { category: "Protein", items: [
-      { amount: "396g", name: "extra-firm tofu" }
+      { amount: "240g", name: "smoked sardines in olive oil (2 tins), drained — reserve the oil" }
     ]},
     { category: "Produce", items: [
-      { amount: "3 cloves", name: "garlic, finely grated" },
-      { amount: "1 inch", name: "fresh ginger, peeled and finely grated" },
-      { amount: "1", name: "red bell pepper, cut into 1/2-inch squares" },
-      { amount: "2 stalks", name: "celery, cut into 1/4-inch slices" },
-      { amount: "4", name: "scallions, cut into 1-inch chunks" },
-      { amount: "15g", name: "fresh cilantro, roughly chopped" }
+      { amount: "300g", name: "grape or cherry tomatoes, halved" },
+      { amount: "60g", name: "red onion, finely chopped" },
+      { amount: "2 cloves", name: "garlic, minced" },
+      { amount: "80g", name: "green bell pepper, finely chopped" },
+      { amount: "1", name: "habanero or Scotch bonnet chile, seeded and very finely chopped" },
+      { amount: "2 tbsp", name: "fresh lime juice (~1 lime)" }
     ]},
     { category: "Pantry", items: [
-      { amount: "30g", name: "cornstarch (for coating tofu)" },
-      { amount: "60ml", name: "soy sauce" },
-      { amount: "2 tbsp", name: "brown sugar" },
-      { amount: "2 tbsp", name: "hoisin sauce" },
-      { amount: "2 tbsp", name: "rice wine or sake" },
-      { amount: "1 tbsp", name: "black vinegar (or rice wine vinegar)" },
-      { amount: "2 tsp", name: "toasted sesame oil" },
-      { amount: "2 tsp", name: "cornstarch (for sauce)" },
-      { amount: "1/2 tsp", name: "white pepper" },
-      { amount: "1 tsp", name: "Sichuan peppercorns (optional)" },
-      { amount: "4", name: "dried chiles (Tianjin or chiles de arbol), crushed" },
-      { amount: "50g", name: "roasted peanuts" },
-      { amount: "3 tbsp", name: "neutral oil (grapeseed or vegetable)" }
+      { amount: "4 tbsp", name: "extra-virgin olive oil" },
+      { amount: "to taste", name: "salt and black pepper" }
     ]},
     { category: "Grains", items: [
-      { amount: "to serve", name: "steamed white rice" }
+      { amount: "180g", name: "fonio (or couscous / quinoa as substitute)" }
     ]}
   ],
-  nutrition: { calories: 313, protein: 17, carbs: 23, fat: 17 }
+  nutrition: { calories: 415, protein: 17, carbs: 39, fat: 21 }
 };
 
 let timers = [];
