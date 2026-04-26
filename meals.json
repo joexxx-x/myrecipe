@@ -1,26 +1,26 @@
 [
   {
-    "date": "2026-04-19",
+    "date": "2026-04-27",
     "meal": "dinner",
-    "name": "Lemony Orzo with Asparagus & Sardines",
-    "file": "meals/2026-04-19_dinner_lemony-orzo-asparagus-sardines.html"
+    "name": "Three-Cup Chicken with Broccoli",
+    "file": "meals/2026-04-27_dinner_three-cup-chicken-broccoli.html"
   },
   {
-    "date": "2026-04-20",
-    "meal": "dinner",
-    "name": "Grain Bowl with Sardines & Sauce Moyo",
-    "file": "meals/2026-04-20_dinner_grain-bowl-sardines-sauce-moyo.html"
-  },
-  {
-    "date": "2026-04-21",
+    "date": "2026-04-28",
     "meal": "dinner",
     "name": "Ras el Hanout Chickpea & Spinach Stew",
-    "file": "meals/2026-04-21_dinner_ras-el-hanout-chickpea-spinach-stew.html"
+    "file": "meals/2026-04-28_dinner_ras-el-hanout-chickpea-spinach-stew.html"
   },
   {
-    "date": "2026-04-22",
+    "date": "2026-04-29",
     "meal": "dinner",
     "name": "Salmon & Cherry Tomato Curry",
-    "file": "meals/2026-04-22_dinner_salmon-cherry-tomato-curry.html"
+    "file": "meals/2026-04-29_dinner_salmon-cherry-tomato-curry.html"
+  },
+  {
+    "date": "2026-04-30",
+    "meal": "dinner",
+    "name": "Kung Pao Tofu & Edamame",
+    "file": "meals/2026-04-30_dinner_kung-pao-tofu-edamame.html"
   }
 ]
