@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Kung Pao Chicken with Broccoli — Cook Mode</title>
+<title>Salmon &amp; Cherry Tomato Curry — Cook Mode</title>
 <style>
   /* ── Reset & Base ── */
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -459,11 +459,11 @@
 
 <!-- Header -->
 <div class="header">
-  <h1>Kung Pao Chicken with Broccoli</h1>
+  <h1>Salmon &amp; Cherry Tomato Curry</h1>
   <div class="meta">
     <span>4 servings</span>
-    <span>15m prep</span>
-    <span>15m cook</span>
+    <span>5m prep</span>
+    <span>25m cook</span>
     <div class="wake-lock-indicator" id="wakeLock" title="Screen wake lock"></div>
   </div>
 </div>
@@ -528,57 +528,41 @@
 // RECIPE DATA — This block gets replaced per recipe
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 const RECIPE = {
-  "name": "Kung Pao Chicken with Broccoli",
+  "name": "Salmon & Cherry Tomato Curry",
   "servings": "4",
-  "prep_time": "15",
-  "cook_time": "15",
+  "prep_time": "5",
+  "cook_time": "25",
   "steps": [
     {
-      "text": "Rinse 400g jasmine rice and start it in the rice cooker or on the hob. Cut chicken into 2cm cubes, mince the garlic and ginger, chop the spring onions, and cut broccoli into bite-size florets.",
+      "text": "Start 300g basmati rice. Season the salmon fillets generously with salt and pepper on both sides, then set aside while you build the curry base.",
       "timer": null
     },
     {
-      "text": "Marinate the chicken with 2 teaspoons light soy sauce, 2 teaspoons cornstarch and a pinch of salt while the rice starts, about 10 minutes.",
+      "text": "In a large lidded skillet or saucepan, heat olive oil over medium. Add garlic, ginger and chilli; cook, stirring frequently, until golden and fragrant, 2–3 minutes. Add cumin seeds and toast briefly.",
       "timer": {
-        "label": "Marinate chicken",
-        "min": 10,
+        "label": "Aromatics",
+        "min": 3,
         "sec": 0
       }
     },
     {
-      "text": "Mix the sauce: combine remaining light soy sauce, dark soy sauce, Chinkiang vinegar, sugar, remaining cornstarch, sesame oil and 4 tablespoons water.",
-      "timer": null
-    },
-    {
-      "text": "Steam or blanch the broccoli until bright green and just tender, 3-4 minutes. Drain and set aside.",
+      "text": "Stir in cherry tomatoes, ground coriander and turmeric. Pour in the light coconut milk, season lightly with salt, and cook uncovered until the liquid reduces slightly and tomato skins begin to burst, 6–8 minutes.",
       "timer": {
-        "label": "Broccoli",
-        "min": 4,
+        "label": "Simmer sauce",
+        "min": 7,
         "sec": 0
       }
     },
     {
-      "text": "Heat vegetable oil in a wok over high heat. Add dried chillies and Sichuan peppercorns; stir until fragrant, about 30 seconds.",
-      "timer": null
-    },
-    {
-      "text": "Add chicken in a single layer. Sear for 2 minutes without moving, then stir-fry until cooked through, about 3 more minutes.",
+      "text": "Stir in spinach until just wilted. Gently nestle the salmon into the curry, submerging as much as possible. Cover and simmer over medium-low until just cooked through, 4–6 minutes.",
       "timer": {
-        "label": "Cook chicken",
+        "label": "Cook salmon",
         "min": 5,
         "sec": 0
       }
     },
     {
-      "text": "Add garlic and ginger; stir-fry for 30 seconds. Pour in the sauce and toss until glossy and thickened.",
-      "timer": {
-        "label": "Thicken sauce",
-        "min": 2,
-        "sec": 0
-      }
-    },
-    {
-      "text": "Fold in broccoli, peanuts and spring onions. Toss for 30 seconds, then serve over rice. Pack two lunch portions for tomorrow.",
+      "text": "Serve over rice with torn herbs. Pack two lunch portions for tomorrow and reheat gently so the salmon stays tender.",
       "timer": null
     }
   ],
@@ -587,8 +571,8 @@ const RECIPE = {
       "category": "Protein",
       "items": [
         {
-          "amount": "700g",
-          "name": "boneless skinless chicken thighs, cut into 2cm cubes"
+          "amount": "680g",
+          "name": "salmon fillets, skin removed"
         }
       ]
     },
@@ -596,20 +580,28 @@ const RECIPE = {
       "category": "Produce",
       "items": [
         {
-          "amount": "400g",
-          "name": "broccoli or Tenderstem broccoli"
-        },
-        {
-          "amount": "6 cloves",
+          "amount": "3 cloves",
           "name": "garlic, minced"
         },
         {
-          "amount": "2 tbsp",
+          "amount": "1 tbsp",
           "name": "fresh ginger, minced"
         },
         {
-          "amount": "6",
-          "name": "spring onions, chopped"
+          "amount": "1",
+          "name": "bird's-eye chilli, sliced"
+        },
+        {
+          "amount": "450g",
+          "name": "cherry tomatoes"
+        },
+        {
+          "amount": "140g",
+          "name": "baby spinach"
+        },
+        {
+          "amount": "10g",
+          "name": "fresh mint, basil or coriander, torn"
         }
       ]
     },
@@ -617,48 +609,28 @@ const RECIPE = {
       "category": "Pantry",
       "items": [
         {
-          "amount": "100g",
-          "name": "roasted peanuts"
-        },
-        {
-          "amount": "12-16",
-          "name": "dried red chillies, to heat preference"
-        },
-        {
-          "amount": "2 tsp",
-          "name": "Sichuan peppercorns"
-        },
-        {
-          "amount": "4 tbsp",
-          "name": "light soy sauce, divided"
-        },
-        {
-          "amount": "2 tsp",
-          "name": "dark soy sauce"
-        },
-        {
-          "amount": "1 tbsp + 1 tsp",
-          "name": "Chinkiang vinegar"
-        },
-        {
-          "amount": "2 tsp",
-          "name": "sugar"
-        },
-        {
           "amount": "2 tbsp",
-          "name": "cornstarch, divided"
+          "name": "olive oil"
         },
         {
-          "amount": "2 tsp",
-          "name": "sesame oil"
+          "amount": "1/2 tsp",
+          "name": "cumin seeds"
         },
         {
-          "amount": "3 tbsp",
-          "name": "vegetable oil"
+          "amount": "1/2 tsp",
+          "name": "ground coriander"
+        },
+        {
+          "amount": "1/2 tsp",
+          "name": "ground turmeric"
+        },
+        {
+          "amount": "400ml",
+          "name": "light coconut milk"
         },
         {
           "amount": "to taste",
-          "name": "salt"
+          "name": "salt and freshly ground black pepper"
         }
       ]
     },
@@ -666,17 +638,17 @@ const RECIPE = {
       "category": "Grains",
       "items": [
         {
-          "amount": "400g",
-          "name": "jasmine rice, uncooked"
+          "amount": "300g",
+          "name": "basmati rice, uncooked"
         }
       ]
     }
   ],
   "nutrition": {
-    "calories": 625,
-    "protein": 45,
-    "carbs": 58,
-    "fat": 24
+    "calories": 780,
+    "protein": 46,
+    "carbs": 68,
+    "fat": 34
   }
 };
 
