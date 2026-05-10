@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Three-Cup Chicken with Broccoli — Cook Mode</title>
+<title>Kung Pao Chicken with Broccoli — Cook Mode</title>
 <style>
   /* ── Reset & Base ── */
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -459,11 +459,11 @@
 
 <!-- Header -->
 <div class="header">
-  <h1>Three-Cup Chicken with Broccoli</h1>
+  <h1>Kung Pao Chicken with Broccoli</h1>
   <div class="meta">
     <span>4 servings</span>
-    <span>10m prep</span>
-    <span>25m cook</span>
+    <span>15m prep</span>
+    <span>15m cook</span>
     <div class="wake-lock-indicator" id="wakeLock" title="Screen wake lock"></div>
   </div>
 </div>
@@ -528,17 +528,29 @@
 // RECIPE DATA — This block gets replaced per recipe
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 const RECIPE = {
-  "name": "Three-Cup Chicken with Broccoli",
+  "name": "Kung Pao Chicken with Broccoli",
   "servings": "4",
-  "prep_time": "10",
-  "cook_time": "25",
+  "prep_time": "15",
+  "cook_time": "15",
   "steps": [
     {
-      "text": "Rinse 300g jasmine rice and start it in the rice cooker or on the hob. While it cooks, cut the chicken into bite-size pieces and prep the aromatics.",
+      "text": "Rinse 400g jasmine rice and start it in the rice cooker or on the hob. Cut chicken into 2cm cubes, mince the garlic and ginger, chop the spring onions, and cut broccoli into bite-size florets.",
       "timer": null
     },
     {
-      "text": "Steam or blanch the broccoli until bright green and just tender, 3-4 minutes. Set aside so it can be folded into the glazed chicken at the end.",
+      "text": "Marinate the chicken with 2 teaspoons light soy sauce, 2 teaspoons cornstarch and a pinch of salt while the rice starts, about 10 minutes.",
+      "timer": {
+        "label": "Marinate chicken",
+        "min": 10,
+        "sec": 0
+      }
+    },
+    {
+      "text": "Mix the sauce: combine remaining light soy sauce, dark soy sauce, Chinkiang vinegar, sugar, remaining cornstarch, sesame oil and 4 tablespoons water.",
+      "timer": null
+    },
+    {
+      "text": "Steam or blanch the broccoli until bright green and just tender, 3-4 minutes. Drain and set aside.",
       "timer": {
         "label": "Broccoli",
         "min": 4,
@@ -546,31 +558,27 @@ const RECIPE = {
       }
     },
     {
-      "text": "Heat a wok over high heat. Add 1 tablespoon sesame oil, then the ginger coins, garlic cloves, scallions and dried chillies. Stir until fragrant and just starting to colour, about 2 minutes.",
+      "text": "Heat vegetable oil in a wok over high heat. Add dried chillies and Sichuan peppercorns; stir until fragrant, about 30 seconds.",
+      "timer": null
+    },
+    {
+      "text": "Add chicken in a single layer. Sear for 2 minutes without moving, then stir-fry until cooked through, about 3 more minutes.",
       "timer": {
-        "label": "Aromatics",
+        "label": "Cook chicken",
+        "min": 5,
+        "sec": 0
+      }
+    },
+    {
+      "text": "Add garlic and ginger; stir-fry for 30 seconds. Pour in the sauce and toss until glossy and thickened.",
+      "timer": {
+        "label": "Thicken sauce",
         "min": 2,
         "sec": 0
       }
     },
     {
-      "text": "Push the aromatics to the sides of the wok. Add the remaining 1 tablespoon sesame oil and the chicken in a single layer. Sear until browned at the edges, 5-7 minutes.",
-      "timer": {
-        "label": "Sear chicken",
-        "min": 6,
-        "sec": 0
-      }
-    },
-    {
-      "text": "Sprinkle in the brown sugar. Pour in the rice wine and soy sauce, bring to a boil, then simmer uncovered until glossy and reduced to a clingy glaze, 12-15 minutes.",
-      "timer": {
-        "label": "Reduce glaze",
-        "min": 13,
-        "sec": 0
-      }
-    },
-    {
-      "text": "Fold in the broccoli and Thai basil until the basil wilts and everything is coated. Serve over rice. Pack two lunch portions for tomorrow.",
+      "text": "Fold in broccoli, peanuts and spring onions. Toss for 30 seconds, then serve over rice. Pack two lunch portions for tomorrow.",
       "timer": null
     }
   ],
@@ -579,8 +587,8 @@ const RECIPE = {
       "category": "Protein",
       "items": [
         {
-          "amount": "900g",
-          "name": "skinless boneless chicken thighs, cut bite-size"
+          "amount": "700g",
+          "name": "boneless skinless chicken thighs, cut into 2cm cubes"
         }
       ]
     },
@@ -588,24 +596,20 @@ const RECIPE = {
       "category": "Produce",
       "items": [
         {
-          "amount": "30g",
-          "name": "fresh ginger, sliced into coins"
-        },
-        {
-          "amount": "12 cloves",
-          "name": "garlic, peeled"
-        },
-        {
-          "amount": "4",
-          "name": "scallions, cut into 1-inch pieces"
-        },
-        {
-          "amount": "300g",
+          "amount": "400g",
           "name": "broccoli or Tenderstem broccoli"
         },
         {
-          "amount": "40g",
-          "name": "Thai basil leaves"
+          "amount": "6 cloves",
+          "name": "garlic, minced"
+        },
+        {
+          "amount": "2 tbsp",
+          "name": "fresh ginger, minced"
+        },
+        {
+          "amount": "6",
+          "name": "spring onions, chopped"
         }
       ]
     },
@@ -613,24 +617,48 @@ const RECIPE = {
       "category": "Pantry",
       "items": [
         {
+          "amount": "100g",
+          "name": "roasted peanuts"
+        },
+        {
+          "amount": "12-16",
+          "name": "dried red chillies, to heat preference"
+        },
+        {
+          "amount": "2 tsp",
+          "name": "Sichuan peppercorns"
+        },
+        {
+          "amount": "4 tbsp",
+          "name": "light soy sauce, divided"
+        },
+        {
+          "amount": "2 tsp",
+          "name": "dark soy sauce"
+        },
+        {
+          "amount": "1 tbsp + 1 tsp",
+          "name": "Chinkiang vinegar"
+        },
+        {
+          "amount": "2 tsp",
+          "name": "sugar"
+        },
+        {
           "amount": "2 tbsp",
-          "name": "toasted sesame oil"
+          "name": "cornstarch, divided"
         },
         {
-          "amount": "3",
-          "name": "dried red chillies"
+          "amount": "2 tsp",
+          "name": "sesame oil"
         },
         {
-          "amount": "1 tbsp",
-          "name": "light brown sugar"
+          "amount": "3 tbsp",
+          "name": "vegetable oil"
         },
         {
-          "amount": "120ml",
-          "name": "Shaoxing rice wine or Taiwanese mijiu"
-        },
-        {
-          "amount": "60ml",
-          "name": "light soy sauce"
+          "amount": "to taste",
+          "name": "salt"
         }
       ]
     },
@@ -638,17 +666,17 @@ const RECIPE = {
       "category": "Grains",
       "items": [
         {
-          "amount": "300g",
+          "amount": "400g",
           "name": "jasmine rice, uncooked"
         }
       ]
     }
   ],
   "nutrition": {
-    "calories": 875,
-    "protein": 47,
-    "carbs": 74,
-    "fat": 45
+    "calories": 625,
+    "protein": 45,
+    "carbs": 58,
+    "fat": 24
   }
 };
 
