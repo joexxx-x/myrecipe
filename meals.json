@@ -1,26 +1,26 @@
 [
   {
-    "date": "2026-04-27",
+    "date": "2026-05-10",
     "meal": "dinner",
     "name": "Three-Cup Chicken with Broccoli",
-    "file": "meals/2026-04-27_dinner_three-cup-chicken-broccoli.html"
+    "file": "meals/2026-05-10_dinner_three-cup-chicken-broccoli.html"
   },
   {
-    "date": "2026-04-28",
+    "date": "2026-05-11",
     "meal": "dinner",
     "name": "Ras el Hanout Chickpea & Spinach Stew",
-    "file": "meals/2026-04-28_dinner_ras-el-hanout-chickpea-spinach-stew.html"
+    "file": "meals/2026-05-11_dinner_ras-el-hanout-chickpea-spinach-stew.html"
   },
   {
-    "date": "2026-04-29",
+    "date": "2026-05-12",
     "meal": "dinner",
-    "name": "Salmon & Cherry Tomato Curry",
-    "file": "meals/2026-04-29_dinner_salmon-cherry-tomato-curry.html"
+    "name": "Spinach One-Pot Pasta with Sardines",
+    "file": "meals/2026-05-12_dinner_spinach-one-pot-pasta-sardines.html"
   },
   {
-    "date": "2026-04-30",
+    "date": "2026-05-13",
     "meal": "dinner",
     "name": "Kung Pao Tofu & Edamame",
-    "file": "meals/2026-04-30_dinner_kung-pao-tofu-edamame.html"
+    "file": "meals/2026-05-13_dinner_kung-pao-tofu-edamame.html"
   }
 ]

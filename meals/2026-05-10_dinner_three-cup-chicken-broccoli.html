@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Salmon &amp; Cherry Tomato Curry — Cook Mode</title>
+<title>Three-Cup Chicken with Broccoli — Cook Mode</title>
 <style>
   /* ── Reset & Base ── */
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -459,10 +459,10 @@
 
 <!-- Header -->
 <div class="header">
-  <h1>Salmon &amp; Cherry Tomato Curry</h1>
+  <h1>Three-Cup Chicken with Broccoli</h1>
   <div class="meta">
     <span>4 servings</span>
-    <span>5m prep</span>
+    <span>10m prep</span>
     <span>25m cook</span>
     <div class="wake-lock-indicator" id="wakeLock" title="Screen wake lock"></div>
   </div>
@@ -528,41 +528,49 @@
 // RECIPE DATA — This block gets replaced per recipe
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 const RECIPE = {
-  "name": "Salmon & Cherry Tomato Curry",
+  "name": "Three-Cup Chicken with Broccoli",
   "servings": "4",
-  "prep_time": "5",
+  "prep_time": "10",
   "cook_time": "25",
   "steps": [
     {
-      "text": "Start 300g basmati rice. Season the salmon fillets generously with salt and pepper on both sides, then set aside while you build the curry base.",
+      "text": "Rinse 300g jasmine rice and start it in the rice cooker or on the hob. While it cooks, cut the chicken into bite-size pieces and prep the aromatics.",
       "timer": null
     },
     {
-      "text": "In a large lidded skillet or saucepan, heat olive oil over medium. Add garlic, ginger and chilli; cook, stirring frequently, until golden and fragrant, 2–3 minutes. Add cumin seeds and toast briefly.",
+      "text": "Steam or blanch the broccoli until bright green and just tender, 3-4 minutes. Set aside so it can be folded into the glazed chicken at the end.",
+      "timer": {
+        "label": "Broccoli",
+        "min": 4,
+        "sec": 0
+      }
+    },
+    {
+      "text": "Heat a wok over high heat. Add 1 tablespoon sesame oil, then the ginger coins, garlic cloves, scallions and dried chillies. Stir until fragrant and just starting to colour, about 2 minutes.",
       "timer": {
         "label": "Aromatics",
-        "min": 3,
+        "min": 2,
         "sec": 0
       }
     },
     {
-      "text": "Stir in cherry tomatoes, ground coriander and turmeric. Pour in the light coconut milk, season lightly with salt, and cook uncovered until the liquid reduces slightly and tomato skins begin to burst, 6–8 minutes.",
+      "text": "Push the aromatics to the sides of the wok. Add the remaining 1 tablespoon sesame oil and the chicken in a single layer. Sear until browned at the edges, 5-7 minutes.",
       "timer": {
-        "label": "Simmer sauce",
-        "min": 7,
+        "label": "Sear chicken",
+        "min": 6,
         "sec": 0
       }
     },
     {
-      "text": "Stir in spinach until just wilted. Gently nestle the salmon into the curry, submerging as much as possible. Cover and simmer over medium-low until just cooked through, 4–6 minutes.",
+      "text": "Sprinkle in the brown sugar. Pour in the rice wine and soy sauce, bring to a boil, then simmer uncovered until glossy and reduced to a clingy glaze, 12-15 minutes.",
       "timer": {
-        "label": "Cook salmon",
-        "min": 5,
+        "label": "Reduce glaze",
+        "min": 13,
         "sec": 0
       }
     },
     {
-      "text": "Serve over rice with torn herbs. Pack two lunch portions for tomorrow and reheat gently so the salmon stays tender.",
+      "text": "Fold in the broccoli and Thai basil until the basil wilts and everything is coated. Serve over rice. Pack two lunch portions for tomorrow.",
       "timer": null
     }
   ],
@@ -571,8 +579,8 @@ const RECIPE = {
       "category": "Protein",
       "items": [
         {
-          "amount": "680g",
-          "name": "salmon fillets, skin removed"
+          "amount": "900g",
+          "name": "skinless boneless chicken thighs, cut bite-size"
         }
       ]
     },
@@ -580,28 +588,24 @@ const RECIPE = {
       "category": "Produce",
       "items": [
         {
-          "amount": "3 cloves",
-          "name": "garlic, minced"
+          "amount": "30g",
+          "name": "fresh ginger, sliced into coins"
         },
         {
-          "amount": "1 tbsp",
-          "name": "fresh ginger, minced"
+          "amount": "12 cloves",
+          "name": "garlic, peeled"
         },
         {
-          "amount": "1",
-          "name": "bird's-eye chilli, sliced"
+          "amount": "4",
+          "name": "scallions, cut into 1-inch pieces"
         },
         {
-          "amount": "450g",
-          "name": "cherry tomatoes"
+          "amount": "300g",
+          "name": "broccoli or Tenderstem broccoli"
         },
         {
-          "amount": "140g",
-          "name": "baby spinach"
-        },
-        {
-          "amount": "10g",
-          "name": "fresh mint, basil or coriander, torn"
+          "amount": "40g",
+          "name": "Thai basil leaves"
         }
       ]
     },
@@ -610,27 +614,23 @@ const RECIPE = {
       "items": [
         {
           "amount": "2 tbsp",
-          "name": "olive oil"
+          "name": "toasted sesame oil"
         },
         {
-          "amount": "1/2 tsp",
-          "name": "cumin seeds"
+          "amount": "3",
+          "name": "dried red chillies"
         },
         {
-          "amount": "1/2 tsp",
-          "name": "ground coriander"
+          "amount": "1 tbsp",
+          "name": "light brown sugar"
         },
         {
-          "amount": "1/2 tsp",
-          "name": "ground turmeric"
+          "amount": "120ml",
+          "name": "Shaoxing rice wine or Taiwanese mijiu"
         },
         {
-          "amount": "400ml",
-          "name": "light coconut milk"
-        },
-        {
-          "amount": "to taste",
-          "name": "salt and freshly ground black pepper"
+          "amount": "60ml",
+          "name": "light soy sauce"
         }
       ]
     },
@@ -639,16 +639,16 @@ const RECIPE = {
       "items": [
         {
           "amount": "300g",
-          "name": "basmati rice, uncooked"
+          "name": "jasmine rice, uncooked"
         }
       ]
     }
   ],
   "nutrition": {
-    "calories": 780,
-    "protein": 46,
-    "carbs": 68,
-    "fat": 34
+    "calories": 875,
+    "protein": 47,
+    "carbs": 74,
+    "fat": 45
   }
 };
 
