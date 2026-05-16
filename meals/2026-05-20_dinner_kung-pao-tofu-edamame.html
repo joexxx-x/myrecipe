@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Three-Cup Chicken with Broccoli — Cook Mode</title>
+<title>Kung Pao Tofu & Edamame — Cook Mode</title>
 <style>
   /* ── Reset & Base ── */
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -459,11 +459,11 @@
 
 <!-- Header -->
 <div class="header">
-  <h1>Three-Cup Chicken with Broccoli</h1>
+  <h1>Kung Pao Tofu & Edamame</h1>
   <div class="meta">
     <span>4 servings</span>
-    <span>10m prep</span>
-    <span>25m cook</span>
+    <span>20m prep</span>
+    <span>30m cook</span>
     <div class="wake-lock-indicator" id="wakeLock" title="Screen wake lock"></div>
   </div>
 </div>
@@ -528,49 +528,49 @@
 // RECIPE DATA — This block gets replaced per recipe
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 const RECIPE = {
-  "name": "Three-Cup Chicken with Broccoli",
+  "name": "Kung Pao Tofu & Edamame",
   "servings": "4",
-  "prep_time": "10",
-  "cook_time": "25",
+  "prep_time": "20",
+  "cook_time": "30",
   "steps": [
     {
-      "text": "Rinse 300g jasmine rice and start it in the rice cooker or on the hob. While it cooks, cut the chicken into bite-size pieces and prep the aromatics.",
+      "text": "Press the tofu under a heavy pan for 10 minutes. Start 300g jasmine rice. Whisk the sauce ingredients together while the tofu presses.",
+      "timer": {
+        "label": "Press tofu",
+        "min": 10,
+        "sec": 0
+      }
+    },
+    {
+      "text": "Cut tofu into 3/4-inch cubes, season with a pinch of salt, then toss with the coating cornstarch right before frying.",
       "timer": null
     },
     {
-      "text": "Steam or blanch the broccoli until bright green and just tender, 3-4 minutes. Set aside so it can be folded into the glazed chicken at the end.",
+      "text": "Heat neutral oil in a large skillet over medium-high. Add tofu in a single layer, working in two batches if needed. Cook until crisp and golden on both sides, about 3 minutes per side. Remove to a plate.",
       "timer": {
-        "label": "Broccoli",
-        "min": 4,
+        "label": "Crisp tofu",
+        "min": 12,
         "sec": 0
       }
     },
     {
-      "text": "Heat a wok over high heat. Add 1 tablespoon sesame oil, then the ginger coins, garlic cloves, scallions and dried chillies. Stir until fragrant and just starting to colour, about 2 minutes.",
+      "text": "Add bell peppers, celery and scallions to the skillet. Stir-fry until softened and lightly charred, about 4 minutes. Add edamame, Sichuan peppercorns and dried chiles; cook until fragrant, about 2 minutes.",
       "timer": {
-        "label": "Aromatics",
-        "min": 2,
-        "sec": 0
-      }
-    },
-    {
-      "text": "Push the aromatics to the sides of the wok. Add the remaining 1 tablespoon sesame oil and the chicken in a single layer. Sear until browned at the edges, 5-7 minutes.",
-      "timer": {
-        "label": "Sear chicken",
+        "label": "Stir-fry veg",
         "min": 6,
         "sec": 0
       }
     },
     {
-      "text": "Sprinkle in the brown sugar. Pour in the rice wine and soy sauce, bring to a boil, then simmer uncovered until glossy and reduced to a clingy glaze, 12-15 minutes.",
+      "text": "Return tofu to the pan and pour in the sauce. Stir to coat and simmer until glossy and thick, about 2 minutes. Finish with peanuts and cilantro.",
       "timer": {
-        "label": "Reduce glaze",
-        "min": 13,
+        "label": "Thicken sauce",
+        "min": 2,
         "sec": 0
       }
     },
     {
-      "text": "Fold in the broccoli and Thai basil until the basil wilts and everything is coated. Serve over rice. Pack two lunch portions for tomorrow.",
+      "text": "Serve immediately over rice. Pack two lunch portions for tomorrow.",
       "timer": null
     }
   ],
@@ -579,8 +579,12 @@ const RECIPE = {
       "category": "Protein",
       "items": [
         {
-          "amount": "900g",
-          "name": "skinless boneless chicken thighs, cut bite-size"
+          "amount": "600g",
+          "name": "extra-firm tofu"
+        },
+        {
+          "amount": "300g",
+          "name": "shelled edamame, thawed if frozen"
         }
       ]
     },
@@ -588,24 +592,28 @@ const RECIPE = {
       "category": "Produce",
       "items": [
         {
-          "amount": "30g",
-          "name": "fresh ginger, sliced into coins"
+          "amount": "4 cloves",
+          "name": "garlic, finely grated"
         },
         {
-          "amount": "12 cloves",
-          "name": "garlic, peeled"
+          "amount": "2 inches",
+          "name": "fresh ginger, finely grated"
+        },
+        {
+          "amount": "2",
+          "name": "red bell peppers, diced"
+        },
+        {
+          "amount": "2 stalks",
+          "name": "celery, sliced"
         },
         {
           "amount": "4",
-          "name": "scallions, cut into 1-inch pieces"
+          "name": "scallions, cut into 1-inch chunks"
         },
         {
-          "amount": "300g",
-          "name": "broccoli or Tenderstem broccoli"
-        },
-        {
-          "amount": "40g",
-          "name": "Thai basil leaves"
+          "amount": "20g",
+          "name": "cilantro, roughly chopped"
         }
       ]
     },
@@ -613,24 +621,60 @@ const RECIPE = {
       "category": "Pantry",
       "items": [
         {
-          "amount": "2 tbsp",
-          "name": "toasted sesame oil"
-        },
-        {
-          "amount": "3",
-          "name": "dried red chillies"
-        },
-        {
-          "amount": "1 tbsp",
-          "name": "light brown sugar"
-        },
-        {
-          "amount": "120ml",
-          "name": "Shaoxing rice wine or Taiwanese mijiu"
+          "amount": "40g",
+          "name": "cornstarch, for coating tofu"
         },
         {
           "amount": "60ml",
-          "name": "light soy sauce"
+          "name": "soy sauce"
+        },
+        {
+          "amount": "2 tbsp",
+          "name": "brown sugar"
+        },
+        {
+          "amount": "2 tbsp",
+          "name": "hoisin sauce"
+        },
+        {
+          "amount": "2 tbsp",
+          "name": "rice wine or sake"
+        },
+        {
+          "amount": "1 tbsp",
+          "name": "black vinegar or rice wine vinegar"
+        },
+        {
+          "amount": "2 tsp",
+          "name": "toasted sesame oil"
+        },
+        {
+          "amount": "2 tsp",
+          "name": "cornstarch, for sauce"
+        },
+        {
+          "amount": "1/2 tsp",
+          "name": "white pepper"
+        },
+        {
+          "amount": "1 tsp",
+          "name": "Sichuan peppercorns"
+        },
+        {
+          "amount": "6",
+          "name": "dried Tianjin chiles or chiles de arbol"
+        },
+        {
+          "amount": "60g",
+          "name": "roasted peanuts"
+        },
+        {
+          "amount": "4 tbsp",
+          "name": "neutral oil"
+        },
+        {
+          "amount": "to taste",
+          "name": "salt"
         }
       ]
     },
@@ -645,10 +689,10 @@ const RECIPE = {
     }
   ],
   "nutrition": {
-    "calories": 875,
-    "protein": 47,
-    "carbs": 74,
-    "fat": 45
+    "calories": 745,
+    "protein": 36,
+    "carbs": 91,
+    "fat": 28
   }
 };
 

@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Kung Pao Chicken with Broccoli — Cook Mode</title>
+<title>Ras el Hanout Chickpea & Spinach Stew — Cook Mode</title>
 <style>
   /* ── Reset & Base ── */
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -459,11 +459,11 @@
 
 <!-- Header -->
 <div class="header">
-  <h1>Kung Pao Chicken with Broccoli</h1>
+  <h1>Ras el Hanout Chickpea & Spinach Stew</h1>
   <div class="meta">
     <span>4 servings</span>
-    <span>15m prep</span>
-    <span>15m cook</span>
+    <span>5m prep</span>
+    <span>25m cook</span>
     <div class="wake-lock-indicator" id="wakeLock" title="Screen wake lock"></div>
   </div>
 </div>
@@ -528,53 +528,41 @@
 // RECIPE DATA — This block gets replaced per recipe
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 const RECIPE = {
-  "name": "Kung Pao Chicken with Broccoli",
+  "name": "Ras el Hanout Chickpea & Spinach Stew",
   "servings": "4",
-  "prep_time": "15",
-  "cook_time": "15",
+  "prep_time": "5",
+  "cook_time": "25",
   "steps": [
     {
-      "text": "Cut chicken into 2cm cubes. Marinate with 2 tsp light soy sauce, 2 tsp cornstarch and a pinch of salt for 10 minutes. Start 400g rice.",
+      "text": "Start 240g rice so it is ready with the stew. Drain and rinse the chickpeas, mince the garlic, and measure the spices and sauces.",
+      "timer": null
+    },
+    {
+      "text": "Heat 2 tablespoons olive oil in a large pot over medium. Add garlic and ras el hanout; stir until fragrant, about 1 minute. Add tomato paste and cook, stirring, until it darkens slightly, about 2 minutes.",
       "timer": {
-        "label": "Marinate chicken",
+        "label": "Toast aromatics",
+        "min": 3,
+        "sec": 0
+      }
+    },
+    {
+      "text": "Add vegetable stock, soy sauce and salt. Bring to a boil, reduce heat to medium-low, cover and cook until the sauce darkens and the flavours meld, about 10 minutes.",
+      "timer": {
+        "label": "Simmer sauce",
         "min": 10,
         "sec": 0
       }
     },
     {
-      "text": "Steam or blanch the broccoli until bright green and just tender, 3-4 minutes. Set aside.",
+      "text": "Add the chickpeas and simmer until warmed through and soft, about 10 minutes. Add spinach and stir until wilted, about 3 minutes. Add a splash of stock or water if too thick.",
       "timer": {
-        "label": "Broccoli",
-        "min": 4,
+        "label": "Chickpeas",
+        "min": 13,
         "sec": 0
       }
     },
     {
-      "text": "Mix the sauce: combine remaining light soy sauce, dark soy sauce, Chinkiang vinegar, sugar, remaining cornstarch, sesame oil and 4 tbsp water.",
-      "timer": null
-    },
-    {
-      "text": "Heat vegetable oil in a wok over high heat. Add dried chillies and Sichuan peppercorns; stir for 30 seconds until fragrant.",
-      "timer": null
-    },
-    {
-      "text": "Add chicken in a single layer, working in 2 batches if needed. Sear for 2 minutes without moving, then stir-fry until cooked through, about 3 more minutes per batch.",
-      "timer": {
-        "label": "Sear chicken",
-        "min": 10,
-        "sec": 0
-      }
-    },
-    {
-      "text": "Return all chicken to the wok. Add garlic and ginger, then stir-fry for 30 seconds.",
-      "timer": null
-    },
-    {
-      "text": "Pour in the sauce and toss until glossy and evenly coated. Add peanuts, spring onions and broccoli; toss for 30 seconds.",
-      "timer": null
-    },
-    {
-      "text": "Serve immediately over rice. Pack two portions for tomorrow's lunches.",
+      "text": "Mix harissa paste with 3 tablespoons olive oil in a small bowl. Serve the stew over rice with low-fat Greek yogurt and harissa oil. Pack two lunch portions for tomorrow.",
       "timer": null
     }
   ],
@@ -583,8 +571,8 @@ const RECIPE = {
       "category": "Protein",
       "items": [
         {
-          "amount": "700g",
-          "name": "boneless skinless chicken thighs"
+          "amount": "1200g",
+          "name": "canned chickpeas, drained and rinsed"
         }
       ]
     },
@@ -592,20 +580,21 @@ const RECIPE = {
       "category": "Produce",
       "items": [
         {
-          "amount": "400g",
-          "name": "broccoli florets"
+          "amount": "150g",
+          "name": "spinach leaves"
         },
         {
-          "amount": "6 cloves",
+          "amount": "4 cloves",
           "name": "garlic, minced"
-        },
+        }
+      ]
+    },
+    {
+      "category": "Dairy",
+      "items": [
         {
-          "amount": "2 tbsp",
-          "name": "fresh ginger, minced"
-        },
-        {
-          "amount": "6",
-          "name": "spring onions, chopped"
+          "amount": "400g",
+          "name": "low-fat Greek yogurt, for serving"
         }
       ]
     },
@@ -613,44 +602,32 @@ const RECIPE = {
       "category": "Pantry",
       "items": [
         {
-          "amount": "100g",
-          "name": "roasted peanuts"
+          "amount": "3 tbsp",
+          "name": "tomato paste"
         },
         {
-          "amount": "16",
-          "name": "dried red chillies"
+          "amount": "1 tbsp",
+          "name": "ras el hanout"
         },
         {
-          "amount": "2 tsp",
-          "name": "Sichuan peppercorns"
+          "amount": "240ml",
+          "name": "vegetable stock"
         },
         {
-          "amount": "4 tbsp",
-          "name": "light soy sauce"
+          "amount": "1 tbsp",
+          "name": "soy sauce"
         },
         {
-          "amount": "2 tsp",
-          "name": "dark soy sauce"
+          "amount": "5 tbsp",
+          "name": "olive oil, divided"
         },
         {
-          "amount": "1.5 tbsp",
-          "name": "Chinkiang vinegar"
+          "amount": "1/2 tsp",
+          "name": "fine sea salt"
         },
         {
-          "amount": "2 tsp",
-          "name": "sugar"
-        },
-        {
-          "amount": "2 tbsp",
-          "name": "cornstarch"
-        },
-        {
-          "amount": "2 tsp",
-          "name": "sesame oil"
-        },
-        {
-          "amount": "4 tbsp",
-          "name": "vegetable oil"
+          "amount": "1 tbsp",
+          "name": "harissa paste"
         }
       ]
     },
@@ -658,16 +635,16 @@ const RECIPE = {
       "category": "Grains",
       "items": [
         {
-          "amount": "400g",
+          "amount": "240g",
           "name": "rice, uncooked"
         }
       ]
     }
   ],
   "nutrition": {
-    "calories": 625,
-    "protein": 45,
-    "carbs": 56,
+    "calories": 790,
+    "protein": 36,
+    "carbs": 104,
     "fat": 22
   }
 };
