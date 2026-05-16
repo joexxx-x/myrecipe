@@ -1,26 +1,26 @@
 [
   {
-    "date": "2026-05-10",
+    "date": "2026-05-17",
     "meal": "dinner",
-    "name": "Salmon & Cherry Tomato Curry",
-    "file": "meals/2026-05-10_dinner_salmon-cherry-tomato-curry.html"
+    "name": "Three-Cup Chicken with Broccoli",
+    "file": "meals/2026-05-17_dinner_three-cup-chicken-broccoli.html"
   },
   {
-    "date": "2026-05-11",
+    "date": "2026-05-18",
     "meal": "dinner",
-    "name": "Ras el Hanout Chickpea & Spinach Stew",
-    "file": "meals/2026-05-11_dinner_ras-el-hanout-chickpea-spinach-stew.html"
+    "name": "Black Bean & Avocado Wraps",
+    "file": "meals/2026-05-18_dinner_black-bean-avocado-wraps.html"
   },
   {
-    "date": "2026-05-12",
+    "date": "2026-05-19",
     "meal": "dinner",
-    "name": "Spinach One-Pot Pasta with Sardines",
-    "file": "meals/2026-05-12_dinner_spinach-one-pot-pasta-sardines.html"
+    "name": "Roasted Fish & Leeks Vinaigrette",
+    "file": "meals/2026-05-19_dinner_roasted-fish-leeks-vinaigrette.html"
   },
   {
-    "date": "2026-05-13",
+    "date": "2026-05-20",
     "meal": "dinner",
-    "name": "Kung Pao Tofu & Edamame",
-    "file": "meals/2026-05-13_dinner_kung-pao-tofu-edamame.html"
+    "name": "Kung Pao Chicken with Broccoli",
+    "file": "meals/2026-05-20_dinner_kung-pao-chicken-broccoli.html"
   }
 ]

@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Spinach One-Pot Pasta with Sardines — Cook Mode</title>
+<title>Roasted Fish & Leeks Vinaigrette — Cook Mode</title>
 <style>
   /* ── Reset & Base ── */
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -459,11 +459,11 @@
 
 <!-- Header -->
 <div class="header">
-  <h1>Spinach One-Pot Pasta with Sardines</h1>
+  <h1>Roasted Fish & Leeks Vinaigrette</h1>
   <div class="meta">
     <span>2 servings</span>
-    <span>5m prep</span>
-    <span>15m cook</span>
+    <span>10m prep</span>
+    <span>35m cook</span>
     <div class="wake-lock-indicator" id="wakeLock" title="Screen wake lock"></div>
   </div>
 </div>
@@ -528,37 +528,45 @@
 // RECIPE DATA — This block gets replaced per recipe
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 const RECIPE = {
-  "name": "Spinach One-Pot Pasta with Sardines",
+  "name": "Roasted Fish & Leeks Vinaigrette",
   "servings": "2",
-  "prep_time": "5",
-  "cook_time": "15",
+  "prep_time": "10",
+  "cook_time": "35",
   "steps": [
     {
-      "text": "Bring a large pot of salted water to a boil. Add the pasta and cook until just shy of al dente, about 1 minute less than the package instructions. Reserve 120ml pasta water.",
-      "timer": null
-    },
-    {
-      "text": "Place the spinach in a large colander in the sink. Drain the pasta over the spinach to wilt it. Drizzle with a little olive oil and stir to prevent sticking.",
-      "timer": null
-    },
-    {
-      "text": "Wipe out the pot and place over medium-high heat. Add 1 tablespoon olive oil and the anchovies carefully; it may splatter. Stir until the anchovies start to dissolve, about 30 seconds.",
-      "timer": null
-    },
-    {
-      "text": "Break the drained sardines into large chunks and add to the pot. Toss gently for 30 seconds to warm through.",
-      "timer": null
-    },
-    {
-      "text": "Pour the pasta and spinach back into the pot. Add Parmesan and red pepper flakes. Stir until a glossy sauce forms and the spinach fully wilts, 1-2 minutes. Add reserved pasta water a tablespoon at a time if dry.",
+      "text": "Heat oven to 200C. Start the baby potatoes in salted water and simmer until tender, about 18-20 minutes.",
       "timer": {
-        "label": "Toss pasta",
-        "min": 2,
+        "label": "Potatoes",
+        "min": 20,
         "sec": 0
       }
     },
     {
-      "text": "Squeeze the lemon over everything. Taste and season with more salt or lemon as needed. Serve with extra Parmesan if desired.",
+      "text": "Wash the sliced leek in cold water to remove grit, lift out, drain well and pat dry.",
+      "timer": null
+    },
+    {
+      "text": "Spread the leek on a sheet pan with capers, 2 tbsp olive oil and a pinch of salt. Roast for 15 minutes, tossing halfway, until tender and starting to crisp.",
+      "timer": {
+        "label": "Roast leeks",
+        "min": 15,
+        "sec": 0
+      }
+    },
+    {
+      "text": "Pat the fish dry. Move the leeks aside, add the fish to the pan, drizzle with a little olive oil, salt and pepper, then roast until it flakes easily, 10-12 minutes.",
+      "timer": {
+        "label": "Roast fish",
+        "min": 12,
+        "sec": 0
+      }
+    },
+    {
+      "text": "Whisk the remaining olive oil with shallot, red wine vinegar, parsley, mustard, salt and black pepper to make the vinaigrette.",
+      "timer": null
+    },
+    {
+      "text": "Serve the fish and leeks with the potatoes, spooning the vinaigrette over everything while warm.",
       "timer": null
     }
   ],
@@ -567,12 +575,8 @@ const RECIPE = {
       "category": "Protein",
       "items": [
         {
-          "amount": "120g",
-          "name": "canned sardines in olive oil, drained"
-        },
-        {
-          "amount": "3",
-          "name": "oil-packed anchovies"
+          "amount": "350g",
+          "name": "skinless white fish fillets, cod or halibut"
         }
       ]
     },
@@ -580,21 +584,20 @@ const RECIPE = {
       "category": "Produce",
       "items": [
         {
-          "amount": "225g",
-          "name": "spinach, mature or baby"
+          "amount": "1",
+          "name": "medium leek, white and light green parts sliced"
         },
         {
-          "amount": "1/2",
-          "name": "lemon"
-        }
-      ]
-    },
-    {
-      "category": "Dairy",
-      "items": [
+          "amount": "500g",
+          "name": "baby potatoes"
+        },
         {
-          "amount": "30g",
-          "name": "Parmesan, grated"
+          "amount": "1/2 tbsp",
+          "name": "shallot, minced"
+        },
+        {
+          "amount": "1/2 tbsp",
+          "name": "fresh parsley, minced"
         }
       ]
     },
@@ -602,34 +605,33 @@ const RECIPE = {
       "category": "Pantry",
       "items": [
         {
-          "amount": "1.5 tbsp",
-          "name": "olive oil"
+          "amount": "1 tbsp",
+          "name": "capers, drained"
         },
         {
-          "amount": "1/4 tsp",
-          "name": "red pepper flakes"
+          "amount": "45ml",
+          "name": "extra-virgin olive oil"
+        },
+        {
+          "amount": "1.5 tsp",
+          "name": "red wine vinegar"
+        },
+        {
+          "amount": "1/2 tsp",
+          "name": "whole-grain mustard"
         },
         {
           "amount": "to taste",
-          "name": "salt"
-        }
-      ]
-    },
-    {
-      "category": "Grains",
-      "items": [
-        {
-          "amount": "170g",
-          "name": "short pasta, orecchiette or fusilli"
+          "name": "salt and black pepper"
         }
       ]
     }
   ],
   "nutrition": {
-    "calories": 630,
-    "protein": 41,
-    "carbs": 71,
-    "fat": 20
+    "calories": 560,
+    "protein": 38,
+    "carbs": 51,
+    "fat": 23
   }
 };
 

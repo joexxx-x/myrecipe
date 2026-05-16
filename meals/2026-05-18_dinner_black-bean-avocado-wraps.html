@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Ras el Hanout Chickpea & Spinach Stew — Cook Mode</title>
+<title>Black Bean & Avocado Wraps — Cook Mode</title>
 <style>
   /* ── Reset & Base ── */
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -459,11 +459,11 @@
 
 <!-- Header -->
 <div class="header">
-  <h1>Ras el Hanout Chickpea & Spinach Stew</h1>
+  <h1>Black Bean & Avocado Wraps</h1>
   <div class="meta">
-    <span>4 servings</span>
-    <span>5m prep</span>
-    <span>25m cook</span>
+    <span>2 servings</span>
+    <span>10m prep</span>
+    <span>10m cook</span>
     <div class="wake-lock-indicator" id="wakeLock" title="Screen wake lock"></div>
   </div>
 </div>
@@ -528,41 +528,37 @@
 // RECIPE DATA — This block gets replaced per recipe
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 const RECIPE = {
-  "name": "Ras el Hanout Chickpea & Spinach Stew",
-  "servings": "4",
-  "prep_time": "5",
-  "cook_time": "25",
+  "name": "Black Bean & Avocado Wraps",
+  "servings": "2",
+  "prep_time": "10",
+  "cook_time": "10",
   "steps": [
     {
-      "text": "Start 240g rice so it is ready with the stew. Drain and rinse the chickpeas, mince the garlic, and measure the spices and sauces.",
-      "timer": null
-    },
-    {
-      "text": "Heat 2 tablespoons olive oil in a large pot over medium. Add garlic and ras el hanout; stir until fragrant, about 1 minute. Add tomato paste and cook, stirring, until it darkens slightly, about 2 minutes.",
+      "text": "Heat olive or rapeseed oil in a large pan over medium-high heat. Add onion, bell pepper and garlic; cook until the onion is lightly golden, 2-3 minutes.",
       "timer": {
-        "label": "Toast aromatics",
+        "label": "Soften veg",
         "min": 3,
         "sec": 0
       }
     },
     {
-      "text": "Add vegetable stock, soy sauce and salt. Bring to a boil, reduce heat to medium-low, cover and cook until the sauce darkens and the flavours meld, about 10 minutes.",
+      "text": "Add the drained black beans and taco seasoning. Stir and cook until hot and lightly saucy, another 2-3 minutes. Remove from the heat.",
       "timer": {
-        "label": "Simmer sauce",
-        "min": 10,
+        "label": "Beans",
+        "min": 3,
         "sec": 0
       }
     },
     {
-      "text": "Add the chickpeas and simmer until warmed through and soft, about 10 minutes. Add spinach and stir until wilted, about 3 minutes. Add a splash of stock or water if too thick.",
-      "timer": {
-        "label": "Chickpeas",
-        "min": 13,
-        "sec": 0
-      }
+      "text": "In a bowl, combine avocado, tomato, cilantro, lime juice, salt and black pepper. Keep it chunky so the wraps do not get wet.",
+      "timer": null
     },
     {
-      "text": "Mix harissa paste with 3 tablespoons olive oil in a small bowl. Serve the stew over rice with low-fat Greek yogurt and harissa oil. Pack two lunch portions for tomorrow.",
+      "text": "Mix Greek yoghurt with chipotle paste or hot sauce and a small pinch of salt. Warm the tortillas in a dry pan or microwave.",
+      "timer": null
+    },
+    {
+      "text": "Spread each tortilla with yoghurt sauce, then add black beans and avocado salsa. Roll tightly and serve three small wraps per person with extra lime or hot sauce.",
       "timer": null
     }
   ],
@@ -571,8 +567,8 @@ const RECIPE = {
       "category": "Protein",
       "items": [
         {
-          "amount": "1200g",
-          "name": "canned chickpeas, drained and rinsed"
+          "amount": "1 can",
+          "name": "black beans, drained and rinsed"
         }
       ]
     },
@@ -580,12 +576,32 @@ const RECIPE = {
       "category": "Produce",
       "items": [
         {
-          "amount": "150g",
-          "name": "spinach leaves"
+          "amount": "1/2 cup",
+          "name": "onion, chopped"
         },
         {
-          "amount": "4 cloves",
+          "amount": "1/2 cup",
+          "name": "bell pepper, chopped"
+        },
+        {
+          "amount": "1 clove",
           "name": "garlic, minced"
+        },
+        {
+          "amount": "1",
+          "name": "avocado, chopped"
+        },
+        {
+          "amount": "1",
+          "name": "small tomato, chopped"
+        },
+        {
+          "amount": "2 tbsp",
+          "name": "cilantro, minced"
+        },
+        {
+          "amount": "1",
+          "name": "lime, juiced"
         }
       ]
     },
@@ -593,8 +609,8 @@ const RECIPE = {
       "category": "Dairy",
       "items": [
         {
-          "amount": "400g",
-          "name": "low-fat Greek yogurt, for serving"
+          "amount": "150g",
+          "name": "low-fat Greek yoghurt"
         }
       ]
     },
@@ -602,32 +618,20 @@ const RECIPE = {
       "category": "Pantry",
       "items": [
         {
-          "amount": "3 tbsp",
-          "name": "tomato paste"
+          "amount": "1 tbsp",
+          "name": "olive oil or rapeseed oil"
         },
         {
           "amount": "1 tbsp",
-          "name": "ras el hanout"
-        },
-        {
-          "amount": "240ml",
-          "name": "vegetable stock"
+          "name": "taco seasoning"
         },
         {
           "amount": "1 tbsp",
-          "name": "soy sauce"
+          "name": "chipotle paste or hot sauce"
         },
         {
-          "amount": "5 tbsp",
-          "name": "olive oil, divided"
-        },
-        {
-          "amount": "1/2 tsp",
-          "name": "fine sea salt"
-        },
-        {
-          "amount": "1 tbsp",
-          "name": "harissa paste"
+          "amount": "to taste",
+          "name": "salt and black pepper"
         }
       ]
     },
@@ -635,16 +639,16 @@ const RECIPE = {
       "category": "Grains",
       "items": [
         {
-          "amount": "240g",
-          "name": "rice, uncooked"
+          "amount": "6",
+          "name": "medium tortillas"
         }
       ]
     }
   ],
   "nutrition": {
-    "calories": 790,
-    "protein": 36,
-    "carbs": 104,
+    "calories": 750,
+    "protein": 30,
+    "carbs": 105,
     "fat": 22
   }
 };
