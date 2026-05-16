@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Black Bean & Avocado Wraps — Cook Mode</title>
+<title>Grain Bowl with Sardines & Sauce Moyo — Cook Mode</title>
 <style>
   /* ── Reset & Base ── */
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -459,7 +459,7 @@
 
 <!-- Header -->
 <div class="header">
-  <h1>Black Bean & Avocado Wraps</h1>
+  <h1>Grain Bowl with Sardines & Sauce Moyo</h1>
   <div class="meta">
     <span>2 servings</span>
     <span>10m prep</span>
@@ -528,37 +528,41 @@
 // RECIPE DATA — This block gets replaced per recipe
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 const RECIPE = {
-  "name": "Black Bean & Avocado Wraps",
+  "name": "Grain Bowl with Sardines & Sauce Moyo",
   "servings": "2",
   "prep_time": "10",
   "cook_time": "10",
   "steps": [
     {
-      "text": "Heat olive or rapeseed oil in a large pan over medium-high heat. Add onion, bell pepper and garlic; cook until the onion is lightly golden, 2-3 minutes.",
+      "text": "Combine red onion, garlic, lime juice and 1/2 tsp salt in a small bowl. Let sit for 5-10 minutes to mellow the raw bite.",
       "timer": {
-        "label": "Soften veg",
+        "label": "Mellow onion",
+        "min": 10,
+        "sec": 0
+      }
+    },
+    {
+      "text": "Bring 180ml water and 1/2 tsp salt to a boil in a small saucepan with a lid. Stir in fonio and 1 tbsp olive oil, cover, reduce to low and cook until the water is absorbed, about 3 minutes.",
+      "timer": {
+        "label": "Cook fonio",
         "min": 3,
         "sec": 0
       }
     },
     {
-      "text": "Add the drained black beans and taco seasoning. Stir and cook until hot and lightly saucy, another 2-3 minutes. Remove from the heat.",
+      "text": "Turn off the heat and let the fonio steam, covered, for 1 minute. Fluff with a fork.",
       "timer": {
-        "label": "Beans",
-        "min": 3,
+        "label": "Steam fonio",
+        "min": 1,
         "sec": 0
       }
     },
     {
-      "text": "In a bowl, combine avocado, tomato, cilantro, lime juice, salt and black pepper. Keep it chunky so the wraps do not get wet.",
+      "text": "Stir tomatoes, green pepper, habanero, remaining 1 tbsp olive oil and black pepper into the onion mixture. Taste and adjust lime, salt and pepper; this is the sauce moyo.",
       "timer": null
     },
     {
-      "text": "Mix Greek yoghurt with chipotle paste or hot sauce and a small pinch of salt. Warm the tortillas in a dry pan or microwave.",
-      "timer": null
-    },
-    {
-      "text": "Spread each tortilla with yoghurt sauce, then add black beans and avocado salsa. Roll tightly and serve three small wraps per person with extra lime or hot sauce.",
+      "text": "Divide the fonio between two bowls. Lay sardines on top, drizzle over the sardine oil, spoon sauce moyo over everything and serve.",
       "timer": null
     }
   ],
@@ -567,8 +571,8 @@ const RECIPE = {
       "category": "Protein",
       "items": [
         {
-          "amount": "1 can",
-          "name": "black beans, drained and rinsed"
+          "amount": "120g",
+          "name": "smoked sardines in olive oil, drained lightly"
         }
       ]
     },
@@ -576,41 +580,28 @@ const RECIPE = {
       "category": "Produce",
       "items": [
         {
-          "amount": "1/2 cup",
-          "name": "onion, chopped"
+          "amount": "150g",
+          "name": "grape or cherry tomatoes, halved"
         },
         {
-          "amount": "1/2 cup",
-          "name": "bell pepper, chopped"
+          "amount": "30g",
+          "name": "red onion, finely chopped"
         },
         {
           "amount": "1 clove",
           "name": "garlic, minced"
         },
         {
-          "amount": "1",
-          "name": "avocado, chopped"
+          "amount": "40g",
+          "name": "green bell pepper, finely chopped"
         },
         {
-          "amount": "1",
-          "name": "small tomato, chopped"
+          "amount": "1/2",
+          "name": "habanero or Scotch bonnet chile, seeded and finely chopped"
         },
         {
-          "amount": "2 tbsp",
-          "name": "cilantro, minced"
-        },
-        {
-          "amount": "1",
-          "name": "lime, juiced"
-        }
-      ]
-    },
-    {
-      "category": "Dairy",
-      "items": [
-        {
-          "amount": "150g",
-          "name": "low-fat Greek yoghurt"
+          "amount": "1 tbsp",
+          "name": "fresh lime juice"
         }
       ]
     },
@@ -618,20 +609,16 @@ const RECIPE = {
       "category": "Pantry",
       "items": [
         {
-          "amount": "1 tbsp",
-          "name": "olive oil or rapeseed oil"
-        },
-        {
-          "amount": "1 tbsp",
-          "name": "taco seasoning"
-        },
-        {
-          "amount": "1 tbsp",
-          "name": "chipotle paste or hot sauce"
+          "amount": "2 tbsp",
+          "name": "extra-virgin olive oil, divided"
         },
         {
           "amount": "to taste",
-          "name": "salt and black pepper"
+          "name": "fine sea salt"
+        },
+        {
+          "amount": "to taste",
+          "name": "black pepper"
         }
       ]
     },
@@ -639,17 +626,17 @@ const RECIPE = {
       "category": "Grains",
       "items": [
         {
-          "amount": "6",
-          "name": "medium tortillas"
+          "amount": "90g",
+          "name": "fonio, couscous or quinoa"
         }
       ]
     }
   ],
   "nutrition": {
-    "calories": 750,
-    "protein": 30,
-    "carbs": 105,
-    "fat": 22
+    "calories": 415,
+    "protein": 17,
+    "carbs": 39,
+    "fat": 21
   }
 };
 
