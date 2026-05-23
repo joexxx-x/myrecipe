@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Three-Cup Chicken with Broccoli — Cook Mode</title>
+<title>Roasted Fish & Leeks Vinaigrette — Cook Mode</title>
 <style>
   /* ── Reset & Base ── */
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -459,11 +459,11 @@
 
 <!-- Header -->
 <div class="header">
-  <h1>Three-Cup Chicken with Broccoli</h1>
+  <h1>Roasted Fish & Leeks Vinaigrette</h1>
   <div class="meta">
     <span>4 servings</span>
     <span>10m prep</span>
-    <span>25m cook</span>
+    <span>35m cook</span>
     <div class="wake-lock-indicator" id="wakeLock" title="Screen wake lock"></div>
   </div>
 </div>
@@ -528,49 +528,45 @@
 // RECIPE DATA — This block gets replaced per recipe
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 const RECIPE = {
-  "name": "Three-Cup Chicken with Broccoli",
+  "name": "Roasted Fish & Leeks Vinaigrette",
   "servings": "4",
   "prep_time": "10",
-  "cook_time": "25",
+  "cook_time": "35",
   "steps": [
     {
-      "text": "Rinse 300g jasmine rice and start it in the rice cooker or on the hob. While it cooks, cut the chicken into bite-size pieces and prep the aromatics.",
+      "text": "Heat oven to 200C. Start 1kg baby potatoes in salted water and simmer until tender, about 18-20 minutes.",
+      "timer": {
+        "label": "Potatoes",
+        "min": 20,
+        "sec": 0
+      }
+    },
+    {
+      "text": "Wash the sliced leeks in cold water to remove grit, lift out, drain well and pat dry.",
       "timer": null
     },
     {
-      "text": "Steam or blanch the broccoli until bright green and just tender, 3–4 minutes. Set aside so it can be folded into the glazed chicken at the end.",
+      "text": "Spread the leeks on a sheet pan with capers, 3 tbsp olive oil and a good pinch of salt. Roast for 15 minutes, tossing halfway, until tender and starting to crisp.",
       "timer": {
-        "label": "Broccoli",
-        "min": 4,
+        "label": "Roast leeks",
+        "min": 15,
         "sec": 0
       }
     },
     {
-      "text": "Heat a wok over high heat. Add 1 tablespoon sesame oil, then the ginger coins, garlic cloves, scallions and dried chillies. Stir until fragrant and just starting to colour, about 2 minutes.",
+      "text": "Pat the fish dry. Move the leeks aside, add the fish to the pan, drizzle with 1 tbsp olive oil, season with salt and pepper, then roast until it flakes easily, 10-12 minutes.",
       "timer": {
-        "label": "Aromatics",
-        "min": 2,
+        "label": "Roast fish",
+        "min": 12,
         "sec": 0
       }
     },
     {
-      "text": "Push the aromatics to the sides of the wok. Add the remaining 1 tablespoon sesame oil and the chicken in a single layer. Sear until browned at the edges, 5–7 minutes.",
-      "timer": {
-        "label": "Sear chicken",
-        "min": 6,
-        "sec": 0
-      }
+      "text": "Whisk the remaining olive oil with shallot, red wine vinegar, parsley, mustard, salt and black pepper to make the vinaigrette.",
+      "timer": null
     },
     {
-      "text": "Sprinkle in the brown sugar. Pour in the rice wine and soy sauce, bring to a boil, then simmer uncovered until glossy and reduced to a clingy glaze, 12–15 minutes.",
-      "timer": {
-        "label": "Reduce glaze",
-        "min": 13,
-        "sec": 0
-      }
-    },
-    {
-      "text": "Fold in the broccoli and Thai basil until the basil wilts and everything is coated. Serve over rice. Pack two lunch portions for tomorrow.",
+      "text": "Serve the fish and leeks with the potatoes, spooning vinaigrette over everything while warm. Pack two lunch portions for tomorrow and chill them promptly.",
       "timer": null
     }
   ],
@@ -579,8 +575,8 @@ const RECIPE = {
       "category": "Protein",
       "items": [
         {
-          "amount": "900g",
-          "name": "skinless boneless chicken thighs, cut bite-size"
+          "amount": "680g",
+          "name": "skinless white fish fillets, cod or halibut"
         }
       ]
     },
@@ -588,24 +584,20 @@ const RECIPE = {
       "category": "Produce",
       "items": [
         {
-          "amount": "30g",
-          "name": "fresh ginger, sliced into coins"
+          "amount": "2",
+          "name": "medium leeks, white and light green parts sliced"
         },
         {
-          "amount": "12 cloves",
-          "name": "garlic, peeled"
+          "amount": "1kg",
+          "name": "baby potatoes"
         },
         {
-          "amount": "4",
-          "name": "scallions, cut into 1-inch pieces"
+          "amount": "1 tbsp",
+          "name": "shallot, minced"
         },
         {
-          "amount": "300g",
-          "name": "broccoli or Tenderstem broccoli"
-        },
-        {
-          "amount": "40g",
-          "name": "Thai basil leaves"
+          "amount": "1 tbsp",
+          "name": "fresh parsley, minced"
         }
       ]
     },
@@ -614,41 +606,32 @@ const RECIPE = {
       "items": [
         {
           "amount": "2 tbsp",
-          "name": "toasted sesame oil"
+          "name": "capers, drained"
         },
         {
-          "amount": "3",
-          "name": "dried red chillies"
+          "amount": "90ml",
+          "name": "extra-virgin olive oil"
         },
         {
           "amount": "1 tbsp",
-          "name": "light brown sugar"
+          "name": "red wine vinegar"
         },
         {
-          "amount": "120ml",
-          "name": "Shaoxing rice wine or Taiwanese mijiu"
+          "amount": "1 tsp",
+          "name": "whole-grain mustard"
         },
         {
-          "amount": "60ml",
-          "name": "light soy sauce"
-        }
-      ]
-    },
-    {
-      "category": "Grains",
-      "items": [
-        {
-          "amount": "300g",
-          "name": "jasmine rice, uncooked"
+          "amount": "to taste",
+          "name": "salt and black pepper"
         }
       ]
     }
   ],
   "nutrition": {
-    "calories": 875,
-    "protein": 47,
-    "carbs": 74,
-    "fat": 45
+    "calories": 560,
+    "protein": 38,
+    "carbs": 51,
+    "fat": 23
   }
 };
 
