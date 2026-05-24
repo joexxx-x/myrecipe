@@ -1,15 +1,9 @@
 [
   {
-    "date": "2026-05-23",
-    "meal": "dinner",
-    "name": "Grain Bowl with Sardines & Sauce Moyo",
-    "file": "meals/2026-05-23_dinner_grain-bowl-sardines-sauce-moyo.html"
-  },
-  {
     "date": "2026-05-24",
     "meal": "dinner",
-    "name": "Roasted Fish & Leeks Vinaigrette",
-    "file": "meals/2026-05-24_dinner_roasted-fish-leeks-vinaigrette.html"
+    "name": "Grain Bowl with Sardines & Sauce Moyo",
+    "file": "meals/2026-05-24_dinner_grain-bowl-sardines-sauce-moyo.html"
   },
   {
     "date": "2026-05-25",
@@ -22,5 +16,11 @@
     "meal": "dinner",
     "name": "Kung Pao Tofu & Edamame",
     "file": "meals/2026-05-26_dinner_kung-pao-tofu-edamame.html"
+  },
+  {
+    "date": "2026-05-27",
+    "meal": "dinner",
+    "name": "Roasted Fish & Leeks Vinaigrette",
+    "file": "meals/2026-05-27_dinner_roasted-fish-leeks-vinaigrette.html"
   }
 ]
