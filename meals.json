@@ -1,8 +1,26 @@
 [
   {
-    "date": "2026-06-04",
+    "date": "2026-06-05",
     "meal": "dinner",
-    "name": "Masala Chickpeas with Tofu & Blistered Tomatoes",
-    "file": "meals/2026-06-04_dinner_masala-chickpeas-tofu-blistered-tomatoes.html"
+    "name": "Kung Pao Tofu & Edamame",
+    "file": "meals/2026-06-05_dinner_kung-pao-tofu-edamame.html"
+  },
+  {
+    "date": "2026-06-06",
+    "meal": "dinner",
+    "name": "Thai Holy Basil Tofu (Pad Kra Pao)",
+    "file": "meals/2026-06-06_dinner_thai-holy-basil-tofu.html"
+  },
+  {
+    "date": "2026-06-07",
+    "meal": "dinner",
+    "name": "Roasted Fish & Leeks Vinaigrette",
+    "file": "meals/2026-06-07_dinner_roasted-fish-leeks-vinaigrette.html"
+  },
+  {
+    "date": "2026-06-08",
+    "meal": "dinner",
+    "name": "Black Bean & Avocado Wraps",
+    "file": "meals/2026-06-08_dinner_black-bean-avocado-wraps.html"
   }
 ]

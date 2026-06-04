@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Masala Chickpeas with Tofu & Blistered Tomatoes — Cook Mode</title>
+<title>Black Bean & Avocado Wraps — Cook Mode</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
@@ -257,11 +257,11 @@
 
 <header class="ck-header">
   <div>
-    <h1 class="ck-title">Masala Chickpeas with Tofu & Blistered Tomatoes</h1>
+    <h1 class="ck-title">Black Bean & Avocado Wraps</h1>
     <div class="ck-meta">
       <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M5 21V8a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v13"/><path d="M3 21h18"/><path d="M9 8h6"/></svg><b>4</b> servings</span>
       <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>10</b>m prep</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>25</b>m cook</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>10</b>m cook</span>
     </div>
   </div>
   <div class="wake-dot" id="wakeDot" title="Screen stays on while cooking"></div>
@@ -313,158 +313,40 @@
 // Also replace the {{...}} header placeholders above.
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 const RECIPE = {
-  "name": "Masala Chickpeas with Tofu & Blistered Tomatoes",
-  "servings": "4",
-  "prep_time": "10",
-  "cook_time": "25",
-  "steps": [
-    {
-      "text": "Start the rice, then slice the tofu in half horizontally and blot it dry on a clean towel.",
-      "timer": {
-        "label": "Rice",
-        "min": 15,
-        "sec": 0
-      }
-    },
-    {
-      "text": "Heat 2 tablespoons oil in a large skillet over medium heat. Season tofu with salt and pepper, then sear the first side until browned; work in batches if needed.",
-      "timer": {
-        "label": "Tofu side 1",
-        "min": 4,
-        "sec": 0
-      }
-    },
-    {
-      "text": "Flip the tofu and brown the second side. Transfer to a plate.",
-      "timer": {
-        "label": "Tofu side 2",
-        "min": 5,
-        "sec": 0
-      }
-    },
-    {
-      "text": "Add 2 tablespoons oil to the skillet. Cook the onion, saving a spoonful for garnish, until translucent.",
-      "timer": {
-        "label": "Onion",
-        "min": 4,
-        "sec": 0
-      }
-    },
-    {
-      "text": "Add ginger, garlic and masala. Season with salt and pepper, then stir until fragrant.",
-      "timer": {
-        "label": "Masala",
-        "min": 2,
-        "sec": 0
-      }
-    },
-    {
-      "text": "Stir in the chickpeas and cook until they start to sizzle.",
-      "timer": {
-        "label": "Chickpeas",
-        "min": 3,
-        "sec": 0
-      }
-    },
-    {
-      "text": "Increase heat to medium-high. Add the remaining 1 tablespoon oil, then the tomatoes. Cook without much stirring until they blister and pop; stir in the herbs.",
-      "timer": {
-        "label": "Tomatoes",
-        "min": 5,
-        "sec": 0
-      }
-    },
-    {
-      "text": "Break tofu into rough 1-inch pieces and toss through the chickpea-tomato mixture until warmed and coated. Finish with lime, reserved onion and herbs, then serve over rice. Pack two lunch portions for Friday.",
-      "timer": {
-        "label": "Warm tofu",
-        "min": 3,
-        "sec": 0
-      }
-    }
+  name: "Black Bean & Avocado Wraps",
+  servings: "4",
+  prep_time: "10",
+  cook_time: "10",
+  steps: [
+    { text: "Heat the oil in a large pan over medium-high. Cook the onion, bell pepper and garlic until softened and lightly golden.", timer: { label: "Soffritto", min: 3, sec: 0 } },
+    { text: "Add the black beans and taco seasoning; cook, mashing a few beans to thicken. Season, then take off the heat.", timer: { label: "Beans", min: 4, sec: 0 } },
+    { text: "Make the salsa: combine the avocado, tomato, cilantro, lime juice, salt and pepper.", timer: null },
+    { text: "Stir the chipotle through the Greek yoghurt for the sauce.", timer: null },
+    { text: "Warm the tortillas, spread each with the yoghurt sauce, then fill with the bean mixture and avocado salsa.", timer: { label: "Warm tortillas", min: 1, sec: 0 } },
+    { text: "Roll up tightly. Serve three per person and wrap two portions in foil for Tuesday's office lunch.", timer: null }
   ],
-  "ingredients": [
-    {
-      "stage": "Prep",
-      "hint": "A high-protein vegetarian dinner with the oil kept moderate",
-      "items": [
-        {
-          "amount": "300g",
-          "name": "basmati rice, uncooked"
-        },
-        {
-          "amount": "560g",
-          "name": "Tofoo naked tofu (2 × 280g), drained"
-        },
-        {
-          "amount": "2",
-          "name": "large red onions, finely chopped; reserve a little"
-        },
-        {
-          "amount": "4-inch piece",
-          "name": "fresh ginger, finely grated"
-        },
-        {
-          "amount": "4 cloves",
-          "name": "garlic, finely grated"
-        },
-        {
-          "amount": "2 cans",
-          "name": "chickpeas, drained and rinsed"
-        },
-        {
-          "amount": "2 pints",
-          "name": "cherry tomatoes"
-        },
-        {
-          "amount": "1/2 cup",
-          "name": "fresh mint or dill, chopped"
-        },
-        {
-          "amount": "2",
-          "name": "lime, cut into wedges"
-        }
-      ]
-    },
-    {
-      "stage": "Cook",
-      "items": [
-        {
-          "amount": "5 tbsp",
-          "name": "rapeseed or neutral vegetable oil"
-        },
-        {
-          "amount": "2 tsp",
-          "name": "tandoori masala or garam masala"
-        },
-        {
-          "amount": "to taste",
-          "name": "salt and black pepper"
-        }
-      ]
-    },
-    {
-      "stage": "Finish",
-      "items": [
-        {
-          "amount": "4 servings",
-          "name": "steamed rice"
-        },
-        {
-          "amount": "to taste",
-          "name": "reserved onion, extra herbs and lime"
-        }
-      ]
-    }
+  ingredients: [
+    { stage: "Prep", hint: "Quick weeknight wraps — extra beans and Greek yoghurt push the protein up", items: [
+      { amount: "1 tbsp", name: "olive or rapeseed oil" },
+      { amount: "1", name: "onion, chopped" },
+      { amount: "1", name: "bell pepper, chopped" },
+      { amount: "2 cloves", name: "garlic, minced" },
+      { amount: "3 cans", name: "black beans, drained and rinsed" },
+      { amount: "1 tbsp", name: "taco seasoning" },
+      { amount: "2", name: "avocados, chopped" },
+      { amount: "2", name: "small tomatoes, chopped" },
+      { amount: "small bunch", name: "cilantro, minced" },
+      { amount: "2", name: "limes, juiced" }
+    ]},
+    { stage: "Cook", items: [
+      { amount: "to taste", name: "salt and black pepper" }
+    ]},
+    { stage: "Finish", items: [
+      { amount: "200g", name: "Greek yoghurt (2%) + 1–2 tsp chipotle paste" },
+      { amount: "12", name: "medium tortillas (wholemeal if you like)" }
+    ]}
   ],
-  "nutrition": {
-    "calories": 840,
-    "protein": 41,
-    "carbs": 94,
-    "fat": 33,
-    "satfat": 3.4,
-    "salt": 2.3
-  }
+  nutrition: { calories: 800, protein: 30, carbs: 99, fat: 29, satfat: 4.5, salt: 1.4 }
 };
 
 const ICON = {
