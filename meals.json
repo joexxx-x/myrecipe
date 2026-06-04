@@ -1,26 +1,8 @@
 [
   {
-    "date": "2026-05-30",
-    "meal": "dinner",
-    "name": "Light Salmon & Cherry Tomato Curry",
-    "file": "meals/2026-05-30_dinner_light-salmon-cherry-tomato-curry.html"
-  },
-  {
-    "date": "2026-06-01",
-    "meal": "dinner",
-    "name": "Super-Savory Grated Tofu Rice Bowls",
-    "file": "meals/2026-06-01_dinner_super-savory-grated-tofu-rice-bowls.html"
-  },
-  {
-    "date": "2026-06-02",
-    "meal": "dinner",
-    "name": "Spinach One-Pot Pasta with Sardines",
-    "file": "meals/2026-06-02_dinner_spinach-one-pot-pasta-sardines.html"
-  },
-  {
-    "date": "2026-06-03",
+    "date": "2026-06-04",
     "meal": "dinner",
     "name": "Masala Chickpeas with Tofu & Blistered Tomatoes",
-    "file": "meals/2026-06-03_dinner_masala-chickpeas-tofu-blistered-tomatoes.html"
+    "file": "meals/2026-06-04_dinner_masala-chickpeas-tofu-blistered-tomatoes.html"
   }
 ]
