@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Kung Pao Tofu & Edamame — Cook Mode</title>
+<title>Quinoa Bowl with Sardines & Sauce Moyo — Cook Mode</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
@@ -257,10 +257,10 @@
 
 <header class="ck-header">
   <div>
-    <h1 class="ck-title">Kung Pao Tofu & Edamame</h1>
+    <h1 class="ck-title">Quinoa Bowl with Sardines & Sauce Moyo</h1>
     <div class="ck-meta">
       <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M5 21V8a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v13"/><path d="M3 21h18"/><path d="M9 8h6"/></svg><b>4</b> servings</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>15</b>m prep</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>10</b>m prep</span>
       <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>20</b>m cook</span>
     </div>
   </div>
@@ -313,41 +313,39 @@
 // Also replace the {{...}} header placeholders above.
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 const RECIPE = {
-  name: "Kung Pao Tofu & Edamame",
+  name: "Quinoa Bowl with Sardines & Sauce Moyo",
   servings: "4",
-  prep_time: "15",
+  prep_time: "10",
   cook_time: "20",
   steps: [
-    { text: "Start the rice. Drain and lightly press the Tofoo tofu in a clean towel, then cut into 3/4-inch cubes (Tofoo is firm, so a quick press is enough).", timer: { label: "Rice", min: 15, sec: 0 } },
-    { text: "Whisk the sauce smooth: soy, brown sugar, hoisin, rice wine, black vinegar, sesame oil, white pepper, grated garlic and ginger, the 2 tsp cornstarch and 80ml water.", timer: null },
-    { text: "Toss the tofu with a pinch of salt and the coating cornstarch. Heat the neutral oil in a large skillet or wok over medium-high and fry the tofu until golden and crisp on two sides, then lift out.", timer: { label: "Crisp tofu", min: 6, sec: 0 } },
-    { text: "Add the bell pepper, celery and scallions; stir-fry until charred at the edges. Add the Sichuan peppercorns and dried chiles and cook 1 minute until fragrant.", timer: { label: "Veg", min: 4, sec: 0 } },
-    { text: "Stir in the edamame and warm through.", timer: { label: "Edamame", min: 2, sec: 0 } },
-    { text: "Return the tofu, pour in the sauce, and simmer until glossy and thickened. Finish with peanuts and cilantro. Serve over rice and pack two lunch portions for Saturday.", timer: { label: "Sauce", min: 2, sec: 0 } }
+    { text: "Rinse the quinoa well. In a large bowl, combine red onion, garlic, lime juice and 1/2 tsp salt. Let sit for 5-10 minutes to mellow the raw bite.", timer: { label: "Mellow onion", min: 10, sec: 0 } },
+    { text: "Bring 540ml water and 1/2 tsp salt to a boil in a saucepan with a lid. Stir in the quinoa and 2 tbsp olive oil, cover, reduce to low and simmer until the water is absorbed.", timer: { label: "Cook quinoa", min: 15, sec: 0 } },
+    { text: "Turn off the heat and let the quinoa steam, covered, for 5 minutes. Fluff with a fork.", timer: { label: "Steam quinoa", min: 5, sec: 0 } },
+    { text: "Stir tomatoes, green pepper, habanero, remaining 2 tbsp olive oil and black pepper into the onion mixture. Taste and adjust lime, salt and pepper; this is the sauce moyo.", timer: null },
+    { text: "Divide the quinoa between four bowls or containers. Lay sardines on top, drizzle over a little sardine oil, spoon sauce moyo over everything, and pack two lunch portions for tomorrow.", timer: null }
   ],
   ingredients: [
-    { stage: "Prep", hint: "Vegetarian — press the tofu, whisk the sauce and start the rice before the wok is hot", items: [
-      { amount: "560g", name: "Tofoo naked tofu (2 × 280g), cut into 3/4-inch cubes" },
-      { amount: "30g", name: "cornstarch, to coat the tofu" },
-      { amount: "1 bowl", name: "sauce (soy, brown sugar, hoisin, rice wine, black vinegar, sesame oil, white pepper, garlic, ginger + 80ml water)" },
-      { amount: "1", name: "red bell pepper, cut into 1/2-inch squares" },
-      { amount: "2 stalks", name: "celery, sliced 1/4-inch" },
-      { amount: "4", name: "scallions, cut into 1-inch chunks" },
-      { amount: "300g", name: "jasmine or basmati rice, uncooked" }
+    { stage: "Prep", hint: "Quinoa version - rinse the grain and build the raw sauce before cooking", items: [
+      { amount: "270g", name: "quinoa, rinsed" },
+      { amount: "480g", name: "smoked sardines in olive oil, drained lightly; reserve some oil" },
+      { amount: "300g", name: "grape or cherry tomatoes, halved" },
+      { amount: "60g", name: "red onion, finely chopped" },
+      { amount: "2 cloves", name: "garlic, minced" },
+      { amount: "80g", name: "green bell pepper, finely chopped" },
+      { amount: "1", name: "habanero or Scotch bonnet chile, seeded and finely chopped" },
+      { amount: "2 tbsp", name: "fresh lime juice" }
     ]},
     { stage: "Cook", items: [
-      { amount: "3 tbsp", name: "neutral oil (grapeseed or rapeseed)" },
-      { amount: "1 tsp", name: "Sichuan peppercorns (optional)" },
-      { amount: "4", name: "dried Tianjin or árbol chiles, crushed" },
-      { amount: "200g", name: "shelled edamame (from frozen, thawed)" }
+      { amount: "540ml", name: "water for the quinoa" },
+      { amount: "4 tbsp", name: "extra-virgin olive oil, divided" },
+      { amount: "1 tsp", name: "fine sea salt, plus more to taste" }
     ]},
     { stage: "Finish", items: [
-      { amount: "50g", name: "roasted peanuts" },
-      { amount: "15g", name: "fresh cilantro, chopped" },
-      { amount: "4 servings", name: "steamed rice" }
+      { amount: "to taste", name: "black pepper" },
+      { amount: "4 portions", name: "quinoa, sardines and sauce moyo" }
     ]}
   ],
-  nutrition: { calories: 750, protein: 38, carbs: 74, fat: 32, satfat: 3.8, salt: 1.4 }
+  nutrition: { calories: 600, protein: 31, carbs: 57, fat: 27 }
 };
 
 const ICON = {
