@@ -259,7 +259,7 @@
   <div>
     <h1 class="ck-title">Quinoa Bowl with Sardines & Sauce Moyo</h1>
     <div class="ck-meta">
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M5 21V8a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v13"/><path d="M3 21h18"/><path d="M9 8h6"/></svg><b>4</b> servings</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M5 21V8a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v13"/><path d="M3 21h18"/><path d="M9 8h6"/></svg><b>3</b> servings</span>
       <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>10</b>m prep</span>
       <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>20</b>m cook</span>
     </div>
@@ -314,20 +314,20 @@
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 const RECIPE = {
   name: "Quinoa Bowl with Sardines & Sauce Moyo",
-  servings: "4",
+  servings: "3",
   prep_time: "10",
   cook_time: "20",
   steps: [
     { text: "Rinse the quinoa well. In a large bowl, combine red onion, garlic, lime juice and 1/2 tsp salt. Let sit for 5-10 minutes to mellow the raw bite.", timer: { label: "Mellow onion", min: 10, sec: 0 } },
-    { text: "Bring 540ml water and 1/2 tsp salt to a boil in a saucepan with a lid. Stir in the quinoa and 2 tbsp olive oil, cover, reduce to low and simmer until the water is absorbed.", timer: { label: "Cook quinoa", min: 15, sec: 0 } },
+    { text: "Bring 620ml water and 1/2 tsp salt to a boil in a saucepan with a lid. Stir in the quinoa and 2 tbsp olive oil, cover, reduce to low and simmer until the water is absorbed.", timer: { label: "Cook quinoa", min: 15, sec: 0 } },
     { text: "Turn off the heat and let the quinoa steam, covered, for 5 minutes. Fluff with a fork.", timer: { label: "Steam quinoa", min: 5, sec: 0 } },
     { text: "Stir tomatoes, green pepper, habanero, remaining 2 tbsp olive oil and black pepper into the onion mixture. Taste and adjust lime, salt and pepper; this is the sauce moyo.", timer: null },
-    { text: "Divide the quinoa between four bowls or containers. Lay sardines on top, drizzle over a little sardine oil, spoon sauce moyo over everything, and pack two lunch portions for tomorrow.", timer: null }
+    { text: "Divide the quinoa among three containers (≈275g cooked each). Lay sardines on top, drizzle over a little of the reserved oil, and spoon sauce moyo over everything — two for dinner, one packed for tomorrow's lunch.", timer: null }
   ],
   ingredients: [
     { stage: "Prep", hint: "Quinoa version - rinse the grain and build the raw sauce before cooking", items: [
-      { amount: "270g", name: "quinoa, rinsed" },
-      { amount: "480g", name: "smoked sardines in olive oil, drained lightly; reserve some oil" },
+      { amount: "≈310g", name: "quinoa, rinsed (makes ~825g cooked, 275g per portion)" },
+      { amount: "3 tins", name: "sardines in oil (≈255g drained), drained; reserve a little oil" },
       { amount: "300g", name: "grape or cherry tomatoes, halved" },
       { amount: "60g", name: "red onion, finely chopped" },
       { amount: "2 cloves", name: "garlic, minced" },
@@ -336,16 +336,16 @@ const RECIPE = {
       { amount: "2 tbsp", name: "fresh lime juice" }
     ]},
     { stage: "Cook", items: [
-      { amount: "540ml", name: "water for the quinoa" },
+      { amount: "620ml", name: "water for the quinoa" },
       { amount: "4 tbsp", name: "extra-virgin olive oil, divided" },
       { amount: "1 tsp", name: "fine sea salt, plus more to taste" }
     ]},
     { stage: "Finish", items: [
       { amount: "to taste", name: "black pepper" },
-      { amount: "4 portions", name: "quinoa, sardines and sauce moyo" }
+      { amount: "3 portions", name: "quinoa, sardines and sauce moyo" }
     ]}
   ],
-  nutrition: { calories: 600, protein: 31, carbs: 57, fat: 27 }
+  nutrition: { calories: 766, protein: 32, carbs: 71, fat: 38 }
 };
 
 const ICON = {
