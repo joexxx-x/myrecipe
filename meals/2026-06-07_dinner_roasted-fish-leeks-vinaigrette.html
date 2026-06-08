@@ -192,7 +192,7 @@
 
   /* ── Nutrition ── */
   .nutrition {
-    display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--border-soft);
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--border-soft);
     border: 1px solid var(--border-soft); border-radius: var(--r-card); overflow: hidden; margin-top: var(--sp-6);
   }
   .nutr-item { background: var(--surface-1); padding: var(--sp-4) var(--sp-2); text-align: center; }
@@ -261,7 +261,7 @@
     <div class="ck-meta">
       <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M5 21V8a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v13"/><path d="M3 21h18"/><path d="M9 8h6"/></svg><b>4</b> servings</span>
       <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>10</b>m prep</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>35</b>m cook</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>30</b>m cook</span>
     </div>
   </div>
   <div class="wake-dot" id="wakeDot" title="Screen stays on while cooking"></div>
@@ -316,19 +316,19 @@ const RECIPE = {
   name: "Roasted Fish & Leeks Vinaigrette",
   servings: "4",
   prep_time: "10",
-  cook_time: "35",
+  cook_time: "30",
   steps: [
-    { text: "Heat the oven to 200°C (400°F). Halve the baby potatoes, toss on a sheet pan with 1 tbsp olive oil and a pinch of salt, and roast for 10 minutes while you prep.", timer: { label: "Potatoes", min: 10, sec: 0 } },
-    { text: "Swish the sliced leeks in a bowl of cold water to release any grit; lift out and pat dry.", timer: null },
-    { text: "Add the leeks and capers to the potato pan with 3 tbsp olive oil and 1/4 tsp salt; toss. Roast 15 minutes, tossing halfway, until the leeks are tender and the potatoes golden.", timer: { label: "Leeks + potatoes", min: 15, sec: 0 } },
-    { text: "Pat the fish dry, drizzle with olive oil and season with salt and pepper. Move the veg aside, nestle the fillets onto the pan, and roast until the fish flakes easily.", timer: { label: "Roast fish", min: 11, sec: 0 } },
+    { text: "Rinse the basmati rice until the water runs clear. Add to a pot with about 600 ml water and a pinch of salt, bring to a boil, then cover and simmer on low for 10–12 minutes. Turn off the heat and let it steam, covered, 5 minutes; fluff with a fork.", timer: { label: "Rice", min: 12, sec: 0 } },
+    { text: "Heat the oven to 200°C (400°F). Swish the sliced leeks in a bowl of cold water to release any grit; lift out and pat dry.", timer: null },
+    { text: "Spread the leeks and capers on a sheet pan with 3 tbsp olive oil and 1/4 tsp salt; toss. Roast 15 minutes, tossing halfway, until tender and starting to crisp.", timer: { label: "Leeks", min: 15, sec: 0 } },
+    { text: "Pat the cod fillets dry, drizzle with olive oil and season with salt and pepper. Move the leeks aside, nestle the cod onto the pan, and roast 12–15 minutes until the fish flakes easily.", timer: { label: "Roast cod", min: 13, sec: 0 } },
     { text: "Meanwhile whisk the vinaigrette: 3 tbsp olive oil with the shallot, red wine vinegar, parsley, whole-grain mustard, salt and pepper.", timer: null },
-    { text: "Plate the fish, leeks and potatoes and spoon the vinaigrette over. Pack two portions for Monday lunch.", timer: null }
+    { text: "Serve the cod and leeks over the basmati rice and spoon the vinaigrette over. Pack two portions for tomorrow's lunch.", timer: null }
   ],
   ingredients: [
-    { stage: "Prep", hint: "Sheet-pan dinner — nearly all the fat is olive oil, so it stays heart-smart", items: [
-      { amount: "680g", name: "skinless white fish (cod or halibut), in 4 fillets" },
-      { amount: "700g", name: "baby potatoes, halved" },
+    { stage: "Prep", hint: "Cod is very lean — almost all the fat here is heart-smart olive oil", items: [
+      { amount: "720g", name: "cod fillets (2 × 360g Tesco packs), thawed" },
+      { amount: "300g", name: "basmati rice (dry weight)" },
       { amount: "2", name: "leeks, white and light green, thinly sliced" },
       { amount: "2 tbsp", name: "capers, drained" },
       { amount: "1 tbsp", name: "shallot, minced" },
@@ -343,7 +343,7 @@ const RECIPE = {
       { amount: "1 tsp", name: "whole-grain mustard" }
     ]}
   ],
-  nutrition: { calories: 585, protein: 36, carbs: 43, fat: 28, satfat: 3.6, salt: 1.1 }
+  nutrition: { calories: 650, protein: 45, carbs: 63, fat: 25, satfat: 3.5, salt: 1.6 }
 };
 
 const ICON = {
@@ -431,11 +431,14 @@ function renderIngredients() {
 // ── Nutrition ──
 function renderNutrition() {
   const n = RECIPE.nutrition; if (!n || !n.calories) { document.getElementById('nutritionBar').style.display = 'none'; return; }
-  document.getElementById('nutritionBar').innerHTML = `
+  let html = `
     <div class="nutr-item"><div class="nutr-val">${n.calories}</div><div class="nutr-label">kcal</div></div>
     <div class="nutr-item hero"><div class="nutr-val">${n.protein}g</div><div class="nutr-label">protein</div></div>
     <div class="nutr-item"><div class="nutr-val">${n.carbs}g</div><div class="nutr-label">carbs</div></div>
     <div class="nutr-item"><div class="nutr-val">${n.fat}g</div><div class="nutr-label">fat</div></div>`;
+  if (n.satfat != null) html += `<div class="nutr-item"><div class="nutr-val">${n.satfat}g</div><div class="nutr-label">sat fat</div></div>`;
+  if (n.salt != null) html += `<div class="nutr-item"><div class="nutr-val">${n.salt}g</div><div class="nutr-label">salt</div></div>`;
+  document.getElementById('nutritionBar').innerHTML = html;
 }
 
 // ── Tabs + swipe (mobile) ──
