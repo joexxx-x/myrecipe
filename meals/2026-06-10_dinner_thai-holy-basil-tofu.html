@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Black Bean & Avocado Wraps — Cook Mode</title>
+<title>Thai Holy Basil Tofu (Pad Kra Pao) — Cook Mode</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
@@ -257,11 +257,11 @@
 
 <header class="ck-header">
   <div>
-    <h1 class="ck-title">Black Bean & Avocado Wraps</h1>
+    <h1 class="ck-title">Thai Holy Basil Tofu (Pad Kra Pao)</h1>
     <div class="ck-meta">
       <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M5 21V8a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v13"/><path d="M3 21h18"/><path d="M9 8h6"/></svg><b>4</b> servings</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>10</b>m prep</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>10</b>m cook</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>15</b>m prep</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>15</b>m cook</span>
     </div>
   </div>
   <div class="wake-dot" id="wakeDot" title="Screen stays on while cooking"></div>
@@ -313,40 +313,41 @@
 // Also replace the {{...}} header placeholders above.
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 const RECIPE = {
-  name: "Black Bean & Avocado Wraps",
+  name: "Thai Holy Basil Tofu (Pad Kra Pao)",
   servings: "4",
-  prep_time: "10",
-  cook_time: "10",
+  prep_time: "15",
+  cook_time: "15",
   steps: [
-    { text: "Heat the oil in a large pan over medium-high. Cook the onion, bell pepper and garlic until softened and lightly golden.", timer: { label: "Soffritto", min: 3, sec: 0 } },
-    { text: "Add the black beans and taco seasoning; cook, mashing a few beans to thicken. Season, then take off the heat.", timer: { label: "Beans", min: 4, sec: 0 } },
-    { text: "Make the salsa: combine the avocado, tomato, cilantro, lime juice, salt and pepper.", timer: null },
-    { text: "Stir the chipotle through the Greek yoghurt for the sauce.", timer: null },
-    { text: "Warm the tortillas, spread each with the yoghurt sauce, then fill with the bean mixture and avocado salsa.", timer: { label: "Warm tortillas", min: 1, sec: 0 } },
-    { text: "Roll up tightly. Serve three per person and wrap two portions in foil for Tuesday's office lunch.", timer: null }
+    { text: "Start the jasmine rice. Pat the tofu very dry, then crumble or finely dice it small so it crisps like minced meat.", timer: { label: "Rice", min: 15, sec: 0 } },
+    { text: "Pound or finely mince the garlic, chillies and shallot into a rough paste. Stir together the sauce: light soy, dark soy, oyster sauce, fish sauce, sugar and 2 tbsp water.", timer: null },
+    { text: "Heat 1 tablespoon oil in a wok over high heat. Fry the tofu, pressing it flat, until golden and crisp at the edges, then push to one side.", timer: { label: "Crisp tofu", min: 6, sec: 0 } },
+    { text: "Add the remaining oil and the chilli paste; stir-fry about 30 seconds until fragrant. Add the green beans and pepper and stir-fry until crisp-tender.", timer: { label: "Stir-fry veg", min: 4, sec: 0 } },
+    { text: "Pour in the sauce and toss everything until glossy. Off the heat, fold through the basil until just wilted.", timer: null },
+    { text: "In a separate pan, fry the eggs in a little hot oil until the edges are crisp and lacy.", timer: { label: "Fried eggs", min: 3, sec: 0 } },
+    { text: "Serve over jasmine rice, each bowl topped with a fried egg. Pack two portions for Thursday's office lunch.", timer: null }
   ],
   ingredients: [
-    { stage: "Prep", hint: "Quick weeknight wraps — extra beans and Greek yoghurt push the protein up", items: [
-      { amount: "1 tbsp", name: "olive or rapeseed oil" },
-      { amount: "1", name: "onion, chopped" },
-      { amount: "1", name: "bell pepper, chopped" },
-      { amount: "2 cloves", name: "garlic, minced" },
-      { amount: "3 cans", name: "black beans, drained and rinsed" },
-      { amount: "1 tbsp", name: "taco seasoning" },
-      { amount: "2", name: "avocados, chopped" },
-      { amount: "2", name: "small tomatoes, chopped" },
-      { amount: "small bunch", name: "cilantro, minced" },
-      { amount: "2", name: "limes, juiced" }
+    { stage: "Prep", hint: "Crumble the tofu small so it crisps like mince; have everything chopped before the wok is hot", items: [
+      { amount: "560g", name: "Tofoo naked tofu (2 × 280g), patted dry and crumbled" },
+      { amount: "6 cloves", name: "garlic" },
+      { amount: "3–4", name: "Thai red chillies (to taste)" },
+      { amount: "1", name: "shallot" },
+      { amount: "250g", name: "green beans, trimmed and cut into 2cm" },
+      { amount: "1", name: "red bell pepper, sliced" },
+      { amount: "30g", name: "Thai holy or sweet basil" },
+      { amount: "250g", name: "jasmine rice, uncooked" },
+      { amount: "1 bowl", name: "sauce (2 tbsp light soy, 1 tbsp dark soy, 1 tbsp oyster sauce, 1 tbsp fish sauce, 1 tsp sugar, 2 tbsp water)" }
     ]},
     { stage: "Cook", items: [
-      { amount: "to taste", name: "salt and black pepper" }
+      { amount: "2 tbsp", name: "rapeseed or neutral oil" },
+      { amount: "4", name: "eggs, to fry and top" }
     ]},
     { stage: "Finish", items: [
-      { amount: "200g", name: "Greek yoghurt (2%) + 1–2 tsp chipotle paste" },
-      { amount: "12", name: "medium tortillas (wholemeal if you like)" }
+      { amount: "4 servings", name: "steamed jasmine rice" },
+      { amount: "to serve", name: "extra basil and sliced chilli" }
     ]}
   ],
-  nutrition: { calories: 800, protein: 30, carbs: 99, fat: 29, satfat: 4.5, salt: 1.4 }
+  nutrition: { calories: 655, protein: 37, carbs: 60, fat: 27, satfat: 3.9, salt: 1.3 }
 };
 
 const ICON = {

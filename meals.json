@@ -1,26 +1,14 @@
 [
   {
-    "date": "2026-06-06",
-    "meal": "dinner",
-    "name": "Quinoa Bowl with Sardines & Sauce Moyo",
-    "file": "meals/2026-06-06_dinner_grain-bowl-sardines-sauce-moyo.html"
-  },
-  {
-    "date": "2026-06-07",
-    "meal": "dinner",
-    "name": "Roasted Fish & Leeks Vinaigrette",
-    "file": "meals/2026-06-07_dinner_roasted-fish-leeks-vinaigrette.html"
-  },
-  {
-    "date": "2026-06-08",
-    "meal": "dinner",
-    "name": "Black Bean & Avocado Wraps",
-    "file": "meals/2026-06-08_dinner_black-bean-avocado-wraps.html"
-  },
-  {
     "date": "2026-06-09",
     "meal": "dinner",
+    "name": "Black Bean & Avocado Wraps",
+    "file": "meals/2026-06-09_dinner_black-bean-avocado-wraps.html"
+  },
+  {
+    "date": "2026-06-10",
+    "meal": "dinner",
     "name": "Thai Holy Basil Tofu (Pad Kra Pao)",
-    "file": "meals/2026-06-09_dinner_thai-holy-basil-tofu.html"
+    "file": "meals/2026-06-10_dinner_thai-holy-basil-tofu.html"
   }
 ]
