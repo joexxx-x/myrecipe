@@ -1,14 +1,8 @@
 [
   {
-    "date": "2026-06-09",
-    "meal": "dinner",
-    "name": "Black Bean & Avocado Wraps",
-    "file": "meals/2026-06-09_dinner_black-bean-avocado-wraps.html"
-  },
-  {
-    "date": "2026-06-10",
+    "date": "2026-06-11",
     "meal": "dinner",
     "name": "Thai Holy Basil Tofu (Pad Kra Pao)",
-    "file": "meals/2026-06-10_dinner_thai-holy-basil-tofu.html"
+    "file": "meals/2026-06-11_dinner_thai-holy-basil-tofu.html"
   }
 ]
