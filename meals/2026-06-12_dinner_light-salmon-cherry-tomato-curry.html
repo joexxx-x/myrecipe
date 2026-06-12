@@ -318,26 +318,24 @@ const RECIPE = {
   prep_time: "5",
   cook_time: "25",
   steps: [
-    { text: "Start the rice first so it is ready when the curry finishes.", timer: { label: "Rice", min: 15, sec: 0 } },
     { text: "Season the salmon fillets generously with black pepper and just enough salt on both sides. Set aside while you build the curry base.", timer: null },
     { text: "Warm the olive oil in a large lidded skillet over medium heat. Add the garlic, ginger and chilli, then cook until golden and fragrant.", timer: { label: "Aromatics", min: 3, sec: 0 } },
     { text: "Add cumin seeds for 15 seconds, then stir in cherry tomatoes, ground coriander, turmeric and light coconut milk. Simmer uncovered until the tomatoes start to burst and the sauce reduces slightly.", timer: { label: "Curry base", min: 8, sec: 0 } },
     { text: "Stir in the spinach until just wilted. Nestle the salmon into the curry, cover, and simmer gently until cooked through. Check wild salmon early so it stays tender.", timer: { label: "Salmon", min: 6, sec: 0 } },
-    { text: "Serve over rice with torn herbs. Pack two portions for Saturday lunch.", timer: null }
+    { text: "Serve in bowls with torn herbs. Pack two portions for Saturday lunch.", timer: null }
   ],
   ingredients: [
-    { stage: "Prep", hint: "Get rice going and keep the curry ingredients close", items: [
-      { amount: "300g", name: "basmati rice, uncooked" },
-      { amount: "680g", name: "salmon fillets (4 × 170g), skin removed" },
+    { stage: "Prep", hint: "Keep the curry ingredients close", items: [
+      { amount: "680g", name: "salmon fillets (440g Tesco skin-on pack + 240g Finest skinless pack)" },
       { amount: "3 cloves", name: "garlic, minced" },
       { amount: "1 tbsp", name: "fresh ginger, minced" },
       { amount: "1", name: "bird's-eye chilli, sliced" },
-      { amount: "450g", name: "cherry tomatoes" },
-      { amount: "140g", name: "baby spinach" },
+      { amount: "500g", name: "cherry tomatoes" },
+      { amount: "200g", name: "spinach" },
       { amount: "10g", name: "mint, basil or coriander, torn" }
     ]},
     { stage: "Cook", items: [
-      { amount: "2 tbsp", name: "olive oil" },
+      { amount: "1 tbsp", name: "extra virgin olive oil" },
       { amount: "1/2 tsp", name: "cumin seeds" },
       { amount: "1/2 tsp", name: "ground coriander" },
       { amount: "1/2 tsp", name: "ground turmeric" },
@@ -345,12 +343,11 @@ const RECIPE = {
       { amount: "to taste", name: "salt and black pepper" }
     ]},
     { stage: "Finish", items: [
-      { amount: "4 servings", name: "steamed rice" },
       { amount: "to taste", name: "extra fresh herbs" }
     ]}
   ],
-  // Light version (light coconut milk + olive oil instead of full-fat + ghee): sat fat ~11g vs ~30g in the original. Counts as 1 of 2-3 weekly fish servings. Includes rice.
-  nutrition: { calories: 795, protein: 45, carbs: 71, fat: 36, satfat: 11, salt: 1.2 }
+  // As cooked 2026-06-12: no rice; 1 tbsp EVOO; 500g cherry tomatoes; 200g spinach; salmon = Tesco 440g skin-on (250 kcal/100g) + Finest 240g skinless (192 kcal/100g). Per Tesco labels. Counts as 1 of 2-3 weekly fish servings.
+  nutrition: { calories: 535, protein: 39, carbs: 9, fat: 37, satfat: 10, salt: 0.8 }
 };
 
 const ICON = {
