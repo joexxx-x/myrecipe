@@ -192,7 +192,7 @@
 
   /* ── Nutrition ── */
   .nutrition {
-    display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--border-soft);
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--border-soft);
     border: 1px solid var(--border-soft); border-radius: var(--r-card); overflow: hidden; margin-top: var(--sp-6);
   }
   .nutr-item { background: var(--surface-1); padding: var(--sp-4) var(--sp-2); text-align: center; }
@@ -318,20 +318,20 @@ const RECIPE = {
   prep_time: "5",
   cook_time: "25",
   steps: [
-    { text: "Start 240g rice so it is ready with the stew. Drain and rinse the chickpeas, mince the garlic, and measure the spices and sauces.", timer: { label: "Rice", min: 15, sec: 0 } },
-    { text: "Heat 2 tablespoons olive oil in a large pot over medium. Add garlic and ras el hanout; stir until fragrant, about 1 minute. Add tomato paste and cook, stirring, until it darkens slightly.", timer: { label: "Toast aromatics", min: 3, sec: 0 } },
+    { text: "Cook 240g rice separately so it's ready with the stew. Drain and rinse the chickpeas, mince the garlic, and measure the spices and sauces.", timer: { label: "Rice", min: 15, sec: 0 } },
+    { text: "Heat 2 tablespoons olive oil in a large pot over medium. Add garlic and ras el hanout; stir until fragrant, about 1 minute. Add the tomato purée (9 tbsp) and cook, stirring, until it darkens slightly.", timer: { label: "Toast aromatics", min: 3, sec: 0 } },
     { text: "Add vegetable stock, soy sauce and salt. Bring to a boil, reduce heat to medium-low, cover and cook until the sauce darkens and the flavours meld.", timer: { label: "Simmer sauce", min: 10, sec: 0 } },
     { text: "Add the chickpeas and simmer until warmed through and soft, about 10 minutes. Add spinach and stir until wilted, about 3 minutes. Add a splash of stock or water if too thick.", timer: { label: "Chickpeas", min: 13, sec: 0 } },
-    { text: "Mix harissa paste with 3 tablespoons olive oil in a small bowl. Serve the stew over rice with low-fat Greek yogurt and harissa oil. Pack two lunch portions for tomorrow.", timer: null }
+    { text: "Make the harissa sauce: stir 2 tablespoons harissa paste with 2 tablespoons extra-virgin olive oil in a small bowl. Serve the stew with the rice on the side, a drizzle of harissa sauce, and 2 lemon wedges. Pack two lunch portions for tomorrow.", timer: null }
   ],
   ingredients: [
     { stage: "Prep", hint: "Everything measured before the pot heats — this one moves fast", items: [
-      { amount: "1200g", name: "canned chickpeas, drained and rinsed (5 × 400g tins)" },
-      { amount: "240g", name: "basmati rice, uncooked" },
+      { amount: "720g", name: "canned chickpeas, drained and rinsed (3 × 400g tins)" },
+      { amount: "240g", name: "basmati rice, uncooked (cook separately)" },
       { amount: "4 cloves", name: "garlic, minced" },
       { amount: "150g", name: "spinach leaves" },
       { amount: "1 tbsp", name: "ras el hanout" },
-      { amount: "3 tbsp", name: "tomato paste" },
+      { amount: "9 tbsp", name: "tomato purée (double concentrate)" },
       { amount: "240ml", name: "vegetable stock" }
     ]},
     { stage: "Cook", items: [
@@ -340,13 +340,13 @@ const RECIPE = {
       { amount: "1/2 tsp", name: "fine sea salt" }
     ]},
     { stage: "Finish", items: [
-      { amount: "1 tbsp", name: "harissa paste + 3 tbsp olive oil (harissa oil)" },
-      { amount: "400g", name: "low-fat Greek yogurt, for serving" },
-      { amount: "4 servings", name: "steamed rice" }
+      { amount: "2 tbsp + 2 tbsp", name: "harissa paste + extra-virgin olive oil (harissa sauce)" },
+      { amount: "2 wedges", name: "lemon, to serve" },
+      { amount: "4 servings", name: "steamed rice, on the side" }
     ]}
   ],
-  // Batch x4 with rice and low-fat Greek yogurt to lift protein; dinner tonight + two office lunches Monday. Includes rice and yogurt.
-  nutrition: { calories: 790, protein: 36, carbs: 104, fat: 22, satfat: 3.2, salt: 1.6 }
+  // Batch x4 — dinner tonight + two office lunches. As cooked: 3×400g chickpea tins, 9 tbsp tomato purée (no paste), no yogurt, harissa sauce = 2 tbsp EVOO + 2 tbsp harissa, 2 lemon wedges. Per serving incl. rice on the side. Protein ~22g — under the 30–40g target since the yogurt was dropped; add a dollop of Greek yogurt or a handful of cashews to lift. Salt ~2g is mostly the ½ tsp added salt + soy + stock.
+  nutrition: { calories: 615, protein: 22, carbs: 83, fat: 19, satfat: 2.7, salt: 2.0 }
 };
 
 const ICON = {
@@ -438,7 +438,9 @@ function renderNutrition() {
     <div class="nutr-item"><div class="nutr-val">${n.calories}</div><div class="nutr-label">kcal</div></div>
     <div class="nutr-item hero"><div class="nutr-val">${n.protein}g</div><div class="nutr-label">protein</div></div>
     <div class="nutr-item"><div class="nutr-val">${n.carbs}g</div><div class="nutr-label">carbs</div></div>
-    <div class="nutr-item"><div class="nutr-val">${n.fat}g</div><div class="nutr-label">fat</div></div>`;
+    <div class="nutr-item"><div class="nutr-val">${n.fat}g</div><div class="nutr-label">fat</div></div>
+    <div class="nutr-item"><div class="nutr-val">${n.satfat}g</div><div class="nutr-label">sat fat</div></div>
+    <div class="nutr-item"><div class="nutr-val">${n.salt}g</div><div class="nutr-label">salt</div></div>`;
 }
 
 // ── Tabs + swipe (mobile) ──
