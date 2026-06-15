@@ -1,26 +1,32 @@
 [
   {
-    "date": "2026-06-12",
-    "meal": "dinner",
-    "name": "Light Salmon & Cherry Tomato Curry",
-    "file": "meals/2026-06-12_dinner_light-salmon-cherry-tomato-curry.html"
-  },
-  {
-    "date": "2026-06-13",
-    "meal": "dinner",
-    "name": "Lemony Orzo with Asparagus & Sardines",
-    "file": "meals/2026-06-13_dinner_lemony-orzo-asparagus-sardines.html"
-  },
-  {
-    "date": "2026-06-14",
-    "meal": "dinner",
-    "name": "Ras el Hanout Chickpea & Spinach Stew",
-    "file": "meals/2026-06-14_dinner_ras-el-hanout-chickpea-spinach-stew.html"
-  },
-  {
     "date": "2026-06-15",
     "meal": "dinner",
     "name": "Kung Pao Tofu & Edamame",
     "file": "meals/2026-06-15_dinner_kung-pao-tofu-edamame.html"
+  },
+  {
+    "date": "2026-06-16",
+    "meal": "dinner",
+    "name": "Three-Cup Chicken",
+    "file": "meals/2026-06-16_dinner_three-cup-chicken.html"
+  },
+  {
+    "date": "2026-06-18",
+    "meal": "dinner",
+    "name": "Roasted Fish & Leeks Vinaigrette",
+    "file": "meals/2026-06-18_dinner_roasted-fish-leeks-vinaigrette.html"
+  },
+  {
+    "date": "2026-06-19",
+    "meal": "dinner",
+    "name": "Avocado & Quinoa Salad with Edamame",
+    "file": "meals/2026-06-19_dinner_avocado-quinoa-edamame-salad.html"
+  },
+  {
+    "date": "2026-06-20",
+    "meal": "dinner",
+    "name": "Korean Beef Bibimbap",
+    "file": "meals/2026-06-20_dinner_korean-beef-bibimbap.html"
   }
 ]

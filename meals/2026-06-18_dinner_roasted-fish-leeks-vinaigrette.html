@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Ras el Hanout Chickpea & Spinach Stew — Cook Mode</title>
+<title>Roasted Fish & Leeks Vinaigrette — Cook Mode</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
@@ -192,7 +192,7 @@
 
   /* ── Nutrition ── */
   .nutrition {
-    display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--border-soft);
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--border-soft);
     border: 1px solid var(--border-soft); border-radius: var(--r-card); overflow: hidden; margin-top: var(--sp-6);
   }
   .nutr-item { background: var(--surface-1); padding: var(--sp-4) var(--sp-2); text-align: center; }
@@ -257,11 +257,11 @@
 
 <header class="ck-header">
   <div>
-    <h1 class="ck-title">Ras el Hanout Chickpea & Spinach Stew</h1>
+    <h1 class="ck-title">Roasted Fish & Leeks Vinaigrette</h1>
     <div class="ck-meta">
       <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M5 21V8a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v13"/><path d="M3 21h18"/><path d="M9 8h6"/></svg><b>4</b> servings</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>5</b>m prep</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>25</b>m cook</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>10</b>m prep</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>35</b>m cook</span>
     </div>
   </div>
   <div class="wake-dot" id="wakeDot" title="Screen stays on while cooking"></div>
@@ -313,40 +313,39 @@
 // Also replace the {{...}} header placeholders above.
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 const RECIPE = {
-  name: "Ras el Hanout Chickpea & Spinach Stew",
+  name: "Roasted Fish & Leeks Vinaigrette",
   servings: "4",
-  prep_time: "5",
-  cook_time: "25",
+  prep_time: "10",
+  cook_time: "35",
   steps: [
-    { text: "Cook 240g rice separately so it's ready with the stew. Drain and rinse the chickpeas, mince the garlic, and measure the spices and sauces.", timer: { label: "Rice", min: 15, sec: 0 } },
-    { text: "Heat 2 tablespoons olive oil in a large pot over medium. Add garlic and ras el hanout; stir until fragrant, about 1 minute. Add the tomato purée (9 tbsp) and cook, stirring, until it darkens slightly.", timer: { label: "Toast aromatics", min: 3, sec: 0 } },
-    { text: "Add vegetable stock, soy sauce and salt. Bring to a boil, reduce heat to medium-low, cover and cook until the sauce darkens and the flavours meld.", timer: { label: "Simmer sauce", min: 10, sec: 0 } },
-    { text: "Add the chickpeas and simmer until warmed through and soft, about 10 minutes. Add spinach and stir until wilted, about 3 minutes. Add a splash of stock or water if too thick.", timer: { label: "Chickpeas", min: 13, sec: 0 } },
-    { text: "Make the harissa sauce: stir 2 tablespoons harissa paste with 2 tablespoons extra-virgin olive oil in a small bowl. Serve the stew with the rice on the side, a drizzle of harissa sauce, and 2 lemon wedges. Pack two lunch portions for tomorrow.", timer: null }
+    { text: "Heat the oven to 200C (400F). If serving with rice, start 300g cooking separately now.", timer: { label: "Rice (optional)", min: 15, sec: 0 } },
+    { text: "Swish the sliced leeks in a bowl of cold water to release any grit, lift out, drain and pat dry.", timer: null },
+    { text: "Spread the leeks and capers on a sheet pan with 3 tbsp olive oil and a pinch of salt; toss. Roast, tossing halfway, until tender and crisping at the edges.", timer: { label: "Roast leeks", min: 15, sec: 0 } },
+    { text: "Pat the cod dry, drizzle with olive oil and season with salt and pepper. Move the leeks aside, nestle in the fish, and roast until it flakes easily with a fork.", timer: { label: "Roast fish", min: 12, sec: 0 } },
+    { text: "Meanwhile, whisk the vinaigrette: 3 tbsp olive oil, shallot, red wine vinegar, parsley, whole-grain mustard, salt and pepper.", timer: null },
+    { text: "Plate the fish and leeks and spoon the vinaigrette over. Serve with rice or boiled potatoes, and pack two lunch portions for tomorrow.", timer: null }
   ],
   ingredients: [
-    { stage: "Prep", hint: "Everything measured before the pot heats — this one moves fast", items: [
-      { amount: "720g", name: "canned chickpeas, drained and rinsed (3 × 400g tins)" },
-      { amount: "240g", name: "basmati rice, uncooked (cook separately)" },
-      { amount: "4 cloves", name: "garlic, minced" },
-      { amount: "150g", name: "spinach leaves" },
-      { amount: "1 tbsp", name: "ras el hanout" },
-      { amount: "9 tbsp", name: "tomato purée (double concentrate)" },
-      { amount: "240ml", name: "vegetable stock" }
+    { stage: "Prep", hint: "A sheet-pan dinner - barely any cleanup", items: [
+      { amount: "680g", name: "skinless cod fillets (4 x 170g)" },
+      { amount: "2", name: "leeks, white and light green, thinly sliced" },
+      { amount: "2 tbsp", name: "capers, drained" },
+      { amount: "300g", name: "rice or potatoes, optional side (cook separately)" }
     ]},
     { stage: "Cook", items: [
-      { amount: "2 tbsp", name: "olive oil" },
-      { amount: "1 tbsp", name: "soy sauce" },
-      { amount: "1/2 tsp", name: "fine sea salt" }
+      { amount: "90ml", name: "extra-virgin olive oil (leeks + drizzle fish + vinaigrette)" },
+      { amount: "to taste", name: "salt and black pepper" }
     ]},
-    { stage: "Finish", items: [
-      { amount: "2 tbsp + 2 tbsp", name: "harissa paste + extra-virgin olive oil (harissa sauce)" },
-      { amount: "2 wedges", name: "lemon, to serve" },
-      { amount: "~60g dry pp", name: "steamed rice, served separately — adds ~210 kcal & 5g protein per serving (not in the card totals)" }
+    { stage: "Finish", hint: "The mustard vinaigrette is the whole flavour - don't skip it", items: [
+      { amount: "1 tbsp", name: "shallot, minced" },
+      { amount: "1 tbsp", name: "red wine vinegar" },
+      { amount: "1 tbsp", name: "parsley, minced" },
+      { amount: "1 tsp", name: "whole-grain mustard" },
+      { amount: "~75g dry pp", name: "rice/potatoes, served separately - adds ~265 kcal & 6g protein per serving (not in the card totals)" }
     ]}
   ],
-  // Per-serving card = STEW ONLY. Rice is served separately so the scoop flexes per person; it adds ~210 kcal / 5g protein / 47g carbs per ~60g dry serving (240g dry for the batch of 4). Full plate ≈ 615 kcal / ~22g protein. Batch x4 — dinner + two office lunches. As cooked: 3×400g chickpea tins, 9 tbsp tomato purée (no paste), no yogurt, harissa sauce = 2 tbsp EVOO + 2 tbsp harissa, 2 lemon wedges. Stew protein ~18g (with rice ~22g) — under the 30–40g target since the yogurt was dropped; add a dollop of Greek yogurt or a handful of cashews to lift. Salt ~2g is mostly the ½ tsp added salt + soy + stock.
-  nutrition: { calories: 405, protein: 18, carbs: 37, fat: 19, satfat: 2.6, salt: 2.0 }
+  // Card = FISH + LEEKS ONLY. Nearly all the fat is olive oil - only ~3g saturated, excellent for Joe's LDL. Cod is very lean and low-mercury; this is the 1 fish meal this week (within the 2-3 limit). Rice/potatoes served separately add ~265 kcal / 6g protein per serving. Full plate ~636 kcal / 39g protein. Batch x4 - dinner + two Friday office lunches.
+  nutrition: { calories: 371, protein: 33, carbs: 8, fat: 23, satfat: 3, salt: 1.3 }
 };
 
 const ICON = {
@@ -434,13 +433,17 @@ function renderIngredients() {
 // ── Nutrition ──
 function renderNutrition() {
   const n = RECIPE.nutrition; if (!n || !n.calories) { document.getElementById('nutritionBar').style.display = 'none'; return; }
-  document.getElementById('nutritionBar').innerHTML = `
-    <div class="nutr-item"><div class="nutr-val">${n.calories}</div><div class="nutr-label">kcal</div></div>
-    <div class="nutr-item hero"><div class="nutr-val">${n.protein}g</div><div class="nutr-label">protein</div></div>
-    <div class="nutr-item"><div class="nutr-val">${n.carbs}g</div><div class="nutr-label">carbs</div></div>
-    <div class="nutr-item"><div class="nutr-val">${n.fat}g</div><div class="nutr-label">fat</div></div>
-    <div class="nutr-item"><div class="nutr-val">${n.satfat}g</div><div class="nutr-label">sat fat</div></div>
-    <div class="nutr-item"><div class="nutr-val">${n.salt}g</div><div class="nutr-label">salt</div></div>`;
+  const cells = [
+    { v: n.calories, l: 'kcal' },
+    { v: n.protein + 'g', l: 'protein', hero: true },
+    { v: n.carbs + 'g', l: 'carbs' },
+    { v: n.fat + 'g', l: 'fat' }
+  ];
+  if (n.satfat != null) cells.push({ v: n.satfat + 'g', l: 'sat fat' });
+  if (n.salt != null) cells.push({ v: n.salt + 'g', l: 'salt' });
+  const bar = document.getElementById('nutritionBar');
+  bar.style.gridTemplateColumns = `repeat(${cells.length % 3 === 0 ? 3 : 4}, 1fr)`;
+  bar.innerHTML = cells.map(c => `<div class="nutr-item${c.hero ? ' hero' : ''}"><div class="nutr-val">${c.v}</div><div class="nutr-label">${c.l}</div></div>`).join('');
 }
 
 // ── Tabs + swipe (mobile) ──

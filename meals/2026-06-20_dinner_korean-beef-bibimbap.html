@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Lemony Orzo with Asparagus & Sardines — Cook Mode</title>
+<title>Korean Beef Bibimbap — Cook Mode</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
@@ -257,11 +257,11 @@
 
 <header class="ck-header">
   <div>
-    <h1 class="ck-title">Lemony Orzo with Asparagus & Sardines</h1>
+    <h1 class="ck-title">Korean Beef Bibimbap</h1>
     <div class="ck-meta">
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M5 21V8a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v13"/><path d="M3 21h18"/><path d="M9 8h6"/></svg><b>2</b> servings</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>5</b>m prep</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>15</b>m cook</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M5 21V8a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v13"/><path d="M3 21h18"/><path d="M9 8h6"/></svg><b>4</b> servings</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>25</b>m prep</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>25</b>m cook</span>
     </div>
   </div>
   <div class="wake-dot" id="wakeDot" title="Screen stays on while cooking"></div>
@@ -313,38 +313,47 @@
 // Also replace the {{...}} header placeholders above.
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 const RECIPE = {
-  name: "Lemony Orzo with Asparagus & Sardines",
-  servings: "2",
-  prep_time: "5",
-  cook_time: "15",
+  name: "Korean Beef Bibimbap",
+  servings: "4",
+  prep_time: "25",
+  cook_time: "25",
   steps: [
-    { text: "Bring a medium pot of salted water to a boil. Cook the orzo until al dente per the package. Two minutes before it is done, add the sliced asparagus. Drain; wipe out and keep the pot.", timer: { label: "Orzo", min: 9, sec: 0 } },
-    { text: "Make the dressing in a large bowl: 1.5 tablespoons olive oil, lemon zest and juice, salt and pepper. Add the drained orzo and asparagus and toss to coat.", timer: null },
-    { text: "In the reserved pot, heat the remaining 1 tablespoon olive oil over medium. Toast the panko, stirring, until golden brown. Off the heat, stir in the grated garlic; season.", timer: { label: "Panko", min: 4, sec: 0 } },
-    { text: "Break the drained sardines into bite-sized chunks. Add to the orzo with the Parmesan and herbs; toss gently.", timer: null },
-    { text: "Taste — more lemon, salt or pepper as needed. Top with the garlic bread crumbs and serve warm.", timer: null }
+    { text: "Rinse the rice until the water runs clear, then cook it (rice cooker, or 300g rice to ~360ml water: boil, cover, low 12 min, rest 10 min).", timer: { label: "Rice", min: 22, sec: 0 } },
+    { text: "Marinate the beef: toss the sliced beef with 3 tbsp soy sauce, 1 tbsp sesame oil, half the grated garlic and 2 tbsp brown sugar. Leave to sit while you prep the rest.", timer: { label: "Marinate", min: 15, sec: 0 } },
+    { text: "Mix the gochujang sauce: 3 tbsp gochujang, 1 tbsp sesame oil, 1 tbsp rice vinegar, the rest of the garlic and 2 tbsp water. Loosen with more water to a drizzle.", timer: null },
+    { text: "Blanch the spinach 30 seconds, cool under cold water, squeeze dry and season with a little sesame oil and salt. Blanch the bean sprouts 3 minutes, drain and season the same way.", timer: { label: "Bean sprouts", min: 3, sec: 0 } },
+    { text: "Heat 1 tbsp neutral oil over medium-high. Saute the carrots 2 min with a pinch of salt; remove. Do the same with the courgette, then the mushrooms (cook until golden). Keep each vegetable in its own pile.", timer: { label: "Saute the veg", min: 8, sec: 0 } },
+    { text: "Turn the heat to high, add the last 1 tbsp oil and sear the marinated beef in a single layer until caramelised.", timer: { label: "Sear beef", min: 4, sec: 0 } },
+    { text: "Fry the eggs sunny-side up, keeping the yolks runny.", timer: { label: "Fry eggs", min: 3, sec: 0 } },
+    { text: "Build each bowl: warm rice, beef and vegetables arranged in sections, a fried egg in the middle, sesame seeds and scallions on top, gochujang sauce alongside to mix in. For the two lunch portions, pack rice/beef/veg together and keep the egg and sauce separate to add fresh.", timer: null }
   ],
   ingredients: [
-    { stage: "Prep", hint: "Slice the asparagus thin (1/4-inch) so 2 minutes in the pot is enough", items: [
-      { amount: "150g", name: "orzo" },
-      { amount: "225g", name: "asparagus, trimmed, sliced thin on the diagonal" },
-      { amount: "2 tins", name: "Dunnes sardines (170g drained), oil drained off" },
-      { amount: "1/2 tsp", name: "lemon zest + 1.5 tbsp lemon juice" },
-      { amount: "1 clove", name: "garlic, finely grated" },
-      { amount: "15g", name: "Parmesan, finely grated" },
-      { amount: "1/4 cup", name: "fresh dill, mint or parsley" }
+    { stage: "Prep", hint: "Bibimbap is all in the prep - get every component ready, then it comes together fast", items: [
+      { amount: "300g", name: "short-grain rice, uncooked" },
+      { amount: "500g", name: "lean beef (sirloin/topside), trimmed, thinly sliced" },
+      { amount: "4 cloves", name: "garlic, finely grated (split: beef + sauce)" },
+      { amount: "200g", name: "spinach" },
+      { amount: "200g", name: "bean sprouts" },
+      { amount: "2", name: "carrots, julienned" },
+      { amount: "1", name: "courgette, julienned" },
+      { amount: "150g", name: "shiitake or chestnut mushrooms, sliced" }
     ]},
-    { stage: "Cook", items: [
-      { amount: "2.5 tbsp", name: "extra-virgin olive oil, divided" },
-      { amount: "30g", name: "panko bread crumbs" },
-      { amount: "to taste", name: "salt and black pepper" }
+    { stage: "Cook", hint: "Beef marinade + the namul seasoning", items: [
+      { amount: "3 tbsp", name: "light soy sauce (beef marinade)" },
+      { amount: "3 tbsp", name: "toasted sesame oil (marinade + namul + sauce)" },
+      { amount: "2 tbsp", name: "light brown sugar (beef marinade)" },
+      { amount: "2 tbsp", name: "rapeseed/neutral oil (for sauteing)" },
+      { amount: "to taste", name: "fine sea salt" }
     ]},
     { stage: "Finish", items: [
-      { amount: "optional", name: "extra Parmesan and lemon to serve" }
+      { amount: "4", name: "eggs, fried sunny-side up" },
+      { amount: "3 tbsp + 1 tbsp", name: "gochujang + rice vinegar (sauce, w/ sesame oil/garlic/water)" },
+      { amount: "1 tbsp", name: "toasted sesame seeds" },
+      { amount: "2", name: "scallions, thinly sliced" }
     ]}
   ],
-  // Boosted from the base recipe: 2 tins of sardines (was ~1.5) and 150g orzo (was 125g) to hit the protein/calorie phase. Counts as 1 fish serving (2nd this week).
-  nutrition: { calories: 715, protein: 36, carbs: 70, fat: 32, satfat: 5.5, salt: 1.3 }
+  // Whole-bowl card - rice is the base of bibimbap, so it's included. This is the week's lean red-meat meal (1x, within the 1-2x/week guidance); use a lean trimmed cut. Sat fat ~9g/serving (lean beef + egg + sesame oil) - moderate, and the rest of the week is very lean. Veg-loaded (5 vegetables) covers the veg servings easily. Meat-free: swap beef for seared extra-firm tofu. Batch x4 - keep egg + sauce separate for office lunches. They like it spicy: be generous with the gochujang.
+  nutrition: { calories: 720, protein: 44, carbs: 72, fat: 28, satfat: 9, salt: 2.2 }
 };
 
 const ICON = {
@@ -432,11 +441,17 @@ function renderIngredients() {
 // ── Nutrition ──
 function renderNutrition() {
   const n = RECIPE.nutrition; if (!n || !n.calories) { document.getElementById('nutritionBar').style.display = 'none'; return; }
-  document.getElementById('nutritionBar').innerHTML = `
-    <div class="nutr-item"><div class="nutr-val">${n.calories}</div><div class="nutr-label">kcal</div></div>
-    <div class="nutr-item hero"><div class="nutr-val">${n.protein}g</div><div class="nutr-label">protein</div></div>
-    <div class="nutr-item"><div class="nutr-val">${n.carbs}g</div><div class="nutr-label">carbs</div></div>
-    <div class="nutr-item"><div class="nutr-val">${n.fat}g</div><div class="nutr-label">fat</div></div>`;
+  const cells = [
+    { v: n.calories, l: 'kcal' },
+    { v: n.protein + 'g', l: 'protein', hero: true },
+    { v: n.carbs + 'g', l: 'carbs' },
+    { v: n.fat + 'g', l: 'fat' }
+  ];
+  if (n.satfat != null) cells.push({ v: n.satfat + 'g', l: 'sat fat' });
+  if (n.salt != null) cells.push({ v: n.salt + 'g', l: 'salt' });
+  const bar = document.getElementById('nutritionBar');
+  bar.style.gridTemplateColumns = `repeat(${cells.length % 3 === 0 ? 3 : 4}, 1fr)`;
+  bar.innerHTML = cells.map(c => `<div class="nutr-item${c.hero ? ' hero' : ''}"><div class="nutr-val">${c.v}</div><div class="nutr-label">${c.l}</div></div>`).join('');
 }
 
 // ── Tabs + swipe (mobile) ──
