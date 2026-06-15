@@ -318,25 +318,24 @@ const RECIPE = {
   prep_time: "20",
   cook_time: "30",
   steps: [
-    { text: "Press the tofu under a heavy pan for 10 minutes. Start 300g jasmine rice. Whisk the sauce ingredients together with 80ml water while the tofu presses.", timer: { label: "Press tofu", min: 10, sec: 0 } },
+    { text: "Press the tofu under a heavy pan for 10 minutes. Whisk the sauce ingredients together with 80ml water while the tofu presses.", timer: { label: "Press tofu", min: 10, sec: 0 } },
     { text: "Cut tofu into 3/4-inch cubes, season with a pinch of salt, then toss with the coating cornstarch right before frying.", timer: null },
     { text: "Heat neutral oil in a large skillet over medium-high. Add tofu in a single layer, in two batches if needed. Cook until crisp and golden on both sides, about 3 minutes per side. Remove to a plate.", timer: { label: "Crisp tofu", min: 12, sec: 0 } },
-    { text: "Add bell peppers, celery and scallions to the skillet. Stir-fry until softened and lightly charred, about 4 minutes. Add edamame, Sichuan peppercorns and dried chiles; cook until fragrant, about 2 minutes.", timer: { label: "Stir-fry veg", min: 6, sec: 0 } },
+    { text: "Add bell peppers, celery and scallions to the skillet. Stir-fry until softened and lightly charred, about 4 minutes. Add soya beans, Sichuan peppercorns and dried chiles; cook until fragrant, about 2 minutes.", timer: { label: "Stir-fry veg", min: 6, sec: 0 } },
     { text: "Return tofu to the pan and pour in the sauce. Stir to coat and simmer until glossy and thick, about 2 minutes. Finish with peanuts and cilantro.", timer: { label: "Thicken sauce", min: 2, sec: 0 } },
-    { text: "Serve immediately over rice. Pack two lunch portions for tomorrow.", timer: null }
+    { text: "Serve immediately. Pack two lunch portions for tomorrow.", timer: null }
   ],
   ingredients: [
     { stage: "Prep", hint: "Press the tofu first, then prep everything else while it drains", items: [
-      { amount: "600g", name: "extra-firm tofu, pressed and cubed" },
-      { amount: "300g", name: "jasmine rice, uncooked" },
+      { amount: "560g", name: "Tofoo Naked tofu (2 × 280g), pressed and cubed" },
       { amount: "1 bowl", name: "sauce (60ml soy, 2 tbsp brown sugar, 2 tbsp hoisin, 2 tbsp rice wine, 1 tbsp black vinegar, 2 tsp sesame oil, 2 tsp cornstarch, 1/2 tsp white pepper, garlic, ginger, 80ml water)" },
       { amount: "4 cloves", name: "garlic, finely grated (for the sauce)" },
       { amount: "2 inches", name: "fresh ginger, finely grated (for the sauce)" },
-      { amount: "40g", name: "cornstarch, for coating the tofu" },
+      { amount: "20g", name: "cornstarch, for coating the tofu" },
       { amount: "2", name: "red bell peppers, diced" },
       { amount: "2 stalks", name: "celery, sliced" },
       { amount: "4", name: "scallions, cut into 1-inch chunks" },
-      { amount: "300g", name: "shelled edamame, thawed if frozen" }
+      { amount: "300g", name: "Tesco soya beans (frozen), boiled & drained" }
     ]},
     { stage: "Cook", items: [
       { amount: "4 tbsp", name: "neutral oil (rapeseed)" },
@@ -345,12 +344,12 @@ const RECIPE = {
     ]},
     { stage: "Finish", items: [
       { amount: "60g", name: "roasted peanuts" },
-      { amount: "20g", name: "cilantro, roughly chopped" },
-      { amount: "4 servings", name: "steamed jasmine rice" }
+      { amount: "20g", name: "cilantro, roughly chopped" }
     ]}
   ],
-  // Batch x4: dinner tonight + two office lunches Tuesday. Edamame added to the base recipe for protein. Includes rice.
-  nutrition: { calories: 745, protein: 36, carbs: 91, fat: 28, satfat: 3.4, salt: 2.4 }
+  // Batch x4: dinner tonight + 2 office lunches. Per-serving = 1/4 batch, DISH ONLY — rice excluded per request (not counted).
+  // Reflects actual cook: Tofoo Naked tofu 560g (2x280g), 20g coating cornstarch, Tesco soya beans 300g (subbed for edamame). Full macro breakdown.
+  nutrition: { calories: 560, protein: 39, carbs: 32, sugars: 14, fat: 29, satfat: 4.1, fibre: 11, salt: 3 }
 };
 
 const ICON = {
@@ -438,11 +437,19 @@ function renderIngredients() {
 // ── Nutrition ──
 function renderNutrition() {
   const n = RECIPE.nutrition; if (!n || !n.calories) { document.getElementById('nutritionBar').style.display = 'none'; return; }
-  document.getElementById('nutritionBar').innerHTML = `
-    <div class="nutr-item"><div class="nutr-val">${n.calories}</div><div class="nutr-label">kcal</div></div>
-    <div class="nutr-item hero"><div class="nutr-val">${n.protein}g</div><div class="nutr-label">protein</div></div>
-    <div class="nutr-item"><div class="nutr-val">${n.carbs}g</div><div class="nutr-label">carbs</div></div>
-    <div class="nutr-item"><div class="nutr-val">${n.fat}g</div><div class="nutr-label">fat</div></div>`;
+  const tiles = [
+    { val: n.calories, label: 'kcal' },
+    { val: n.protein + 'g', label: 'protein', hero: true },
+    { val: n.carbs + 'g', label: 'carbs' },
+    { val: n.fat + 'g', label: 'fat' },
+    n.sugars != null && { val: n.sugars + 'g', label: 'sugars' },
+    n.satfat != null && { val: n.satfat + 'g', label: 'sat fat' },
+    n.fibre != null && { val: n.fibre + 'g', label: 'fibre' },
+    n.salt != null && { val: n.salt + 'g', label: 'salt' }
+  ].filter(Boolean);
+  document.getElementById('nutritionBar').innerHTML = tiles.map(t =>
+    `<div class="nutr-item${t.hero ? ' hero' : ''}"><div class="nutr-val">${t.val}</div><div class="nutr-label">${t.label}</div></div>`
+  ).join('');
 }
 
 // ── Tabs + swipe (mobile) ──
