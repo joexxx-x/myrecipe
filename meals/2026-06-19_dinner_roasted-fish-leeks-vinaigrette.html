@@ -259,7 +259,7 @@
   <div>
     <h1 class="ck-title">Roasted Fish & Leeks Vinaigrette</h1>
     <div class="ck-meta">
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M5 21V8a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v13"/><path d="M3 21h18"/><path d="M9 8h6"/></svg><b>4</b> servings</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M5 21V8a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v13"/><path d="M3 21h18"/><path d="M9 8h6"/></svg><b>2</b> servings</span>
       <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>10</b>m prep</span>
       <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>35</b>m cook</span>
     </div>
@@ -314,23 +314,23 @@
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 const RECIPE = {
   name: "Roasted Fish & Leeks Vinaigrette",
-  servings: "4",
+  servings: "2",
   prep_time: "10",
   cook_time: "35",
   steps: [
-    { text: "Heat the oven to 200C (400F). If serving with rice, start 300g cooking separately now.", timer: { label: "Rice (optional)", min: 15, sec: 0 } },
+    { text: "Heat the oven to 200C (400F). Put 6 baby potatoes on to boil so they're ready alongside the fish.", timer: { label: "Boil potatoes", min: 18, sec: 0 } },
     { text: "Swish the sliced leeks in a bowl of cold water to release any grit, lift out, drain and pat dry.", timer: null },
     { text: "Spread the leeks and capers on a sheet pan with 3 tbsp olive oil and a pinch of salt; toss. Roast, tossing halfway, until tender and crisping at the edges.", timer: { label: "Roast leeks", min: 15, sec: 0 } },
-    { text: "Pat the cod dry, drizzle with olive oil and season with salt and pepper. Move the leeks aside, nestle in the fish, and roast until it flakes easily with a fork.", timer: { label: "Roast fish", min: 12, sec: 0 } },
+    { text: "Pat the cod dry (the Tesco pack + the extra fillet, ~430g), drizzle with olive oil and season with salt and pepper. Move the leeks aside, nestle in the fish, and roast until it flakes easily with a fork.", timer: { label: "Roast fish", min: 12, sec: 0 } },
     { text: "Meanwhile, whisk the vinaigrette: 3 tbsp olive oil, shallot, red wine vinegar, parsley, whole-grain mustard, salt and pepper.", timer: null },
-    { text: "Plate the fish and leeks and spoon the vinaigrette over. Serve with rice or boiled potatoes, and pack two lunch portions for tomorrow.", timer: null }
+    { text: "Plate the fish and leeks, spoon the vinaigrette over, and serve with the boiled baby potatoes.", timer: null }
   ],
   ingredients: [
     { stage: "Prep", hint: "A sheet-pan dinner - barely any cleanup", items: [
-      { amount: "680g", name: "skinless cod fillets (4 x 170g)" },
+      { amount: "430g", name: "skinless cod (1 Tesco pack 360g + 1 frozen fillet ~70g)" },
       { amount: "2", name: "leeks, white and light green, thinly sliced" },
       { amount: "2 tbsp", name: "capers, drained" },
-      { amount: "300g", name: "rice or potatoes, optional side (cook separately)" }
+      { amount: "6", name: "baby potatoes, to boil (served alongside)" }
     ]},
     { stage: "Cook", items: [
       { amount: "90ml", name: "extra-virgin olive oil (leeks + drizzle fish + vinaigrette)" },
@@ -341,11 +341,11 @@ const RECIPE = {
       { amount: "1 tbsp", name: "red wine vinegar" },
       { amount: "1 tbsp", name: "parsley, minced" },
       { amount: "1 tsp", name: "whole-grain mustard" },
-      { amount: "~75g dry pp", name: "rice/potatoes, served separately - adds ~265 kcal & 6g protein per serving (not in the card totals)" }
+      { amount: "side", name: "6 baby potatoes, served separately - adds ~150 kcal & ~32g carb for the two of you (not in the card totals)" }
     ]}
   ],
-  // Card = FISH + LEEKS ONLY. Nearly all the fat is olive oil - only ~3g saturated, excellent for Joe's LDL. Cod is very lean and low-mercury; this is the 1 fish meal this week (within the 2-3 limit). Rice/potatoes served separately add ~265 kcal / 6g protein per serving. Full plate ~636 kcal / 39g protein. Batch x4 - dinner + two Friday office lunches.
-  nutrition: { calories: 371, protein: 33, carbs: 8, fat: 23, satfat: 3, salt: 1.3 }
+  // PER-SERVING values, dish shared 2 ways (NOT 4). Card = fish + leeks + olive oil + vinaigrette; baby potatoes excluded. Fish = 430g cod (1 Tesco pack 360g + 1 frozen fillet ~70g). Full dish (both servings): 1247 kcal / 93g protein / 31g carb / 86g fat / 12g sat / 4.3g salt. Almost all the fat is olive oil - only ~6g saturated per serving, great for Joe's LDL. Cod is very lean and low-mercury; 1 fish meal this week (within 2-3). Baby potatoes add ~150 kcal / 32g carb for the pair, not in the card. Shared, no leftovers.
+  nutrition: { calories: 624, protein: 46.5, carbs: 15, fat: 43, satfat: 6, salt: 2.2 }
 };
 
 const ICON = {
