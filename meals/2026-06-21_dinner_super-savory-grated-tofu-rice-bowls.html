@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Roasted Fish & Leeks Vinaigrette — Cook Mode</title>
+<title>Super-Savory Grated Tofu Rice Bowls — Cook Mode</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
@@ -257,11 +257,11 @@
 
 <header class="ck-header">
   <div>
-    <h1 class="ck-title">Roasted Fish & Leeks Vinaigrette</h1>
+    <h1 class="ck-title">Super-Savory Grated Tofu Rice Bowls</h1>
     <div class="ck-meta">
       <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M5 21V8a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v13"/><path d="M3 21h18"/><path d="M9 8h6"/></svg><b>2</b> servings</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>10</b>m prep</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>35</b>m cook</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>15</b>m prep</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>20</b>m cook</span>
     </div>
   </div>
   <div class="wake-dot" id="wakeDot" title="Screen stays on while cooking"></div>
@@ -313,39 +313,45 @@
 // Also replace the {{...}} header placeholders above.
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 const RECIPE = {
-  name: "Roasted Fish & Leeks Vinaigrette",
+  name: "Super-Savory Grated Tofu Rice Bowls",
   servings: "2",
-  prep_time: "10",
-  cook_time: "35",
+  prep_time: "15",
+  cook_time: "20",
   steps: [
-    { text: "Heat the oven to 200C (400F). Put 6 baby potatoes on to boil so they're ready alongside the fish.", timer: { label: "Boil potatoes", min: 18, sec: 0 } },
-    { text: "Swish the sliced leeks in a bowl of cold water to release any grit, lift out, drain and pat dry.", timer: null },
-    { text: "Spread the leeks and capers on a sheet pan with 3 tbsp olive oil and a pinch of salt; toss. Roast, tossing halfway, until tender and crisping at the edges.", timer: { label: "Roast leeks", min: 15, sec: 0 } },
-    { text: "Pat the cod dry (the Tesco pack + the extra fillet, ~430g), drizzle with olive oil and season with salt and pepper. Move the leeks aside, nestle in the fish, and roast until it flakes easily with a fork.", timer: { label: "Roast fish", min: 12, sec: 0 } },
-    { text: "Meanwhile, whisk the vinaigrette: 3 tbsp olive oil, shallot, red wine vinegar, parsley, whole-grain mustard, salt and pepper.", timer: null },
-    { text: "Plate the fish and leeks, spoon the vinaigrette over, and serve with the boiled baby potatoes.", timer: null }
+    { text: "Cook the rice using your preferred method, or warm leftover cooked rice if you have it.", timer: { label: "Rice", min: 15, sec: 0 } },
+    { text: "Wrap the tofu in a clean thin towel and gently squeeze out excess water. Grate it on the large holes of a box grater; thinly slice any chunks that break off.", timer: null },
+    { text: "Whisk the tamari, black vinegar, sugar, gochugaru and toasted sesame oil in a small bowl. Prep the broccoli or green beans, edamame, scallions, chile, garlic and cilantro.", timer: null },
+    { text: "Heat the neutral oil in a large nonstick skillet over medium-high. Add the scallion whites and pale greens, chile and garlic. Stir until softened and lightly golden.", timer: { label: "Aromatics", min: 2, sec: 0 } },
+    { text: "Add the grated tofu and toss to coat. Cook undisturbed for 2 minutes, then stir every couple of minutes until some pieces turn golden and chewy.", timer: { label: "Brown tofu", min: 10, sec: 0 } },
+    { text: "While the tofu browns, steam or stir-fry the broccoli or green beans with the edamame until hot and bright.", timer: { label: "Veg + edamame", min: 5, sec: 0 } },
+    { text: "Pour the sauce over the tofu and stir until evenly coated and bubbling. Cook briefly, then take off the heat and scatter over the sesame seeds.", timer: { label: "Sauce glaze", min: 1, sec: 0 } },
+    { text: "Serve the tofu over rice with the vegetables and edamame. Finish with reserved scallion tops and cilantro.", timer: null }
   ],
   ingredients: [
-    { stage: "Prep", hint: "A sheet-pan dinner - barely any cleanup", items: [
-      { amount: "430g", name: "skinless cod (1 Tesco pack 360g + 1 frozen fillet ~70g)" },
-      { amount: "2", name: "leeks, white and light green, thinly sliced" },
-      { amount: "2 tbsp", name: "capers, drained" },
-      { amount: "6", name: "baby potatoes, to boil (served alongside)" }
+    { stage: "Prep", hint: "Mise en place — before the pan is hot", items: [
+      { amount: "280g", name: "super-firm Tofoo tofu (1 x 280g pack)" },
+      { amount: "2", name: "scallions, sliced; dark green tops reserved" },
+      { amount: "1", name: "Thai chile or 1/2 serrano, thinly sliced (optional)" },
+      { amount: "2 cloves", name: "garlic, thinly sliced" },
+      { amount: "200g", name: "broccoli or green beans" },
+      { amount: "200g", name: "shelled edamame beans" },
+      { amount: "8g", name: "cilantro leaves and tender stems, chopped" },
+      { amount: "1 1/2 tbsp", name: "tamari or soy sauce" },
+      { amount: "1/2 tbsp", name: "Chinese black vinegar" },
+      { amount: "1/2 tsp", name: "cane sugar, maple syrup or agave" },
+      { amount: "1/2 tbsp", name: "gochugaru" },
+      { amount: "1/2 tbsp", name: "toasted sesame oil" }
     ]},
     { stage: "Cook", items: [
-      { amount: "90ml", name: "extra-virgin olive oil (leeks + drizzle fish + vinaigrette)" },
-      { amount: "to taste", name: "salt and black pepper" }
+      { amount: "1 tbsp", name: "neutral oil" }
     ]},
-    { stage: "Finish", hint: "The mustard vinaigrette is the whole flavour - don't skip it", items: [
-      { amount: "1 tbsp", name: "shallot, minced" },
-      { amount: "1 tbsp", name: "red wine vinegar" },
-      { amount: "1 tbsp", name: "parsley, minced" },
-      { amount: "1 tsp", name: "whole-grain mustard" },
-      { amount: "side", name: "6 baby potatoes, served separately - adds ~150 kcal & ~32g carb for the two of you (not in the card totals)" }
+    { stage: "Finish", items: [
+      { amount: "1/2 tbsp", name: "roasted black or white sesame seeds" },
+      { amount: "150g dry", name: "basmati rice, steamed separately — ~75g pp, adds ~260 kcal & 6g protein per serving (not in card totals)" },
+      { amount: "to taste", name: "reserved scallion tops and cilantro" }
     ]}
   ],
-  // PER-SERVING values, dish shared 2 ways (NOT 4). Card = fish + leeks + olive oil + vinaigrette; baby potatoes excluded. Fish = 430g cod (1 Tesco pack 360g + 1 frozen fillet ~70g). Full dish (both servings): 1247 kcal / 93g protein / 31g carb / 86g fat / 12g sat / 4.3g salt. Almost all the fat is olive oil - only ~6g saturated per serving, great for Joe's LDL. Cod is very lean and low-mercury; 1 fish meal this week (within 2-3). Baby potatoes add ~150 kcal / 32g carb for the pair, not in the card. Shared, no leftovers.
-  nutrition: { calories: 624, protein: 46.5, carbs: 15, fat: 43, satfat: 6, salt: 2.2 }
+  nutrition: { calories: 460, protein: 35, carbs: 18, fat: 26, satfat: 3.8, salt: 1.2 }
 };
 
 const ICON = {
