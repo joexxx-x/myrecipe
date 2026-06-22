@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Spinach One-Pot Pasta with Sardines — Cook Mode</title>
+<title>Spinach One-Pot Pasta with Seitan — Cook Mode</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
@@ -257,7 +257,7 @@
 
 <header class="ck-header">
   <div>
-    <h1 class="ck-title">Spinach One-Pot Pasta with Sardines</h1>
+    <h1 class="ck-title">Spinach One-Pot Pasta with Seitan</h1>
     <div class="ck-meta">
       <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M5 21V8a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v13"/><path d="M3 21h18"/><path d="M9 8h6"/></svg><b>4</b> servings</span>
       <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>5</b>m prep</span>
@@ -313,7 +313,7 @@
 // Also replace the {{...}} header placeholders above.
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 const RECIPE = {
-  name: "Spinach One-Pot Pasta with Sardines",
+  name: "Spinach One-Pot Pasta with Seitan",
   servings: "4",
   prep_time: "5",
   cook_time: "15",
@@ -321,22 +321,22 @@ const RECIPE = {
     { text: "Bring a large pot of well-salted water to a boil. Add the pasta and cook until just shy of al dente — about 1 minute less than the package says. Scoop out 240ml pasta water before you drain.", timer: { label: "Pasta", min: 9, sec: 0 } },
     { text: "Put the spinach in a large colander in the sink. Drain the pasta directly over the spinach to wilt it, then drizzle with a little olive oil and toss so it doesn't stick.", timer: null },
     { text: "Wipe out the pot and set it over medium-high heat. Add 1 tbsp olive oil and the anchovies — careful, it may splatter. Stir until the anchovies start to dissolve, about 30 seconds.", timer: { label: "Anchovies", min: 0, sec: 30 } },
-    { text: "Break the drained sardines into large chunks, add them to the pot, and toss gently for about 30 seconds to warm through.", timer: { label: "Sardines", min: 0, sec: 30 } },
+    { text: "Tear the seitan into bite-size pieces, add to the pot, and fry for 3–4 minutes, tossing, until lightly golden and piping hot.", timer: { label: "Brown seitan", min: 4, sec: 0 } },
     { text: "Tip the pasta and spinach back into the pot. Add the Parmesan and red pepper flakes and stir until a glossy sauce forms and the spinach fully wilts, 1–2 minutes. Loosen with reserved pasta water a splash at a time if it looks dry.", timer: { label: "Toss & wilt", min: 2, sec: 0 } },
-    { text: "Squeeze the lemon over everything. Taste and adjust with more lemon or a little salt — it's already savoury from the anchovies and Parmesan, so go easy. Serve with extra Parmesan if you like.", timer: null },
+    { text: "Squeeze the lemon over everything. Taste — it's already salty from the anchovies, seitan and Parmesan, so you likely won't need any extra salt; brighten with more lemon instead. Serve with extra Parmesan if you like.", timer: null },
     { text: "Let two portions cool, then pack them into containers for tomorrow's office lunches.", timer: null }
   ],
   ingredients: [
     { stage: "Prep", hint: "Before the pot's hot", items: [
-      { amount: "340g", name: "short pasta (orecchiette or fusilli)" },
+      { amount: "340g", name: "gigli (or other short pasta)" },
       { amount: "400g", name: "spinach (mature or baby)" },
       { amount: "3 tbsp", name: "olive oil (1 for the pot, rest to toss the pasta)" },
       { amount: "to taste", name: "salt — season the pasta water well" }
     ]},
     { stage: "Cook", hint: "Into the pot, in order", items: [
-      { amount: "20g", name: "oil-packed anchovies" },
-      { amount: "2 cans", name: "sardines in olive oil, drained (90g drained each)" },
-      { amount: "60g", name: "Parmesan, grated (save a little to finish)" },
+      { amount: "30g", name: "Cantabrian anchovy fillets, drained (1 tin)" },
+      { amount: "225g", name: "seitan, torn into bite-size pieces (1 pack)" },
+      { amount: "40g", name: "Parmigiano Reggiano, grated (save a little to finish)" },
       { amount: "1/2 tsp", name: "red pepper flakes" },
       { amount: "240ml", name: "reserved pasta water" }
     ]},
@@ -345,7 +345,7 @@ const RECIPE = {
     ]}
   ],
   nutrition: {
-    calories: 600, protein: 36, carbs: 71, fat: 19, satfat: 5.5, salt: 1.6
+    calories: 610, protein: 34, carbs: 72, fat: 19, satfat: 4.5, salt: 2.1
   }
 };
 
