@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Ras el Hanout Chickpea & Spinach Stew — Cook Mode</title>
+<title>Masala Chickpeas with Tofu & Blistered Tomatoes — Cook Mode</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
@@ -257,10 +257,10 @@
 
 <header class="ck-header">
   <div>
-    <h1 class="ck-title">Ras el Hanout Chickpea & Spinach Stew</h1>
+    <h1 class="ck-title">Masala Chickpeas with Tofu & Blistered Tomatoes</h1>
     <div class="ck-meta">
       <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M5 21V8a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v13"/><path d="M3 21h18"/><path d="M9 8h6"/></svg><b>4</b> servings</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>5</b>m prep</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>10</b>m prep</span>
       <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>25</b>m cook</span>
     </div>
   </div>
@@ -313,72 +313,100 @@
 // Also replace the {{...}} header placeholders above.
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 const RECIPE = {
-  "name": "Ras el Hanout Chickpea & Spinach Stew",
+  "name": "Masala Chickpeas with Tofu & Blistered Tomatoes",
   "servings": "4",
-  "prep_time": "5",
+  "prep_time": "10",
   "cook_time": "25",
   "steps": [
     {
-      "text": "Heat 2 tbsp olive oil in a large pot over medium. Add the garlic and ras el hanout; stir ~1 minute until fragrant. Add the tomato paste and cook, stirring, until it darkens slightly, about 2 minutes.",
-      "timer": null
-    },
-    {
-      "text": "Add the stock, soy sauce and salt. Bring to a boil, reduce to medium-low, cover and cook 10 minutes.",
+      "text": "Start the rice (300g). Slice the tofu in half horizontally and pat it very dry on a towel.",
       "timer": {
-        "label": "Simmer",
-        "min": 10,
+        "label": "Rice",
+        "min": 12,
         "sec": 0
       }
     },
     {
-      "text": "Add the chickpeas and simmer until soft, about 10 minutes. Stir in the spinach until wilted, about 3 minutes. Taste for salt; loosen with a splash of stock if thick.",
+      "text": "Heat 1 tbsp oil in a large skillet over medium. Season the tofu with salt and pepper; sear undisturbed ~4 minutes until browned, then flip and brown 4–5 minutes more. Transfer to a plate.",
       "timer": {
-        "label": "Chickpeas",
-        "min": 10,
+        "label": "Sear tofu",
+        "min": 8,
         "sec": 0
       }
     },
     {
-      "text": "Make the harissa oil: stir the harissa paste into 3 tbsp olive oil.",
+      "text": "Add 2–3 tbsp oil to the skillet. Add the chopped red onion (reserve a little for garnish) and cook, stirring often, until translucent, about 4 minutes.",
+      "timer": {
+        "label": "Onion",
+        "min": 4,
+        "sec": 0
+      }
+    },
+    {
+      "text": "Add the ginger, garlic and garam masala. Season with salt and pepper; stir until fragrant, 1–2 minutes.",
       "timer": null
     },
     {
-      "text": "Serve with a dollop of Greek yogurt, a drizzle of harissa oil, and crusty bread or rice. Pack two portions for next-day lunch.",
+      "text": "Stir in the chickpeas and cook until they start to sizzle, about 3 minutes.",
+      "timer": null
+    },
+    {
+      "text": "Increase heat to medium-high. Add the remaining oil, then the cherry tomatoes and ~1 tsp salt. Cook without stirring until they blister and pop, 4–5 minutes, then stir in the herbs.",
+      "timer": {
+        "label": "Blister tomatoes",
+        "min": 5,
+        "sec": 0
+      }
+    },
+    {
+      "text": "Break the tofu into ~2cm pieces and toss into the chickpea-tomato mixture; cook 2–3 minutes until warmed through and coated in the masala.",
+      "timer": {
+        "label": "Finish tofu",
+        "min": 3,
+        "sec": 0
+      }
+    },
+    {
+      "text": "Taste and adjust salt, pepper and lime. Serve over rice, garnished with the reserved raw onion and extra herbs. Pack two portions for next-day lunch.",
       "timer": null
     }
   ],
   "ingredients": [
     {
       "stage": "Prep",
-      "hint": "Mise en place — before the pot is hot",
+      "hint": "Mise en place — before the pan is hot",
       "items": [
         {
-          "amount": "1200g",
-          "name": "canned chickpeas, drained & rinsed (~5 cans)"
+          "amount": "560g",
+          "name": "firm tofu (2 x 280g Tofoo), halved horizontally & patted dry"
+        },
+        {
+          "amount": "2",
+          "name": "red onions, finely chopped (reserve some for garnish)"
         },
         {
           "amount": "4 cloves",
-          "name": "garlic, minced"
+          "name": "garlic, grated"
         },
         {
-          "amount": "3 tbsp",
-          "name": "tomato paste"
+          "amount": "~4cm",
+          "name": "fresh ginger, grated"
         },
         {
-          "amount": "3 tsp",
-          "name": "ras el hanout"
+          "amount": "2 tsp",
+          "name": "garam masala (or tandoori masala)"
         },
         {
-          "amount": "240ml",
-          "name": "vegetable stock"
+          "amount": "~480g",
+          "name": "canned chickpeas (2 cans), drained & rinsed"
         },
         {
-          "amount": "3 tsp",
-          "name": "soy sauce"
+          "amount": "~600g",
+          "name": "cherry tomatoes"
         },
         {
-          "amount": "150g",
-          "name": "spinach leaves"
+          "amount": "300g",
+          "name": "basmati rice, uncooked"
         }
       ]
     },
@@ -386,12 +414,12 @@ const RECIPE = {
       "stage": "Cook",
       "items": [
         {
-          "amount": "2 tbsp",
-          "name": "olive oil"
+          "amount": "5 tbsp",
+          "name": "rapeseed or neutral oil (divided)"
         },
         {
-          "amount": "1/2 tsp",
-          "name": "fine sea salt"
+          "amount": "to taste",
+          "name": "salt & black pepper"
         }
       ]
     },
@@ -399,27 +427,27 @@ const RECIPE = {
       "stage": "Finish",
       "items": [
         {
-          "amount": "3 tsp",
-          "name": "harissa paste + 3 tbsp olive oil (harissa oil)"
+          "amount": "1/2 cup",
+          "name": "fresh mint or dill, chopped"
         },
         {
-          "amount": "120g",
-          "name": "Greek yogurt, to serve"
+          "amount": "2",
+          "name": "limes, in wedges"
         },
         {
-          "amount": "to taste",
-          "name": "crusty bread or cooked rice, to serve"
+          "amount": "—",
+          "name": "reserved raw red onion"
         }
       ]
     }
   ],
   "nutrition": {
-    "calories": 555,
-    "protein": 29,
-    "carbs": 52,
-    "fat": 24,
-    "satfat": 4,
-    "salt": 1.3
+    "calories": 560,
+    "protein": 35,
+    "carbs": 31,
+    "fat": 29,
+    "satfat": 3.5,
+    "salt": 1.4
   }
 };
 
