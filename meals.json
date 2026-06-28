@@ -1,8 +1,26 @@
 [
   {
-    "date": "2026-06-26",
+    "date": "2026-06-29",
     "meal": "dinner",
-    "name": "Super-Savory Grated Tofu Rice Bowls",
-    "file": "meals/2026-06-26_dinner_super-savory-grated-tofu-rice-bowls.html"
+    "name": "Kung Pao Chicken",
+    "file": "meals/2026-06-29_dinner_kung-pao-chicken.html"
+  },
+  {
+    "date": "2026-06-30",
+    "meal": "dinner",
+    "name": "Salmon & Cherry Tomato Curry",
+    "file": "meals/2026-06-30_dinner_salmon-cherry-tomato-curry.html"
+  },
+  {
+    "date": "2026-07-01",
+    "meal": "dinner",
+    "name": "Ras el Hanout Chickpea & Spinach Stew",
+    "file": "meals/2026-07-01_dinner_ras-el-hanout-chickpea-spinach-stew.html"
+  },
+  {
+    "date": "2026-07-02",
+    "meal": "dinner",
+    "name": "Thai Holy Basil Tofu (Pad Kra Pao)",
+    "file": "meals/2026-07-02_dinner_thai-holy-basil-tofu.html"
   }
 ]
