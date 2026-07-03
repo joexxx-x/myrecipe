@@ -4,5 +4,35 @@
     "meal": "dinner",
     "name": "Kung Pao Tofu",
     "file": "meals/2026-07-03_dinner_kung-pao-tofu.html"
+  },
+  {
+    "date": "2026-07-04",
+    "meal": "lunch",
+    "name": "Sourdough Chicken & Avocado Sandwich",
+    "file": "meals/2026-07-04_lunch_sourdough-chicken-avocado-sandwich.html"
+  },
+  {
+    "date": "2026-07-04",
+    "meal": "dinner",
+    "name": "Korean Beef Bibimbap",
+    "file": "meals/2026-07-04_dinner_korean-beef-bibimbap.html"
+  },
+  {
+    "date": "2026-07-05",
+    "meal": "dinner",
+    "name": "Baked Spiced Mediterranean Chicken",
+    "file": "meals/2026-07-05_dinner_baked-mediterranean-chicken.html"
+  },
+  {
+    "date": "2026-07-06",
+    "meal": "dinner",
+    "name": "Spinach One-Pot Pasta with Sardines",
+    "file": "meals/2026-07-06_dinner_spinach-one-pot-pasta-sardines.html"
+  },
+  {
+    "date": "2026-07-07",
+    "meal": "dinner",
+    "name": "Super-Savory Grated Tofu Rice Bowls",
+    "file": "meals/2026-07-07_dinner_super-savory-grated-tofu.html"
   }
 ]
