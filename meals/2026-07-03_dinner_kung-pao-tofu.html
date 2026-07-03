@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Masala Chickpeas with Tofu & Blistered Tomatoes — Cook Mode</title>
+<title>Kung Pao Tofu — Cook Mode</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
@@ -257,11 +257,11 @@
 
 <header class="ck-header">
   <div>
-    <h1 class="ck-title">Masala Chickpeas with Tofu & Blistered Tomatoes</h1>
+    <h1 class="ck-title">Kung Pao Tofu</h1>
     <div class="ck-meta">
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M5 21V8a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v13"/><path d="M3 21h18"/><path d="M9 8h6"/></svg><b>4</b> servings</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>10</b>m prep</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>25</b>m cook</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M5 21V8a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v13"/><path d="M3 21h18"/><path d="M9 8h6"/></svg><b>2</b> servings</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>25</b>m prep</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>20</b>m cook</span>
     </div>
   </div>
   <div class="wake-dot" id="wakeDot" title="Screen stays on while cooking"></div>
@@ -313,100 +313,108 @@
 // Also replace the {{...}} header placeholders above.
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 const RECIPE = {
-  "name": "Masala Chickpeas with Tofu & Blistered Tomatoes",
-  "servings": "4",
-  "prep_time": "10",
-  "cook_time": "25",
+  "name": "Kung Pao Tofu",
+  "servings": "2",
+  "prep_time": "25",
+  "cook_time": "20",
   "steps": [
     {
-      "text": "Start the rice (300g). Slice the tofu in half horizontally and pat it very dry on a towel.",
+      "text": "Drain both Tofoo blocks, wrap in a clean towel and press under a heavy skillet for 15 minutes.",
       "timer": {
-        "label": "Rice",
-        "min": 12,
+        "label": "Press tofu",
+        "min": 15,
         "sec": 0
       }
     },
     {
-      "text": "Heat 1 tbsp oil in a large skillet over medium. Season the tofu with salt and pepper; sear undisturbed ~4 minutes until browned, then flip and brown 4–5 minutes more. Transfer to a plate.",
-      "timer": {
-        "label": "Sear tofu",
-        "min": 8,
-        "sec": 0
-      }
-    },
-    {
-      "text": "Add 2–3 tbsp oil to the skillet. Add the chopped red onion (reserve a little for garnish) and cook, stirring often, until translucent, about 4 minutes.",
-      "timer": {
-        "label": "Onion",
-        "min": 4,
-        "sec": 0
-      }
-    },
-    {
-      "text": "Add the ginger, garlic and garam masala. Season with salt and pepper; stir until fragrant, 1–2 minutes.",
+      "text": "Meanwhile whisk the sauce: 1 tbsp liquid aminos, 1 tsp dark soy, 1 tbsp hoisin, 2 tsp brown sugar, 1 tbsp Shaoxing wine, 1 tbsp Chinkiang vinegar, 1 tsp sesame oil, 1/4 tsp white pepper, the grated garlic and ginger, 1.5 tsp cornstarch and 80ml water. Chop the veg while the tofu presses.",
       "timer": null
     },
     {
-      "text": "Stir in the chickpeas and cook until they start to sizzle, about 3 minutes.",
+      "text": "Cut the pressed tofu into 2cm cubes, season with a small pinch of salt, then toss in the 40g cornstarch until every side is coated.",
       "timer": null
     },
     {
-      "text": "Increase heat to medium-high. Add the remaining oil, then the cherry tomatoes and ~1 tsp salt. Cook without stirring until they blister and pop, 4–5 minutes, then stir in the herbs.",
+      "text": "Heat the rapeseed oil in a large skillet or wok over medium-high. Fry the tofu in a single layer — do it in 2 batches — until golden and crisp, about 3 minutes per side. Remove to a plate.",
       "timer": {
-        "label": "Blister tomatoes",
-        "min": 5,
-        "sec": 0
-      }
-    },
-    {
-      "text": "Break the tofu into ~2cm pieces and toss into the chickpea-tomato mixture; cook 2–3 minutes until warmed through and coated in the masala.",
-      "timer": {
-        "label": "Finish tofu",
+        "label": "Fry tofu",
         "min": 3,
         "sec": 0
       }
     },
     {
-      "text": "Taste and adjust salt, pepper and lime. Serve over rice, garnished with the reserved raw onion and extra herbs. Pack two portions for next-day lunch.",
+      "text": "Add the bell pepper, celery and scallion whites to the pan. Stir-fry until crisp-tender and charred at the edges, about 4 minutes.",
+      "timer": {
+        "label": "Veg",
+        "min": 4,
+        "sec": 0
+      }
+    },
+    {
+      "text": "Add the Sichuan peppercorns and dried chillies; stir 1 minute until fragrant (open a window).",
+      "timer": null
+    },
+    {
+      "text": "Return the tofu, re-stir the sauce and pour it in. Toss and simmer until glossy and thickened, about 2 minutes.",
+      "timer": {
+        "label": "Glaze",
+        "min": 2,
+        "sec": 0
+      }
+    },
+    {
+      "text": "Off the heat, add the peanuts, scallion greens and cilantro (if using). Toss once and serve.",
       "timer": null
     }
   ],
   "ingredients": [
     {
       "stage": "Prep",
-      "hint": "Mise en place — before the pan is hot",
+      "hint": "Mise en place — start the tofu press first",
       "items": [
         {
-          "amount": "560g",
-          "name": "firm tofu (2 x 280g Tofoo), halved horizontally & patted dry"
+          "amount": "2×280g",
+          "name": "Tofoo Naked tofu (560g), pressed, 2cm cubes"
         },
         {
-          "amount": "2",
-          "name": "red onions, finely chopped (reserve some for garnish)"
+          "amount": "40g",
+          "name": "cornstarch (≈5 tbsp), to coat the tofu"
         },
         {
-          "amount": "4 cloves",
-          "name": "garlic, grated"
+          "amount": "—",
+          "name": "sauce: 1 tbsp liquid aminos, 1 tsp dark soy, 1 tbsp hoisin, 2 tsp brown sugar, 1 tbsp Shaoxing, 1 tbsp Chinkiang vinegar, 1 tsp sesame oil, 1/4 tsp white pepper, 1.5 tsp cornstarch, 80ml water"
         },
         {
-          "amount": "~4cm",
-          "name": "fresh ginger, grated"
+          "amount": "3 cloves",
+          "name": "garlic, finely grated (into the sauce)"
         },
         {
-          "amount": "2 tsp",
-          "name": "garam masala (or tandoori masala)"
+          "amount": "2cm",
+          "name": "fresh ginger, finely grated (into the sauce)"
         },
         {
-          "amount": "~480g",
-          "name": "canned chickpeas (2 cans), drained & rinsed"
+          "amount": "1",
+          "name": "red bell pepper, cut into 1.5cm squares"
         },
         {
-          "amount": "~600g",
-          "name": "cherry tomatoes"
+          "amount": "2 stalks",
+          "name": "celery, sliced"
         },
         {
-          "amount": "300g",
-          "name": "basmati rice, uncooked"
+          "amount": "3",
+          "name": "scallions, 2cm pieces (whites + greens separated)"
+        },
+        {
+          "amount": "6",
+          "name": "dried red chillies, torn"
+        },
+        {
+          "amount": "1 tsp",
+          "name": "Sichuan peppercorns"
+        },
+        {
+          "amount": "pinch",
+          "name": "salt (for the tofu)"
         }
       ]
     },
@@ -414,12 +422,8 @@ const RECIPE = {
       "stage": "Cook",
       "items": [
         {
-          "amount": "5 tbsp",
-          "name": "rapeseed or neutral oil (divided)"
-        },
-        {
-          "amount": "to taste",
-          "name": "salt & black pepper"
+          "amount": "1.5 tbsp",
+          "name": "rapeseed oil"
         }
       ]
     },
@@ -427,27 +431,27 @@ const RECIPE = {
       "stage": "Finish",
       "items": [
         {
-          "amount": "1/2 cup",
-          "name": "fresh mint or dill, chopped"
-        },
-        {
-          "amount": "2",
-          "name": "limes, in wedges"
+          "amount": "50g",
+          "name": "roasted peanuts"
         },
         {
           "amount": "—",
-          "name": "reserved raw red onion"
+          "name": "reserved scallion greens"
+        },
+        {
+          "amount": "handful",
+          "name": "fresh cilantro, chopped (optional)"
         }
       ]
     }
   ],
   "nutrition": {
-    "calories": 560,
-    "protein": 35,
-    "carbs": 31,
-    "fat": 29,
-    "satfat": 3.5,
-    "salt": 1.4
+    "calories": 860,
+    "protein": 56,
+    "carbs": 45,
+    "fat": 48,
+    "satfat": 6,
+    "salt": 2.4
   }
 };
 
