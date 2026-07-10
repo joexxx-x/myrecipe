@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Korean Beef Bibimbap — Cook Mode</title>
+<title>Black Bean &amp; Avocado Wraps — Cook Mode</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
@@ -257,11 +257,11 @@
 
 <header class="ck-header">
   <div>
-    <h1 class="ck-title">Korean Beef Bibimbap</h1>
+    <h1 class="ck-title">Black Bean &amp; Avocado Wraps</h1>
     <div class="ck-meta">
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M5 21V8a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v13"/><path d="M3 21h18"/><path d="M9 8h6"/></svg><b>2</b> servings</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>25</b>m prep</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>25</b>m cook</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M5 21V8a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v13"/><path d="M3 21h18"/><path d="M9 8h6"/></svg><b>4</b> servings</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>10</b>m prep</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>10</b>m cook</span>
     </div>
   </div>
   <div class="wake-dot" id="wakeDot" title="Screen stays on while cooking"></div>
@@ -313,147 +313,38 @@
 // Also replace the {{...}} header placeholders above.
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 const RECIPE = {
-  "name": "Korean Beef Bibimbap",
-  "servings": "2",
-  "prep_time": "25",
-  "cook_time": "25",
-  "steps": [
-    {
-      "text": "Rinse the rice until the water runs clear, then cook (180g rice to ~215ml water: boil, cover, low 12 min, rest 10 min).",
-      "timer": {
-        "label": "Rice",
-        "min": 12,
-        "sec": 0
-      }
-    },
-    {
-      "text": "Marinate the beef with 1.5 tbsp reduced-salt soy sauce, half the sesame oil, half the grated garlic and 1 tbsp brown sugar. Set aside while you prep the veg.",
-      "timer": null
-    },
-    {
-      "text": "Make the sauce: stir the gochujang with a splash of sesame oil, 1/2 tbsp rice vinegar, the remaining garlic and 1 tbsp water until smooth. Loosen with a little more water if needed.",
-      "timer": null
-    },
-    {
-      "text": "Blanch the bean sprouts 3 minutes, drain and toss with a little sesame oil and salt.",
-      "timer": {
-        "label": "Bean sprouts",
-        "min": 3,
-        "sec": 0
-      }
-    },
-    {
-      "text": "Heat 1/2 tbsp neutral oil over medium-high. Saute the carrot 2 min until just tender; remove. Repeat with the courgette, then the mushrooms (golden, 3-4 min). Keep the veg in separate piles.",
-      "timer": {
-        "label": "Veg saute",
-        "min": 4,
-        "sec": 0
-      }
-    },
-    {
-      "text": "Turn the heat high, add the remaining 1/2 tbsp oil and sear the marinated beef in a single layer until caramelised, 3-4 min (do it in 2 batches so it sears rather than steams). Remove.",
-      "timer": {
-        "label": "Sear beef",
-        "min": 4,
-        "sec": 0
-      }
-    },
-    {
-      "text": "Assemble each bowl: warm rice base, the beef and each vegetable arranged in sections around the edge. Top with sesame seeds and scallion; serve the gochujang sauce alongside to mix in at the table.",
-      "timer": null
-    }
+  name: "Black Bean & Avocado Wraps",
+  servings: "4",
+  prep_time: "10",
+  cook_time: "10",
+  steps: [
+    { text: "Heat the oil in a large pan over medium-high. Add the onion and peppers; cook until softened and lightly golden.", timer: { label: "Soften vegetables", min: 5, sec: 0 } },
+    { text: "Add the rinsed black beans and reduced-salt taco seasoning. Cook until hot, mashing a few beans so the filling holds together.", timer: { label: "Bean filling", min: 5, sec: 0 } },
+    { text: "For dinner, mash 1 avocado with the juice of 1 lime. Leave the second avocado and lime whole for tomorrow so the lunch filling stays fresh.", timer: null },
+    { text: "Stir the Greek yogurt and chipotle hot sauce together. Warm 6 tortillas for dinner; keep the other 6 sealed for Wednesday lunch.", timer: { label: "Warm tortillas", min: 1, sec: 0 } },
+    { text: "Build three wraps per person with beans, peppers, avocado and yogurt sauce. Pack the remaining bean filling, yogurt sauce and tortillas separately; add the fresh avocado and lime tomorrow.", timer: null }
   ],
-  "ingredients": [
-    {
-      "stage": "Prep",
-      "hint": "Mise en place — marinade, sauce, rice on",
-      "items": [
-        {
-          "amount": "180g",
-          "name": "short-grain rice (sushi/Korean)"
-        },
-        {
-          "amount": "350g",
-          "name": "Tesco Irish beef stir-fry strips, raw (teriyaki sauce sachet discarded)"
-        },
-        {
-          "amount": "1.5 tbsp",
-          "name": "reduced-salt soy sauce (Lee Kum Kee)"
-        },
-        {
-          "amount": "1.5 tbsp",
-          "name": "toasted sesame oil (marinade + veg + sauce)"
-        },
-        {
-          "amount": "2 cloves",
-          "name": "garlic, finely grated"
-        },
-        {
-          "amount": "1 tbsp",
-          "name": "light brown sugar"
-        },
-        {
-          "amount": "1.5 tbsp",
-          "name": "gochujang"
-        },
-        {
-          "amount": "1/2 tbsp",
-          "name": "rice vinegar"
-        }
-      ]
-    },
-    {
-      "stage": "Cook",
-      "hint": "Blanch, saute, sear",
-      "items": [
-        {
-          "amount": "100g",
-          "name": "bean sprouts"
-        },
-        {
-          "amount": "1",
-          "name": "carrot, julienned"
-        },
-        {
-          "amount": "1/2",
-          "name": "courgette, julienned"
-        },
-        {
-          "amount": "75g",
-          "name": "shiitake or chestnut mushrooms, sliced"
-        },
-        {
-          "amount": "1 tbsp",
-          "name": "rapeseed / neutral oil"
-        },
-        {
-          "amount": "to taste",
-          "name": "fine sea salt"
-        }
-      ]
-    },
-    {
-      "stage": "Finish",
-      "hint": "Assemble & garnish",
-      "items": [
-        {
-          "amount": "1/2 tbsp",
-          "name": "toasted sesame seeds"
-        },
-        {
-          "amount": "1",
-          "name": "scallion, thinly sliced"
-        }
-      ]
-    }
+  ingredients: [
+    { stage: "Prep", hint: "Save one avocado and lime whole for Wednesday lunch", items: [
+      { amount: "2 × 400g tins", name: "black beans, drained and rinsed (480g drained)" },
+      { amount: "1", name: "onion, chopped" },
+      { amount: "2", name: "bell peppers, chopped" },
+      { amount: "2", name: "avocados" },
+      { amount: "2", name: "limes" },
+      { amount: "600g", name: "low-fat Greek yogurt" },
+      { amount: "2 tbsp", name: "chipotle hot sauce" }
+    ]},
+    { stage: "Cook", items: [
+      { amount: "2 tbsp", name: "olive or rapeseed oil" },
+      { amount: "2 tbsp", name: "reduced-salt taco seasoning" }
+    ]},
+    { stage: "Finish", hint: "Choose the lowest-salt wholemeal tortillas available", items: [
+      { amount: "12", name: "medium wholemeal tortillas" },
+      { amount: "2 boxes", name: "deconstructed lunch portions for Wednesday" }
+    ]}
   ],
-  "nutrition": {
-    "calories": 790,
-    "protein": 50,
-    "carbs": 92,
-    "fat": 26,
-    "satfat": 5,
-    "salt": 2.2
+  nutrition: {
+    calories: 800, protein: 36, carbs: 105, fat: 25, satfat: 6.0, salt: 2.4
   }
 };
 

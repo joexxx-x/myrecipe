@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Baked Spiced Mediterranean Chicken — Cook Mode</title>
+<title>Ras el Hanout Chickpea &amp; Spinach Stew — Cook Mode</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
@@ -257,11 +257,11 @@
 
 <header class="ck-header">
   <div>
-    <h1 class="ck-title">Baked Spiced Mediterranean Chicken</h1>
+    <h1 class="ck-title">Ras el Hanout Chickpea &amp; Spinach Stew</h1>
     <div class="ck-meta">
       <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M5 21V8a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v13"/><path d="M3 21h18"/><path d="M9 8h6"/></svg><b>4</b> servings</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>15</b>m prep</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>40</b>m cook</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>5</b>m prep</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>25</b>m cook</span>
     </div>
   </div>
   <div class="wake-dot" id="wakeDot" title="Screen stays on while cooking"></div>
@@ -313,143 +313,39 @@
 // Also replace the {{...}} header placeholders above.
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 const RECIPE = {
-  "name": "Baked Spiced Mediterranean Chicken",
-  "servings": "4",
-  "prep_time": "15",
-  "cook_time": "40",
-  "steps": [
-    {
-      "text": "Heat the oven to 220C fan (425F). Start the rice (300g basmati to ~600ml water) so it's ready when the chicken comes out.",
-      "timer": {
-        "label": "Rice",
-        "min": 12,
-        "sec": 0
-      }
-    },
-    {
-      "text": "Make the rub: stir together the olive oil, tomato puree, lemon juice, minced garlic, oregano, smoked paprika, cumin, black pepper and 1/4-1/2 tsp salt.",
-      "timer": null
-    },
-    {
-      "text": "Pat the chicken thighs dry and coat thoroughly in the rub.",
-      "timer": null
-    },
-    {
-      "text": "Scatter the sliced onions over a large roasting dish, lay the chicken on top, tuck the cherry tomatoes around, and pour a splash of water into the corners.",
-      "timer": null
-    },
-    {
-      "text": "Roast until cooked through (75C / 165F internal), 35-40 minutes.",
-      "timer": {
-        "label": "Roast",
-        "min": 40,
-        "sec": 0
-      }
-    },
-    {
-      "text": "For the last 12 minutes, toss the green beans/broccoli in 1 tbsp olive oil on a second tray and roast alongside (or steam on the hob).",
-      "timer": {
-        "label": "Green veg",
-        "min": 12,
-        "sec": 0
-      }
-    },
-    {
-      "text": "Rest the chicken 5 minutes, scatter with parsley. Serve over rice with the green veg. Pack two portions for tomorrow's office lunch.",
-      "timer": null
-    }
+  name: "Ras el Hanout Chickpea & Spinach Stew",
+  servings: "4",
+  prep_time: "5",
+  cook_time: "25",
+  steps: [
+    { text: "Start the rice so it is ready with the stew. Drain and thoroughly rinse the chickpeas, mince the garlic and measure the spices.", timer: { label: "Rice", min: 15, sec: 0 } },
+    { text: "Heat 2 tbsp olive oil in a large pot over medium. Add the garlic and ras el hanout; stir until fragrant. Add the tomato purée and cook until slightly darkened.", timer: { label: "Toast aromatics", min: 3, sec: 0 } },
+    { text: "Add 240ml water and the reduced-salt soy. Bring to a boil, reduce to medium-low, cover and let the flavours meld.", timer: { label: "Simmer sauce", min: 10, sec: 0 } },
+    { text: "Add the chickpeas and simmer until hot and tender. Stir in the spinach for the final 3 minutes; add a splash of water if the stew becomes too thick.", timer: { label: "Chickpeas and spinach", min: 13, sec: 0 } },
+    { text: "Mix the harissa with the remaining 1 tbsp olive oil. Serve each portion with rice, 150g Greek yogurt and harissa oil. Pack two Tuesday lunches, keeping the yogurt separate.", timer: null }
   ],
-  "ingredients": [
-    {
-      "stage": "Prep",
-      "hint": "Spiced tomato-lemon rub",
-      "items": [
-        {
-          "amount": "800g",
-          "name": "skinless boneless chicken thighs"
-        },
-        {
-          "amount": "3 tbsp",
-          "name": "extra virgin olive oil"
-        },
-        {
-          "amount": "3 tbsp",
-          "name": "tomato puree (no added salt)"
-        },
-        {
-          "amount": "1",
-          "name": "lemon, juiced"
-        },
-        {
-          "amount": "4 cloves",
-          "name": "garlic, minced"
-        },
-        {
-          "amount": "1.5 tsp",
-          "name": "dried oregano"
-        },
-        {
-          "amount": "1 tsp",
-          "name": "smoked paprika"
-        },
-        {
-          "amount": "1 tsp",
-          "name": "ground cumin"
-        },
-        {
-          "amount": "1 tsp",
-          "name": "black pepper"
-        },
-        {
-          "amount": "1/4-1/2 tsp",
-          "name": "fine sea salt"
-        }
-      ]
-    },
-    {
-      "stage": "Cook",
-      "hint": "Into the oven",
-      "items": [
-        {
-          "amount": "2",
-          "name": "onions, halved & sliced"
-        },
-        {
-          "amount": "200g",
-          "name": "cherry tomatoes (or 2 vine tomatoes, wedged)"
-        },
-        {
-          "amount": "300g",
-          "name": "green beans or tenderstem broccoli"
-        },
-        {
-          "amount": "1 tbsp",
-          "name": "olive oil (for the greens)"
-        }
-      ]
-    },
-    {
-      "stage": "Finish",
-      "hint": "Rest & serve",
-      "items": [
-        {
-          "amount": "handful",
-          "name": "fresh parsley, chopped"
-        },
-        {
-          "amount": "300g",
-          "name": "basmati rice — cooked separately (~75g dry/serving, +~260 kcal)"
-        }
-      ]
-    }
+  ingredients: [
+    { stage: "Prep", hint: "Ten ingredients, one pot; rice cooks alongside", items: [
+      { amount: "4 × 400g tins", name: "chickpeas, drained and rinsed (960g drained)" },
+      { amount: "300g", name: "basmati rice, uncooked" },
+      { amount: "200g", name: "spinach leaves" },
+      { amount: "4 cloves", name: "garlic, minced" },
+      { amount: "4 tbsp", name: "tomato purée" },
+      { amount: "1 tbsp", name: "ras el hanout" }
+    ]},
+    { stage: "Cook", hint: "Water replaces salty stock; no added salt needed", items: [
+      { amount: "3 tbsp", name: "extra-virgin olive oil, divided" },
+      { amount: "240ml", name: "water" },
+      { amount: "2 tsp", name: "reduced-salt soy sauce" }
+    ]},
+    { stage: "Finish", items: [
+      { amount: "2 tbsp", name: "harissa paste" },
+      { amount: "600g", name: "low-fat Greek yogurt" },
+      { amount: "2 boxes", name: "lunch portions for Tuesday" }
+    ]}
   ],
-  "nutrition": {
-    "calories": 410,
-    "protein": 40,
-    "carbs": 16,
-    "fat": 22,
-    "satfat": 5,
-    "salt": 0.9
+  nutrition: {
+    calories: 800, protein: 40, carbs: 105, fat: 20, satfat: 4.3, salt: 0.8
   }
 };
 

@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Spinach One-Pot Pasta with Sardines — Cook Mode</title>
+<title>Roasted Fish &amp; Leeks Vinaigrette — Cook Mode</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
@@ -257,11 +257,11 @@
 
 <header class="ck-header">
   <div>
-    <h1 class="ck-title">Spinach One-Pot Pasta with Sardines</h1>
+    <h1 class="ck-title">Roasted Fish &amp; Leeks Vinaigrette</h1>
     <div class="ck-meta">
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M5 21V8a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v13"/><path d="M3 21h18"/><path d="M9 8h6"/></svg><b>4</b> servings</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>5</b>m prep</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>15</b>m cook</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M5 21V8a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v13"/><path d="M3 21h18"/><path d="M9 8h6"/></svg><b>2</b> servings</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>10</b>m prep</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>35</b>m cook</span>
     </div>
   </div>
   <div class="wake-dot" id="wakeDot" title="Screen stays on while cooking"></div>
@@ -313,111 +313,38 @@
 // Also replace the {{...}} header placeholders above.
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 const RECIPE = {
-  "name": "Spinach One-Pot Pasta with Sardines",
-  "servings": "4",
-  "prep_time": "5",
-  "cook_time": "15",
-  "steps": [
-    {
-      "text": "Bring a large pot of salted water to a boil. Cook the pasta until just shy of al dente (~1 min less than the package). Reserve 240ml pasta water.",
-      "timer": {
-        "label": "Pasta",
-        "min": 9,
-        "sec": 0
-      }
-    },
-    {
-      "text": "Put the spinach in a large colander in the sink. Drain the pasta over the spinach, drizzle with a little olive oil and stir to stop it sticking.",
-      "timer": null
-    },
-    {
-      "text": "Wipe out the pot, set over medium-high heat and add 2 tbsp olive oil and the anchovies (careful — it may splatter). Stir ~30 sec until they start to dissolve.",
-      "timer": null
-    },
-    {
-      "text": "Break the drained sardines into large chunks and add; toss gently 30 sec to warm through.",
-      "timer": null
-    },
-    {
-      "text": "Return the pasta and spinach. Add the Parmesan and red pepper flakes and stir until glossy and the spinach wilts, 1-2 min; loosen with pasta water if dry.",
-      "timer": {
-        "label": "Toss",
-        "min": 2,
-        "sec": 0
-      }
-    },
-    {
-      "text": "Squeeze over the lemon. Taste and adjust salt/lemon. Serve with extra Parmesan and pack two portions for tomorrow's office lunch.",
-      "timer": null
-    }
+  name: "Roasted Fish & Leeks Vinaigrette",
+  servings: "2",
+  prep_time: "10",
+  cook_time: "35",
+  steps: [
+    { text: "Heat the oven to 200°C. Put the baby potatoes in unsalted water, bring to a boil and simmer until tender.", timer: { label: "Boil potatoes", min: 20, sec: 0 } },
+    { text: "Swish the sliced leeks in cold water to release any grit, lift out, drain and pat dry. Rinse the capers to shed excess salt.", timer: null },
+    { text: "Toss the leeks and capers on a sheet pan with 30ml olive oil and black pepper. Roast, tossing halfway, until tender and crisping at the edges.", timer: { label: "Roast leeks", min: 15, sec: 0 } },
+    { text: "Pat the cod dry. Move the leeks aside, add the fish, drizzle with 5ml olive oil and season with pepper. Roast until opaque and flaking easily.", timer: { label: "Roast cod", min: 12, sec: 0 } },
+    { text: "Whisk the remaining 10ml olive oil with the shallot, red wine vinegar, parsley and mustard. Taste before adding any salt — the cod and capers already bring some.", timer: null },
+    { text: "Drain the potatoes. Plate the cod, leeks and potatoes, then spoon over the vinaigrette while everything is warm.", timer: null }
   ],
-  "ingredients": [
-    {
-      "stage": "Prep",
-      "hint": "Boil & drain over the spinach",
-      "items": [
-        {
-          "amount": "340g",
-          "name": "short pasta (orecchiette or fusilli)"
-        },
-        {
-          "amount": "400g",
-          "name": "spinach"
-        },
-        {
-          "amount": "for the water",
-          "name": "salt"
-        }
-      ]
-    },
-    {
-      "stage": "Cook",
-      "hint": "Build the sauce in the pot",
-      "items": [
-        {
-          "amount": "3 tbsp",
-          "name": "olive oil"
-        },
-        {
-          "amount": "20g",
-          "name": "oil-packed anchovies"
-        },
-        {
-          "amount": "2 cans",
-          "name": "John West sardines in olive oil (180g drained)"
-        },
-        {
-          "amount": "60g",
-          "name": "Parmesan, grated"
-        },
-        {
-          "amount": "1/2 tsp",
-          "name": "red pepper flakes"
-        }
-      ]
-    },
-    {
-      "stage": "Finish",
-      "hint": "Brighten & serve",
-      "items": [
-        {
-          "amount": "1",
-          "name": "lemon"
-        },
-        {
-          "amount": "to serve",
-          "name": "extra Parmesan"
-        }
-      ]
-    }
+  ingredients: [
+    { stage: "Prep", hint: "Fresh fish first; rinse the capers to keep salt in check", items: [
+      { amount: "360g", name: "skinless cod fillets (1 Tesco pack)" },
+      { amount: "500g", name: "baby potatoes" },
+      { amount: "2 small", name: "leeks, white and light-green parts, thinly sliced" },
+      { amount: "1 tbsp", name: "capers, drained and rinsed" }
+    ]},
+    { stage: "Cook", items: [
+      { amount: "45ml", name: "extra-virgin olive oil, divided" },
+      { amount: "to taste", name: "black pepper; salt only if needed" }
+    ]},
+    { stage: "Finish", hint: "The sharp mustard vinaigrette balances the sweet leeks", items: [
+      { amount: "1/2", name: "small shallot, minced" },
+      { amount: "1.5 tsp", name: "red wine vinegar" },
+      { amount: "1 tbsp", name: "fresh parsley, minced" },
+      { amount: "1/2 tsp", name: "whole-grain mustard" }
+    ]}
   ],
-  "nutrition": {
-    "calories": 600,
-    "protein": 36,
-    "carbs": 71,
-    "fat": 19,
-    "satfat": 5,
-    "salt": 1.6
+  nutrition: {
+    calories: 620, protein: 42, carbs: 60, fat: 22, satfat: 3.2, salt: 0.9
   }
 };
 
