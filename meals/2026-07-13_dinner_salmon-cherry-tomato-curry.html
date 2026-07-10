@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Ras el Hanout Chickpea &amp; Spinach Stew — Cook Mode</title>
+<title>Light Salmon &amp; Cherry Tomato Curry — Cook Mode</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
@@ -257,7 +257,7 @@
 
 <header class="ck-header">
   <div>
-    <h1 class="ck-title">Ras el Hanout Chickpea &amp; Spinach Stew</h1>
+    <h1 class="ck-title">Light Salmon &amp; Cherry Tomato Curry</h1>
     <div class="ck-meta">
       <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M5 21V8a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v13"/><path d="M3 21h18"/><path d="M9 8h6"/></svg><b>4</b> servings</span>
       <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>5</b>m prep</span>
@@ -313,39 +313,125 @@
 // Also replace the {{...}} header placeholders above.
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 const RECIPE = {
-  name: "Ras el Hanout Chickpea & Spinach Stew",
-  servings: "4",
-  prep_time: "5",
-  cook_time: "25",
-  steps: [
-    { text: "Start the rice so it is ready with the stew. Drain and thoroughly rinse the chickpeas, mince the garlic and measure the spices.", timer: { label: "Rice", min: 15, sec: 0 } },
-    { text: "Heat 2 tbsp olive oil in a large pot over medium. Add the garlic and ras el hanout; stir until fragrant. Add the tomato purée and cook until slightly darkened.", timer: { label: "Toast aromatics", min: 3, sec: 0 } },
-    { text: "Add 240ml water and the reduced-salt soy. Bring to a boil, reduce to medium-low, cover and let the flavours meld.", timer: { label: "Simmer sauce", min: 10, sec: 0 } },
-    { text: "Add the chickpeas and simmer until hot and tender. Stir in the spinach for the final 3 minutes; add a splash of water if the stew becomes too thick.", timer: { label: "Chickpeas and spinach", min: 13, sec: 0 } },
-    { text: "Mix the harissa with the remaining 1 tbsp olive oil. Serve each portion with rice, 150g Greek yogurt and harissa oil. Pack two Tuesday lunches, keeping the yogurt separate.", timer: null }
+  "name": "Light Salmon & Cherry Tomato Curry",
+  "servings": "4",
+  "prep_time": "5",
+  "cook_time": "25",
+  "steps": [
+    {
+      "text": "Start the rice so it is ready with the curry. Pat the salmon dry; season with black pepper and half of the measured salt.",
+      "timer": {
+        "label": "Rice",
+        "min": 15,
+        "sec": 0
+      }
+    },
+    {
+      "text": "Heat the olive oil in a large lidded skillet over medium. Add garlic, ginger and chilli; cook until golden and fragrant. Add the cumin seeds and toast for 15 seconds.",
+      "timer": {
+        "label": "Aromatics",
+        "min": 3,
+        "sec": 0
+      }
+    },
+    {
+      "text": "Stir in the cherry tomatoes, ground coriander and turmeric. Add 200ml light coconut milk, 200ml water and the remaining salt; simmer uncovered until the tomatoes burst and the sauce reduces slightly.",
+      "timer": {
+        "label": "Simmer",
+        "min": 8,
+        "sec": 0
+      }
+    },
+    {
+      "text": "Stir in the spinach until just wilted. Nestle the salmon into the curry, cover and simmer over medium-low until just cooked through; check early so it stays tender.",
+      "timer": {
+        "label": "Salmon",
+        "min": 6,
+        "sec": 0
+      }
+    },
+    {
+      "text": "Serve over rice and garnish with the torn herbs. Pack two portions for Tuesday lunch; cool promptly and refrigerate.",
+      "timer": null
+    }
   ],
-  ingredients: [
-    { stage: "Prep", hint: "Ten ingredients, one pot; rice cooks alongside", items: [
-      { amount: "4 × 400g tins", name: "chickpeas, drained and rinsed (960g drained)" },
-      { amount: "300g", name: "basmati rice, uncooked" },
-      { amount: "200g", name: "spinach leaves" },
-      { amount: "4 cloves", name: "garlic, minced" },
-      { amount: "4 tbsp", name: "tomato purée" },
-      { amount: "1 tbsp", name: "ras el hanout" }
-    ]},
-    { stage: "Cook", hint: "Water replaces salty stock; no added salt needed", items: [
-      { amount: "3 tbsp", name: "extra-virgin olive oil, divided" },
-      { amount: "240ml", name: "water" },
-      { amount: "2 tsp", name: "reduced-salt soy sauce" }
-    ]},
-    { stage: "Finish", items: [
-      { amount: "2 tbsp", name: "harissa paste" },
-      { amount: "600g", name: "low-fat Greek yogurt" },
-      { amount: "2 boxes", name: "lunch portions for Tuesday" }
-    ]}
+  "ingredients": [
+    {
+      "stage": "Prep",
+      "hint": "Mise en place — before the pan is hot",
+      "items": [
+        {
+          "amount": "680g",
+          "name": "salmon fillets (1 × 440g pack + 1 × 240g pack)"
+        },
+        {
+          "amount": "300g",
+          "name": "basmati rice, uncooked"
+        },
+        {
+          "amount": "3 cloves",
+          "name": "garlic, minced"
+        },
+        {
+          "amount": "1 tbsp",
+          "name": "fresh ginger, minced"
+        },
+        {
+          "amount": "1",
+          "name": "bird's-eye chilli, sliced"
+        },
+        {
+          "amount": "450g",
+          "name": "cherry tomatoes"
+        },
+        {
+          "amount": "—",
+          "name": "spices: 1/2 tsp cumin seeds, 1/2 tsp ground coriander, 1/2 tsp turmeric"
+        }
+      ]
+    },
+    {
+      "stage": "Cook",
+      "items": [
+        {
+          "amount": "1 tbsp",
+          "name": "extra-virgin olive oil (in place of ghee — heart-smart)"
+        },
+        {
+          "amount": "200ml + 200ml",
+          "name": "light coconut milk + water (freeze the remaining coconut milk)"
+        },
+        {
+          "amount": "180g",
+          "name": "spinach (2 packs Tesco Spinach 90g)"
+        },
+        {
+          "amount": "1/4 tsp + to taste",
+          "name": "fine sea salt + black pepper"
+        }
+      ]
+    },
+    {
+      "stage": "Finish",
+      "items": [
+        {
+          "amount": "10g",
+          "name": "fresh mint, basil or coriander, torn"
+        },
+        {
+          "amount": "2 boxes",
+          "name": "lunch portions for Tuesday"
+        }
+      ]
+    }
   ],
-  nutrition: {
-    calories: 800, protein: 40, carbs: 105, fat: 20, satfat: 4.3, salt: 0.8
+  "nutrition": {
+    "calories": 800,
+    "protein": 45,
+    "carbs": 68,
+    "fat": 38,
+    "satfat": 8,
+    "salt": 0.7
   }
 };
 

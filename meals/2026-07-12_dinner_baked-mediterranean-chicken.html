@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Three-Cup Chicken with Broccoli — Cook Mode</title>
+<title>Baked Spiced Mediterranean Chicken — Cook Mode</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
@@ -257,11 +257,11 @@
 
 <header class="ck-header">
   <div>
-    <h1 class="ck-title">Three-Cup Chicken with Broccoli</h1>
+    <h1 class="ck-title">Baked Spiced Mediterranean Chicken</h1>
     <div class="ck-meta">
       <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M5 21V8a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v13"/><path d="M3 21h18"/><path d="M9 8h6"/></svg><b>4</b> servings</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>10</b>m prep</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>25</b>m cook</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>15</b>m prep</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>40</b>m cook</span>
     </div>
   </div>
   <div class="wake-dot" id="wakeDot" title="Screen stays on while cooking"></div>
@@ -313,41 +313,143 @@
 // Also replace the {{...}} header placeholders above.
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 const RECIPE = {
-  name: "Three-Cup Chicken with Broccoli",
-  servings: "4",
-  prep_time: "10",
-  cook_time: "25",
-  steps: [
-    { text: "Rinse the rice and start it in the rice cooker or on the hob. Cut the chicken into bite-size pieces and prep the aromatics while it cooks.", timer: { label: "Rice", min: 15, sec: 0 } },
-    { text: "Steam or blanch the broccoli until bright green and just tender, then set aside to fold through at the end.", timer: { label: "Broccoli", min: 4, sec: 0 } },
-    { text: "Heat a wok over high heat with 1 tbsp sesame oil. Add ginger, garlic, scallions and dried chillies; stir-fry until fragrant and lightly coloured.", timer: { label: "Aromatics", min: 2, sec: 0 } },
-    { text: "Push the aromatics aside, add the remaining sesame oil and spread the chicken in a single layer. Sear, stirring occasionally, until browned at the edges.", timer: { label: "Sear chicken", min: 7, sec: 0 } },
-    { text: "Sprinkle in the sugar. Add the rice wine and reduced-salt soy, bring to a boil, then simmer uncovered until glossy, reduced and the chicken is cooked through.", timer: { label: "Reduce glaze", min: 15, sec: 0 } },
-    { text: "Fold through the broccoli and Thai basil until the basil wilts. Serve over rice and pack two portions for Monday lunch.", timer: null }
+  "name": "Baked Spiced Mediterranean Chicken",
+  "servings": "4",
+  "prep_time": "15",
+  "cook_time": "40",
+  "steps": [
+    {
+      "text": "Heat the oven to 220C fan (425F). Start the rice (300g basmati to ~600ml water) so it's ready when the chicken comes out.",
+      "timer": {
+        "label": "Rice",
+        "min": 12,
+        "sec": 0
+      }
+    },
+    {
+      "text": "Make the rub: stir together the olive oil, tomato puree, lemon juice, minced garlic, oregano, smoked paprika, cumin, black pepper and 1/4 tsp salt.",
+      "timer": null
+    },
+    {
+      "text": "Pat the chicken thighs dry and coat thoroughly in the rub.",
+      "timer": null
+    },
+    {
+      "text": "Scatter the sliced onions over a large roasting dish, lay the chicken on top, tuck the cherry tomatoes around, and pour a splash of water into the corners.",
+      "timer": null
+    },
+    {
+      "text": "Roast until cooked through (75C / 165F internal), 35-40 minutes.",
+      "timer": {
+        "label": "Roast",
+        "min": 40,
+        "sec": 0
+      }
+    },
+    {
+      "text": "For the last 12 minutes, toss the green beans/broccoli in 1 tbsp olive oil on a second tray and roast alongside (or steam on the hob).",
+      "timer": {
+        "label": "Green veg",
+        "min": 12,
+        "sec": 0
+      }
+    },
+    {
+      "text": "Rest the chicken 5 minutes, scatter with parsley. Serve over rice with the green veg. Pack two portions for tomorrow's office lunch.",
+      "timer": null
+    }
   ],
-  ingredients: [
-    { stage: "Prep", hint: "Sunday batch: dinner for two plus Monday lunches", items: [
-      { amount: "800g", name: "boneless skinless chicken thighs, bite-size" },
-      { amount: "300g", name: "jasmine or sushi rice, uncooked" },
-      { amount: "400g", name: "broccoli, cut into florets" },
-      { amount: "30g", name: "fresh ginger, sliced into coins" },
-      { amount: "12 cloves", name: "garlic, peeled" },
-      { amount: "4", name: "scallions, cut into 2.5cm pieces" },
-      { amount: "3", name: "dried red chillies" }
-    ]},
-    { stage: "Cook", items: [
-      { amount: "2 tbsp", name: "toasted sesame oil, divided" },
-      { amount: "1 tbsp", name: "light brown sugar" },
-      { amount: "120ml", name: "Shaoxing rice wine" },
-      { amount: "40ml", name: "reduced-salt soy sauce" }
-    ]},
-    { stage: "Finish", items: [
-      { amount: "40g", name: "fresh Thai basil leaves" },
-      { amount: "2 boxes", name: "lunch portions for Monday" }
-    ]}
+  "ingredients": [
+    {
+      "stage": "Prep",
+      "hint": "Spiced tomato-lemon rub",
+      "items": [
+        {
+          "amount": "800g",
+          "name": "skinless boneless chicken thighs"
+        },
+        {
+          "amount": "3 tbsp",
+          "name": "extra virgin olive oil"
+        },
+        {
+          "amount": "3 tbsp",
+          "name": "tomato puree (no added salt)"
+        },
+        {
+          "amount": "1",
+          "name": "lemon, juiced"
+        },
+        {
+          "amount": "4 cloves",
+          "name": "garlic, minced"
+        },
+        {
+          "amount": "1.5 tsp",
+          "name": "dried oregano"
+        },
+        {
+          "amount": "1 tsp",
+          "name": "smoked paprika"
+        },
+        {
+          "amount": "1 tsp",
+          "name": "ground cumin"
+        },
+        {
+          "amount": "1 tsp",
+          "name": "black pepper"
+        },
+        {
+          "amount": "1/4 tsp",
+          "name": "fine sea salt"
+        }
+      ]
+    },
+    {
+      "stage": "Cook",
+      "hint": "Into the oven",
+      "items": [
+        {
+          "amount": "2",
+          "name": "onions, halved & sliced"
+        },
+        {
+          "amount": "200g",
+          "name": "cherry tomatoes (or 2 vine tomatoes, wedged)"
+        },
+        {
+          "amount": "300g",
+          "name": "green beans or tenderstem broccoli"
+        },
+        {
+          "amount": "1 tbsp",
+          "name": "olive oil (for the greens)"
+        }
+      ]
+    },
+    {
+      "stage": "Finish",
+      "hint": "Rest & serve",
+      "items": [
+        {
+          "amount": "handful",
+          "name": "fresh parsley, chopped"
+        },
+        {
+          "amount": "300g",
+          "name": "basmati rice — cooked separately (~75g dry/serving, +~260 kcal)"
+        }
+      ]
+    }
   ],
-  nutrition: {
-    calories: 695, protein: 48, carbs: 74, fat: 21, satfat: 5.0, salt: 1.5
+  "nutrition": {
+    "calories": 670,
+    "protein": 46,
+    "carbs": 73,
+    "fat": 23,
+    "satfat": 5.2,
+    "salt": 0.8
   }
 };
 
