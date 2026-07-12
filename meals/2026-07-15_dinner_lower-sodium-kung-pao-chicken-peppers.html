@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Ras el Hanout Chickpea & Spinach Stew — Cook Mode</title>
+<title>Lower-Sodium Kung Pao Chicken & Peppers — Cook Mode</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
@@ -257,11 +257,11 @@
 
 <header class="ck-header">
   <div>
-    <h1 class="ck-title">Ras el Hanout Chickpea & Spinach Stew</h1>
+    <h1 class="ck-title">Lower-Sodium Kung Pao Chicken & Peppers</h1>
     <div class="ck-meta">
       <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M5 21V8a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v13"/><path d="M3 21h18"/><path d="M9 8h6"/></svg><b>4</b> servings</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>10</b>m prep</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>25</b>m cook</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>15</b>m prep</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>15</b>m cook</span>
     </div>
   </div>
   <div class="wake-dot" id="wakeDot" title="Screen stays on while cooking"></div>
@@ -313,13 +313,13 @@
 // Also replace the {{...}} header placeholders above.
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 const RECIPE = {
-  "name": "Ras el Hanout Chickpea & Spinach Stew",
+  "name": "Lower-Sodium Kung Pao Chicken & Peppers",
   "servings": "4",
-  "prep_time": "10",
-  "cook_time": "25",
+  "prep_time": "15",
+  "cook_time": "15",
   "steps": [
     {
-      "text": "Rinse the brown rice, add it to a pan of boiling water and simmer until tender. Drain well when ready.",
+      "text": "Rinse the brown rice and cook according to the packet instructions. Drain well when tender.",
       "timer": {
         "label": "Brown rice",
         "min": 25,
@@ -327,70 +327,106 @@ const RECIPE = {
       }
     },
     {
-      "text": "Heat 2 tbsp olive oil in a large pot over medium. Add the garlic and ras el hanout; stir until fragrant. Add the tomato paste and cook, stirring, until it darkens slightly.",
+      "text": "Cut the chicken into 2cm pieces. Toss with 1 tsp reduced-salt soy sauce and 1 tbsp cornstarch; marinate while you prep the vegetables.",
       "timer": {
-        "label": "Toast aromatics",
+        "label": "Marinate",
+        "min": 10,
+        "sec": 0
+      }
+    },
+    {
+      "text": "Whisk the sauce: remaining reduced-salt soy sauce, Chinkiang vinegar, brown sugar, remaining cornstarch, sesame oil and 4 tbsp water.",
+      "timer": null
+    },
+    {
+      "text": "Heat the rapeseed oil in a wok over high heat. Add the dried chillies and Sichuan peppercorns; stir until fragrant, about 30 seconds.",
+      "timer": null
+    },
+    {
+      "text": "Add the chicken in a single layer. Sear without moving, then stir-fry until nearly cooked through.",
+      "timer": {
+        "label": "Sear chicken",
+        "min": 5,
+        "sec": 0
+      }
+    },
+    {
+      "text": "Add the bell peppers and spring-onion whites; stir-fry until crisp-tender. Add the garlic and ginger for the final 30 seconds.",
+      "timer": {
+        "label": "Stir-fry vegetables",
         "min": 3,
         "sec": 0
       }
     },
     {
-      "text": "Add 240ml water and the reduced-salt soy sauce. Bring to a boil, reduce to medium-low, cover and cook until the sauce darkens and the flavours meld.",
+      "text": "Pour in the sauce and toss until glossy and the chicken is fully cooked. Fold through the peanuts and spring-onion greens.",
       "timer": {
-        "label": "Build sauce",
-        "min": 10,
+        "label": "Glaze",
+        "min": 2,
         "sec": 0
       }
     },
     {
-      "text": "Add the rinsed chickpeas and simmer until hot and tender. Fold in the spinach and cook just until wilted; loosen with a splash of water if needed.",
-      "timer": {
-        "label": "Chickpeas",
-        "min": 10,
-        "sec": 0
-      }
-    },
-    {
-      "text": "Mix the remaining 2 tbsp olive oil with the harissa paste in a small bowl.",
-      "timer": null
-    },
-    {
-      "text": "Spoon the stew over brown rice. Finish with Greek yogurt and harissa oil. Pack two portions for Thursday lunch.",
+      "text": "Serve over brown rice. Pack two portions for Thursday lunch.",
       "timer": null
     }
   ],
   "ingredients": [
     {
       "stage": "Prep",
-      "hint": "Rice on; rinse the chickpeas to keep salt low",
+      "hint": "Rice on; everything ready before the wok gets hot",
       "items": [
         {
-          "amount": "240g",
+          "amount": "300g",
           "name": "brown rice, uncooked"
         },
         {
-          "amount": "5 × 400g tins",
-          "name": "chickpeas, drained and rinsed (1.2kg drained)"
+          "amount": "600g",
+          "name": "skinless boneless chicken thighs, cut into 2cm pieces"
         },
         {
-          "amount": "150g",
-          "name": "spinach leaves"
+          "amount": "2",
+          "name": "bell peppers, diced"
         },
         {
-          "amount": "4 cloves",
+          "amount": "6",
+          "name": "spring onions, whites and greens separated"
+        },
+        {
+          "amount": "6 cloves",
           "name": "garlic, minced"
         },
         {
-          "amount": "3 tbsp",
-          "name": "tomato paste"
+          "amount": "2 tbsp",
+          "name": "fresh ginger, minced"
         },
         {
-          "amount": "3 tsp",
-          "name": "ras el hanout"
+          "amount": "12",
+          "name": "dried red chillies"
         },
         {
           "amount": "2 tsp",
-          "name": "reduced-salt soy sauce"
+          "name": "Sichuan peppercorns"
+        },
+        {
+          "amount": "2 tbsp",
+          "name": "reduced-salt soy sauce, divided"
+        },
+        {
+          "amount": "4 tsp",
+          "name": "Chinkiang vinegar"
+        },
+        {
+          "amount": "2 tsp",
+          "name": "brown sugar"
+        },
+        {
+          "amount": "2 tbsp",
+          "name": "cornstarch, divided"
+        },
+        {
+          "amount": "2 tsp",
+          "name": "toasted sesame oil"
         }
       ]
     },
@@ -398,26 +434,22 @@ const RECIPE = {
       "stage": "Cook",
       "items": [
         {
-          "amount": "4 tbsp",
-          "name": "extra-virgin olive oil, divided"
+          "amount": "1½ tbsp",
+          "name": "rapeseed oil"
         },
         {
-          "amount": "240ml",
-          "name": "water"
+          "amount": "4 tbsp",
+          "name": "water for the sauce"
         }
       ]
     },
     {
       "stage": "Finish",
-      "hint": "Creamy, spicy finish without extra salt",
+      "hint": "No added salt — the reduced-salt soy carries the seasoning",
       "items": [
         {
-          "amount": "2 tsp",
-          "name": "harissa paste"
-        },
-        {
-          "amount": "300g",
-          "name": "0% or low-fat Greek yogurt"
+          "amount": "80g",
+          "name": "unsalted roasted peanuts"
         },
         {
           "amount": "2",
@@ -427,12 +459,12 @@ const RECIPE = {
     }
   ],
   "nutrition": {
-    "calories": 830,
-    "protein": 39,
-    "carbs": 104,
-    "fat": 24,
-    "satfat": 3.6,
-    "salt": 0.5
+    "calories": 765,
+    "protein": 43,
+    "carbs": 84,
+    "fat": 29,
+    "satfat": 5.7,
+    "salt": 1.2
   }
 };
 
