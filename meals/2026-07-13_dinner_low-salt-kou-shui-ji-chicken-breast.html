@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Steamed Ginger-Scallion Chicken Breast — Cook Mode</title>
+<title>Low-Salt Kou Shui Ji Chicken Breast (口水鸡) — Cook Mode</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
@@ -257,11 +257,11 @@
 
 <header class="ck-header">
   <div>
-    <h1 class="ck-title">Steamed Ginger-Scallion Chicken Breast</h1>
+    <h1 class="ck-title">Low-Salt Kou Shui Ji Chicken Breast (口水鸡)</h1>
     <div class="ck-meta">
       <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M5 21V8a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v13"/><path d="M3 21h18"/><path d="M9 8h6"/></svg><b>4</b> servings</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>10</b>m prep</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>25</b>m cook</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>15</b>m prep</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>45</b>m cook</span>
     </div>
   </div>
   <div class="wake-dot" id="wakeDot" title="Screen stays on while cooking"></div>
@@ -313,13 +313,13 @@
 // Also replace the {{...}} header placeholders above.
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 const RECIPE = {
-  "name": "Steamed Ginger-Scallion Chicken Breast",
+  "name": "Low-Salt Kou Shui Ji Chicken Breast (口水鸡)",
   "servings": "4",
-  "prep_time": "10",
-  "cook_time": "25",
+  "prep_time": "15",
+  "cook_time": "45",
   "steps": [
     {
-      "text": "Do not wash the raw chicken. Sprinkle the breasts evenly with 1/4 tsp of the measured salt, cover and refrigerate for 40 minutes; this short dry-brine helps the lean meat stay juicy. If time is tight, even 15 minutes helps.",
+      "text": "Before the gym, do not wash the raw chicken. Sprinkle all four breasts evenly with just 1/4 tsp salt, cover and dry-brine in the fridge for 40–90 minutes.",
       "timer": {
         "label": "Dry-brine chicken",
         "min": 40,
@@ -327,7 +327,31 @@ const RECIPE = {
       }
     },
     {
-      "text": "Rinse the brown rice, add it to boiling water, cover and simmer for 22–25 minutes. Drain well when tender.",
+      "text": "Fill the electric steamer as its manual directs. Arrange the whole breasts in one uncrowded layer, set 18 minutes and leave them untouched. At the end, check the thickest part has reached 75°C; if not, steam 2–3 minutes more.",
+      "timer": {
+        "label": "Steam chicken",
+        "min": 18,
+        "sec": 0
+      }
+    },
+    {
+      "text": "Move the cooked chicken straight into the ice bath for 5 minutes. Pat it dry, keep the breasts whole and refrigerate them in a shallow covered container before leaving for the gym. Do not leave them cooling on the counter while you are out.",
+      "timer": {
+        "label": "Ice-bath chicken",
+        "min": 5,
+        "sec": 0
+      }
+    },
+    {
+      "text": "Let the chicken chill during the gym session. Keep it at 0–5°C; cold, firm chicken will slice cleanly and stay juicier than chicken cut before chilling.",
+      "timer": {
+        "label": "Gym / chill chicken",
+        "min": 90,
+        "sec": 0
+      }
+    },
+    {
+      "text": "After the gym, rinse the brown rice, add it to boiling water, cover and simmer for 22–25 minutes. Drain well. Meanwhile, smash or slice the cucumber; if using another green vegetable, steam it until just tender.",
       "timer": {
         "label": "Brown rice",
         "min": 24,
@@ -335,46 +359,30 @@ const RECIPE = {
       }
     },
     {
-      "text": "Set a rack in a lidded wok or deep pot. Add 2–3cm water, keeping it below the rack, and bring to a steady boil. Arrange the chicken in one layer on a shallow heatproof plate and set it on the rack.",
+      "text": "For the low-salt mouthwatering sauce, put most of the spring onions, ginger, garlic, chilli flakes and crushed Sichuan pepper in a heatproof bowl. Heat the rapeseed oil until shimmering and pour it over. Whisk in sesame oil, black vinegar, only 2 tsp reduced-salt soy, tahini, sugar and 2–3 tbsp cooked chicken juices or hot water. Add no more salt.",
       "timer": null
     },
     {
-      "text": "Cover and steam over medium-high heat. Flip the breasts every 3–4 minutes for even cooking. Start checking at 14 minutes; the thickest part must reach 75°C. If needed, continue in 2-minute bursts, topping up the steamer with boiling water only.",
-      "timer": {
-        "label": "Steam chicken",
-        "min": 14,
-        "sec": 0
-      }
-    },
-    {
-      "text": "Transfer the chicken plate out carefully and rest the meat for 5 minutes. Steam the green vegetables until bright and just tender while the chicken rests.",
-      "timer": {
-        "label": "Steam vegetables",
-        "min": 5,
-        "sec": 0
-      }
-    },
-    {
-      "text": "Put the spring onions, ginger and chilli in a heatproof bowl. Heat the rapeseed oil until shimmering, pour it over the aromatics and stir. Mix in the sesame oil, rice vinegar, remaining 1/4 tsp salt and 2 tbsp of the fully cooked chicken juices (or hot water).",
-      "timer": null
-    },
-    {
-      "text": "Slice the chicken across the grain and spoon over the ginger-scallion sauce. Serve with brown rice and vegetables. Pack two lunch portions, cool promptly and refrigerate; reheat once to at least 70°C tomorrow.",
+      "text": "Slice the cold chicken across the grain and arrange it over the cucumber or alongside the green vegetables. Spoon over the sauce; finish with unsalted peanuts and reserved spring onions. Serve with hot brown rice. Pack two lunch portions with sauce and peanuts separate; keep the chicken cold and reheat the rice only, once, until piping hot.",
       "timer": null
     }
   ],
   "ingredients": [
     {
       "stage": "Prep",
-      "hint": "Salt first, then prep while the chicken rests",
+      "hint": "Before the gym — cook, chill and refrigerate",
       "items": [
         {
           "amount": "600g",
           "name": "boneless skinless chicken breasts (about 4 small breasts)"
         },
         {
-          "amount": "1/2 tsp",
-          "name": "fine sea salt, divided"
+          "amount": "1/4 tsp",
+          "name": "fine sea salt — the only added salt outside the soy"
+        },
+        {
+          "amount": "1 bowl",
+          "name": "ice water"
         },
         {
           "amount": "300g",
@@ -382,24 +390,33 @@ const RECIPE = {
         },
         {
           "amount": "400g",
-          "name": "green vegetables you have (broccoli, green beans, pak choi or frozen peas)"
+          "name": "cucumber, smashed or sliced (or any green vegetable you already have)"
         },
         {
           "amount": "4",
           "name": "spring onions, finely sliced"
         },
         {
-          "amount": "40g",
+          "amount": "20g",
           "name": "fresh ginger, finely grated"
         },
         {
-          "amount": "1",
-          "name": "red chilli, finely sliced (or 1/2 tsp chilli flakes)"
+          "amount": "2 cloves",
+          "name": "garlic, finely grated"
+        },
+        {
+          "amount": "1 tsp",
+          "name": "chilli flakes"
+        },
+        {
+          "amount": "1 tsp",
+          "name": "Sichuan peppercorns, toasted and crushed"
         }
       ]
     },
     {
       "stage": "Cook",
+      "hint": "After the gym — make the sauce while the rice cooks",
       "items": [
         {
           "amount": "2 tbsp",
@@ -410,11 +427,23 @@ const RECIPE = {
           "name": "toasted sesame oil"
         },
         {
-          "amount": "1 tbsp",
-          "name": "rice vinegar"
+          "amount": "2 tbsp",
+          "name": "Chinkiang black vinegar"
         },
         {
-          "amount": "2 tbsp",
+          "amount": "2 tsp",
+          "name": "reduced-salt soy sauce — measure, do not free-pour"
+        },
+        {
+          "amount": "1 tbsp",
+          "name": "tahini or Chinese sesame paste"
+        },
+        {
+          "amount": "1 tsp",
+          "name": "sugar"
+        },
+        {
+          "amount": "2–3 tbsp",
           "name": "fully cooked chicken juices or hot water"
         }
       ]
@@ -423,19 +452,23 @@ const RECIPE = {
       "stage": "Finish",
       "items": [
         {
+          "amount": "30g",
+          "name": "roasted unsalted peanuts, roughly chopped"
+        },
+        {
           "amount": "2 boxes",
-          "name": "lunch portions for Tuesday"
+          "name": "lunch portions for Tuesday; sauce and peanuts packed separately"
         }
       ]
     }
   ],
   "nutrition": {
-    "calories": 605,
-    "protein": 48,
-    "carbs": 75,
-    "fat": 13,
-    "satfat": 1.8,
-    "salt": 0.9
+    "calories": 660,
+    "protein": 49,
+    "carbs": 76,
+    "fat": 19,
+    "satfat": 2.7,
+    "salt": 0.8
   }
 };
 
