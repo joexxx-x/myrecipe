@@ -259,9 +259,9 @@
   <div>
     <h1 class="ck-title">Low-Salt Kou Shui Ji Chicken Breast (口水鸡)</h1>
     <div class="ck-meta">
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M5 21V8a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v13"/><path d="M3 21h18"/><path d="M9 8h6"/></svg><b>4</b> servings</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M5 21V8a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v13"/><path d="M3 21h18"/><path d="M9 8h6"/></svg><b>3</b> servings</span>
       <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>15</b>m prep</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>45</b>m cook</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>25</b>m cook</span>
     </div>
   </div>
   <div class="wake-dot" id="wakeDot" title="Screen stays on while cooking"></div>
@@ -314,12 +314,12 @@
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 const RECIPE = {
   "name": "Low-Salt Kou Shui Ji Chicken Breast (口水鸡)",
-  "servings": "4",
+  "servings": "3",
   "prep_time": "15",
-  "cook_time": "45",
+  "cook_time": "25",
   "steps": [
     {
-      "text": "Before the gym, do not wash the raw chicken. Sprinkle all four breasts evenly with just 1/4 tsp salt, cover and dry-brine in the fridge for 40–90 minutes.",
+      "text": "Before the gym, do not wash the raw chicken. Sprinkle the chicken breasts evenly with 1/2 tsp salt, cover and dry-brine in the fridge for 40–90 minutes.",
       "timer": {
         "label": "Dry-brine chicken",
         "min": 40,
@@ -351,19 +351,15 @@ const RECIPE = {
       }
     },
     {
-      "text": "After the gym, rinse the brown rice, add it to boiling water, cover and simmer for 22–25 minutes. Drain well. Meanwhile, smash or slice the cucumber; if using another green vegetable, steam it until just tender.",
-      "timer": {
-        "label": "Brown rice",
-        "min": 24,
-        "sec": 0
-      }
+      "text": "After the gym, smash or slice the cucumber and get the chilled chicken and sauce ingredients ready.",
+      "timer": null
     },
     {
       "text": "For the low-salt mouthwatering sauce, put most of the spring onions, ginger, garlic, chilli flakes and crushed Sichuan pepper in a heatproof bowl. Heat the rapeseed oil until shimmering and pour it over. Whisk in sesame oil, black vinegar, only 2 tsp reduced-salt soy, tahini, sugar and 2–3 tbsp cooked chicken juices or hot water. Add no more salt.",
       "timer": null
     },
     {
-      "text": "Slice the cold chicken across the grain and arrange it over the cucumber or alongside the green vegetables. Spoon over the sauce; finish with unsalted peanuts and reserved spring onions. Serve with hot brown rice. Pack two lunch portions with sauce and peanuts separate; keep the chicken cold and reheat the rice only, once, until piping hot.",
+      "text": "Slice the cold chicken across the grain and arrange it over the cucumber. Spoon over the sauce and finish with the reserved spring onions. Divide evenly into three servings; keep the remaining serving refrigerated in a covered lunch box.",
       "timer": null
     }
   ],
@@ -373,11 +369,11 @@ const RECIPE = {
       "hint": "Before the gym — cook, chill and refrigerate",
       "items": [
         {
-          "amount": "600g",
-          "name": "boneless skinless chicken breasts (about 4 small breasts)"
+          "amount": "910g",
+          "name": "boneless skinless chicken breasts"
         },
         {
-          "amount": "1/4 tsp",
+          "amount": "1/2 tsp",
           "name": "fine sea salt — the only added salt outside the soy"
         },
         {
@@ -385,12 +381,8 @@ const RECIPE = {
           "name": "ice water"
         },
         {
-          "amount": "300g",
-          "name": "brown rice, uncooked"
-        },
-        {
-          "amount": "400g",
-          "name": "cucumber, smashed or sliced (or any green vegetable you already have)"
+          "amount": "200g",
+          "name": "cucumber, smashed or sliced"
         },
         {
           "amount": "4",
@@ -416,7 +408,7 @@ const RECIPE = {
     },
     {
       "stage": "Cook",
-      "hint": "After the gym — make the sauce while the rice cooks",
+      "hint": "After the gym — make the sauce and slice the chilled chicken",
       "items": [
         {
           "amount": "2 tbsp",
@@ -452,23 +444,19 @@ const RECIPE = {
       "stage": "Finish",
       "items": [
         {
-          "amount": "30g",
-          "name": "roasted unsalted peanuts, roughly chopped"
-        },
-        {
-          "amount": "2 boxes",
-          "name": "lunch portions for Tuesday; sauce and peanuts packed separately"
+          "amount": "1 box",
+          "name": "remaining third for a lunch portion"
         }
       ]
     }
   ],
   "nutrition": {
-    "calories": 660,
-    "protein": 49,
-    "carbs": 76,
-    "fat": 19,
-    "satfat": 2.7,
-    "salt": 0.8
+    "calories": 490,
+    "protein": 75,
+    "carbs": 9,
+    "fat": 17,
+    "satfat": 2.3,
+    "salt": 2.0
   }
 };
 
