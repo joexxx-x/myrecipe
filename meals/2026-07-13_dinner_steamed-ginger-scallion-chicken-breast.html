@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Baked Spiced Mediterranean Chicken — Cook Mode</title>
+<title>Steamed Ginger-Scallion Chicken Breast — Cook Mode</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
@@ -257,11 +257,11 @@
 
 <header class="ck-header">
   <div>
-    <h1 class="ck-title">Baked Spiced Mediterranean Chicken</h1>
+    <h1 class="ck-title">Steamed Ginger-Scallion Chicken Breast</h1>
     <div class="ck-meta">
       <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M5 21V8a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v13"/><path d="M3 21h18"/><path d="M9 8h6"/></svg><b>4</b> servings</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>15</b>m prep</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>40</b>m cook</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>10</b>m prep</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>25</b>m cook</span>
     </div>
   </div>
   <div class="wake-dot" id="wakeDot" title="Screen stays on while cooking"></div>
@@ -313,119 +313,129 @@
 // Also replace the {{...}} header placeholders above.
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 const RECIPE = {
-  "name": "Baked Spiced Mediterranean Chicken",
+  "name": "Steamed Ginger-Scallion Chicken Breast",
   "servings": "4",
-  "prep_time": "15",
-  "cook_time": "40",
+  "prep_time": "10",
+  "cook_time": "25",
   "steps": [
     {
-      "text": "Heat the oven to 220C fan (425F).",
-      "timer": null
-    },
-    {
-      "text": "Make the rub: stir together the olive oil, tomato puree, lemon juice, minced garlic, oregano, smoked paprika, cumin, black pepper and 1/4 tsp salt.",
-      "timer": null
-    },
-    {
-      "text": "Pat the chicken thighs dry and coat thoroughly in the rub.",
-      "timer": null
-    },
-    {
-      "text": "Scatter the sliced onions over a large roasting dish, lay the chicken on top, tuck the cherry tomatoes around, and pour a splash of water into the corners.",
-      "timer": null
-    },
-    {
-      "text": "Roast until cooked through (75C / 165F internal), 35-40 minutes.",
+      "text": "Do not wash the raw chicken. Sprinkle the breasts evenly with 1/4 tsp of the measured salt, cover and refrigerate for 40 minutes; this short dry-brine helps the lean meat stay juicy. If time is tight, even 15 minutes helps.",
       "timer": {
-        "label": "Roast",
+        "label": "Dry-brine chicken",
         "min": 40,
         "sec": 0
       }
     },
     {
-      "text": "Rest the chicken 5 minutes, scatter with parsley, and serve. Pack two portions for tomorrow's office lunch.",
+      "text": "Rinse the brown rice, add it to boiling water, cover and simmer for 22–25 minutes. Drain well when tender.",
+      "timer": {
+        "label": "Brown rice",
+        "min": 24,
+        "sec": 0
+      }
+    },
+    {
+      "text": "Set a rack in a lidded wok or deep pot. Add 2–3cm water, keeping it below the rack, and bring to a steady boil. Arrange the chicken in one layer on a shallow heatproof plate and set it on the rack.",
+      "timer": null
+    },
+    {
+      "text": "Cover and steam over medium-high heat. Flip the breasts every 3–4 minutes for even cooking. Start checking at 14 minutes; the thickest part must reach 75°C. If needed, continue in 2-minute bursts, topping up the steamer with boiling water only.",
+      "timer": {
+        "label": "Steam chicken",
+        "min": 14,
+        "sec": 0
+      }
+    },
+    {
+      "text": "Transfer the chicken plate out carefully and rest the meat for 5 minutes. Steam the green vegetables until bright and just tender while the chicken rests.",
+      "timer": {
+        "label": "Steam vegetables",
+        "min": 5,
+        "sec": 0
+      }
+    },
+    {
+      "text": "Put the spring onions, ginger and chilli in a heatproof bowl. Heat the rapeseed oil until shimmering, pour it over the aromatics and stir. Mix in the sesame oil, rice vinegar, remaining 1/4 tsp salt and 2 tbsp of the fully cooked chicken juices (or hot water).",
+      "timer": null
+    },
+    {
+      "text": "Slice the chicken across the grain and spoon over the ginger-scallion sauce. Serve with brown rice and vegetables. Pack two lunch portions, cool promptly and refrigerate; reheat once to at least 70°C tomorrow.",
       "timer": null
     }
   ],
   "ingredients": [
     {
       "stage": "Prep",
-      "hint": "Spiced tomato-lemon rub",
+      "hint": "Salt first, then prep while the chicken rests",
       "items": [
         {
-          "amount": "800g",
-          "name": "skinless boneless chicken thighs"
+          "amount": "600g",
+          "name": "boneless skinless chicken breasts (about 4 small breasts)"
         },
         {
-          "amount": "3 tbsp",
-          "name": "extra virgin olive oil"
+          "amount": "1/2 tsp",
+          "name": "fine sea salt, divided"
         },
         {
-          "amount": "3 tbsp",
-          "name": "tomato puree (no added salt)"
+          "amount": "300g",
+          "name": "brown rice, uncooked"
+        },
+        {
+          "amount": "400g",
+          "name": "green vegetables you have (broccoli, green beans, pak choi or frozen peas)"
+        },
+        {
+          "amount": "4",
+          "name": "spring onions, finely sliced"
+        },
+        {
+          "amount": "40g",
+          "name": "fresh ginger, finely grated"
         },
         {
           "amount": "1",
-          "name": "lemon, juiced"
-        },
-        {
-          "amount": "4 cloves",
-          "name": "garlic, minced"
-        },
-        {
-          "amount": "1.5 tsp",
-          "name": "dried oregano"
-        },
-        {
-          "amount": "1 tsp",
-          "name": "smoked paprika"
-        },
-        {
-          "amount": "1 tsp",
-          "name": "ground cumin"
-        },
-        {
-          "amount": "1 tsp",
-          "name": "black pepper"
-        },
-        {
-          "amount": "1/4 tsp",
-          "name": "fine sea salt"
+          "name": "red chilli, finely sliced (or 1/2 tsp chilli flakes)"
         }
       ]
     },
     {
       "stage": "Cook",
-      "hint": "Into the oven",
       "items": [
         {
-          "amount": "2",
-          "name": "onions, halved & sliced"
+          "amount": "2 tbsp",
+          "name": "rapeseed or other neutral oil"
         },
         {
-          "amount": "200g",
-          "name": "cherry tomatoes (or 2 vine tomatoes, wedged)"
+          "amount": "1 tsp",
+          "name": "toasted sesame oil"
+        },
+        {
+          "amount": "1 tbsp",
+          "name": "rice vinegar"
+        },
+        {
+          "amount": "2 tbsp",
+          "name": "fully cooked chicken juices or hot water"
         }
       ]
     },
     {
       "stage": "Finish",
-      "hint": "Rest & serve",
       "items": [
         {
-          "amount": "handful",
-          "name": "fresh parsley, chopped"
+          "amount": "2 boxes",
+          "name": "lunch portions for Tuesday"
         }
       ]
     }
   ],
   "nutrition": {
-    "calories": 418,
-    "protein": 41,
-    "carbs": 12,
-    "fat": 23,
-    "satfat": 5.1,
-    "salt": 0.8
+    "calories": 605,
+    "protein": 48,
+    "carbs": 75,
+    "fat": 13,
+    "satfat": 1.8,
+    "salt": 0.9
   }
 };
 

@@ -1,15 +1,9 @@
 [
   {
-    "date": "2026-07-12",
-    "meal": "dinner",
-    "name": "Baked Spiced Mediterranean Chicken",
-    "file": "meals/2026-07-12_dinner_baked-mediterranean-chicken.html"
-  },
-  {
     "date": "2026-07-13",
     "meal": "dinner",
-    "name": "Light Salmon & Cherry Tomato Curry",
-    "file": "meals/2026-07-13_dinner_salmon-cherry-tomato-curry.html"
+    "name": "Steamed Ginger-Scallion Chicken Breast",
+    "file": "meals/2026-07-13_dinner_steamed-ginger-scallion-chicken-breast.html"
   },
   {
     "date": "2026-07-14",
