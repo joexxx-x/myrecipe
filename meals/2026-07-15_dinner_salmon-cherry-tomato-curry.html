@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Lower-Sodium Kung Pao Chicken & Peppers — Cook Mode</title>
+<title>Light Salmon &amp; Cherry Tomato Curry — Cook Mode</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
@@ -257,11 +257,11 @@
 
 <header class="ck-header">
   <div>
-    <h1 class="ck-title">Lower-Sodium Kung Pao Chicken & Peppers</h1>
+    <h1 class="ck-title">Light Salmon &amp; Cherry Tomato Curry</h1>
     <div class="ck-meta">
       <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M5 21V8a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v13"/><path d="M3 21h18"/><path d="M9 8h6"/></svg><b>4</b> servings</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>15</b>m prep</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>15</b>m cook</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>5</b>m prep</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>25</b>m cook</span>
     </div>
   </div>
   <div class="wake-dot" id="wakeDot" title="Screen stays on while cooking"></div>
@@ -313,120 +313,80 @@
 // Also replace the {{...}} header placeholders above.
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 const RECIPE = {
-  "name": "Lower-Sodium Kung Pao Chicken & Peppers",
+  "name": "Light Salmon & Cherry Tomato Curry",
   "servings": "4",
-  "prep_time": "15",
-  "cook_time": "15",
+  "prep_time": "5",
+  "cook_time": "25",
   "steps": [
     {
-      "text": "Rinse the brown rice and cook according to the packet instructions. Drain well when tender.",
+      "text": "Start the rice so it is ready with the curry. Pat the salmon dry; season with black pepper and half of the measured salt.",
       "timer": {
-        "label": "Brown rice",
-        "min": 25,
+        "label": "Rice",
+        "min": 15,
         "sec": 0
       }
     },
     {
-      "text": "Cut the chicken into 2cm pieces. Toss with 1 tsp reduced-salt soy sauce and 1 tbsp cornstarch; marinate while you prep the vegetables.",
+      "text": "Heat the olive oil in a large lidded skillet over medium. Add garlic, ginger and chilli; cook until golden and fragrant. Add the cumin seeds and toast for 15 seconds.",
       "timer": {
-        "label": "Marinate",
-        "min": 10,
-        "sec": 0
-      }
-    },
-    {
-      "text": "Whisk the sauce: remaining reduced-salt soy sauce, Chinkiang vinegar, brown sugar, remaining cornstarch, sesame oil and 4 tbsp water.",
-      "timer": null
-    },
-    {
-      "text": "Heat the rapeseed oil in a wok over high heat. Add the dried chillies and Sichuan peppercorns; stir until fragrant, about 30 seconds.",
-      "timer": null
-    },
-    {
-      "text": "Add the chicken in a single layer. Sear without moving, then stir-fry until nearly cooked through.",
-      "timer": {
-        "label": "Sear chicken",
-        "min": 5,
-        "sec": 0
-      }
-    },
-    {
-      "text": "Add the bell peppers and spring-onion whites; stir-fry until crisp-tender. Add the garlic and ginger for the final 30 seconds.",
-      "timer": {
-        "label": "Stir-fry vegetables",
+        "label": "Aromatics",
         "min": 3,
         "sec": 0
       }
     },
     {
-      "text": "Pour in the sauce and toss until glossy and the chicken is fully cooked. Fold through the peanuts and spring-onion greens.",
+      "text": "Stir in the cherry tomatoes, ground coriander and turmeric. Add 200ml light coconut milk, 200ml water and the remaining salt; simmer uncovered until the tomatoes burst and the sauce reduces slightly.",
       "timer": {
-        "label": "Glaze",
-        "min": 2,
+        "label": "Simmer",
+        "min": 8,
         "sec": 0
       }
     },
     {
-      "text": "Serve over brown rice. Pack two portions for Thursday lunch.",
+      "text": "Stir in the spinach until just wilted. Nestle the salmon into the curry, cover and simmer over medium-low until just cooked through; check early so it stays tender.",
+      "timer": {
+        "label": "Salmon",
+        "min": 6,
+        "sec": 0
+      }
+    },
+    {
+      "text": "Serve over rice and garnish with the torn herbs. Pack two portions for Thursday lunch; cool promptly and refrigerate.",
       "timer": null
     }
   ],
   "ingredients": [
     {
       "stage": "Prep",
-      "hint": "Rice on; everything ready before the wok gets hot",
+      "hint": "Mise en place — before the pan is hot",
       "items": [
         {
+          "amount": "680g",
+          "name": "salmon fillets (1 × 440g pack + 1 × 240g pack)"
+        },
+        {
           "amount": "300g",
-          "name": "brown rice, uncooked"
+          "name": "basmati rice, uncooked"
         },
         {
-          "amount": "600g",
-          "name": "skinless boneless chicken thighs, cut into 2cm pieces"
-        },
-        {
-          "amount": "2",
-          "name": "bell peppers, diced"
-        },
-        {
-          "amount": "6",
-          "name": "spring onions, whites and greens separated"
-        },
-        {
-          "amount": "6 cloves",
+          "amount": "3 cloves",
           "name": "garlic, minced"
         },
         {
-          "amount": "2 tbsp",
+          "amount": "1 tbsp",
           "name": "fresh ginger, minced"
         },
         {
-          "amount": "12",
-          "name": "dried red chillies"
+          "amount": "1",
+          "name": "bird's-eye chilli, sliced"
         },
         {
-          "amount": "2 tsp",
-          "name": "Sichuan peppercorns"
+          "amount": "450g",
+          "name": "cherry tomatoes"
         },
         {
-          "amount": "2 tbsp",
-          "name": "reduced-salt soy sauce, divided"
-        },
-        {
-          "amount": "4 tsp",
-          "name": "Chinkiang vinegar"
-        },
-        {
-          "amount": "2 tsp",
-          "name": "brown sugar"
-        },
-        {
-          "amount": "2 tbsp",
-          "name": "cornstarch, divided"
-        },
-        {
-          "amount": "2 tsp",
-          "name": "toasted sesame oil"
+          "amount": "—",
+          "name": "spices: 1/2 tsp cumin seeds, 1/2 tsp ground coriander, 1/2 tsp turmeric"
         }
       ]
     },
@@ -434,37 +394,44 @@ const RECIPE = {
       "stage": "Cook",
       "items": [
         {
-          "amount": "1½ tbsp",
-          "name": "rapeseed oil"
+          "amount": "1 tbsp",
+          "name": "extra-virgin olive oil (in place of ghee — heart-smart)"
         },
         {
-          "amount": "4 tbsp",
-          "name": "water for the sauce"
+          "amount": "200ml + 200ml",
+          "name": "light coconut milk + water (freeze the remaining coconut milk)"
+        },
+        {
+          "amount": "180g",
+          "name": "spinach (2 packs Tesco Spinach 90g)"
+        },
+        {
+          "amount": "1/4 tsp + to taste",
+          "name": "fine sea salt + black pepper"
         }
       ]
     },
     {
       "stage": "Finish",
-      "hint": "No added salt — the reduced-salt soy carries the seasoning",
       "items": [
         {
-          "amount": "80g",
-          "name": "unsalted roasted peanuts"
+          "amount": "10g",
+          "name": "fresh mint, basil or coriander, torn"
         },
         {
-          "amount": "2",
-          "name": "lunch containers for Thursday"
+          "amount": "2 boxes",
+          "name": "lunch portions for Thursday"
         }
       ]
     }
   ],
   "nutrition": {
-    "calories": 765,
-    "protein": 43,
-    "carbs": 84,
-    "fat": 29,
-    "satfat": 5.7,
-    "salt": 1.2
+    "calories": 800,
+    "protein": 45,
+    "carbs": 68,
+    "fat": 38,
+    "satfat": 8,
+    "salt": 0.7
   }
 };
 
