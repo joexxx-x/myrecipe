@@ -1,26 +1,8 @@
 [
   {
-    "date": "2026-07-13",
+    "date": "2026-07-22",
     "meal": "dinner",
-    "name": "Low-Salt Kou Shui Ji Chicken Breast (口水鸡)",
-    "file": "meals/2026-07-13_dinner_low-salt-kou-shui-ji-chicken-breast.html"
-  },
-  {
-    "date": "2026-07-14",
-    "meal": "dinner",
-    "name": "Black Bean & Avocado Wraps",
-    "file": "meals/2026-07-14_dinner_black-bean-avocado-wraps.html"
-  },
-  {
-    "date": "2026-07-15",
-    "meal": "dinner",
-    "name": "Light Salmon & Cherry Tomato Curry",
-    "file": "meals/2026-07-15_dinner_salmon-cherry-tomato-curry.html"
-  },
-  {
-    "date": "2026-07-16",
-    "meal": "dinner",
-    "name": "Avocado-Quinoa Salad with Tofu & Edamame",
-    "file": "meals/2026-07-16_dinner_avocado-quinoa-tofu-edamame.html"
+    "name": "Low-Salt Poached Kou Shui Ji with Brown Rice (口水鸡)",
+    "file": "meals/2026-07-22_dinner_low-salt-poached-kou-shui-ji-brown-rice.html"
   }
 ]

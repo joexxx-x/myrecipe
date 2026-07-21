@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Avocado-Quinoa Salad with Tofu & Edamame — Cook Mode</title>
+<title>Low-Salt Poached Kou Shui Ji with Brown Rice (口水鸡) — Cook Mode</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
@@ -257,11 +257,11 @@
 
 <header class="ck-header">
   <div>
-    <h1 class="ck-title">Avocado-Quinoa Salad with Tofu & Edamame</h1>
+    <h1 class="ck-title">Low-Salt Poached Kou Shui Ji with Brown Rice (口水鸡)</h1>
     <div class="ck-meta">
       <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M5 21V8a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v13"/><path d="M3 21h18"/><path d="M9 8h6"/></svg><b>4</b> servings</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>10</b>m prep</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>20</b>m cook</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>15</b>m prep</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>30</b>m cook</span>
     </div>
   </div>
   <div class="wake-dot" id="wakeDot" title="Screen stays on while cooking"></div>
@@ -313,118 +313,102 @@
 // Also replace the {{...}} header placeholders above.
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 const RECIPE = {
-  "name": "Avocado-Quinoa Salad with Tofu & Edamame",
+  "name": "Low-Salt Poached Kou Shui Ji with Brown Rice (口水鸡)",
   "servings": "4",
-  "prep_time": "10",
-  "cook_time": "20",
+  "prep_time": "15",
+  "cook_time": "30",
   "steps": [
     {
-      "text": "Rinse the quinoa, add to a pot with 600ml water and bring to a boil. Cover, lower the heat and simmer until the water is absorbed; rest 5 minutes, then fluff.",
-      "timer": {
-        "label": "Quinoa",
-        "min": 15,
-        "sec": 0
-      }
+      "text": "Do not wash the raw chicken. Sprinkle the breasts evenly with 1/4 tsp fine salt, cover and dry-brine in the fridge for 40 minutes.",
+      "timer": { "label": "Dry-brine chicken", "min": 40, "sec": 0 }
     },
     {
-      "text": "Pat the tofu dry and cut into bite-size cubes. Heat 1 tbsp olive oil in a large nonstick pan over medium-high and sear the tofu until golden on several sides.",
-      "timer": {
-        "label": "Sear tofu",
-        "min": 10,
-        "sec": 0
-      }
-    },
-    {
-      "text": "Cook the edamame from frozen in boiling water or the microwave until hot and bright green, then drain well.",
-      "timer": {
-        "label": "Edamame",
-        "min": 6,
-        "sec": 0
-      }
-    },
-    {
-      "text": "Whisk the lemon juice and zest with the mustard, remaining 1 tbsp olive oil and plenty of black pepper.",
+      "text": "While the chicken brines, smash or slice the cucumber. Keep 1 spring onion whole; finely slice the other 5. Slice 10g ginger for the poaching water, grate the remaining 20g, grate the garlic, and toast and crush the Sichuan pepper. Prepare a bowl of ice water.",
       "timer": null
     },
     {
-      "text": "For dinner, slice 1 avocado. Toss half the quinoa, tofu and edamame with half the spinach, half the dressing and half the sunflower seeds; fold in the avocado gently.",
+      "text": "Rinse the brown rice. Add it to boiling water, cover and simmer according to the packet until tender, 22–25 minutes, then drain well.",
+      "timer": { "label": "Brown rice", "min": 25, "sec": 0 }
+    },
+    {
+      "text": "Put enough water to submerge the chicken in a wide lidded pot with the sliced ginger and whole spring onion. Bring to a full boil, lower in the chicken in one uncrowded layer and bring the water back to a boil.",
       "timer": null
     },
     {
-      "text": "Pack the remaining quinoa, tofu, edamame, spinach, dressing and seeds separately for Friday lunch. Leave the second avocado whole and slice it fresh at lunch.",
+      "text": "Immediately reduce the heat to its lowest setting, cover and barely simmer for 5 minutes.",
+      "timer": { "label": "Barely simmer chicken", "min": 5, "sec": 0 }
+    },
+    {
+      "text": "Turn off the heat and leave the pot covered for 15 minutes without lifting the lid. The residual heat will finish the gentle poach.",
+      "timer": { "label": "Residual-heat poach", "min": 15, "sec": 0 }
+    },
+    {
+      "text": "Check the centre of the thickest breast with a probe thermometer: it must reach 75°C. If it has not, return the pot to a very gentle simmer for 2 minutes and recheck before removing the chicken.",
+      "timer": null
+    },
+    {
+      "text": "Transfer the cooked chicken to the ice water for 5 minutes. Pat it dry and keep it whole while you finish the sauce; the quick chill keeps it firm and juicy for slicing.",
+      "timer": { "label": "Ice-bath chicken", "min": 5, "sec": 0 }
+    },
+    {
+      "text": "Put most of the sliced spring onions, grated ginger, garlic, chilli flakes and crushed Sichuan pepper in a heatproof bowl. Heat the rapeseed oil until shimmering and pour it over. Whisk in the sesame oil, black vinegar, only 2 tsp reduced-salt soy, tahini, sugar and 2–3 tbsp hot poaching liquid. Add no more salt.",
+      "timer": null
+    },
+    {
+      "text": "Slice the chicken across the grain and arrange it over the cucumber. Spoon over the sauce, finish with the reserved spring onions and serve each portion with one quarter of the brown rice.",
+      "timer": null
+    },
+    {
+      "text": "Serve two portions for dinner. Cool the other two promptly for Thursday lunch and refrigerate them, keeping the sauce separate if possible so the cucumber stays crisp.",
       "timer": null
     }
   ],
   "ingredients": [
     {
       "stage": "Prep",
-      "hint": "Keep one avocado whole for Friday lunch",
+      "hint": "Dry-brine, chop and start the rice",
       "items": [
-        {
-          "amount": "300g",
-          "name": "quinoa"
-        },
-        {
-          "amount": "560g",
-          "name": "super-firm tofu (2 × 280g packs)"
-        },
-        {
-          "amount": "300g",
-          "name": "shelled edamame"
-        },
-        {
-          "amount": "240g",
-          "name": "spinach"
-        },
-        {
-          "amount": "2",
-          "name": "avocados"
-        },
-        {
-          "amount": "1",
-          "name": "lemon, zest and juice"
-        },
-        {
-          "amount": "2 tsp",
-          "name": "whole-grain mustard"
-        },
-        {
-          "amount": "to taste",
-          "name": "black pepper"
-        }
+        { "amount": "500g", "name": "boneless skinless chicken breasts" },
+        { "amount": "1/4 tsp", "name": "fine sea salt — the only added salt outside the soy" },
+        { "amount": "350g", "name": "brown rice, uncooked" },
+        { "amount": "600g", "name": "cucumber, smashed or sliced" },
+        { "amount": "6", "name": "spring onions — 1 whole, 5 finely sliced" },
+        { "amount": "30g", "name": "fresh ginger — 10g sliced, 20g finely grated" },
+        { "amount": "3 cloves", "name": "garlic, finely grated" },
+        { "amount": "1 tsp", "name": "chilli flakes" },
+        { "amount": "1 tsp", "name": "Sichuan peppercorns, toasted and crushed" },
+        { "amount": "about 1.5L", "name": "water, enough to submerge the chicken" },
+        { "amount": "1 bowl", "name": "ice water" }
       ]
     },
     {
       "stage": "Cook",
+      "hint": "Poach gently, then build the low-salt sauce",
       "items": [
-        {
-          "amount": "2 tbsp",
-          "name": "extra-virgin olive oil, divided"
-        }
+        { "amount": "2 tbsp", "name": "rapeseed or other neutral oil" },
+        { "amount": "1 tsp", "name": "toasted sesame oil" },
+        { "amount": "2 tbsp", "name": "Chinkiang black vinegar" },
+        { "amount": "2 tsp", "name": "reduced-salt soy sauce — measure, do not free-pour" },
+        { "amount": "1 tbsp", "name": "tahini or Chinese sesame paste" },
+        { "amount": "1 tsp", "name": "sugar" },
+        { "amount": "2–3 tbsp", "name": "hot poaching liquid" }
       ]
     },
     {
       "stage": "Finish",
-      "hint": "Add crunch just before serving",
+      "hint": "Dinner for two + two Thursday lunches",
       "items": [
-        {
-          "amount": "6 tbsp",
-          "name": "sunflower seeds"
-        },
-        {
-          "amount": "2",
-          "name": "lunch containers for Friday"
-        }
+        { "amount": "2", "name": "airtight lunch boxes; pack sauce separately if possible" }
       ]
     }
   ],
   "nutrition": {
-    "calories": 650,
-    "protein": 43,
-    "carbs": 44,
-    "fat": 34,
-    "satfat": 4.5,
-    "salt": 0.4
+    "calories": 660,
+    "protein": 41,
+    "carbs": 88,
+    "fat": 15,
+    "satfat": 2.0,
+    "salt": 0.9
   }
 };
 
