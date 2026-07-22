@@ -1,6 +1,12 @@
 [
   {
     "date": "2026-07-22",
+    "meal": "lunch",
+    "name": "Gourmet Sourdough Chicken & Avocado Sandwich",
+    "file": "meals/2026-07-22_lunch_sourdough-chicken-avocado-sandwich.html"
+  },
+  {
+    "date": "2026-07-22",
     "meal": "dinner",
     "name": "Low-Salt Poached Kou Shui Ji with Brown Rice (口水鸡)",
     "file": "meals/2026-07-22_dinner_low-salt-poached-kou-shui-ji-brown-rice.html"
