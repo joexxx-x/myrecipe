@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Steamed Ginger-Scallion Chicken Breast — Cook Mode</title>
+<title>Air-Fryer Ginger-Scallion Chicken Breast — Cook Mode</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
@@ -257,11 +257,11 @@
 
 <header class="ck-header">
   <div>
-    <h1 class="ck-title">Steamed Ginger-Scallion Chicken Breast</h1>
+    <h1 class="ck-title">Air-Fryer Ginger-Scallion Chicken Breast</h1>
     <div class="ck-meta">
       <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M5 21V8a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v13"/><path d="M3 21h18"/><path d="M9 8h6"/></svg><b>4</b> servings</span>
       <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>10</b>m prep</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>30</b>m cook</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>20</b>m cook</span>
     </div>
   </div>
   <div class="wake-dot" id="wakeDot" title="Screen stays on while cooking"></div>
@@ -313,13 +313,13 @@
 // Also replace the {{...}} header placeholders above.
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 const RECIPE = {
-  "name": "Steamed Ginger-Scallion Chicken Breast",
+  "name": "Air-Fryer Ginger-Scallion Chicken Breast",
   "servings": "4",
   "prep_time": "10",
-  "cook_time": "30",
+  "cook_time": "20",
   "steps": [
     {
-      "text": "Don't wash the raw chicken. Season the breasts evenly with 1/4 tsp of the salt, cover and dry-brine in the fridge — 40 minutes is ideal, 15 is plenty on a weeknight.",
+      "text": "Don't wash the raw chicken. Season the breasts evenly with 1/4 tsp of the salt, cover and dry-brine in the fridge — 40 minutes is ideal, 15 is plenty on a weeknight. Don't skip this: dry heat is less forgiving than steam, and the brine is what keeps the breast juicy.",
       "timer": {
         "label": "Dry-brine chicken",
         "min": 15,
@@ -335,31 +335,35 @@ const RECIPE = {
       }
     },
     {
-      "text": "While the rice cooks, finely slice the spring onions, grate the ginger and slice the chilli. Set a rack in a lidded wok or deep pot with 2–3cm of water below it and bring to a steady boil.",
+      "text": "While the rice cooks, finely slice the spring onions, grate the ginger and slice the chilli.",
       "timer": null
     },
     {
-      "text": "Arrange the chicken in a single layer on a shallow heatproof plate and set it on the rack. Steam over medium-high heat, flipping every 3–4 minutes.",
+      "text": "Butterfly or bash flat any breast thicker than about 2.5cm so they're all an even thickness — otherwise the thin end is dry before the thick end is safe. Brush lightly all over with the 1 tsp oil.",
+      "timer": null
+    },
+    {
+      "text": "Preheat the air fryer to 190°C. Lay the chicken in a single layer with space around each piece — do two batches if your basket is small rather than crowding it. Air fry 12 minutes, flipping at the halfway point.",
       "timer": {
-        "label": "Steam chicken",
-        "min": 14,
+        "label": "Air fry chicken",
+        "min": 12,
         "sec": 0
       }
     },
     {
-      "text": "From 14 minutes, check the thickest part with a probe thermometer and continue in 2-minute bursts until it reads 75°C. Reserve any juices on the plate — they go in the sauce.",
+      "text": "Check the thickest part with a probe thermometer: it must read 75°C. If it's not there, go on in 2-minute bursts — but pull it the moment it hits, because breast dries out fast past that point.",
       "timer": null
     },
     {
-      "text": "Rest the chicken for 5 minutes. While it rests, steam the green vegetables above the same water until bright and just tender.",
+      "text": "Rest the chicken for 5 minutes. While it rests, tip the green vegetables into the empty basket and air fry at 190°C until bright and just tender.",
       "timer": {
-        "label": "Rest + steam greens",
-        "min": 5,
+        "label": "Rest chicken + greens",
+        "min": 7,
         "sec": 0
       }
     },
     {
-      "text": "Put the spring onions, ginger and chilli in a heatproof bowl. Heat the rapeseed oil until it shimmers and pour it over — it should sizzle hard. Stir in the sesame oil, rice vinegar, the remaining 1/4 tsp salt and 2 tbsp of the reserved chicken juices (or hot water) to loosen.",
+      "text": "Put the spring onions, ginger and chilli in a heatproof bowl. Heat the rapeseed oil until it shimmers and pour it over — it should sizzle hard. Stir in the sesame oil, rice vinegar, the remaining 1/4 tsp salt and 2 tbsp hot water to loosen (the air fryer won't leave you the plate juices a steamer would).",
       "timer": null
     },
     {
@@ -378,11 +382,15 @@ const RECIPE = {
       "items": [
         {
           "amount": "600g",
-          "name": "boneless skinless chicken breasts"
+          "name": "boneless skinless chicken breasts, evened out to ~2.5cm thick"
         },
         {
           "amount": "1/2 tsp",
           "name": "fine sea salt, divided — the only added salt in the dish"
+        },
+        {
+          "amount": "1 tsp",
+          "name": "rapeseed oil, for brushing the chicken"
         },
         {
           "amount": "350g",
@@ -404,7 +412,7 @@ const RECIPE = {
     },
     {
       "stage": "Cook",
-      "hint": "Steamer + the sizzling-oil sauce",
+      "hint": "Air fryer at 190°C, then the sizzling-oil sauce",
       "items": [
         {
           "amount": "400g",
@@ -424,7 +432,7 @@ const RECIPE = {
         },
         {
           "amount": "2 tbsp",
-          "name": "reserved chicken juices, or hot water"
+          "name": "hot water, to loosen the sauce"
         }
       ]
     },
@@ -444,10 +452,10 @@ const RECIPE = {
     }
   ],
   "nutrition": {
-    "calories": 277,
+    "calories": 287,
     "protein": 40,
     "carbs": 6,
-    "fat": 11,
+    "fat": 11.5,
     "satfat": 1.4,
     "salt": 1.0
   }
