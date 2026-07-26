@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Gourmet Sourdough Chicken &amp; Avocado Sandwich — Cook Mode</title>
+<title>Steamed Ginger-Scallion Chicken Breast — Cook Mode</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
@@ -257,11 +257,11 @@
 
 <header class="ck-header">
   <div>
-    <h1 class="ck-title">Gourmet Sourdough Chicken &amp; Avocado Sandwich</h1>
+    <h1 class="ck-title">Steamed Ginger-Scallion Chicken Breast</h1>
     <div class="ck-meta">
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M5 21V8a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v13"/><path d="M3 21h18"/><path d="M9 8h6"/></svg><b>1</b> serving</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M5 21V8a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v13"/><path d="M3 21h18"/><path d="M9 8h6"/></svg><b>4</b> servings</span>
       <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>10</b>m prep</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>5</b>m cook</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>30</b>m cook</span>
     </div>
   </div>
   <div class="wake-dot" id="wakeDot" title="Screen stays on while cooking"></div>
@@ -313,42 +313,143 @@
 // Also replace the {{...}} header placeholders above.
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 const RECIPE = {
-  name: "Gourmet Sourdough Chicken & Avocado Sandwich",
-  servings: "1",
-  prep_time: "10",
-  cook_time: "5",
-  steps: [
-    { text: "Mix the pesto and light mayonnaise into a spread. Slice the avocado and get the chicken, cheese and greens ready.", timer: null },
-    { text: "Lightly toast both slices of sourdough to your liking.", timer: { label: "Toast", min: 3, sec: 0 } },
-    { text: "Spread the pesto-mayo over one side of each toasted slice.", timer: null },
-    { text: "On the base slice, layer the cheese and 110g cooked chicken. Season lightly with salt and black pepper.", timer: null },
-    { text: "Add the sliced avocado and mixed salad greens.", timer: null },
-    { text: "Top with the second slice, spread-side down. Cut in half and serve immediately.", timer: null },
+  "name": "Steamed Ginger-Scallion Chicken Breast",
+  "servings": "4",
+  "prep_time": "10",
+  "cook_time": "30",
+  "steps": [
+    {
+      "text": "Don't wash the raw chicken. Season the breasts evenly with 1/4 tsp of the salt, cover and dry-brine in the fridge — 40 minutes is ideal, 15 is plenty on a weeknight.",
+      "timer": {
+        "label": "Dry-brine chicken",
+        "min": 15,
+        "sec": 0
+      }
+    },
+    {
+      "text": "Rinse the brown rice and simmer it in a large pan of boiling water for 22–25 minutes, then drain well.",
+      "timer": {
+        "label": "Brown rice",
+        "min": 24,
+        "sec": 0
+      }
+    },
+    {
+      "text": "While the rice cooks, finely slice the spring onions, grate the ginger and slice the chilli. Set a rack in a lidded wok or deep pot with 2–3cm of water below it and bring to a steady boil.",
+      "timer": null
+    },
+    {
+      "text": "Arrange the chicken in a single layer on a shallow heatproof plate and set it on the rack. Steam over medium-high heat, flipping every 3–4 minutes.",
+      "timer": {
+        "label": "Steam chicken",
+        "min": 14,
+        "sec": 0
+      }
+    },
+    {
+      "text": "From 14 minutes, check the thickest part with a probe thermometer and continue in 2-minute bursts until it reads 75°C. Reserve any juices on the plate — they go in the sauce.",
+      "timer": null
+    },
+    {
+      "text": "Rest the chicken for 5 minutes. While it rests, steam the green vegetables above the same water until bright and just tender.",
+      "timer": {
+        "label": "Rest + steam greens",
+        "min": 5,
+        "sec": 0
+      }
+    },
+    {
+      "text": "Put the spring onions, ginger and chilli in a heatproof bowl. Heat the rapeseed oil until it shimmers and pour it over — it should sizzle hard. Stir in the sesame oil, rice vinegar, the remaining 1/4 tsp salt and 2 tbsp of the reserved chicken juices (or hot water) to loosen.",
+      "timer": null
+    },
+    {
+      "text": "Slice the chicken across the grain, spoon the ginger-scallion sauce over and serve with the rice and greens.",
+      "timer": null
+    },
+    {
+      "text": "Plate two portions for dinner. Cool the other two promptly and refrigerate for tomorrow's office lunches — reheat once to at least 70°C.",
+      "timer": null
+    }
   ],
-  ingredients: [
-    { stage: "Prep", hint: "Mix the spread and ready the fillings", items: [
-      { amount: "1 tbsp", name: "Tesco classic green pesto" },
-      { amount: "1 tbsp", name: "Tesco light mayonnaise" },
-      { amount: "110g", name: "cooked chicken breast, sliced or shredded" },
-      { amount: "1/2", name: "ripe avocado, sliced" },
-      { amount: "30g", name: "mixed salad greens" },
-      { amount: "1 slice", name: "provolone or cheddar cheese" },
-    ]},
-    { stage: "Cook", hint: "Toast just before assembling", items: [
-      { amount: "2 slices", name: "sourdough bread" },
-    ]},
-    { stage: "Finish", hint: "Season lightly and assemble", items: [
-      { amount: "to taste", name: "salt" },
-      { amount: "to taste", name: "freshly ground black pepper" },
-    ]},
+  "ingredients": [
+    {
+      "stage": "Prep",
+      "hint": "Dry-brine, start the rice, chop the aromatics",
+      "items": [
+        {
+          "amount": "600g",
+          "name": "boneless skinless chicken breasts"
+        },
+        {
+          "amount": "1/2 tsp",
+          "name": "fine sea salt, divided — the only added salt in the dish"
+        },
+        {
+          "amount": "350g",
+          "name": "brown rice, uncooked"
+        },
+        {
+          "amount": "4",
+          "name": "spring onions, finely sliced"
+        },
+        {
+          "amount": "40g",
+          "name": "fresh ginger, finely grated"
+        },
+        {
+          "amount": "1",
+          "name": "red chilli, finely sliced (or 1/2 tsp chilli flakes)"
+        }
+      ]
+    },
+    {
+      "stage": "Cook",
+      "hint": "Steamer + the sizzling-oil sauce",
+      "items": [
+        {
+          "amount": "400g",
+          "name": "green vegetables — broccoli, green beans or pak choi"
+        },
+        {
+          "amount": "2 tbsp",
+          "name": "rapeseed or other neutral oil, heated until shimmering"
+        },
+        {
+          "amount": "1 tsp",
+          "name": "toasted sesame oil"
+        },
+        {
+          "amount": "1 tbsp",
+          "name": "rice vinegar"
+        },
+        {
+          "amount": "2 tbsp",
+          "name": "reserved chicken juices, or hot water"
+        }
+      ]
+    },
+    {
+      "stage": "Finish",
+      "hint": "Dinner for two + two Tuesday lunches",
+      "items": [
+        {
+          "amount": "87g pp",
+          "name": "the drained brown rice, served alongside — adds ~305 kcal & 7g protein per serving (not in the card totals)"
+        },
+        {
+          "amount": "2",
+          "name": "airtight lunch boxes"
+        }
+      ]
+    }
   ],
-  nutrition: {
-    calories: 550,
-    protein: 35,
-    carbs: 40,
-    fat: 30,
-    satfat: 8,
-    salt: 2.0,
+  "nutrition": {
+    "calories": 277,
+    "protein": 40,
+    "carbs": 6,
+    "fat": 11,
+    "satfat": 1.4,
+    "salt": 1.0
   }
 };
 

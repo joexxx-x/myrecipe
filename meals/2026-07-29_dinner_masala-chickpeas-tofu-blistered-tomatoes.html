@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Low-Salt Poached Kou Shui Ji with Brown Rice (口水鸡) — Cook Mode</title>
+<title>Masala Chickpeas with Tofu & Blistered Tomatoes — Cook Mode</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
@@ -257,11 +257,11 @@
 
 <header class="ck-header">
   <div>
-    <h1 class="ck-title">Low-Salt Poached Kou Shui Ji with Brown Rice (口水鸡)</h1>
+    <h1 class="ck-title">Masala Chickpeas with Tofu & Blistered Tomatoes</h1>
     <div class="ck-meta">
       <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M5 21V8a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v13"/><path d="M3 21h18"/><path d="M9 8h6"/></svg><b>4</b> servings</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>15</b>m prep</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>30</b>m cook</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>10</b>m prep</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>25</b>m cook</span>
     </div>
   </div>
   <div class="wake-dot" id="wakeDot" title="Screen stays on while cooking"></div>
@@ -313,102 +313,163 @@
 // Also replace the {{...}} header placeholders above.
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 const RECIPE = {
-  "name": "Low-Salt Poached Kou Shui Ji with Brown Rice (口水鸡)",
+  "name": "Masala Chickpeas with Tofu & Blistered Tomatoes",
   "servings": "4",
-  "prep_time": "15",
-  "cook_time": "30",
+  "prep_time": "10",
+  "cook_time": "25",
   "steps": [
     {
-      "text": "Do not wash the raw chicken. Sprinkle the breasts evenly with 1/4 tsp fine salt, cover and dry-brine in the fridge for 40 minutes.",
-      "timer": { "label": "Dry-brine chicken", "min": 40, "sec": 0 }
-    },
-    {
-      "text": "While the chicken brines, smash or slice the cucumber. Keep 1 spring onion whole; finely slice the other 5. Slice 10g ginger for the poaching water, grate the remaining 20g, grate the garlic, and toast and crush the Sichuan pepper. Prepare a bowl of ice water.",
+      "text": "Drain the tofu, slice each block in half horizontally and press between clean tea towels while you chop — the drier it is, the better it browns.",
       "timer": null
     },
     {
-      "text": "Rinse the brown rice. Add it to boiling water, cover and simmer according to the packet until tender, 22–25 minutes, then drain well.",
-      "timer": { "label": "Brown rice", "min": 25, "sec": 0 }
+      "text": "Start the rice: rinse the basmati and cook it by your usual method so it's ready when the pan is.",
+      "timer": {
+        "label": "Basmati rice",
+        "min": 12,
+        "sec": 0
+      }
     },
     {
-      "text": "Put enough water to submerge the chicken in a wide lidded pot with the sliced ginger and whole spring onion. Bring to a full boil, lower in the chicken in one uncrowded layer and bring the water back to a boil.",
+      "text": "Set a large skillet over medium heat with 1 tbsp of the oil. Season the tofu with black pepper only, then sear undisturbed until deep golden, about 4 minutes. Flip and brown the second side.",
+      "timer": {
+        "label": "Sear tofu",
+        "min": 4,
+        "sec": 0
+      }
+    },
+    {
+      "text": "Transfer the tofu to a plate. Add 1.5 tbsp oil to the same pan and cook the red onion — holding back a spoonful raw for garnish — until translucent, about 4 minutes.",
+      "timer": {
+        "label": "Onion",
+        "min": 4,
+        "sec": 0
+      }
+    },
+    {
+      "text": "Add the ginger, garlic and masala with a good grind of pepper. Stir until fragrant, 1–2 minutes — this is where the flavour comes from, so don't rush it.",
+      "timer": {
+        "label": "Bloom the spices",
+        "min": 1,
+        "sec": 30
+      }
+    },
+    {
+      "text": "Stir in the drained chickpeas and cook until they start to sizzle and catch a little colour, about 3 minutes.",
+      "timer": {
+        "label": "Chickpeas",
+        "min": 3,
+        "sec": 0
+      }
+    },
+    {
+      "text": "Turn the heat to medium-high, add the last 1/2 tbsp oil and the cherry tomatoes with the 3/4 tsp salt. Leave them completely alone until they blister and pop, 4–5 minutes.",
+      "timer": {
+        "label": "Blister tomatoes",
+        "min": 5,
+        "sec": 0
+      }
+    },
+    {
+      "text": "Break the tofu into rough 2cm pieces, fold it through and warm for 2–3 minutes until coated in the masala. Stir in most of the herbs.",
+      "timer": {
+        "label": "Warm the tofu through",
+        "min": 3,
+        "sec": 0
+      }
+    },
+    {
+      "text": "Finish with a hard squeeze of lime, the reserved raw onion and the last of the herbs. Taste — the lime and masala should mean it needs no more salt. Serve over the rice.",
       "timer": null
     },
     {
-      "text": "Immediately reduce the heat to its lowest setting, cover and barely simmer for 5 minutes.",
-      "timer": { "label": "Barely simmer chicken", "min": 5, "sec": 0 }
-    },
-    {
-      "text": "Turn off the heat and leave the pot covered for 15 minutes without lifting the lid. The residual heat will finish the gentle poach.",
-      "timer": { "label": "Residual-heat poach", "min": 15, "sec": 0 }
-    },
-    {
-      "text": "Check the centre of the thickest breast with a probe thermometer: it must reach 75°C. If it has not, return the pot to a very gentle simmer for 2 minutes and recheck before removing the chicken.",
-      "timer": null
-    },
-    {
-      "text": "Transfer the cooked chicken to the ice water for 5 minutes. Pat it dry and keep it whole while you finish the sauce; the quick chill keeps it firm and juicy for slicing.",
-      "timer": { "label": "Ice-bath chicken", "min": 5, "sec": 0 }
-    },
-    {
-      "text": "Put most of the sliced spring onions, grated ginger, garlic, chilli flakes and crushed Sichuan pepper in a heatproof bowl. Heat the rapeseed oil until shimmering and pour it over. Whisk in the sesame oil, black vinegar, only 2 tsp reduced-salt soy, tahini, sugar and 2–3 tbsp hot poaching liquid. Add no more salt.",
-      "timer": null
-    },
-    {
-      "text": "Slice the chicken across the grain and arrange it over the cucumber. Spoon over the sauce, finish with the reserved spring onions and serve each portion with one quarter of the brown rice.",
-      "timer": null
-    },
-    {
-      "text": "Serve two portions for dinner. Cool the other two promptly for Thursday lunch and refrigerate them, keeping the sauce separate if possible so the cucumber stays crisp.",
+      "text": "Plate two portions for dinner; cool the other two and refrigerate for Thursday's office lunches.",
       "timer": null
     }
   ],
   "ingredients": [
     {
       "stage": "Prep",
-      "hint": "Dry-brine, chop and start the rice",
+      "hint": "Press the tofu first, then chop while it drains",
       "items": [
-        { "amount": "500g", "name": "boneless skinless chicken breasts" },
-        { "amount": "1/4 tsp", "name": "fine sea salt — the only added salt outside the soy" },
-        { "amount": "350g", "name": "brown rice, uncooked" },
-        { "amount": "600g", "name": "cucumber, smashed or sliced" },
-        { "amount": "6", "name": "spring onions — 1 whole, 5 finely sliced" },
-        { "amount": "30g", "name": "fresh ginger — 10g sliced, 20g finely grated" },
-        { "amount": "3 cloves", "name": "garlic, finely grated" },
-        { "amount": "1 tsp", "name": "chilli flakes" },
-        { "amount": "1 tsp", "name": "Sichuan peppercorns, toasted and crushed" },
-        { "amount": "about 1.5L", "name": "water, enough to submerge the chicken" },
-        { "amount": "1 bowl", "name": "ice water" }
+        {
+          "amount": "560g",
+          "name": "Tofoo naked tofu (2 × 280g), halved horizontally and pressed"
+        },
+        {
+          "amount": "1 large",
+          "name": "red onion, finely chopped — keep a spoonful raw back"
+        },
+        {
+          "amount": "40g",
+          "name": "fresh ginger, finely grated"
+        },
+        {
+          "amount": "4 cloves",
+          "name": "garlic, finely grated"
+        },
+        {
+          "amount": "2 tsp",
+          "name": "tandoori or garam masala"
+        },
+        {
+          "amount": "2 × 400g tins",
+          "name": "chickpeas, drained and rinsed (480g drained)"
+        },
+        {
+          "amount": "500g",
+          "name": "cherry tomatoes"
+        }
       ]
     },
     {
       "stage": "Cook",
-      "hint": "Poach gently, then build the low-salt sauce",
+      "hint": "One skillet, oil added in three goes",
       "items": [
-        { "amount": "2 tbsp", "name": "rapeseed or other neutral oil" },
-        { "amount": "1 tsp", "name": "toasted sesame oil" },
-        { "amount": "2 tbsp", "name": "Chinkiang black vinegar" },
-        { "amount": "2 tsp", "name": "reduced-salt soy sauce — measure, do not free-pour" },
-        { "amount": "1 tbsp", "name": "tahini or Chinese sesame paste" },
-        { "amount": "1 tsp", "name": "sugar" },
-        { "amount": "2–3 tbsp", "name": "hot poaching liquid" }
+        {
+          "amount": "3 tbsp",
+          "name": "rapeseed oil, divided — 1 for the tofu, 1.5 for the onion, 1/2 for the tomatoes"
+        },
+        {
+          "amount": "3/4 tsp",
+          "name": "fine sea salt — goes in with the tomatoes, the only added salt"
+        },
+        {
+          "amount": "to taste",
+          "name": "black pepper, freshly ground"
+        }
       ]
     },
     {
       "stage": "Finish",
       "hint": "Dinner for two + two Thursday lunches",
       "items": [
-        { "amount": "2", "name": "airtight lunch boxes; pack sauce separately if possible" }
+        {
+          "amount": "50g",
+          "name": "fresh mint or dill, roughly chopped"
+        },
+        {
+          "amount": "2",
+          "name": "limes, cut into wedges"
+        },
+        {
+          "amount": "60g pp",
+          "name": "basmati rice (240g dry for the batch), served separately — adds ~210 kcal & 5g protein per serving (not in the card totals)"
+        },
+        {
+          "amount": "2",
+          "name": "airtight lunch boxes"
+        }
       ]
     }
   ],
   "nutrition": {
-    "calories": 660,
-    "protein": 41,
-    "carbs": 88,
-    "fat": 15,
-    "satfat": 2.0,
-    "salt": 0.9
+    "calories": 513,
+    "protein": 35,
+    "carbs": 32,
+    "fat": 24.5,
+    "satfat": 2.7,
+    "salt": 1.2
   }
 };
 

@@ -1,14 +1,26 @@
 [
   {
-    "date": "2026-07-22",
-    "meal": "lunch",
-    "name": "Gourmet Sourdough Chicken & Avocado Sandwich",
-    "file": "meals/2026-07-22_lunch_sourdough-chicken-avocado-sandwich.html"
+    "date": "2026-07-27",
+    "meal": "dinner",
+    "name": "Steamed Ginger-Scallion Chicken Breast",
+    "file": "meals/2026-07-27_dinner_steamed-ginger-scallion-chicken-breast.html"
   },
   {
-    "date": "2026-07-22",
+    "date": "2026-07-28",
     "meal": "dinner",
-    "name": "Low-Salt Poached Kou Shui Ji with Brown Rice (口水鸡)",
-    "file": "meals/2026-07-22_dinner_low-salt-poached-kou-shui-ji-brown-rice.html"
+    "name": "Roasted Cod & Leeks with Mustard Vinaigrette",
+    "file": "meals/2026-07-28_dinner_roasted-cod-leeks-vinaigrette.html"
+  },
+  {
+    "date": "2026-07-29",
+    "meal": "dinner",
+    "name": "Masala Chickpeas with Tofu & Blistered Tomatoes",
+    "file": "meals/2026-07-29_dinner_masala-chickpeas-tofu-blistered-tomatoes.html"
+  },
+  {
+    "date": "2026-07-30",
+    "meal": "dinner",
+    "name": "Spinach One-Pot Pasta with Sardines",
+    "file": "meals/2026-07-30_dinner_spinach-one-pot-pasta-sardines.html"
   }
 ]
