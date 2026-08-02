@@ -1,26 +1,8 @@
 [
   {
-    "date": "2026-07-27",
+    "date": "2026-08-02",
     "meal": "dinner",
-    "name": "Air-Fryer Ginger-Scallion Chicken Breast",
-    "file": "meals/2026-07-27_dinner_air-fryer-ginger-scallion-chicken-breast.html"
-  },
-  {
-    "date": "2026-07-28",
-    "meal": "dinner",
-    "name": "Roasted Cod & Leeks with Mustard Vinaigrette",
-    "file": "meals/2026-07-28_dinner_roasted-cod-leeks-vinaigrette.html"
-  },
-  {
-    "date": "2026-07-29",
-    "meal": "dinner",
-    "name": "Masala Chickpeas with Tofu & Blistered Tomatoes",
-    "file": "meals/2026-07-29_dinner_masala-chickpeas-tofu-blistered-tomatoes.html"
-  },
-  {
-    "date": "2026-07-30",
-    "meal": "dinner",
-    "name": "Spinach One-Pot Pasta with Sardines",
-    "file": "meals/2026-07-30_dinner_spinach-one-pot-pasta-sardines.html"
+    "name": "I Can't Believe It's Not Chicken (Super-Savory Grated Tofu)",
+    "file": "meals/2026-08-02_dinner_super-savory-grated-tofu.html"
   }
 ]
