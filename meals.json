@@ -4,5 +4,29 @@
     "meal": "dinner",
     "name": "Air-Fryer Kou Shui Ji Chicken Breast (口水鸡)",
     "file": "meals/2026-08-03_dinner_air-fryer-kou-shui-ji-chicken-breast.html"
+  },
+  {
+    "date": "2026-08-05",
+    "meal": "dinner",
+    "name": "Air-Fryer Kou Shui Ji Chicken Breast (口水鸡)",
+    "file": "meals/2026-08-05_dinner_air-fryer-kou-shui-ji-chicken-breast.html"
+  },
+  {
+    "date": "2026-08-06",
+    "meal": "dinner",
+    "name": "Thai Holy Basil Tofu (Pad Kra Pao)",
+    "file": "meals/2026-08-06_dinner_thai-holy-basil-tofu.html"
+  },
+  {
+    "date": "2026-08-07",
+    "meal": "dinner",
+    "name": "Light Salmon & Cherry Tomato Curry",
+    "file": "meals/2026-08-07_dinner_light-salmon-cherry-tomato-curry.html"
+  },
+  {
+    "date": "2026-08-08",
+    "meal": "dinner",
+    "name": "Korean Beef Bibimbap",
+    "file": "meals/2026-08-08_dinner_korean-beef-bibimbap.html"
   }
 ]
