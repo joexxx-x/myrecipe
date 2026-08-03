@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Korean Beef Bibimbap — Cook Mode</title>
+<title>Three-Cup Chicken (三杯鸡) — Cook Mode</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
@@ -257,11 +257,11 @@
 
 <header class="ck-header">
   <div>
-    <h1 class="ck-title">Korean Beef Bibimbap</h1>
+    <h1 class="ck-title">Three-Cup Chicken (三杯鸡)</h1>
     <div class="ck-meta">
       <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M5 21V8a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v13"/><path d="M3 21h18"/><path d="M9 8h6"/></svg><b>2</b> servings</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>25</b>m prep</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>25</b>m cook</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>10</b>m prep</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>22</b>m cook</span>
     </div>
   </div>
   <div class="wake-dot" id="wakeDot" title="Screen stays on while cooking"></div>
@@ -313,13 +313,13 @@
 // Also replace the {{...}} header placeholders above.
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 const RECIPE = {
-  "name": "Korean Beef Bibimbap",
+  "name": "Three-Cup Chicken (三杯鸡)",
   "servings": "2",
-  "prep_time": "25",
-  "cook_time": "25",
+  "prep_time": "10",
+  "cook_time": "22",
   "steps": [
     {
-      "text": "Rinse the rice until the water runs clear, then cook (180g rice to ~215ml water: boil, cover, low 12 min, rest 10 min).",
+      "text": "Start 150g rice cooking separately so it's ready with the chicken (boil, cover, low 12 minutes, rest off the heat). Slice the ginger into coins, peel the garlic, cut the scallions into 1-inch pieces.",
       "timer": {
         "label": "Rice",
         "min": 12,
@@ -327,133 +327,108 @@ const RECIPE = {
       }
     },
     {
-      "text": "Marinate the beef with 1.5 tbsp reduced-salt soy sauce, half the sesame oil, half the grated garlic and 1 tbsp brown sugar. Set aside while you prep the veg.",
-      "timer": null
-    },
-    {
-      "text": "Make the sauce: stir the gochujang with a splash of sesame oil, 1/2 tbsp rice vinegar, the remaining garlic and 1 tbsp water until smooth. Loosen with a little more water if needed.",
-      "timer": null
-    },
-    {
-      "text": "Blanch the bean sprouts 3 minutes, drain and toss with a little sesame oil and salt.",
+      "text": "Heat a wok over high heat with 1 tbsp sesame oil until shimmering. Add the ginger, garlic, scallions and dried chillies; stir-fry until fragrant and lightly coloured.",
       "timer": {
-        "label": "Bean sprouts",
-        "min": 3,
+        "label": "Aromatics",
+        "min": 2,
         "sec": 0
       }
     },
     {
-      "text": "Heat 1/2 tbsp neutral oil over medium-high. Saute the carrot 2 min until just tender; remove. Repeat with the courgette, then the mushrooms (golden, 3-4 min). Keep the veg in separate piles.",
+      "text": "Push the aromatics to the sides and add the remaining 1/2 tbsp sesame oil. Add the chicken in a single layer and cook, stirring occasionally, until browned and crisping at the edges.",
       "timer": {
-        "label": "Veg saute",
-        "min": 4,
+        "label": "Brown chicken",
+        "min": 6,
         "sec": 0
       }
     },
     {
-      "text": "Turn the heat high, add the remaining 1/2 tbsp oil and sear the marinated beef in a single layer until caramelised, 3-4 min (do it in 2 batches so it sears rather than steams). Remove.",
+      "text": "Sprinkle in the sugar and stir to coat. Pour in the rice wine and reduced-salt soy, bring to a boil, then drop to medium-low and simmer uncovered until the sauce reduces to a glossy glaze that clings to the chicken.",
       "timer": {
-        "label": "Sear beef",
-        "min": 4,
+        "label": "Glaze",
+        "min": 15,
         "sec": 0
       }
     },
     {
-      "text": "Assemble each bowl: warm rice base, the beef and each vegetable arranged in sections around the edge. Top with sesame seeds and scallion; serve the gochujang sauce alongside to mix in at the table.",
+      "text": "Turn off the heat. Stir the Thai basil through until just wilted. Taste — the glaze should read sweet-savoury with no extra salt needed. Serve over the rice. No lunches to pack tonight — it's Saturday.",
       "timer": null
     }
   ],
   "ingredients": [
     {
       "stage": "Prep",
-      "hint": "Mise en place — marinade, sauce, rice on",
+      "hint": "Skinless thighs keep the sat fat down — cut everything before the wok is hot",
       "items": [
         {
-          "amount": "180g",
-          "name": "short-grain rice (sushi/Korean)"
+          "amount": "450g",
+          "name": "boneless skinless chicken thighs, bite-size (freeze the rest of the 800g Tesco pack)"
         },
         {
-          "amount": "350g",
-          "name": "Tesco Irish beef stir-fry strips, raw (teriyaki sauce sachet discarded)"
+          "amount": "150g",
+          "name": "white rice, uncooked (cook separately)"
         },
         {
-          "amount": "1.5 tbsp",
-          "name": "reduced-salt soy sauce (Lee Kum Kee)"
+          "amount": "15g",
+          "name": "fresh ginger, sliced into coins"
         },
         {
-          "amount": "1.5 tbsp",
-          "name": "toasted sesame oil (marinade + veg + sauce)"
+          "amount": "6 cloves",
+          "name": "garlic, peeled and left whole"
         },
         {
-          "amount": "2 cloves",
-          "name": "garlic, finely grated"
+          "amount": "2",
+          "name": "scallions, cut into 1-inch pieces"
         },
         {
-          "amount": "1 tbsp",
-          "name": "light brown sugar"
-        },
-        {
-          "amount": "1.5 tbsp",
-          "name": "gochujang"
-        },
-        {
-          "amount": "1/2 tbsp",
-          "name": "rice vinegar"
+          "amount": "2",
+          "name": "dried red chillies (or 1/2 tsp red pepper flakes)"
         }
       ]
     },
     {
       "stage": "Cook",
-      "hint": "Blanch, saute, sear",
+      "hint": "Wok on high — aromatics, brown, then glaze",
       "items": [
         {
-          "amount": "100g",
-          "name": "bean sprouts"
+          "amount": "1.5 tbsp",
+          "name": "toasted sesame oil (1 tbsp aromatics + 1/2 tbsp chicken)"
         },
         {
-          "amount": "1",
-          "name": "carrot, julienned"
+          "amount": "1/2 tbsp",
+          "name": "light brown sugar"
         },
         {
-          "amount": "1/2",
-          "name": "courgette, julienned"
+          "amount": "60ml",
+          "name": "Shaoxing rice wine"
         },
         {
-          "amount": "75g",
-          "name": "shiitake or chestnut mushrooms, sliced"
-        },
-        {
-          "amount": "1 tbsp",
-          "name": "rapeseed / neutral oil"
-        },
-        {
-          "amount": "to taste",
-          "name": "fine sea salt"
+          "amount": "30ml",
+          "name": "reduced-salt soy sauce (in place of light soy — measure, don't free-pour)"
         }
       ]
     },
     {
       "stage": "Finish",
-      "hint": "Assemble & garnish",
       "items": [
         {
-          "amount": "1/2 tbsp",
-          "name": "toasted sesame seeds"
+          "amount": "20g",
+          "name": "Thai basil leaves (grab alongside Wednesday's basil)"
         },
         {
-          "amount": "1",
-          "name": "scallion, thinly sliced"
+          "amount": "~75g dry pp",
+          "name": "steamed rice, served separately — adds ~265 kcal & 6g protein per serving (not in the card totals)"
         }
       ]
     }
   ],
   "nutrition": {
-    "calories": 790,
-    "protein": 50,
-    "carbs": 92,
+    "calories": 440,
+    "protein": 40,
+    "carbs": 10,
     "fat": 26,
-    "satfat": 5,
-    "salt": 2.2
+    "satfat": 6,
+    "salt": 1.8
   }
 };
 
