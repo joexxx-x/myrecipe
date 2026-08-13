@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Light Salmon & Cherry Tomato Curry — Cook Mode</title>
+<title>Korean Beef Bibimbap (비빔밥) — Cook Mode</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
@@ -257,10 +257,10 @@
 
 <header class="ck-header">
   <div>
-    <h1 class="ck-title">Light Salmon & Cherry Tomato Curry</h1>
+    <h1 class="ck-title">Korean Beef Bibimbap (비빔밥)</h1>
     <div class="ck-meta">
       <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M5 21V8a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v13"/><path d="M3 21h18"/><path d="M9 8h6"/></svg><b>2</b> servings</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>5</b>m prep</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>25</b>m prep</span>
       <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>25</b>m cook</span>
     </div>
   </div>
@@ -313,13 +313,13 @@
 // Also replace the {{...}} header placeholders above.
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 const RECIPE = {
-  "name": "Light Salmon & Cherry Tomato Curry",
+  "name": "Korean Beef Bibimbap (비빔밥)",
   "servings": "2",
-  "prep_time": "5",
+  "prep_time": "25",
   "cook_time": "25",
   "steps": [
     {
-      "text": "Start the basmati (rinse, boil, simmer 12 minutes, rest off the heat). Pat the salmon dry and season both sides with black pepper and half of the measured salt.",
+      "text": "Rinse the rice until the water runs clear, then cook it (150g rice to ~180ml water — boil, cover, lowest heat 12 minutes, then rest off the heat 10 minutes without lifting the lid).",
       "timer": {
         "label": "Rice",
         "min": 12,
@@ -327,88 +327,127 @@ const RECIPE = {
       }
     },
     {
-      "text": "Warm the olive oil in a lidded skillet over medium heat. Add the garlic, ginger and chilli and cook until golden and fragrant, then toast the cumin seeds for 15 seconds.",
+      "text": "Marinate the beef: toss the sliced beef with 1 tbsp reduced-salt soy, 1/2 tbsp sesame oil, 1 grated garlic clove and the brown sugar. Leave it while you prep everything else.",
+      "timer": null
+    },
+    {
+      "text": "Make the sauce: stir the gochujang with 1/2 tbsp sesame oil, the rice vinegar, the second grated garlic clove and 1 tbsp water until smooth and spoonable. Loosen with a splash more water if it's stiff.",
+      "timer": null
+    },
+    {
+      "text": "Blanch the spinach in boiling water, then lift it straight into cold water. Squeeze it properly dry — handful by handful — and season with a few drops of sesame oil and a pinch of salt.",
       "timer": {
-        "label": "Aromatics",
+        "label": "Spinach",
+        "min": 0,
+        "sec": 30
+      }
+    },
+    {
+      "text": "Blanch the bean sprouts in the same water, drain, and toss with a few drops of sesame oil and a pinch of salt. Keep each namul in its own pile.",
+      "timer": {
+        "label": "Bean sprouts",
         "min": 3,
         "sec": 0
       }
     },
     {
-      "text": "Stir in the cherry tomatoes, ground coriander and turmeric. Pour in 100ml light coconut milk and 150ml water, add the remaining salt, and simmer uncovered until the tomatoes burst and the sauce reduces slightly.",
+      "text": "Heat 1/2 tbsp neutral oil over medium-high. Sauté the carrot with a pinch of salt until just tender, then remove. Repeat with the courgette. Then the mushrooms — cook those until properly golden, not grey.",
       "timer": {
-        "label": "Simmer",
+        "label": "Vegetables",
         "min": 8,
         "sec": 0
       }
     },
     {
-      "text": "Stir in the spinach until just wilted. Nestle the salmon fillets into the curry, cover and simmer over medium-low until just cooked through — check early, skinless fillets cook fast.",
+      "text": "Turn the heat to high, add the last 1/2 tbsp oil and sear the marinated beef in a single layer until caramelised at the edges. Don't crowd it — do two batches if the pan looks full.",
       "timer": {
-        "label": "Salmon",
-        "min": 6,
+        "label": "Sear beef",
+        "min": 4,
         "sec": 0
       }
     },
     {
-      "text": "Serve over the rice and finish with the torn herbs. No lunches to pack tonight — it's Friday.",
+      "text": "Fry the eggs sunny-side up so the yolks stay runny — the yolk is what binds the bowl when you mix it.",
       "timer": null
+    },
+    {
+      "text": "Build each bowl: warm rice as the base, the beef and each vegetable arranged in their own sections around the edge, fried egg in the centre. Sesame seeds and scallion over the top, gochujang sauce alongside to stir in at the table. Go heavy on the gochujang."
     }
   ],
   "ingredients": [
     {
       "stage": "Prep",
-      "hint": "Mise en place — before the pan is hot",
+      "hint": "The whole dish is prep — get every component cut and piled before anything hits heat",
       "items": [
         {
-          "amount": "240g",
-          "name": "Tesco Finest Scottish salmon fillets, skinless (1 pack of 2)"
-        },
-        {
-          "amount": "200g",
-          "name": "basmati rice, uncooked"
-        },
-        {
-          "amount": "2 cloves",
-          "name": "garlic, minced"
-        },
-        {
-          "amount": "1/2 tbsp",
-          "name": "fresh ginger, minced"
-        },
-        {
-          "amount": "1",
-          "name": "bird's-eye chilli, sliced"
+          "amount": "150g",
+          "name": "short-grain sushi rice, uncooked (cook separately)"
         },
         {
           "amount": "250g",
-          "name": "cherry tomatoes (1 Piccobella pack)"
+          "name": "lean beef sirloin or topside, trimmed and thinly sliced"
         },
         {
-          "amount": "—",
-          "name": "spices: 1/4 tsp cumin seeds + 1/4 tsp ground coriander + 1/4 tsp ground turmeric"
+          "amount": "1 tbsp",
+          "name": "reduced-salt soy sauce (beef marinade)"
+        },
+        {
+          "amount": "1/2 tbsp",
+          "name": "light brown sugar (beef marinade)"
+        },
+        {
+          "amount": "1.5 tbsp",
+          "name": "gochujang (Korean chilli paste)"
+        },
+        {
+          "amount": "1/2 tbsp",
+          "name": "rice vinegar"
+        },
+        {
+          "amount": "2 cloves",
+          "name": "garlic, finely grated (1 marinade + 1 sauce)"
+        },
+        {
+          "amount": "100g",
+          "name": "spinach"
+        },
+        {
+          "amount": "100g",
+          "name": "bean sprouts (mung bean)"
+        },
+        {
+          "amount": "1",
+          "name": "carrot, julienned"
+        },
+        {
+          "amount": "1/2",
+          "name": "courgette, julienned"
+        },
+        {
+          "amount": "75g",
+          "name": "chestnut or shiitake mushrooms, sliced"
         }
       ]
     },
     {
       "stage": "Cook",
-      "hint": "Build the curry, then poach the salmon in it",
+      "hint": "One pan, wiped between components — vegetables first, beef last",
       "items": [
         {
-          "amount": "1/2 tbsp",
-          "name": "extra-virgin olive oil (in place of ghee — heart-smart)"
+          "amount": "1.5 tbsp",
+          "name": "toasted sesame oil (1/2 marinade + 1/2 sauce + 1/2 seasoning the namul)"
         },
         {
-          "amount": "100ml + 150ml",
-          "name": "light coconut milk + water (freeze the remaining 300ml of the can)"
+          "amount": "1 tbsp",
+          "name": "rapeseed or other neutral oil"
         },
         {
-          "amount": "90g",
-          "name": "spinach (1 × Tesco Spinach 90g pack)"
+          "amount": "2",
+          "name": "eggs"
         },
         {
-          "amount": "1/8 tsp",
-          "name": "fine sea salt + black pepper to taste"
+          "amount": "a few pinches",
+          "name": "fine sea salt, for the namul"
         }
       ]
     },
@@ -416,23 +455,27 @@ const RECIPE = {
       "stage": "Finish",
       "items": [
         {
-          "amount": "10g",
-          "name": "fresh mint, basil or coriander, torn"
+          "amount": "1/2 tbsp",
+          "name": "toasted sesame seeds"
         },
         {
-          "amount": "100g pp",
-          "name": "basmati rice (dry weight), served under — adds ~350 kcal & 8g protein per serving (not in the card totals)"
+          "amount": "1",
+          "name": "scallion, thinly sliced"
+        },
+        {
+          "amount": "75g dry pp",
+          "name": "steamed rice, served as the base — adds ~258 kcal & 6g protein per serving (not in the card totals)"
         }
       ]
     }
   ],
   "nutrition": {
-    "calories": 335,
-    "protein": 26,
-    "carbs": 7,
-    "fat": 21,
-    "satfat": 5.6,
-    "salt": 0.6
+    "calories": 490,
+    "protein": 38,
+    "carbs": 22,
+    "fat": 27,
+    "satfat": 5.4,
+    "salt": 1.5
   }
 };
 

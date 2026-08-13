@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Thai Holy Basil Tofu (Pad Kra Pao) — Cook Mode</title>
+<title>Kung Pao Chicken (宫保鸡丁) — Cook Mode</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
@@ -257,11 +257,11 @@
 
 <header class="ck-header">
   <div>
-    <h1 class="ck-title">Thai Holy Basil Tofu (Pad Kra Pao)</h1>
+    <h1 class="ck-title">Kung Pao Chicken (宫保鸡丁)</h1>
     <div class="ck-meta">
       <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M5 21V8a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v13"/><path d="M3 21h18"/><path d="M9 8h6"/></svg><b>4</b> servings</span>
       <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>15</b>m prep</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>20</b>m cook</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>15</b>m cook</span>
     </div>
   </div>
   <div class="wake-dot" id="wakeDot" title="Screen stays on while cooking"></div>
@@ -313,143 +313,169 @@
 // Also replace the {{...}} header placeholders above.
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 const RECIPE = {
-  "name": "Thai Holy Basil Tofu (Pad Kra Pao)",
+  "name": "Kung Pao Chicken (宫保鸡丁)",
   "servings": "4",
   "prep_time": "15",
-  "cook_time": "20",
+  "cook_time": "15",
   "steps": [
     {
-      "text": "Start the rice — rinse 300g jasmine (or basmati) and cook: boil, cover, low 12 minutes, then rest 10 off the heat. It should land just as the wok work ends.",
+      "text": "Start the brown rice — it's the long pole tonight, so get it on before anything else.",
       "timer": {
-        "label": "Rice",
-        "min": 12,
+        "label": "Brown rice",
+        "min": 25,
         "sec": 0
       }
     },
     {
-      "text": "Pat the tofu very dry, then crumble or finely dice it small so it crisps like minced meat.",
-      "timer": null
-    },
-    {
-      "text": "Pound or finely mince the garlic, chillies and shallot into a rough paste. Stir together the sauce: 2 tbsp reduced-salt soy, 1 tbsp dark soy, 1 tbsp oyster sauce, 1 tbsp fish sauce, 1 tsp sugar and 2 tbsp water.",
-      "timer": null
-    },
-    {
-      "text": "Heat 1 tbsp oil in a wok over high heat. Fry the tofu, pressing it flat, until golden and crisp at the edges — patience here is what makes it eat like mince. Push to one side.",
+      "text": "Cut the chicken into 2cm cubes and toss with 1 tsp reduced-salt soy, 1 tsp cornstarch and a pinch of salt. Leave it to sit while you do everything else.",
       "timer": {
-        "label": "Crisp tofu",
+        "label": "Marinate",
+        "min": 10,
+        "sec": 0
+      }
+    },
+    {
+      "text": "Mix the sauce in a bowl: 2.5 tbsp reduced-salt soy, the dark soy, Chinkiang vinegar, sugar, the remaining 1 tbsp cornstarch, sesame oil and 4 tbsp water. Whisk until no lumps — once the wok is hot there's no time.",
+      "timer": null
+    },
+    {
+      "text": "Air-fry the frozen broccoli at 190°C, shaking once, until the edges char slightly. Set aside — it goes in at the end so it stays crisp.",
+      "timer": {
+        "label": "Broccoli",
+        "min": 8,
+        "sec": 0
+      }
+    },
+    {
+      "text": "Heat the rapeseed oil in a wok over high heat. Add the dried chillies and Sichuan peppercorns and stir until fragrant — the moment you smell them, move on or they'll turn bitter.",
+      "timer": {
+        "label": "Aromatics",
+        "min": 0,
+        "sec": 30
+      }
+    },
+    {
+      "text": "Add the chicken in a single layer and leave it alone to sear, then stir-fry until cooked through. Work in two batches if the wok looks crowded — crowded means steamed, not seared.",
+      "timer": {
+        "label": "Chicken",
         "min": 6,
         "sec": 0
       }
     },
     {
-      "text": "Add the remaining 1 tbsp oil and the chilli paste; stir-fry about 30 seconds until fragrant. Add the green beans and pepper and stir-fry until crisp-tender.",
+      "text": "Add the garlic and ginger and stir-fry until fragrant.",
       "timer": {
-        "label": "Veg",
-        "min": 3,
-        "sec": 0
+        "label": "Garlic & ginger",
+        "min": 0,
+        "sec": 30
       }
     },
     {
-      "text": "Pour in the sauce and toss everything until glossy. Off the heat, fold through the basil until just wilted.",
+      "text": "Give the sauce a final stir (the cornstarch settles) and pour it in. Toss until it thickens and glosses everything.",
       "timer": null
     },
     {
-      "text": "Fry the eggs in a little hot oil until the edges are crisp and lacy and the yolks still runny.",
-      "timer": {
-        "label": "Fry eggs",
-        "min": 4,
-        "sec": 0
-      }
+      "text": "Add the peanuts, spring onions and the air-fried broccoli. Toss for 30 seconds and kill the heat — the peanuts should stay crunchy.",
+      "timer": null
     },
     {
-      "text": "Serve over the rice, each bowl topped with a fried egg. Plate two portions for dinner; cool the other two promptly and refrigerate for Thursday's office lunches (reheat the rice to at least 70°C — the stir-fry is fine warm or cold).",
-      "timer": null
+      "text": "Serve over the brown rice. Pack two portions for tomorrow's office lunches — keep the peanuts in a separate corner of the box so they don't go soft."
     }
   ],
   "ingredients": [
     {
       "stage": "Prep",
-      "hint": "Mise en place — before the wok is hot",
+      "hint": "Wok cooking is fast — everything must be cut and measured before the oil goes in",
       "items": [
         {
-          "amount": "560g",
-          "name": "Tofoo naked tofu (2 × 280g), patted very dry & crumbled small"
+          "amount": "700g",
+          "name": "boneless skinless chicken thighs, cut into 2cm cubes"
         },
         {
-          "amount": "300g",
-          "name": "jasmine rice (or basmati), uncooked"
+          "amount": "1 tsp + 2.5 tbsp",
+          "name": "reduced-salt soy sauce (marinade + sauce — measure it, don't free-pour)"
+        },
+        {
+          "amount": "2 tbsp",
+          "name": "cornstarch (1 tsp marinade + the rest in the sauce)"
+        },
+        {
+          "amount": "2 tsp",
+          "name": "dark soy sauce"
+        },
+        {
+          "amount": "4 tsp",
+          "name": "Chinkiang vinegar"
+        },
+        {
+          "amount": "2 tsp",
+          "name": "sugar"
+        },
+        {
+          "amount": "2 tsp",
+          "name": "toasted sesame oil"
+        },
+        {
+          "amount": "240g",
+          "name": "brown rice, uncooked (cook separately)"
+        },
+        {
+          "amount": "400g",
+          "name": "frozen broccoli florets"
         },
         {
           "amount": "6 cloves",
-          "name": "garlic"
+          "name": "garlic, minced"
         },
         {
-          "amount": "4",
-          "name": "Thai red chillies (bird's eye), to taste"
+          "amount": "2 tbsp",
+          "name": "fresh ginger, minced"
         },
         {
-          "amount": "1",
-          "name": "shallot"
-        },
-        {
-          "amount": "—",
-          "name": "sauce: 2 tbsp reduced-salt soy + 1 tbsp dark soy + 1 tbsp oyster sauce + 1 tbsp fish sauce + 1 tsp sugar + 2 tbsp water"
-        },
-        {
-          "amount": "250g",
-          "name": "green beans, trimmed & cut into 2cm"
-        },
-        {
-          "amount": "1",
-          "name": "red bell pepper, sliced"
+          "amount": "6",
+          "name": "spring onions, chopped"
         }
       ]
     },
     {
       "stage": "Cook",
-      "hint": "Wok on high — tofu first, then veg, then sauce",
+      "hint": "Wok on the highest heat you have",
       "items": [
         {
-          "amount": "2 tbsp",
-          "name": "rapeseed or neutral oil, for the wok"
+          "amount": "2.5 tbsp",
+          "name": "rapeseed or other neutral oil"
         },
         {
-          "amount": "1 tbsp",
-          "name": "rapeseed oil, for frying the eggs"
+          "amount": "16",
+          "name": "dried red chillies"
         },
         {
-          "amount": "4",
-          "name": "eggs (1 per serving)"
+          "amount": "2 tsp",
+          "name": "Sichuan peppercorns"
         }
       ]
     },
     {
       "stage": "Finish",
-      "hint": "Off the heat + the base — dinner for two + two Thursday lunches",
       "items": [
         {
-          "amount": "30g",
-          "name": "Thai holy or sweet basil, folded through off the heat"
+          "amount": "90g",
+          "name": "roasted peanuts"
         },
         {
-          "amount": "75g pp",
-          "name": "jasmine rice (dry weight), served under — adds ~262 kcal & 5g protein per serving (not in the card totals)"
-        },
-        {
-          "amount": "2",
-          "name": "airtight lunch boxes for Thursday"
+          "amount": "60g dry pp",
+          "name": "brown rice, served separately — adds ~259 kcal & 6g protein per serving (not in the card totals)"
         }
       ]
     }
   ],
   "nutrition": {
-    "calories": 415,
-    "protein": 33,
-    "carbs": 12,
-    "fat": 27,
-    "satfat": 4.0,
-    "salt": 2.5
+    "calories": 540,
+    "protein": 41,
+    "carbs": 13,
+    "fat": 33,
+    "satfat": 6,
+    "salt": 1.3
   }
 };
 

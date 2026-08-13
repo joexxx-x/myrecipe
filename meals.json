@@ -1,32 +1,26 @@
 [
   {
-    "date": "2026-08-03",
+    "date": "2026-08-14",
     "meal": "dinner",
-    "name": "Air-Fryer Kou Shui Ji Chicken Breast (口水鸡)",
-    "file": "meals/2026-08-03_dinner_air-fryer-kou-shui-ji-chicken-breast.html"
+    "name": "Roasted Cod & Leeks with Mustard Vinaigrette",
+    "file": "meals/2026-08-14_dinner_roasted-cod-leeks-vinaigrette.html"
   },
   {
-    "date": "2026-08-05",
+    "date": "2026-08-15",
     "meal": "dinner",
-    "name": "Thai Holy Basil Tofu (Pad Kra Pao)",
-    "file": "meals/2026-08-05_dinner_thai-holy-basil-tofu.html"
+    "name": "Korean Beef Bibimbap (비빔밥)",
+    "file": "meals/2026-08-15_dinner_korean-beef-bibimbap.html"
   },
   {
-    "date": "2026-08-06",
+    "date": "2026-08-16",
     "meal": "dinner",
-    "name": "Air-Fryer Kou Shui Ji Chicken Breast (口水鸡)",
-    "file": "meals/2026-08-06_dinner_air-fryer-kou-shui-ji-chicken-breast.html"
+    "name": "Kung Pao Chicken (宫保鸡丁)",
+    "file": "meals/2026-08-16_dinner_kung-pao-chicken.html"
   },
   {
-    "date": "2026-08-07",
+    "date": "2026-08-17",
     "meal": "dinner",
-    "name": "Light Salmon & Cherry Tomato Curry",
-    "file": "meals/2026-08-07_dinner_light-salmon-cherry-tomato-curry.html"
-  },
-  {
-    "date": "2026-08-08",
-    "meal": "dinner",
-    "name": "Three-Cup Chicken (三杯鸡)",
-    "file": "meals/2026-08-08_dinner_three-cup-chicken.html"
+    "name": "Masala Chickpeas with Tofu & Blistered Tomatoes",
+    "file": "meals/2026-08-17_dinner_masala-chickpeas-tofu.html"
   }
 ]
