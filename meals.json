@@ -1,15 +1,9 @@
 [
   {
-    "date": "2026-08-14",
-    "meal": "dinner",
-    "name": "Roasted Cod & Leeks with Mustard Vinaigrette",
-    "file": "meals/2026-08-14_dinner_roasted-cod-leeks-vinaigrette.html"
-  },
-  {
     "date": "2026-08-15",
     "meal": "dinner",
-    "name": "Korean Beef Bibimbap (비빔밥)",
-    "file": "meals/2026-08-15_dinner_korean-beef-bibimbap.html"
+    "name": "Air-Fryer Kou Shui Ji Chicken Breast (口水鸡)",
+    "file": "meals/2026-08-15_dinner_air-fryer-kou-shui-ji-chicken-breast.html"
   },
   {
     "date": "2026-08-16",
