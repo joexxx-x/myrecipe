@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Kung Pao Chicken (宫保鸡丁) — Cook Mode</title>
+<title>Light Salmon & Cherry Tomato Curry — Cook Mode</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
@@ -257,11 +257,11 @@
 
 <header class="ck-header">
   <div>
-    <h1 class="ck-title">Kung Pao Chicken (宫保鸡丁)</h1>
+    <h1 class="ck-title">Light Salmon & Cherry Tomato Curry</h1>
     <div class="ck-meta">
       <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M5 21V8a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v13"/><path d="M3 21h18"/><path d="M9 8h6"/></svg><b>4</b> servings</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>15</b>m prep</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>15</b>m cook</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>10</b>m prep</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>25</b>m cook</span>
     </div>
   </div>
   <div class="wake-dot" id="wakeDot" title="Screen stays on while cooking"></div>
@@ -313,145 +313,102 @@
 // Also replace the {{...}} header placeholders above.
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 const RECIPE = {
-  "name": "Kung Pao Chicken (宫保鸡丁)",
-  "servings": "4",
-  "prep_time": "15",
-  "cook_time": "15",
-  "steps": [
+  name: "Light Salmon & Cherry Tomato Curry",
+  servings: "4",
+  prep_time: "10",
+  cook_time: "25",
+  steps: [
     {
-      "text": "Start the brown rice — it's the long pole tonight, so get it on before anything else.",
+      "text": "Start the basmati: rinse 400g until the water runs clear, boil, then simmer covered for 12 minutes and rest off the heat. Meanwhile pat the salmon dry and season both sides with black pepper and half of the measured salt.",
       "timer": {
-        "label": "Brown rice",
-        "min": 25,
+        "label": "Rice",
+        "min": 12,
         "sec": 0
       }
     },
     {
-      "text": "Cut the chicken into 2cm cubes and toss with 1 tsp reduced-salt soy, 1 tsp cornstarch and a pinch of salt. Leave it to sit while you do everything else.",
-      "timer": {
-        "label": "Marinate",
-        "min": 10,
-        "sec": 0
-      }
-    },
-    {
-      "text": "Mix the sauce in a bowl: 2.5 tbsp reduced-salt soy, the dark soy, Chinkiang vinegar, sugar, the remaining 1 tbsp cornstarch, sesame oil and 4 tbsp water. Whisk until no lumps — once the wok is hot there's no time.",
-      "timer": null
-    },
-    {
-      "text": "Air-fry the frozen broccoli at 190°C, shaking once, until the edges char slightly. Set aside — it goes in at the end so it stays crisp.",
-      "timer": {
-        "label": "Broccoli",
-        "min": 8,
-        "sec": 0
-      }
-    },
-    {
-      "text": "Heat the rapeseed oil in a wok over high heat. Add the dried chillies and Sichuan peppercorns and stir until fragrant — the moment you smell them, move on or they'll turn bitter.",
+      "text": "Warm the olive oil in a large lidded skillet over medium heat. Add the garlic, ginger and chilli and cook, stirring, until golden and fragrant, then toast the cumin seeds for 15 seconds.",
       "timer": {
         "label": "Aromatics",
-        "min": 0,
-        "sec": 30
-      }
-    },
-    {
-      "text": "Add the chicken in a single layer and leave it alone to sear, then stir-fry until cooked through. Work in two batches if the wok looks crowded — crowded means steamed, not seared.",
-      "timer": {
-        "label": "Chicken",
-        "min": 6,
+        "min": 3,
         "sec": 0
       }
     },
     {
-      "text": "Add the garlic and ginger and stir-fry until fragrant.",
+      "text": "Stir in the cherry tomatoes, ground coriander and turmeric. Pour in 200ml light coconut milk and 250ml water, add the remaining salt, and simmer uncovered until the tomato skins burst and the sauce reduces slightly. Press a few tomatoes with the spoon to help them along.",
       "timer": {
-        "label": "Garlic & ginger",
-        "min": 0,
-        "sec": 30
+        "label": "Simmer",
+        "min": 9,
+        "sec": 0
       }
     },
     {
-      "text": "Give the sauce a final stir (the cornstarch settles) and pour it in. Toss until it thickens and glosses everything.",
-      "timer": null
+      "text": "Stir in the spinach a handful at a time until just wilted. Nestle the salmon fillets into the curry in a single layer, spooning sauce over the tops. Cover and simmer over medium-low until just cooked through — check at 5 minutes, the thinner fillets finish first.",
+      "timer": {
+        "label": "Salmon",
+        "min": 7,
+        "sec": 0
+      }
     },
     {
-      "text": "Add the peanuts, spring onions and the air-fried broccoli. Toss for 30 seconds and kill the heat — the peanuts should stay crunchy.",
+      "text": "Serve over the rice and finish with the torn herbs. Pack two portions with rice for tomorrow's office lunches — cool them uncovered for 10 minutes before the lids go on.",
       "timer": null
-    },
-    {
-      "text": "Serve over the brown rice. Pack two portions for tomorrow's office lunches — keep the peanuts in a separate corner of the box so they don't go soft."
     }
   ],
-  "ingredients": [
+  ingredients: [
     {
       "stage": "Prep",
-      "hint": "Wok cooking is fast — everything must be cut and measured before the oil goes in",
+      "hint": "Mise en place — before the pan is hot",
       "items": [
         {
-          "amount": "700g",
-          "name": "boneless skinless chicken thighs, cut into 2cm cubes"
-        },
-        {
-          "amount": "1 tsp + 2.5 tbsp",
-          "name": "reduced-salt soy sauce (marinade + sauce — measure it, don't free-pour)"
-        },
-        {
-          "amount": "2 tbsp",
-          "name": "cornstarch (1 tsp marinade + the rest in the sauce)"
-        },
-        {
-          "amount": "2 tsp",
-          "name": "dark soy sauce"
-        },
-        {
-          "amount": "4 tsp",
-          "name": "Chinkiang vinegar"
-        },
-        {
-          "amount": "2 tsp",
-          "name": "sugar"
-        },
-        {
-          "amount": "2 tsp",
-          "name": "toasted sesame oil"
-        },
-        {
-          "amount": "240g",
-          "name": "brown rice, uncooked (cook separately)"
+          "amount": "680g",
+          "name": "salmon fillets, skinless (1 × Tesco 4 Salmon Fillets 440g + 1 × Tesco Finest 2 Scottish 240g)"
         },
         {
           "amount": "400g",
-          "name": "frozen broccoli florets"
+          "name": "basmati rice, uncooked (100g per serving)"
         },
         {
-          "amount": "6 cloves",
+          "amount": "3 cloves",
           "name": "garlic, minced"
         },
         {
-          "amount": "2 tbsp",
+          "amount": "1 tbsp",
           "name": "fresh ginger, minced"
         },
         {
-          "amount": "6",
-          "name": "spring onions, chopped"
+          "amount": "1",
+          "name": "bird's-eye chilli, sliced"
+        },
+        {
+          "amount": "500g",
+          "name": "cherry tomatoes (2 × Piccobella 250g packs)"
+        },
+        {
+          "amount": "—",
+          "name": "spices: 1/2 tsp cumin seeds + 1/2 tsp ground coriander + 1/2 tsp ground turmeric"
         }
       ]
     },
     {
       "stage": "Cook",
-      "hint": "Wok on the highest heat you have",
+      "hint": "Build the curry, then poach the salmon in it",
       "items": [
         {
-          "amount": "2.5 tbsp",
-          "name": "rapeseed or other neutral oil"
+          "amount": "1 tbsp",
+          "name": "extra-virgin olive oil (in place of ghee — heart-smart)"
         },
         {
-          "amount": "16",
-          "name": "dried red chillies"
+          "amount": "200ml + 250ml",
+          "name": "light coconut milk + water (freeze the remaining 200ml of the can)"
         },
         {
-          "amount": "2 tsp",
-          "name": "Sichuan peppercorns"
+          "amount": "180g",
+          "name": "spinach (2 × Tesco Spinach 90g packs)"
+        },
+        {
+          "amount": "1/4 tsp",
+          "name": "fine sea salt + black pepper to taste"
         }
       ]
     },
@@ -459,23 +416,23 @@ const RECIPE = {
       "stage": "Finish",
       "items": [
         {
-          "amount": "90g",
-          "name": "roasted peanuts"
+          "amount": "10g",
+          "name": "fresh mint, basil or coriander, torn"
         },
         {
-          "amount": "60g dry pp",
-          "name": "brown rice, served separately — adds ~259 kcal & 6g protein per serving (not in the card totals)"
+          "amount": "100g pp",
+          "name": "basmati rice (dry weight), served under — adds ~350 kcal & 8g protein per serving (not in the card totals)"
         }
       ]
     }
   ],
-  "nutrition": {
-    "calories": 540,
-    "protein": 41,
-    "carbs": 13,
-    "fat": 33,
-    "satfat": 6,
-    "salt": 1.3
+  nutrition: {
+    "calories": 500,
+    "protein": 39,
+    "carbs": 8,
+    "fat": 34,
+    "satfat": 7.7,
+    "salt": 0.6
   }
 };
 

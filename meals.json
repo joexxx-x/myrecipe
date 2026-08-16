@@ -1,15 +1,9 @@
 [
   {
-    "date": "2026-08-15",
-    "meal": "dinner",
-    "name": "Air-Fryer Kou Shui Ji Chicken Breast (口水鸡)",
-    "file": "meals/2026-08-15_dinner_air-fryer-kou-shui-ji-chicken-breast.html"
-  },
-  {
     "date": "2026-08-16",
     "meal": "dinner",
-    "name": "Kung Pao Chicken (宫保鸡丁)",
-    "file": "meals/2026-08-16_dinner_kung-pao-chicken.html"
+    "name": "Light Salmon & Cherry Tomato Curry",
+    "file": "meals/2026-08-16_dinner_light-salmon-cherry-tomato-curry.html"
   },
   {
     "date": "2026-08-17",
