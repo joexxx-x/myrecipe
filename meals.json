@@ -8,7 +8,13 @@
   {
     "date": "2026-08-17",
     "meal": "dinner",
-    "name": "Masala Chickpeas with Tofu & Blistered Tomatoes",
-    "file": "meals/2026-08-17_dinner_masala-chickpeas-tofu.html"
+    "name": "Kung Pao Chicken (宫保鸡丁)",
+    "file": "meals/2026-08-17_dinner_kung-pao-chicken.html"
+  },
+  {
+    "date": "2026-08-18",
+    "meal": "dinner",
+    "name": "Black Bean & Avocado Wraps",
+    "file": "meals/2026-08-18_dinner_black-bean-avocado-wraps.html"
   }
 ]
