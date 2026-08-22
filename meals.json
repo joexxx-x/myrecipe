@@ -1,20 +1,8 @@
 [
   {
-    "date": "2026-08-16",
-    "meal": "dinner",
-    "name": "Light Salmon & Cherry Tomato Curry",
-    "file": "meals/2026-08-16_dinner_light-salmon-cherry-tomato-curry.html"
-  },
-  {
-    "date": "2026-08-17",
+    "date": "2026-08-22",
     "meal": "dinner",
     "name": "Kung Pao Chicken (宫保鸡丁)",
-    "file": "meals/2026-08-17_dinner_kung-pao-chicken.html"
-  },
-  {
-    "date": "2026-08-18",
-    "meal": "dinner",
-    "name": "Black Bean & Avocado Wraps",
-    "file": "meals/2026-08-18_dinner_black-bean-avocado-wraps.html"
+    "file": "meals/2026-08-22_dinner_kung-pao-chicken.html"
   }
 ]
