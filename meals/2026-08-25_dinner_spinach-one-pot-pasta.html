@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Kung Pao Chicken (宫保鸡丁) — Cook Mode</title>
+<title>Spinach One-Pot Pasta with Sardines — Cook Mode</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
@@ -257,10 +257,10 @@
 
 <header class="ck-header">
   <div>
-    <h1 class="ck-title">Kung Pao Chicken (宫保鸡丁)</h1>
+    <h1 class="ck-title">Spinach One-Pot Pasta with Sardines</h1>
     <div class="ck-meta">
       <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M5 21V8a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v13"/><path d="M3 21h18"/><path d="M9 8h6"/></svg><b>4</b> servings</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>15</b>m prep</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>5</b>m prep</span>
       <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>15</b>m cook</span>
     </div>
   </div>
@@ -313,169 +313,27 @@
 // Also replace the {{...}} header placeholders above.
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 const RECIPE = {
-  "name": "Kung Pao Chicken (宫保鸡丁)",
-  "servings": "4",
-  "prep_time": "15",
-  "cook_time": "15",
-  "steps": [
-    {
-      "text": "Start the brown rice — it's the long pole tonight, so get it on before anything else.",
-      "timer": {
-        "label": "Brown rice",
-        "min": 25,
-        "sec": 0
-      }
-    },
-    {
-      "text": "Cut the chicken into 2cm cubes and toss with 1 tsp reduced-salt soy, 1 tsp cornstarch and a pinch of salt. Leave it to sit while you do everything else.",
-      "timer": {
-        "label": "Marinate",
-        "min": 10,
-        "sec": 0
-      }
-    },
-    {
-      "text": "Mix the sauce in a bowl: 2.5 tbsp reduced-salt soy, the dark soy, Chinkiang vinegar, sugar, the remaining 1 tbsp cornstarch, sesame oil and 4 tbsp water. Whisk until no lumps — once the wok is hot there's no time.",
-      "timer": null
-    },
-    {
-      "text": "Air-fry the frozen broccoli at 190°C, shaking once, until the edges char slightly. Set aside — it goes in at the end so it stays crisp.",
-      "timer": {
-        "label": "Broccoli",
-        "min": 8,
-        "sec": 0
-      }
-    },
-    {
-      "text": "Heat the rapeseed oil in a wok over high heat. Add the dried chillies and Sichuan peppercorns and stir until fragrant — the moment you smell them, move on or they'll turn bitter.",
-      "timer": {
-        "label": "Aromatics",
-        "min": 0,
-        "sec": 30
-      }
-    },
-    {
-      "text": "Add the chicken in a single layer and leave it alone to sear, then stir-fry until cooked through. Work in two batches if the wok looks crowded — crowded means steamed, not seared.",
-      "timer": {
-        "label": "Chicken",
-        "min": 6,
-        "sec": 0
-      }
-    },
-    {
-      "text": "Add the garlic and ginger and stir-fry until fragrant.",
-      "timer": {
-        "label": "Garlic & ginger",
-        "min": 0,
-        "sec": 30
-      }
-    },
-    {
-      "text": "Give the sauce a final stir (the cornstarch settles) and pour it in. Toss until it thickens and glosses everything.",
-      "timer": null
-    },
-    {
-      "text": "Add the peanuts, spring onions and the air-fried broccoli. Toss for 30 seconds and kill the heat — the peanuts should stay crunchy.",
-      "timer": null
-    },
-    {
-      "text": "Serve over the brown rice. Two portions left over — box them up and keep the peanuts in a separate corner so they don't go soft."
-    }
+  name: "Spinach One-Pot Pasta with Sardines",
+  servings: "4",
+  prep_time: "5",
+  cook_time: "15",
+  steps: [
+    {"text": "Bring a large pot of water to a boil and salt it lightly — go easier than usual, the anchovies and Parmesan carry most of the seasoning.", "timer": null},
+    {"text": "Add the pasta and cook until just shy of al dente, about 1 minute less than the package says. Reserve 240ml pasta water before draining.", "timer": {"label": "Pasta", "min": 7, "sec": 0}},
+    {"text": "Pile the spinach into a large colander in the sink. Drain the pasta straight over the spinach so the hot water wilts it. Drizzle with a little olive oil and stir so it doesn't stick.", "timer": null},
+    {"text": "Wipe out the pot and set it over medium-high heat. Add 2 tbsp olive oil and the anchovies — careful, it may splatter. Stir until the anchovies start to dissolve.", "timer": {"label": "Anchovies", "min": 0, "sec": 45}},
+    {"text": "Break the drained sardines into large chunks and add them to the pot. Toss gently to warm through — keep the chunks intact.", "timer": {"label": "Sardines", "min": 0, "sec": 30}},
+    {"text": "Tip the pasta and spinach back into the pot. Add the Parmesan and red pepper flakes. Stir until a glossy sauce forms and the spinach fully wilts. If it looks dry, add reserved pasta water a tablespoon at a time.", "timer": {"label": "Emulsify", "min": 2, "sec": 0}},
+    {"text": "Squeeze the lemon over everything. Taste — reach for more lemon before more salt.", "timer": null},
+    {"text": "Serve with extra Parmesan if you like. Cool two portions promptly and refrigerate for tomorrow's lunches.", "timer": null}
   ],
-  "ingredients": [
-    {
-      "stage": "Prep",
-      "hint": "Wok cooking is fast — everything must be cut and measured before the oil goes in",
-      "items": [
-        {
-          "amount": "700g",
-          "name": "boneless skinless chicken thighs, cut into 2cm cubes"
-        },
-        {
-          "amount": "1 tsp + 2.5 tbsp",
-          "name": "reduced-salt soy sauce (marinade + sauce — measure it, don't free-pour)"
-        },
-        {
-          "amount": "2 tbsp",
-          "name": "cornstarch (1 tsp marinade + the rest in the sauce)"
-        },
-        {
-          "amount": "2 tsp",
-          "name": "dark soy sauce"
-        },
-        {
-          "amount": "4 tsp",
-          "name": "Chinkiang vinegar"
-        },
-        {
-          "amount": "2 tsp",
-          "name": "sugar"
-        },
-        {
-          "amount": "2 tsp",
-          "name": "toasted sesame oil"
-        },
-        {
-          "amount": "240g",
-          "name": "brown rice, uncooked (cook separately)"
-        },
-        {
-          "amount": "400g",
-          "name": "frozen broccoli florets"
-        },
-        {
-          "amount": "6 cloves",
-          "name": "garlic, minced"
-        },
-        {
-          "amount": "2 tbsp",
-          "name": "fresh ginger, minced"
-        },
-        {
-          "amount": "6",
-          "name": "spring onions, chopped"
-        }
-      ]
-    },
-    {
-      "stage": "Cook",
-      "hint": "Wok on the highest heat you have",
-      "items": [
-        {
-          "amount": "2.5 tbsp",
-          "name": "rapeseed or other neutral oil"
-        },
-        {
-          "amount": "16",
-          "name": "dried red chillies"
-        },
-        {
-          "amount": "2 tsp",
-          "name": "Sichuan peppercorns"
-        }
-      ]
-    },
-    {
-      "stage": "Finish",
-      "items": [
-        {
-          "amount": "90g",
-          "name": "roasted peanuts"
-        },
-        {
-          "amount": "60g dry pp",
-          "name": "brown rice, served separately — adds ~259 kcal & 6g protein per serving (not in the card totals)"
-        }
-      ]
-    }
+  ingredients: [
+    {"stage": "Prep", "hint": "Mise en place — before the pot is hot", "items": [{"amount": "340g", "name": "short pasta (gigli, fusilli or orecchiette), dry"}, {"amount": "400g", "name": "spinach"}, {"amount": "2 × 120g cans", "name": "sardines in olive oil, drained (180g drained)"}, {"amount": "20g", "name": "oil-packed anchovy fillets"}, {"amount": "60g", "name": "Parmesan, grated"}, {"amount": "a pinch", "name": "salt for the pasta water — go easy"}]},
+    {"stage": "Cook", "items": [{"amount": "3 tbsp", "name": "olive oil"}, {"amount": "1/2 tsp", "name": "red pepper flakes"}, {"amount": "240ml", "name": "reserved pasta water, as needed"}]},
+    {"stage": "Finish", "hint": "Off the heat, to serve", "items": [{"amount": "1", "name": "lemon, halved"}, {"amount": "to taste", "name": "extra grated Parmesan (optional)"}]}
   ],
-  "nutrition": {
-    "calories": 540,
-    "protein": 41,
-    "carbs": 13,
-    "fat": 33,
-    "satfat": 6,
-    "salt": 1.3
+  nutrition: {
+    calories: 600, protein: 36, carbs: 71, fat: 19, satfat: 5.9, salt: 1.5
   }
 };
 
