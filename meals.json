@@ -1,20 +1,8 @@
 [
   {
-    "date": "2026-08-25",
+    "date": "2026-08-31",
     "meal": "dinner",
-    "name": "Spinach One-Pot Pasta with Sardines",
-    "file": "meals/2026-08-25_dinner_spinach-one-pot-pasta.html"
-  },
-  {
-    "date": "2026-08-26",
-    "meal": "dinner",
-    "name": "Thai Holy Basil Tofu (Pad Kra Pao)",
-    "file": "meals/2026-08-26_dinner_thai-holy-basil-tofu.html"
-  },
-  {
-    "date": "2026-08-27",
-    "meal": "dinner",
-    "name": "Air-Fryer Ginger-Scallion Chicken Breast",
-    "file": "meals/2026-08-27_dinner_air-fryer-ginger-scallion-chicken.html"
+    "name": "Light Salmon & Cherry Tomato Curry",
+    "file": "meals/2026-08-31_dinner_light-salmon-cherry-tomato-curry.html"
   }
 ]
