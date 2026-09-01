@@ -1,8 +1,26 @@
 [
   {
-    "date": "2026-08-31",
+    "date": "2026-09-02",
     "meal": "dinner",
-    "name": "Light Salmon & Cherry Tomato Curry",
-    "file": "meals/2026-08-31_dinner_light-salmon-cherry-tomato-curry.html"
+    "name": "Kung Pao Tofu & Edamame (宫保豆腐)",
+    "file": "meals/2026-09-02_dinner_kung-pao-tofu-edamame.html"
+  },
+  {
+    "date": "2026-09-04",
+    "meal": "dinner",
+    "name": "Roasted Cod & Leeks with Mustard Vinaigrette",
+    "file": "meals/2026-09-04_dinner_roasted-cod-leeks-vinaigrette.html"
+  },
+  {
+    "date": "2026-09-05",
+    "meal": "dinner",
+    "name": "Korean Beef Bibimbap (비빔밥)",
+    "file": "meals/2026-09-05_dinner_korean-beef-bibimbap.html"
+  },
+  {
+    "date": "2026-09-06",
+    "meal": "dinner",
+    "name": "Baked Spiced Mediterranean Chicken",
+    "file": "meals/2026-09-06_dinner_baked-mediterranean-chicken.html"
   }
 ]

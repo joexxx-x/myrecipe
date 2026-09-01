@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Light Salmon & Cherry Tomato Curry — Cook Mode</title>
+<title>Kung Pao Tofu & Edamame (宫保豆腐) — Cook Mode</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
@@ -257,10 +257,10 @@
 
 <header class="ck-header">
   <div>
-    <h1 class="ck-title">Light Salmon & Cherry Tomato Curry</h1>
+    <h1 class="ck-title">Kung Pao Tofu & Edamame (宫保豆腐)</h1>
     <div class="ck-meta">
       <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M5 21V8a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v13"/><path d="M3 21h18"/><path d="M9 8h6"/></svg><b>4</b> servings</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>10</b>m prep</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>20</b>m prep</span>
       <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>25</b>m cook</span>
     </div>
   </div>
@@ -313,138 +313,171 @@
 // Also replace the {{...}} header placeholders above.
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 const RECIPE = {
-  name: "Light Salmon & Cherry Tomato Curry",
-  servings: "4",
-  prep_time: "10",
-  cook_time: "25",
-  steps: [
+  "name": "Kung Pao Tofu & Edamame (宫保豆腐)",
+  "servings": "4",
+  "prep_time": "20",
+  "cook_time": "25",
+  "steps": [
     {
-      "text": "Start the basmati: rinse 520g until the water runs clear, boil, then simmer covered for 12 minutes and rest off the heat. Meanwhile pat the salmon dry and season both sides with black pepper and half of the measured salt.",
+      "text": "Start the basmati: rinse 400g until the water runs clear, boil, then simmer covered for 12 minutes and rest off the heat. Drain the three tofu blocks, wrap in a clean towel and press under a heavy pan while you do everything else.",
       "timer": {
-        "label": "Rice",
-        "min": 12,
+        "label": "Press tofu",
+        "min": 10,
         "sec": 0
       }
     },
     {
-      "text": "Toast the cashews dry in the empty skillet over medium heat until they colour, then tip them onto a plate — they go on at the end and want to stay crunchy.",
-      "timer": {
-        "label": "Cashews",
-        "min": 4,
-        "sec": 0
-      }
+      "text": "Whisk the sauce: 2.5 tbsp reduced-salt soy, 1.5 tbsp hoisin, 1.5 tbsp brown sugar, 2 tbsp Shaoxing, 1 tbsp Chinkiang vinegar, 2 tsp sesame oil, 1/2 tsp white pepper, the grated garlic and ginger, 2 tsp cornstarch and 120ml water. Chop the peppers, celery and scallions (keep the scallion greens aside).",
+      "timer": null
     },
     {
-      "text": "Warm the olive oil in the same large lidded skillet over medium heat. Add the garlic, ginger and chilli and cook, stirring, until golden and fragrant, then toast the cumin seeds for 15 seconds.",
+      "text": "Boil the frozen soya beans in a small pan until just tender, then drain well — wet beans will spit in the wok later.",
       "timer": {
-        "label": "Aromatics",
+        "label": "Soya beans",
         "min": 3,
         "sec": 0
       }
     },
     {
-      "text": "Stir in the cherry tomatoes, ground coriander and turmeric. Pour in 200ml light coconut milk and 250ml water, add the remaining salt, and simmer uncovered until the tomato skins burst and the sauce reduces slightly. Press a few tomatoes with the spoon to help them along.",
+      "text": "Cut the pressed tofu into 2cm cubes, season with a small pinch of salt, then toss in the 40g cornstarch right before frying so every side is coated.",
+      "timer": null
+    },
+    {
+      "text": "Heat the rapeseed oil in a large skillet or wok over medium-high. Fry the tofu in a single layer — three batches, don't crowd it — until golden and crisp, about 3 minutes per side. Remove to a plate.",
       "timer": {
-        "label": "Simmer",
-        "min": 9,
+        "label": "Fry tofu",
+        "min": 3,
         "sec": 0
       }
     },
     {
-      "text": "Stir in the spinach a handful at a time until just wilted — it's 4 packs, so it goes in in waves and collapses to almost nothing. Nestle the salmon fillets into the curry in a single layer, spooning sauce over the tops. Cover and simmer over medium-low until just cooked through — check at 5 minutes, the thinner fillets finish first.",
+      "text": "Add the bell peppers, celery and scallion whites to the pan. Stir-fry until crisp-tender and charred at the edges.",
       "timer": {
-        "label": "Salmon",
-        "min": 7,
+        "label": "Veg",
+        "min": 4,
         "sec": 0
       }
     },
     {
-      "text": "Serve over the rice, scatter the toasted cashews and torn herbs over the top. Pack two portions with rice for tomorrow's office lunches — cool them uncovered for 10 minutes before the lids go on, and keep the cashews in a separate corner so they don't soften.",
+      "text": "Add the Sichuan peppercorns, dried chillies and drained soya beans; stir until fragrant (open a window).",
+      "timer": {
+        "label": "Aromatics",
+        "min": 1,
+        "sec": 0
+      }
+    },
+    {
+      "text": "Return the tofu, re-stir the sauce and pour it in. Toss and simmer until glossy and thickened.",
+      "timer": {
+        "label": "Glaze",
+        "min": 2,
+        "sec": 0
+      }
+    },
+    {
+      "text": "Off the heat, add the peanuts, scallion greens and cilantro. Serve over the rice. Pack two portions with rice for tomorrow's office lunches — cool uncovered 10 minutes before the lids go on, peanuts in a separate corner so they stay crunchy.",
       "timer": null
     }
   ],
-  ingredients: [
+  "ingredients": [
     {
       "stage": "Prep",
-      "hint": "Mise en place — before the pan is hot",
+      "hint": "Mise en place — start the rice and the tofu press first",
       "items": [
         {
-          "amount": "680g",
-          "name": "salmon fillets, skinless (1 × Tesco 4 Salmon Fillets 440g + 1 × Tesco Finest 2 Scottish 240g)"
+          "amount": "840g",
+          "name": "Tofoo Naked tofu (3 × 280g), pressed and cut into 2cm cubes"
         },
         {
-          "amount": "520g",
-          "name": "basmati rice, uncooked (130g per serving)"
+          "amount": "400g",
+          "name": "basmati rice, uncooked (100g per serving)"
         },
         {
-          "amount": "3 cloves",
-          "name": "garlic, minced"
-        },
-        {
-          "amount": "1 tbsp",
-          "name": "fresh ginger, minced"
-        },
-        {
-          "amount": "1",
-          "name": "bird's-eye chilli, sliced"
-        },
-        {
-          "amount": "500g",
-          "name": "cherry tomatoes (2 × Piccobella 250g packs)"
+          "amount": "40g",
+          "name": "cornstarch (≈5 tbsp), to coat the tofu"
         },
         {
           "amount": "—",
-          "name": "spices: 1/2 tsp cumin seeds + 1/2 tsp ground coriander + 1/2 tsp ground turmeric"
+          "name": "sauce: 2.5 tbsp reduced-salt soy, 1.5 tbsp hoisin, 1.5 tbsp brown sugar, 2 tbsp Shaoxing, 1 tbsp Chinkiang vinegar, 2 tsp sesame oil, 1/2 tsp white pepper, 2 tsp cornstarch, 120ml water"
+        },
+        {
+          "amount": "4 cloves",
+          "name": "garlic, finely grated (into the sauce)"
+        },
+        {
+          "amount": "3cm",
+          "name": "fresh ginger, finely grated (into the sauce)"
+        },
+        {
+          "amount": "2",
+          "name": "red bell peppers, cut into 1.5cm squares"
+        },
+        {
+          "amount": "3 stalks",
+          "name": "celery, sliced"
+        },
+        {
+          "amount": "5",
+          "name": "scallions, 2cm pieces (whites + greens separated)"
+        },
+        {
+          "amount": "300g",
+          "name": "Tesco soya beans (frozen), boiled & drained"
+        },
+        {
+          "amount": "8",
+          "name": "dried red chillies, torn"
+        },
+        {
+          "amount": "1.5 tsp",
+          "name": "Sichuan peppercorns"
+        },
+        {
+          "amount": "pinch",
+          "name": "fine sea salt (for the tofu)"
         }
       ]
     },
     {
       "stage": "Cook",
-      "hint": "Build the curry, then poach the salmon in it",
+      "hint": "Three batches of tofu, then the veg in the same pan",
       "items": [
         {
-          "amount": "40g",
-          "name": "cashews, unsalted — toasted first, scattered last"
-        },
-        {
-          "amount": "1 tbsp",
-          "name": "extra-virgin olive oil (in place of ghee — heart-smart)"
-        },
-        {
-          "amount": "200ml + 250ml",
-          "name": "light coconut milk + water (freeze the remaining 200ml of the can)"
-        },
-        {
-          "amount": "360g",
-          "name": "spinach (4 × Tesco Spinach 90g packs)"
-        },
-        {
-          "amount": "1/4 tsp",
-          "name": "fine sea salt + black pepper to taste"
+          "amount": "3 tbsp",
+          "name": "rapeseed oil"
         }
       ]
     },
     {
       "stage": "Finish",
+      "hint": "Off the heat",
       "items": [
         {
-          "amount": "10g",
-          "name": "fresh mint, basil or coriander, torn"
+          "amount": "60g",
+          "name": "roasted peanuts, unsalted"
         },
         {
-          "amount": "130g pp",
-          "name": "basmati rice (dry weight), served under — adds ~455 kcal & 10g protein per serving (not in the card totals)"
+          "amount": "—",
+          "name": "reserved scallion greens"
+        },
+        {
+          "amount": "handful",
+          "name": "fresh cilantro, chopped"
+        },
+        {
+          "amount": "100g dry pp",
+          "name": "steamed basmati, served as the base — adds ~350 kcal & 8g protein per serving (not in the card totals)"
         }
       ]
     }
   ],
-  nutrition: {
-    "calories": 575,
-    "protein": 42,
-    "carbs": 12,
-    "fat": 39,
-    "satfat": 8.6,
-    "salt": 0.6
+  "nutrition": {
+    "calories": 705,
+    "protein": 48,
+    "carbs": 32,
+    "fat": 42,
+    "satfat": 5.6,
+    "salt": 1.5
   }
 };
 
