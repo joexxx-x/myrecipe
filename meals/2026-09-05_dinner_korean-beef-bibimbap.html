@@ -259,9 +259,9 @@
   <div>
     <h1 class="ck-title">Korean Beef Bibimbap (비빔밥)</h1>
     <div class="ck-meta">
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M5 21V8a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v13"/><path d="M3 21h18"/><path d="M9 8h6"/></svg><b>2</b> servings</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>25</b>m prep</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>25</b>m cook</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M5 21V8a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v13"/><path d="M3 21h18"/><path d="M9 8h6"/></svg><b>4</b> servings</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>30</b>m prep</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>30</b>m cook</span>
     </div>
   </div>
   <div class="wake-dot" id="wakeDot" title="Screen stays on while cooking"></div>
@@ -314,12 +314,12 @@
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 const RECIPE = {
   "name": "Korean Beef Bibimbap (비빔밥)",
-  "servings": "2",
-  "prep_time": "25",
-  "cook_time": "25",
+  "servings": "4",
+  "prep_time": "30",
+  "cook_time": "30",
   "steps": [
     {
-      "text": "Rinse the rice until the water runs clear, then cook it (150g rice to ~180ml water — boil, cover, lowest heat 12 minutes, then rest off the heat 10 minutes without lifting the lid).",
+      "text": "Rinse the rice until the water runs clear, then cook it (300g rice to ~360ml water — boil, cover, lowest heat 12 minutes, then rest off the heat 10 minutes without lifting the lid).",
       "timer": {
         "label": "Rice",
         "min": 12,
@@ -327,11 +327,11 @@ const RECIPE = {
       }
     },
     {
-      "text": "Marinate the beef: toss the sliced beef with 1 tbsp reduced-salt soy, 1/2 tbsp sesame oil, 1 grated garlic clove and the brown sugar. Leave it while you prep everything else.",
+      "text": "Marinate the beef: toss the sliced beef with 2 tbsp reduced-salt soy, 1 tbsp sesame oil, 2 grated garlic cloves and the brown sugar. Leave it while you prep everything else.",
       "timer": null
     },
     {
-      "text": "Make the sauce: stir the gochujang with 1/2 tbsp sesame oil, the rice vinegar, the second grated garlic clove and 1 tbsp water until smooth and spoonable. Loosen with a splash more water if it's stiff.",
+      "text": "Make the sauce: stir the gochujang with 1 tbsp sesame oil, the rice vinegar, the other 2 grated garlic cloves and 2 tbsp water until smooth and spoonable. Loosen with a splash more water if it's stiff.",
       "timer": null
     },
     {
@@ -351,15 +351,15 @@ const RECIPE = {
       }
     },
     {
-      "text": "Heat 1/2 tbsp neutral oil over medium-high. Sauté the carrot with a pinch of salt until just tender, then remove. Repeat with the courgette. Then the mushrooms — cook those until properly golden, not grey.",
+      "text": "Heat 1 tbsp neutral oil over medium-high. Sauté the carrots with a pinch of salt until just tender, then remove. Repeat with the courgette. Then the mushrooms — cook those until properly golden, not grey.",
       "timer": {
         "label": "Vegetables",
-        "min": 8,
+        "min": 10,
         "sec": 0
       }
     },
     {
-      "text": "Turn the heat to high, add the last 1/2 tbsp oil and sear the marinated beef in a single layer until caramelised at the edges. Don't crowd it — do two batches if the pan looks full.",
+      "text": "Turn the heat to high, add the last 1 tbsp oil and sear the marinated beef in a single layer until caramelised at the edges. It's 500g — do it in two or three batches so it sears rather than stews.",
       "timer": {
         "label": "Sear beef",
         "min": 4,
@@ -367,11 +367,11 @@ const RECIPE = {
       }
     },
     {
-      "text": "Fry the eggs sunny-side up so the yolks stay runny — the yolk is what binds the bowl when you mix it.",
+      "text": "Fry the eggs sunny-side up so the yolks stay runny — the yolk is what binds the bowl when you mix it. Fry only two tonight; the lunch eggs are fried fresh tomorrow.",
       "timer": null
     },
     {
-      "text": "Build each bowl: warm rice as the base, the beef and each vegetable arranged in their own sections around the edge, fried egg in the centre. Sesame seeds and scallion over the top, gochujang sauce alongside to stir in at the table. Go heavy on the gochujang. No lunches to pack — it's Saturday.",
+      "text": "Build each bowl: warm rice as the base, the beef and each vegetable arranged in their own sections around the edge, fried egg in the centre. Sesame seeds and scallion over the top, gochujang sauce alongside to stir in at the table. Go heavy on the gochujang. Box the other two portions for Sunday lunch — rice, beef and vegetables together, sauce in a separate pot, egg fried fresh at lunchtime.",
       "timer": null
     }
   ],
@@ -381,51 +381,51 @@ const RECIPE = {
       "hint": "The whole dish is prep — get every component cut and piled before anything hits heat",
       "items": [
         {
-          "amount": "150g",
+          "amount": "300g",
           "name": "short-grain sushi rice, uncooked (cook separately)"
         },
         {
-          "amount": "250g",
+          "amount": "500g",
           "name": "lean beef sirloin or topside, trimmed and thinly sliced"
         },
         {
-          "amount": "1 tbsp",
+          "amount": "2 tbsp",
           "name": "reduced-salt soy sauce (beef marinade)"
         },
         {
-          "amount": "1/2 tbsp",
+          "amount": "1 tbsp",
           "name": "light brown sugar (beef marinade)"
         },
         {
-          "amount": "1.5 tbsp",
+          "amount": "3 tbsp",
           "name": "gochujang (Korean chilli paste)"
         },
         {
-          "amount": "1/2 tbsp",
+          "amount": "1 tbsp",
           "name": "rice vinegar"
         },
         {
-          "amount": "2 cloves",
-          "name": "garlic, finely grated (1 marinade + 1 sauce)"
+          "amount": "4 cloves",
+          "name": "garlic, finely grated (2 marinade + 2 sauce)"
         },
         {
-          "amount": "100g",
+          "amount": "200g",
           "name": "spinach"
         },
         {
-          "amount": "100g",
+          "amount": "200g",
           "name": "bean sprouts (mung bean)"
         },
         {
-          "amount": "1",
-          "name": "carrot, julienned"
+          "amount": "2",
+          "name": "carrots, julienned"
         },
         {
-          "amount": "1/2",
+          "amount": "1",
           "name": "courgette, julienned"
         },
         {
-          "amount": "75g",
+          "amount": "150g",
           "name": "chestnut or shiitake mushrooms, sliced"
         }
       ]
@@ -435,16 +435,16 @@ const RECIPE = {
       "hint": "One pan, wiped between components — vegetables first, beef last",
       "items": [
         {
-          "amount": "1.5 tbsp",
-          "name": "toasted sesame oil (1/2 marinade + 1/2 sauce + 1/2 seasoning the namul)"
+          "amount": "3 tbsp",
+          "name": "toasted sesame oil (1 marinade + 1 sauce + 1 seasoning the namul)"
         },
         {
-          "amount": "1 tbsp",
+          "amount": "2 tbsp",
           "name": "rapeseed or other neutral oil"
         },
         {
-          "amount": "2",
-          "name": "eggs"
+          "amount": "4",
+          "name": "eggs (2 tonight, 2 fried fresh for Sunday lunch)"
         },
         {
           "amount": "a few pinches",
@@ -456,12 +456,12 @@ const RECIPE = {
       "stage": "Finish",
       "items": [
         {
-          "amount": "1/2 tbsp",
+          "amount": "1 tbsp",
           "name": "toasted sesame seeds"
         },
         {
-          "amount": "1",
-          "name": "scallion, thinly sliced"
+          "amount": "2",
+          "name": "scallions, thinly sliced"
         },
         {
           "amount": "75g dry pp",

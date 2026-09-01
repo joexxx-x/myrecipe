@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Kung Pao Tofu (宫保豆腐) — Cook Mode</title>
+<title>Kung Pao Tofu & Edamame (宫保豆腐) — Cook Mode</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
@@ -257,11 +257,11 @@
 
 <header class="ck-header">
   <div>
-    <h1 class="ck-title">Kung Pao Tofu (宫保豆腐)</h1>
+    <h1 class="ck-title">Kung Pao Tofu & Edamame (宫保豆腐)</h1>
     <div class="ck-meta">
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M5 21V8a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v13"/><path d="M3 21h18"/><path d="M9 8h6"/></svg><b>2</b> servings</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M5 21V8a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v13"/><path d="M3 21h18"/><path d="M9 8h6"/></svg><b>4</b> servings</span>
       <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>20</b>m prep</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>20</b>m cook</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>25</b>m cook</span>
     </div>
   </div>
   <div class="wake-dot" id="wakeDot" title="Screen stays on while cooking"></div>
@@ -313,13 +313,13 @@
 // Also replace the {{...}} header placeholders above.
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 const RECIPE = {
-  "name": "Kung Pao Tofu (宫保豆腐)",
-  "servings": "2",
+  "name": "Kung Pao Tofu & Edamame (宫保豆腐)",
+  "servings": "4",
   "prep_time": "20",
-  "cook_time": "20",
+  "cook_time": "25",
   "steps": [
     {
-      "text": "Start the basmati: rinse 200g until the water runs clear, boil, then simmer covered for 12 minutes and rest off the heat. Drain both tofu blocks, wrap in a clean towel and press under a heavy pan while you do everything else.",
+      "text": "Start the basmati: rinse 400g until the water runs clear, boil, then simmer covered for 12 minutes and rest off the heat. Drain the three tofu blocks, wrap in a clean towel and press under a heavy pan while you do everything else.",
       "timer": {
         "label": "Press tofu",
         "min": 10,
@@ -327,15 +327,23 @@ const RECIPE = {
       }
     },
     {
-      "text": "Whisk the sauce: 1.5 tbsp reduced-salt soy, 1 tbsp hoisin, 1 tbsp brown sugar, 1 tbsp Shaoxing, 1/2 tbsp Chinkiang vinegar, 1 tsp sesame oil, 1/4 tsp white pepper, the grated garlic and ginger, 1 tsp cornstarch and 60ml water. Chop the pepper, celery and scallions (keep the greens aside).",
+      "text": "Whisk the sauce: 2.5 tbsp reduced-salt soy, 1.5 tbsp hoisin, 1.5 tbsp brown sugar, 2 tbsp Shaoxing, 1 tbsp Chinkiang vinegar, 2 tsp sesame oil, 1/2 tsp white pepper, the grated garlic and ginger, 2 tsp cornstarch and 120ml water. Chop the peppers, celery and scallions (keep the scallion greens aside).",
       "timer": null
     },
     {
-      "text": "Cut the pressed tofu into 2cm cubes, season with a small pinch of salt, then toss in the 30g cornstarch right before frying so every side is coated.",
+      "text": "Boil the frozen soya beans in a small pan until just tender, then drain well — wet beans will spit in the wok later.",
+      "timer": {
+        "label": "Soya beans",
+        "min": 3,
+        "sec": 0
+      }
+    },
+    {
+      "text": "Cut the pressed tofu into 2cm cubes, season with a small pinch of salt, then toss in the 40g cornstarch right before frying so every side is coated.",
       "timer": null
     },
     {
-      "text": "Heat the rapeseed oil in a large skillet or wok over medium-high. Fry the tofu in a single layer — two batches — until golden and crisp, about 3 minutes per side. Remove to a plate.",
+      "text": "Heat the rapeseed oil in a large skillet or wok over medium-high. Fry the tofu in a single layer — three batches, don't crowd it — until golden and crisp, about 3 minutes per side. Remove to a plate.",
       "timer": {
         "label": "Fry tofu",
         "min": 3,
@@ -343,7 +351,7 @@ const RECIPE = {
       }
     },
     {
-      "text": "Add the bell pepper, celery and scallion whites to the pan. Stir-fry until crisp-tender and charred at the edges.",
+      "text": "Add the bell peppers, celery and scallion whites to the pan. Stir-fry until crisp-tender and charred at the edges.",
       "timer": {
         "label": "Veg",
         "min": 4,
@@ -351,7 +359,7 @@ const RECIPE = {
       }
     },
     {
-      "text": "Add the Sichuan peppercorns and dried chillies; stir until fragrant (open a window).",
+      "text": "Add the Sichuan peppercorns, dried chillies and drained soya beans; stir until fragrant (open a window).",
       "timer": {
         "label": "Aromatics",
         "min": 1,
@@ -367,7 +375,7 @@ const RECIPE = {
       }
     },
     {
-      "text": "Off the heat, add the peanuts, scallion greens and cilantro. Serve over the rice. No lunches to pack — it's Friday.",
+      "text": "Off the heat, add the peanuts, scallion greens and cilantro. Serve over the rice. Box the other two portions with rice for Saturday lunch — cool uncovered 10 minutes before the lids go on, peanuts in a separate corner so they stay crunchy.",
       "timer": null
     }
   ],
@@ -377,47 +385,51 @@ const RECIPE = {
       "hint": "Mise en place — start the rice and the tofu press first",
       "items": [
         {
-          "amount": "560g",
-          "name": "Tofoo Naked tofu (2 × 280g), pressed and cut into 2cm cubes"
+          "amount": "840g",
+          "name": "Tofoo Naked tofu (3 × 280g), pressed and cut into 2cm cubes"
         },
         {
-          "amount": "200g",
+          "amount": "400g",
           "name": "basmati rice, uncooked (100g per serving)"
         },
         {
-          "amount": "30g",
-          "name": "cornstarch (≈4 tbsp), to coat the tofu"
+          "amount": "40g",
+          "name": "cornstarch (≈5 tbsp), to coat the tofu"
         },
         {
           "amount": "—",
-          "name": "sauce: 1.5 tbsp reduced-salt soy, 1 tbsp hoisin, 1 tbsp brown sugar, 1 tbsp Shaoxing, 1/2 tbsp Chinkiang vinegar, 1 tsp sesame oil, 1/4 tsp white pepper, 1 tsp cornstarch, 60ml water"
+          "name": "sauce: 2.5 tbsp reduced-salt soy, 1.5 tbsp hoisin, 1.5 tbsp brown sugar, 2 tbsp Shaoxing, 1 tbsp Chinkiang vinegar, 2 tsp sesame oil, 1/2 tsp white pepper, 2 tsp cornstarch, 120ml water"
         },
         {
-          "amount": "2 cloves",
+          "amount": "4 cloves",
           "name": "garlic, finely grated (into the sauce)"
         },
         {
-          "amount": "2cm",
+          "amount": "3cm",
           "name": "fresh ginger, finely grated (into the sauce)"
         },
         {
-          "amount": "1",
-          "name": "red bell pepper, cut into 1.5cm squares"
+          "amount": "2",
+          "name": "red bell peppers, cut into 1.5cm squares"
         },
         {
-          "amount": "2 stalks",
+          "amount": "3 stalks",
           "name": "celery, sliced"
         },
         {
-          "amount": "3",
+          "amount": "5",
           "name": "scallions, 2cm pieces (whites + greens separated)"
         },
         {
-          "amount": "5",
+          "amount": "300g",
+          "name": "Tesco soya beans (frozen), boiled & drained"
+        },
+        {
+          "amount": "8",
           "name": "dried red chillies, torn"
         },
         {
-          "amount": "1 tsp",
+          "amount": "1.5 tsp",
           "name": "Sichuan peppercorns"
         },
         {
@@ -428,10 +440,10 @@ const RECIPE = {
     },
     {
       "stage": "Cook",
-      "hint": "Two batches of tofu, then the veg in the same pan",
+      "hint": "Three batches of tofu, then the veg in the same pan",
       "items": [
         {
-          "amount": "1.5 tbsp",
+          "amount": "3 tbsp",
           "name": "rapeseed oil"
         }
       ]
@@ -441,7 +453,7 @@ const RECIPE = {
       "hint": "Off the heat",
       "items": [
         {
-          "amount": "40g",
+          "amount": "60g",
           "name": "roasted peanuts, unsalted"
         },
         {
@@ -460,12 +472,12 @@ const RECIPE = {
     }
   ],
   "nutrition": {
-    "calories": 790,
-    "protein": 53,
-    "carbs": 37,
-    "fat": 44,
-    "satfat": 6,
-    "salt": 1.9
+    "calories": 705,
+    "protein": 48,
+    "carbs": 32,
+    "fat": 42,
+    "satfat": 5.6,
+    "salt": 1.5
   }
 };
 
