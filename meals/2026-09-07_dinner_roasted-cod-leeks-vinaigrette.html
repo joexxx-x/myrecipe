@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Xu Fu's Braised Rice (徐福烩饭) — Cook Mode</title>
+<title>Roasted Cod & Leeks with Mustard Vinaigrette — Cook Mode</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
@@ -257,11 +257,11 @@
 
 <header class="ck-header">
   <div>
-    <h1 class="ck-title">Xu Fu's Braised Rice (徐福烩饭)</h1>
+    <h1 class="ck-title">Roasted Cod & Leeks with Mustard Vinaigrette</h1>
     <div class="ck-meta">
       <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M5 21V8a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v13"/><path d="M3 21h18"/><path d="M9 8h6"/></svg><b>4</b> servings</span>
       <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>15</b>m prep</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>30</b>m cook</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>42</b>m cook</span>
     </div>
   </div>
   <div class="wake-dot" id="wakeDot" title="Screen stays on while cooking"></div>
@@ -313,163 +313,127 @@
 // Also replace the {{...}} header placeholders above.
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 const RECIPE = {
-  "name": "Xu Fu's Braised Rice (徐福烩饭)",
+  "name": "Roasted Cod & Leeks with Mustard Vinaigrette",
   "servings": "4",
   "prep_time": "15",
-  "cook_time": "30",
+  "cook_time": "42",
   "steps": [
     {
-      "text": "Dice the chicken thighs into 2cm pieces and toss with the Shaoxing, white pepper, cornstarch, grated ginger, 1 tsp of the reduced-salt soy and 1 tsp oil. Leave to sit while you do the rest.",
-      "timer": null
-    },
-    {
-      "text": "Parboil the rice: rinse 400g, drop into a large pan of boiling water and boil until the grains turn translucent at the edges but are still chalky in the middle. Drain — and keep about 600ml of the cloudy rice water (米汤). That's the braising liquid, don't pour it away.",
+      "text": "Heat the oven to 200°C (180°C fan). Halve any baby potatoes bigger than a walnut so they're all a similar size, toss with 1 tbsp of the olive oil and plenty of black pepper, and spread over a large sheet pan. Roast 15 minutes.",
       "timer": {
-        "label": "Parboil rice",
-        "min": 3,
-        "sec": 0
-      }
-    },
-    {
-      "text": "Dice the onion, potatoes, squash and carrots into 1.5cm pieces and quarter the mushrooms — small, because they only get 15 minutes under the rice. Mince the garlic; slice the scallions, whites and greens apart.",
-      "timer": null
-    },
-    {
-      "text": "Heat the rapeseed oil in a large lidded pot or deep skillet over high heat. Sear the chicken in a single layer until coloured at the edges.",
-      "timer": {
-        "label": "Sear chicken",
-        "min": 4,
-        "sec": 0
-      }
-    },
-    {
-      "text": "Add the onion, garlic and scallion whites and fry until fragrant, then tip in the potato, squash, carrot and mushrooms and stir-fry until the edges start to catch.",
-      "timer": {
-        "label": "Veg",
-        "min": 5,
-        "sec": 0
-      }
-    },
-    {
-      "text": "Season: pour in the rest of the reduced-salt soy, the dark soy, oyster sauce and honey. Toss until everything is glossy and smells of caramelised sauce.",
-      "timer": null
-    },
-    {
-      "text": "Spread the parboiled rice in an even layer over the top — don't stir it in. Poke a few holes through with a chopstick, then pour the rice water around the edges until it just reaches the top of the veg layer (about 500ml). Cover, turn to medium-low and braise.",
-      "timer": {
-        "label": "Braise",
+        "label": "Potatoes",
         "min": 15,
         "sec": 0
       }
     },
     {
-      "text": "Lift the lid: if the liquid has gone from the edges, drop to the lowest heat for 2 minutes, then rest off the heat with the lid on for 3. If it still looks wet, cover and give it 5 more minutes.",
+      "text": "Meanwhile, slice the leeks and swish them in a big bowl of cold water to release the grit. Lift them out with your hands rather than pouring — the grit stays behind in the bowl. Drain and pat dry.",
+      "timer": null
+    },
+    {
+      "text": "Push the potatoes to one side of the pan. Add the leeks and capers with 1 tbsp olive oil, toss, and roast another 15 minutes, tossing once halfway, until the leeks are tender and catching at the edges.",
       "timer": {
-        "label": "Finish",
-        "min": 5,
+        "label": "Leeks",
+        "min": 15,
         "sec": 0
       }
     },
     {
-      "text": "Scatter the scallion greens over, then toss the whole pot through from the bottom so the crust and sauce mix into the rice. Taste — a little more honey if you want the film's sweetness. Pack two portions for tomorrow's office lunches; cool uncovered 10 minutes before the lids go on.",
+      "text": "While that roasts, whisk the vinaigrette: 3 tbsp olive oil with the minced shallot, red wine vinegar, parsley, wholegrain mustard and a good grind of black pepper. No extra salt — the capers and mustard carry it. Set aside.",
+      "timer": null
+    },
+    {
+      "text": "Pat the cod fillets thoroughly dry (wet fish steams instead of roasting). Drizzle with the last 1 tbsp olive oil and season with the 1/4 tsp fine sea salt and black pepper. Make room on the pan and lay the fillets among the leeks and potatoes.",
+      "timer": null
+    },
+    {
+      "text": "Roast until the cod flakes easily at the thickest point — 10 to 12 minutes, longer for thick fillets.",
+      "timer": {
+        "label": "Cod",
+        "min": 11,
+        "sec": 0
+      }
+    },
+    {
+      "text": "Spoon the vinaigrette over the fish and vegetables at the table, off the heat, so the mustard and vinegar stay sharp. Pack two portions for tomorrow's lunches — keep the vinaigrette in a separate little pot and spoon it on cold.",
       "timer": null
     }
   ],
   "ingredients": [
     {
       "stage": "Prep",
-      "hint": "Marinate the chicken first, parboil the rice, then chop",
+      "hint": "One sheet pan, staggered — potatoes, then leeks, then fish",
       "items": [
         {
-          "amount": "800g",
-          "name": "skinless boneless chicken thighs (one Tesco 800g pack), 2cm dice"
-        },
-        {
-          "amount": "—",
-          "name": "marinade: 1 tbsp Shaoxing wine, 1/2 tsp white pepper, 1 tbsp cornstarch, 1 tsp reduced-salt soy, 1 tsp rapeseed oil"
-        },
-        {
-          "amount": "2cm",
-          "name": "fresh ginger, grated (into the marinade)"
-        },
-        {
-          "amount": "400g",
-          "name": "basmati or other long-grain rice, parboiled 3 min — rice water reserved"
-        },
-        {
-          "amount": "1 large",
-          "name": "onion, 1.5cm dice"
-        },
-        {
-          "amount": "400g",
-          "name": "potatoes (2 medium), 1.5cm dice"
-        },
-        {
-          "amount": "400g",
-          "name": "butternut squash (about half a small one), 1.5cm dice — stands in for the 贝贝南瓜"
+          "amount": "1kg",
+          "name": "baby potatoes, larger ones halved"
         },
         {
           "amount": "2",
-          "name": "carrots, 1.5cm dice"
+          "name": "medium leeks, white and light green only, thinly sliced"
         },
         {
-          "amount": "150g",
-          "name": "chestnut mushrooms, quartered"
+          "amount": "720g",
+          "name": "skinless cod fillets (2 × Tesco 360g packs)"
         },
         {
-          "amount": "3 cloves",
-          "name": "garlic, minced"
+          "amount": "6 tbsp",
+          "name": "extra-virgin olive oil, divided (1 potatoes / 1 leeks / 1 cod / 3 vinaigrette)"
         },
         {
-          "amount": "4",
-          "name": "scallions, whites and greens separated"
+          "amount": "2 tbsp",
+          "name": "capers, drained"
         }
       ]
     },
     {
       "stage": "Cook",
-      "hint": "Sear, fry, season, then the rice goes on top and the lid goes on",
+      "hint": "Seasoning the fish — the only salt that gets added",
       "items": [
         {
-          "amount": "1.5 tbsp",
-          "name": "rapeseed oil"
+          "amount": "1/4 tsp",
+          "name": "fine sea salt"
         },
         {
-          "amount": "—",
-          "name": "sauce: 1 tbsp + 1 tsp reduced-salt soy (the rest of 1.5 tbsp), 1 tsp dark soy, 1 tbsp oyster sauce, 1 tbsp honey"
-        },
-        {
-          "amount": "~500ml",
-          "name": "reserved rice water (米汤), poured around the edges"
+          "amount": "to taste",
+          "name": "black pepper, freshly ground"
         }
       ]
     },
     {
       "stage": "Finish",
-      "hint": "Off the heat",
+      "hint": "Mustard vinaigrette — whisked cold, spooned at the table",
       "items": [
         {
-          "amount": "—",
-          "name": "reserved scallion greens"
+          "amount": "1 tbsp",
+          "name": "shallot, finely minced"
         },
         {
-          "amount": "to taste",
-          "name": "extra honey, a small drizzle (optional)"
+          "amount": "1 tbsp",
+          "name": "red wine vinegar"
         },
         {
-          "amount": "100g dry pp",
-          "name": "rice — cooked into the pot, so it IS in the card totals (~350 kcal & 8g protein of them per serving)"
+          "amount": "1 tsp",
+          "name": "wholegrain mustard"
+        },
+        {
+          "amount": "1 tbsp",
+          "name": "fresh parsley, minced"
+        },
+        {
+          "amount": "250g pp",
+          "name": "roasted baby potatoes as the base — adds ~215 kcal & 4.5g protein per serving (not in the card totals)"
         }
       ]
     }
   ],
   "nutrition": {
-    "calories": 880,
-    "protein": 52,
-    "carbs": 121,
-    "fat": 20,
-    "satfat": 4.3,
-    "salt": 1.4
+    "calories": 395,
+    "protein": 39,
+    "carbs": 4,
+    "fat": 22,
+    "satfat": 3.0,
+    "salt": 0.95
   }
 };
 

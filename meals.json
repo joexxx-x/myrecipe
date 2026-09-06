@@ -1,26 +1,32 @@
 [
   {
-    "date": "2026-09-02",
-    "meal": "dinner",
-    "name": "Xu Fu's Braised Rice (徐福烩饭)",
-    "file": "meals/2026-09-02_dinner_xu-fu-braised-rice.html"
-  },
-  {
-    "date": "2026-09-04",
-    "meal": "dinner",
-    "name": "Kung Pao Tofu & Edamame (宫保豆腐)",
-    "file": "meals/2026-09-04_dinner_kung-pao-tofu-edamame.html"
-  },
-  {
-    "date": "2026-09-05",
-    "meal": "dinner",
-    "name": "Korean Beef Bibimbap (비빔밥)",
-    "file": "meals/2026-09-05_dinner_korean-beef-bibimbap.html"
-  },
-  {
     "date": "2026-09-06",
     "meal": "dinner",
     "name": "Baked Spiced Mediterranean Chicken",
     "file": "meals/2026-09-06_dinner_baked-mediterranean-chicken.html"
+  },
+  {
+    "date": "2026-09-07",
+    "meal": "dinner",
+    "name": "Roasted Cod & Leeks with Mustard Vinaigrette",
+    "file": "meals/2026-09-07_dinner_roasted-cod-leeks-vinaigrette.html"
+  },
+  {
+    "date": "2026-09-08",
+    "meal": "dinner",
+    "name": "Super-Savory Grated Tofu Rice Bowls",
+    "file": "meals/2026-09-08_dinner_super-savory-grated-tofu.html"
+  },
+  {
+    "date": "2026-09-09",
+    "meal": "dinner",
+    "name": "Three-Cup Chicken with Broccoli (三杯鸡)",
+    "file": "meals/2026-09-09_dinner_three-cup-chicken-broccoli.html"
+  },
+  {
+    "date": "2026-09-10",
+    "meal": "dinner",
+    "name": "Lemony Orzo with Asparagus & Sardines",
+    "file": "meals/2026-09-10_dinner_lemony-orzo-asparagus-sardines.html"
   }
 ]

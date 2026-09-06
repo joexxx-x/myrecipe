@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Kung Pao Tofu & Edamame (宫保豆腐) — Cook Mode</title>
+<title>Super-Savory Grated Tofu Rice Bowls — Cook Mode</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
@@ -257,11 +257,11 @@
 
 <header class="ck-header">
   <div>
-    <h1 class="ck-title">Kung Pao Tofu & Edamame (宫保豆腐)</h1>
+    <h1 class="ck-title">Super-Savory Grated Tofu Rice Bowls</h1>
     <div class="ck-meta">
       <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M5 21V8a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v13"/><path d="M3 21h18"/><path d="M9 8h6"/></svg><b>4</b> servings</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>20</b>m prep</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>25</b>m cook</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>15</b>m prep</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>20</b>m cook</span>
     </div>
   </div>
   <div class="wake-dot" id="wakeDot" title="Screen stays on while cooking"></div>
@@ -313,171 +313,135 @@
 // Also replace the {{...}} header placeholders above.
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 const RECIPE = {
-  "name": "Kung Pao Tofu & Edamame (宫保豆腐)",
+  "name": "Super-Savory Grated Tofu Rice Bowls",
   "servings": "4",
-  "prep_time": "20",
-  "cook_time": "25",
+  "prep_time": "15",
+  "cook_time": "20",
   "steps": [
     {
-      "text": "Start the basmati: rinse 400g until the water runs clear, boil, then simmer covered for 12 minutes and rest off the heat. Drain the three tofu blocks, wrap in a clean towel and press under a heavy pan while you do everything else.",
+      "text": "Start the rice: rinse 300g basmati until the water runs clear, then cook by your usual method. It can sit covered off the heat while everything else happens.",
       "timer": {
-        "label": "Press tofu",
-        "min": 10,
+        "label": "Rice",
+        "min": 12,
         "sec": 0
       }
     },
     {
-      "text": "Whisk the sauce: 2.5 tbsp reduced-salt soy, 1.5 tbsp hoisin, 1.5 tbsp brown sugar, 2 tbsp Shaoxing, 1 tbsp Chinkiang vinegar, 2 tsp sesame oil, 1/2 tsp white pepper, the grated garlic and ginger, 2 tsp cornstarch and 120ml water. Chop the peppers, celery and scallions (keep the scallion greens aside).",
+      "text": "Wrap the tofu in a clean thin towel and gently squeeze out the excess water without crushing the block. Grate it on the large holes of a box grater; thinly slice any chunks that break off.",
       "timer": null
     },
     {
-      "text": "Boil the frozen soya beans in a small pan until just tender, then drain well — wet beans will spit in the wok later.",
-      "timer": {
-        "label": "Soya beans",
-        "min": 3,
-        "sec": 0
-      }
-    },
-    {
-      "text": "Cut the pressed tofu into 2cm cubes, season with a small pinch of salt, then toss in the 40g cornstarch right before frying so every side is coated.",
+      "text": "Whisk the sauce in a small bowl: reduced-salt soy, black vinegar, sugar, gochugaru and toasted sesame oil. Set it by the hob.",
       "timer": null
     },
     {
-      "text": "Heat the rapeseed oil in a large skillet or wok over medium-high. Fry the tofu in a single layer — three batches, don't crowd it — until golden and crisp, about 3 minutes per side. Remove to a plate.",
-      "timer": {
-        "label": "Fry tofu",
-        "min": 3,
-        "sec": 0
-      }
-    },
-    {
-      "text": "Add the bell peppers, celery and scallion whites to the pan. Stir-fry until crisp-tender and charred at the edges.",
-      "timer": {
-        "label": "Veg",
-        "min": 4,
-        "sec": 0
-      }
-    },
-    {
-      "text": "Add the Sichuan peppercorns, dried chillies and drained soya beans; stir until fragrant (open a window).",
+      "text": "Heat the neutral oil in a large nonstick skillet over medium-high. Add the scallion whites and pale greens, the chillies if using, and the sliced garlic. Stir often until softened and the garlic is just turning golden, about 2 minutes.",
       "timer": {
         "label": "Aromatics",
-        "min": 1,
-        "sec": 0
-      }
-    },
-    {
-      "text": "Return the tofu, re-stir the sauce and pour it in. Toss and simmer until glossy and thickened.",
-      "timer": {
-        "label": "Glaze",
         "min": 2,
         "sec": 0
       }
     },
     {
-      "text": "Off the heat, add the peanuts, scallion greens and cilantro. Serve over the rice. Box the other two portions with rice for Saturday lunch — cool uncovered 10 minutes before the lids go on, peanuts in a separate corner so they stay crunchy.",
+      "text": "Add the grated tofu and toss to coat in the aromatic oil. Leave it undisturbed for 2 minutes, then stir and keep going, stirring every couple of minutes, until plenty of the shreds are golden and chewy — 10 to 14 minutes. This browning is the whole point; don't rush it.",
+      "timer": {
+        "label": "Brown the tofu",
+        "min": 12,
+        "sec": 0
+      }
+    },
+    {
+      "text": "While the tofu browns, air-fry or steam the broccoli with the edamame until hot and bright green.",
+      "timer": {
+        "label": "Broccoli & edamame",
+        "min": 8,
+        "sec": 0
+      }
+    },
+    {
+      "text": "Pour the sauce over the tofu — it will bubble up fast. Stir with a silicone spatula until every shred is coated, then cook 1 minute more. Off the heat, scatter over the sesame seeds.",
+      "timer": null
+    },
+    {
+      "text": "Serve over the rice with the broccoli and edamame, finished with the reserved scallion tops and coriander. Pack two portions for tomorrow's lunches — it reheats better than almost anything else we cook.",
       "timer": null
     }
   ],
   "ingredients": [
     {
       "stage": "Prep",
-      "hint": "Mise en place — start the rice and the tofu press first",
+      "hint": "Rice on, tofu grated, sauce whisked — before the pan is hot",
       "items": [
         {
-          "amount": "840g",
-          "name": "Tofoo Naked tofu (3 × 280g), pressed and cut into 2cm cubes"
+          "amount": "300g",
+          "name": "basmati rice, uncooked (75g per serving)"
         },
         {
-          "amount": "400g",
-          "name": "basmati rice, uncooked (100g per serving)"
+          "amount": "560g",
+          "name": "super-firm tofu (2 × Tofoo 280g packs)"
         },
         {
-          "amount": "40g",
-          "name": "cornstarch (≈5 tbsp), to coat the tofu"
+          "amount": "4",
+          "name": "scallions, sliced on a bias, dark green tops reserved"
         },
         {
-          "amount": "—",
-          "name": "sauce: 2.5 tbsp reduced-salt soy, 1.5 tbsp hoisin, 1.5 tbsp brown sugar, 2 tbsp Shaoxing, 1 tbsp Chinkiang vinegar, 2 tsp sesame oil, 1/2 tsp white pepper, 2 tsp cornstarch, 120ml water"
-        },
-        {
-          "amount": "4 cloves",
-          "name": "garlic, finely grated (into the sauce)"
-        },
-        {
-          "amount": "3cm",
-          "name": "fresh ginger, finely grated (into the sauce)"
+          "amount": "3 cloves",
+          "name": "garlic, thinly sliced"
         },
         {
           "amount": "2",
-          "name": "red bell peppers, cut into 1.5cm squares"
+          "name": "Thai chillies, thinly sliced (optional)"
         },
         {
-          "amount": "3 stalks",
-          "name": "celery, sliced"
-        },
-        {
-          "amount": "5",
-          "name": "scallions, 2cm pieces (whites + greens separated)"
-        },
-        {
-          "amount": "300g",
-          "name": "Tesco soya beans (frozen), boiled & drained"
-        },
-        {
-          "amount": "8",
-          "name": "dried red chillies, torn"
-        },
-        {
-          "amount": "1.5 tsp",
-          "name": "Sichuan peppercorns"
-        },
-        {
-          "amount": "pinch",
-          "name": "fine sea salt (for the tofu)"
+          "amount": "—",
+          "name": "sauce: 3 tbsp reduced-salt soy + 1 tbsp Chinese black vinegar + 1 tsp sugar + 1 tbsp gochugaru + 1 tbsp toasted sesame oil"
         }
       ]
     },
     {
       "stage": "Cook",
-      "hint": "Three batches of tofu, then the veg in the same pan",
+      "hint": "Nonstick skillet, medium-high — the browning is the flavour",
       "items": [
         {
-          "amount": "3 tbsp",
-          "name": "rapeseed oil"
+          "amount": "1.5 tbsp",
+          "name": "neutral oil"
+        },
+        {
+          "amount": "400g",
+          "name": "broccoli florets (frozen is fine)"
+        },
+        {
+          "amount": "400g",
+          "name": "shelled edamame beans"
         }
       ]
     },
     {
       "stage": "Finish",
-      "hint": "Off the heat",
+      "hint": "Off the heat, then into bowls",
       "items": [
         {
-          "amount": "60g",
-          "name": "roasted peanuts, unsalted"
+          "amount": "1 tbsp",
+          "name": "roasted sesame seeds"
         },
         {
-          "amount": "—",
-          "name": "reserved scallion greens"
+          "amount": "15g",
+          "name": "coriander leaves and tender stems, roughly chopped"
         },
         {
-          "amount": "handful",
-          "name": "fresh cilantro, chopped"
-        },
-        {
-          "amount": "100g dry pp",
-          "name": "steamed basmati, served as the base — adds ~350 kcal & 8g protein per serving (not in the card totals)"
+          "amount": "75g dry pp",
+          "name": "steamed basmati as the base — adds ~263 kcal & 6g protein per serving (not in the card totals)"
         }
       ]
     }
   ],
   "nutrition": {
-    "calories": 705,
-    "protein": 48,
-    "carbs": 32,
-    "fat": 42,
-    "satfat": 5.6,
-    "salt": 1.5
+    "calories": 460,
+    "protein": 37,
+    "carbs": 11,
+    "fat": 26,
+    "satfat": 3.3,
+    "salt": 1.3
   }
 };
 

@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Korean Beef Bibimbap (비빔밥) — Cook Mode</title>
+<title>Three-Cup Chicken with Broccoli (三杯鸡) — Cook Mode</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
@@ -257,11 +257,11 @@
 
 <header class="ck-header">
   <div>
-    <h1 class="ck-title">Korean Beef Bibimbap (비빔밥)</h1>
+    <h1 class="ck-title">Three-Cup Chicken with Broccoli (三杯鸡)</h1>
     <div class="ck-meta">
       <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M5 21V8a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v13"/><path d="M3 21h18"/><path d="M9 8h6"/></svg><b>4</b> servings</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>30</b>m prep</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>30</b>m cook</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>10</b>m prep</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>25</b>m cook</span>
     </div>
   </div>
   <div class="wake-dot" id="wakeDot" title="Screen stays on while cooking"></div>
@@ -313,13 +313,13 @@
 // Also replace the {{...}} header placeholders above.
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 const RECIPE = {
-  "name": "Korean Beef Bibimbap (비빔밥)",
+  "name": "Three-Cup Chicken with Broccoli (三杯鸡)",
   "servings": "4",
-  "prep_time": "30",
-  "cook_time": "30",
+  "prep_time": "10",
+  "cook_time": "25",
   "steps": [
     {
-      "text": "Rinse the rice until the water runs clear, then cook it (300g rice to ~360ml water — boil, cover, lowest heat 12 minutes, then rest off the heat 10 minutes without lifting the lid).",
+      "text": "Start the rice — 300g basmati, rinsed and cooked your usual way. It holds fine off the heat while the braise reduces.",
       "timer": {
         "label": "Rice",
         "min": 12,
@@ -327,156 +327,129 @@ const RECIPE = {
       }
     },
     {
-      "text": "Marinate the beef: toss the sliced beef with 2 tbsp reduced-salt soy, 1 tbsp sesame oil, 2 grated garlic cloves and the brown sugar. Leave it while you prep everything else.",
-      "timer": null
-    },
-    {
-      "text": "Make the sauce: stir the gochujang with 1 tbsp sesame oil, the rice vinegar, the other 2 grated garlic cloves and 2 tbsp water until smooth and spoonable. Loosen with a splash more water if it's stiff.",
-      "timer": null
-    },
-    {
-      "text": "Blanch the spinach in boiling water, then lift it straight into cold water. Squeeze it properly dry — handful by handful — and season with a few drops of sesame oil and a pinch of salt.",
+      "text": "Heat a wok over high heat. Add 1.5 tbsp of the sesame oil and heat until it shimmers. Add the ginger coins, whole garlic cloves, scallion pieces and dried chillies. Stir until fragrant and just starting to colour, about 2 minutes.",
       "timer": {
-        "label": "Spinach",
-        "min": 0,
-        "sec": 30
-      }
-    },
-    {
-      "text": "Blanch the bean sprouts in the same water, drain, and toss with a few drops of sesame oil and a pinch of salt. Keep each namul in its own pile.",
-      "timer": {
-        "label": "Bean sprouts",
-        "min": 3,
+        "label": "Aromatics",
+        "min": 2,
         "sec": 0
       }
     },
     {
-      "text": "Heat 1 tbsp neutral oil over medium-high. Sauté the carrots with a pinch of salt until just tender, then remove. Repeat with the courgette. Then the mushrooms — cook those until properly golden, not grey.",
+      "text": "Push the aromatics up the sides of the wok and add the last 0.5 tbsp sesame oil. Lay the chicken in as close to a single layer as you can and cook, stirring occasionally, until browned and crisping at the edges — 5 to 7 minutes.",
       "timer": {
-        "label": "Vegetables",
+        "label": "Brown the chicken",
+        "min": 6,
+        "sec": 0
+      }
+    },
+    {
+      "text": "Sprinkle in the brown sugar and stir to coat. Pour in the rice wine and the reduced-salt soy, bring to a boil, then drop to medium-low and simmer uncovered until the sauce reduces to a glossy glaze that clings to the chicken — about 15 minutes.",
+      "timer": {
+        "label": "Reduce to a glaze",
+        "min": 15,
+        "sec": 0
+      }
+    },
+    {
+      "text": "While it reduces, air-fry or steam the broccoli until just tender and still bright.",
+      "timer": {
+        "label": "Broccoli",
         "min": 10,
         "sec": 0
       }
     },
     {
-      "text": "Turn the heat to high, add the last 1 tbsp oil and sear the marinated beef in a single layer until caramelised at the edges. It's 500g — do it in two or three batches so it sears rather than stews.",
-      "timer": {
-        "label": "Sear beef",
-        "min": 4,
-        "sec": 0
-      }
-    },
-    {
-      "text": "Fry the eggs sunny-side up so the yolks stay runny — the yolk is what binds the bowl when you mix it. Fry only two tonight; the lunch eggs are fried fresh tomorrow.",
+      "text": "Turn off the heat and stir the Thai basil through until it just wilts — it goes in off the heat or it turns black. Taste: it should be sweet-savoury and aromatic. If it needs lift, a splash of black vinegar does more than more soy would.",
       "timer": null
     },
     {
-      "text": "Build each bowl: warm rice as the base, the beef and each vegetable arranged in their own sections around the edge, fried egg in the centre. Sesame seeds and scallion over the top, gochujang sauce alongside to stir in at the table. Go heavy on the gochujang. Box the other two portions for Sunday lunch — rice, beef and vegetables together, sauce in a separate pot, egg fried fresh at lunchtime.",
+      "text": "Serve over the rice with the broccoli alongside, spooning the glaze over everything. Pack two portions for tomorrow's lunches — the sauce deepens overnight and this is arguably better on day two.",
       "timer": null
     }
   ],
   "ingredients": [
     {
       "stage": "Prep",
-      "hint": "The whole dish is prep — get every component cut and piled before anything hits heat",
+      "hint": "Rice on; peel a lot of garlic — 12 cloves is not a typo",
       "items": [
         {
+          "amount": "800g",
+          "name": "skinless boneless chicken thighs (one Tesco 800g pack), bite-size pieces"
+        },
+        {
           "amount": "300g",
-          "name": "short-grain sushi rice, uncooked (cook separately)"
+          "name": "basmati rice, uncooked (75g per serving)"
         },
         {
-          "amount": "500g",
-          "name": "lean beef sirloin or topside, trimmed and thinly sliced"
+          "amount": "30g",
+          "name": "fresh ginger, peeled and sliced into coins"
         },
         {
-          "amount": "2 tbsp",
-          "name": "reduced-salt soy sauce (beef marinade)"
+          "amount": "12 cloves",
+          "name": "garlic, peeled and left whole"
         },
         {
-          "amount": "1 tbsp",
-          "name": "light brown sugar (beef marinade)"
+          "amount": "4",
+          "name": "scallions, cut into 1-inch pieces"
         },
         {
-          "amount": "3 tbsp",
-          "name": "gochujang (Korean chilli paste)"
-        },
-        {
-          "amount": "1 tbsp",
-          "name": "rice vinegar"
-        },
-        {
-          "amount": "4 cloves",
-          "name": "garlic, finely grated (2 marinade + 2 sauce)"
-        },
-        {
-          "amount": "200g",
-          "name": "spinach"
-        },
-        {
-          "amount": "200g",
-          "name": "bean sprouts (mung bean)"
-        },
-        {
-          "amount": "2",
-          "name": "carrots, julienned"
-        },
-        {
-          "amount": "1",
-          "name": "courgette, julienned"
-        },
-        {
-          "amount": "150g",
-          "name": "chestnut or shiitake mushrooms, sliced"
+          "amount": "3",
+          "name": "dried red chillies (or 1 tsp chilli flakes)"
         }
       ]
     },
     {
       "stage": "Cook",
-      "hint": "One pan, wiped between components — vegetables first, beef last",
+      "hint": "Wok, high heat — then a slow reduce to a glaze",
       "items": [
         {
-          "amount": "3 tbsp",
-          "name": "toasted sesame oil (1 marinade + 1 sauce + 1 seasoning the namul)"
-        },
-        {
           "amount": "2 tbsp",
-          "name": "rapeseed or other neutral oil"
+          "name": "toasted sesame oil (down from 3 — trims the fat, keeps the aroma)"
         },
         {
-          "amount": "4",
-          "name": "eggs (2 tonight, 2 fried fresh for Sunday lunch)"
+          "amount": "1 tbsp",
+          "name": "light brown sugar"
         },
         {
-          "amount": "a few pinches",
-          "name": "fine sea salt, for the namul"
+          "amount": "120ml",
+          "name": "Shaoxing rice wine or Taiwanese mijiu (unsalted if you can find it)"
+        },
+        {
+          "amount": "40ml",
+          "name": "reduced-salt soy sauce (Lee Kum Kee) — down from 60ml regular light soy"
+        },
+        {
+          "amount": "450g",
+          "name": "broccoli florets (one Green Isle bag)"
         }
       ]
     },
     {
       "stage": "Finish",
+      "hint": "Basil goes in off the heat, or it blackens",
       "items": [
         {
-          "amount": "1 tbsp",
-          "name": "toasted sesame seeds"
+          "amount": "40g",
+          "name": "fresh Thai basil leaves"
         },
         {
-          "amount": "2",
-          "name": "scallions, thinly sliced"
+          "amount": "splash",
+          "name": "Chinese black vinegar, if it needs lift (better than more soy)"
         },
         {
           "amount": "75g dry pp",
-          "name": "steamed rice, served as the base — adds ~258 kcal & 6g protein per serving (not in the card totals)"
+          "name": "steamed basmati as the base — adds ~263 kcal & 6g protein per serving (not in the card totals)"
         }
       ]
     }
   ],
   "nutrition": {
-    "calories": 490,
-    "protein": 38,
-    "carbs": 22,
-    "fat": 27,
-    "satfat": 5.4,
-    "salt": 1.5
+    "calories": 436,
+    "protein": 43,
+    "carbs": 9,
+    "fat": 19,
+    "satfat": 4.6,
+    "salt": 1.7
   }
 };
 
