@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Grain Bowl with Sardines & Sauce Moyo — Cook Mode</title>
+<title>Super-Savory Grated Tofu with Edamame — Cook Mode</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
@@ -257,11 +257,11 @@
 
 <header class="ck-header">
   <div>
-    <h1 class="ck-title">Grain Bowl with Sardines & Sauce Moyo</h1>
+    <h1 class="ck-title">Super-Savory Grated Tofu with Edamame</h1>
     <div class="ck-meta">
       <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M5 21V8a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v13"/><path d="M3 21h18"/><path d="M9 8h6"/></svg><b>4</b> servings</span>
       <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>15</b>m prep</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>15</b>m cook</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>25</b>m cook</span>
     </div>
   </div>
   <div class="wake-dot" id="wakeDot" title="Screen stays on while cooking"></div>
@@ -313,125 +313,136 @@
 // Also replace the {{...}} header placeholders above.
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 const RECIPE = {
-  "name": "Grain Bowl with Sardines & Sauce Moyo",
+  "name": "Super-Savory Grated Tofu with Edamame",
   "servings": "4",
   "prep_time": "15",
-  "cook_time": "15",
+  "cook_time": "25",
   "steps": [
     {
-      "text": "Make the sauce moyo base: combine the red onion, garlic, lime juice and 1 tsp salt in a bowl. Let sit 5–10 minutes to mellow the raw bite.",
+      "text": "Start the rice: rinse 250g rice, cover with water by a finger's width, bring to the boil, then cover and simmer on low and rest off the heat.",
       "timer": {
-        "label": "Mellow onion",
-        "min": 8,
+        "label": "Rice",
+        "min": 12,
         "sec": 0
       }
     },
     {
-      "text": "Bring 540ml water and 1 tsp salt to the boil in a lidded pan. Stir in the fonio and 1 tbsp olive oil, cover and reduce to low until the water is absorbed. Turn off the heat and steam, covered, then fluff with a fork. (If using couscous or quinoa, follow the pack timing instead.)",
+      "text": "Wrap the tofu blocks in a clean thin towel and gently squeeze out the water. Grate on the large holes of a box grater; slice any chunks that break off.",
+      "timer": null
+    },
+    {
+      "text": "Slice the scallions on a bias (keep the dark green tops for the end), the chillies and the garlic. Whisk the sauce: soy, black vinegar, sugar, gochugaru and sesame oil.",
+      "timer": null
+    },
+    {
+      "text": "Heat the neutral oil in your largest non-stick pan (or wok) over medium-high. Add the scallion whites and pale greens, chillies and garlic. Stir until the garlic is lightly golden.",
       "timer": {
-        "label": "Fonio",
-        "min": 4,
+        "label": "Aromatics",
+        "min": 2,
         "sec": 0
       }
     },
     {
-      "text": "Cook the frozen soya beans in boiling water per the pack, about 5 minutes. Drain well and let steam-dry.",
+      "text": "Add all the grated tofu and toss to coat. Leave it for 2 minutes, then stir every couple of minutes until lots of pieces are golden and chewy. It's a double batch, so it takes longer: give it room.",
       "timer": {
-        "label": "Soya beans",
+        "label": "Brown tofu",
+        "min": 15,
+        "sec": 0
+      }
+    },
+    {
+      "text": "Meanwhile, steam the broccoli and edamame together until the broccoli is just tender.",
+      "timer": {
+        "label": "Steam veg",
         "min": 5,
         "sec": 0
       }
     },
     {
-      "text": "Stir the tomatoes, green pepper, habanero, 3 tbsp olive oil and a generous grind of black pepper into the onion mixture. Taste and adjust lime, salt and heat — this is the sauce moyo.",
-      "timer": null
+      "text": "Pour the sauce over the tofu (it bubbles fast). Stir until evenly coated, cook 1 more minute, then take off the heat and scatter over the sesame seeds.",
+      "timer": {
+        "label": "Glaze",
+        "min": 1,
+        "sec": 0
+      }
     },
     {
-      "text": "Divide the fonio between four bowls. Top with the soya beans and the sardines, drizzling over the tin oil. Spoon the sauce moyo on top and serve. Box two bowls for lunch (sauce in a separate corner) — keeps in the fridge up to 2 days.",
+      "text": "Serve over rice with the broccoli and edamame, topped with the scallion tops and coriander. Box two portions for tomorrow's office lunch.",
       "timer": null
     }
   ],
   "ingredients": [
     {
       "stage": "Prep",
-      "hint": "Onion and lime first so they mellow while everything else cooks",
+      "hint": "Rice on first, then grate and chop",
       "items": [
         {
-          "amount": "120g",
-          "name": "red onion, finely chopped"
+          "amount": "250g",
+          "name": "rice, uncooked"
         },
         {
-          "amount": "2 cloves",
-          "name": "garlic, minced"
+          "amount": "≈600g (2 blocks)",
+          "name": "super-firm (or extra-firm) tofu, squeezed and grated"
         },
         {
-          "amount": "2 tbsp",
-          "name": "fresh lime juice"
+          "amount": "4",
+          "name": "scallions, sliced on a bias, dark tops reserved"
         },
         {
-          "amount": "1 tsp",
-          "name": "fine sea salt"
+          "amount": "2",
+          "name": "Thai chillies, thinly sliced"
         },
         {
-          "amount": "300g",
-          "name": "grape or cherry tomatoes, halved"
+          "amount": "3 cloves",
+          "name": "garlic, thinly sliced"
         },
         {
-          "amount": "80g",
-          "name": "green bell pepper, finely chopped"
-        },
-        {
-          "amount": "1",
-          "name": "habanero or Scotch bonnet, seeded and very finely chopped (use 1/2 if cautious)"
+          "amount": "—",
+          "name": "sauce: 4 tbsp soy, 1.5 tbsp black vinegar, 1.5 tsp sugar, 1.5 tbsp gochugaru, 1.5 tbsp toasted sesame oil"
         }
       ]
     },
     {
       "stage": "Cook",
-      "hint": "Grain and beans",
+      "hint": "Big non-stick pan + steamer",
       "items": [
         {
-          "amount": "300g",
-          "name": "fonio (or couscous/quinoa), uncooked (75g per serving)"
+          "amount": "2 tbsp",
+          "name": "neutral oil"
         },
         {
-          "amount": "540ml",
-          "name": "water"
+          "amount": "400g",
+          "name": "broccoli, cut into florets"
         },
         {
-          "amount": "1 tbsp",
-          "name": "olive oil, for the grain"
-        },
-        {
-          "amount": "300g",
-          "name": "frozen soya beans (edamame), shelled"
+          "amount": "200g",
+          "name": "frozen shelled edamame"
         }
       ]
     },
     {
       "stage": "Finish",
-      "hint": "Assemble",
       "items": [
         {
-          "amount": "3 tbsp",
-          "name": "extra-virgin olive oil (into the sauce)"
+          "amount": "1 tbsp",
+          "name": "roasted sesame seeds"
         },
         {
-          "amount": "360g (3 tins)",
-          "name": "sardines in olive oil, with their oil"
+          "amount": "15g",
+          "name": "coriander, roughly chopped"
         },
         {
           "amount": "—",
-          "name": "black pepper, to taste"
+          "name": "reserved scallion tops"
         }
       ]
     }
   ],
   "nutrition": {
-    "calories": 680,
-    "protein": 32,
-    "carbs": 58,
-    "fat": 28
+    "calories": 655,
+    "protein": 37,
+    "carbs": 68,
+    "fat": 26
   }
 };
 
