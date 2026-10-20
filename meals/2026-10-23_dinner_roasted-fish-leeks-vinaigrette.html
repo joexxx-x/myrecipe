@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Super-Savory Grated Tofu with Edamame — Cook Mode</title>
+<title>Roasted Fish & Leeks Vinaigrette with Crushed Potatoes — Cook Mode</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
@@ -257,11 +257,11 @@
 
 <header class="ck-header">
   <div>
-    <h1 class="ck-title">Super-Savory Grated Tofu with Edamame</h1>
+    <h1 class="ck-title">Roasted Fish & Leeks Vinaigrette with Crushed Potatoes</h1>
     <div class="ck-meta">
       <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M5 21V8a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v13"/><path d="M3 21h18"/><path d="M9 8h6"/></svg><b>4</b> servings</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>15</b>m prep</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>25</b>m cook</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>10</b>m prep</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>35</b>m cook</span>
     </div>
   </div>
   <div class="wake-dot" id="wakeDot" title="Screen stays on while cooking"></div>
@@ -313,135 +313,124 @@
 // Also replace the {{...}} header placeholders above.
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 const RECIPE = {
-  "name": "Super-Savory Grated Tofu with Edamame",
+  "name": "Roasted Fish & Leeks Vinaigrette with Crushed Potatoes",
   "servings": "4",
-  "prep_time": "15",
-  "cook_time": "25",
+  "prep_time": "10",
+  "cook_time": "35",
   "steps": [
     {
-      "text": "Start the rice: rinse 250g rice, cover with water by a finger's width, bring to the boil, then cover and simmer on low and rest off the heat.",
+      "text": "Heat the oven to 200°C (fan 180°C). Halve any large potatoes, put them in a pan of cold salted water, bring to the boil and simmer until tender.",
       "timer": {
-        "label": "Rice",
-        "min": 12,
+        "label": "Potatoes",
+        "min": 18,
         "sec": 0
       }
     },
     {
-      "text": "Wrap the tofu blocks in a clean thin towel and gently squeeze out the water. Grate on the large holes of a box grater; slice any chunks that break off.",
+      "text": "Meanwhile, slice the leeks, swish them in a bowl of cold water to release grit, lift out, drain and pat dry.",
       "timer": null
     },
     {
-      "text": "Slice the scallions on a bias (keep the dark green tops for the end), the chillies and the garlic. Whisk the sauce: soy, black vinegar, sugar, gochugaru and sesame oil.",
-      "timer": null
-    },
-    {
-      "text": "Heat the neutral oil in your largest non-stick pan (or wok) over medium-high. Add the scallion whites and pale greens, chillies and garlic. Stir until the garlic is lightly golden.",
+      "text": "Spread the leeks on a large sheet pan with the capers, 3 tbsp olive oil and 1/4 tsp salt. Toss and roast, tossing halfway, until tender and crisp at the edges.",
       "timer": {
-        "label": "Aromatics",
-        "min": 2,
-        "sec": 0
-      }
-    },
-    {
-      "text": "Add all the grated tofu and toss to coat. Leave it for 2 minutes, then stir every couple of minutes until lots of pieces are golden and chewy. It's a double batch, so it takes longer: give it room.",
-      "timer": {
-        "label": "Brown tofu",
+        "label": "Leeks",
         "min": 15,
         "sec": 0
       }
     },
     {
-      "text": "Meanwhile, steam the broccoli and edamame together until the broccoli is just tender.",
+      "text": "Pat the fish dry, drizzle with a little olive oil and season with 1/2 tsp salt and pepper. Push the leeks aside, lay the fillets on the pan and roast until the fish flakes easily.",
       "timer": {
-        "label": "Steam veg",
-        "min": 5,
+        "label": "Fish",
+        "min": 11,
         "sec": 0
       }
     },
     {
-      "text": "Pour the sauce over the tofu (it bubbles fast). Stir until evenly coated, cook 1 more minute, then take off the heat and scatter over the sesame seeds.",
-      "timer": {
-        "label": "Glaze",
-        "min": 1,
-        "sec": 0
-      }
+      "text": "While the fish roasts, whisk the vinaigrette: 3 tbsp olive oil, shallot, red wine vinegar, parsley, mustard, 1/4 tsp salt and pepper.",
+      "timer": null
     },
     {
-      "text": "Serve over rice with the broccoli and edamame, topped with the scallion tops and coriander. Box two portions for tomorrow's office lunch.",
+      "text": "Drain the potatoes and lightly crush them in the pan with 1 tbsp olive oil, salt and pepper.",
+      "timer": null
+    },
+    {
+      "text": "Serve fish and leeks on the potatoes with the vinaigrette spooned over. Box two portions for tomorrow's lunch (vinaigrette in a small pot on the side) — cool 10 minutes, then into the fridge.",
       "timer": null
     }
   ],
   "ingredients": [
     {
       "stage": "Prep",
-      "hint": "Rice on first, then grate and chop",
+      "hint": "Oven on, potatoes on, leeks washed",
       "items": [
         {
-          "amount": "250g",
-          "name": "rice, uncooked"
+          "amount": "800g",
+          "name": "new potatoes"
         },
         {
-          "amount": "≈600g (2 blocks)",
-          "name": "super-firm (or extra-firm) tofu, squeezed and grated"
+          "amount": "3",
+          "name": "leeks, white and light green parts, thinly sliced"
         },
         {
-          "amount": "4",
-          "name": "scallions, sliced on a bias, dark tops reserved"
-        },
-        {
-          "amount": "2",
-          "name": "Thai chillies, thinly sliced"
-        },
-        {
-          "amount": "3 cloves",
-          "name": "garlic, thinly sliced"
-        },
-        {
-          "amount": "—",
-          "name": "sauce: 4 tbsp soy, 1.5 tbsp black vinegar, 1.5 tsp sugar, 1.5 tbsp gochugaru, 1.5 tbsp toasted sesame oil"
+          "amount": "700g (4 × 175g)",
+          "name": "skinless cod or sea bass fillets"
         }
       ]
     },
     {
       "stage": "Cook",
-      "hint": "Big non-stick pan + steamer",
+      "hint": "One sheet pan",
       "items": [
         {
           "amount": "2 tbsp",
-          "name": "neutral oil"
+          "name": "capers, drained"
         },
         {
-          "amount": "400g",
-          "name": "broccoli, cut into florets"
+          "amount": "3 tbsp + drizzle",
+          "name": "extra-virgin olive oil (leeks + fish)"
         },
         {
-          "amount": "200g",
-          "name": "frozen shelled edamame"
+          "amount": "to taste",
+          "name": "salt and black pepper"
         }
       ]
     },
     {
       "stage": "Finish",
+      "hint": "Vinaigrette + potatoes",
       "items": [
         {
+          "amount": "3 tbsp",
+          "name": "extra-virgin olive oil (vinaigrette)"
+        },
+        {
+          "amount": "1 small",
+          "name": "shallot, minced"
+        },
+        {
           "amount": "1 tbsp",
-          "name": "roasted sesame seeds"
+          "name": "red wine vinegar"
         },
         {
-          "amount": "15g",
-          "name": "coriander, roughly chopped"
+          "amount": "small handful",
+          "name": "parsley, minced"
         },
         {
-          "amount": "—",
-          "name": "reserved scallion tops"
+          "amount": "1 tsp",
+          "name": "whole-grain mustard"
+        },
+        {
+          "amount": "1 tbsp",
+          "name": "olive oil, for crushing the potatoes"
         }
       ]
     }
   ],
   "nutrition": {
-    "calories": 655,
-    "protein": 37,
-    "carbs": 68,
+    "calories": 565,
+    "protein": 38,
+    "carbs": 45,
     "fat": 26
   }
 };

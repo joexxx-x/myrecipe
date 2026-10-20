@@ -1,20 +1,20 @@
 [
   {
-    "date": "2026-10-12",
+    "date": "2026-10-22",
     "meal": "dinner",
-    "name": "Ras el Hanout Chickpea & Spinach Stew",
-    "file": "meals/2026-10-12_dinner_ras-el-hanout-chickpea-spinach-stew.html"
+    "name": "Masala Chickpeas with Tofu & Blistered Tomatoes",
+    "file": "meals/2026-10-22_dinner_masala-chickpeas-tofu.html"
   },
   {
-    "date": "2026-10-13",
+    "date": "2026-10-23",
     "meal": "dinner",
-    "name": "Spinach One-Pot Pasta with Sardines",
-    "file": "meals/2026-10-13_dinner_spinach-one-pot-pasta-sardines.html"
+    "name": "Roasted Fish & Leeks Vinaigrette with Crushed Potatoes",
+    "file": "meals/2026-10-23_dinner_roasted-fish-leeks-vinaigrette.html"
   },
   {
-    "date": "2026-10-14",
+    "date": "2026-10-24",
     "meal": "dinner",
-    "name": "Super-Savory Grated Tofu with Edamame",
-    "file": "meals/2026-10-14_dinner_grated-tofu-edamame.html"
+    "name": "Korean Beef Bibimbap",
+    "file": "meals/2026-10-24_dinner_korean-beef-bibimbap.html"
   }
 ]

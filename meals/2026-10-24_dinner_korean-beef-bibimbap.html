@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Spinach One-Pot Pasta with Sardines — Cook Mode</title>
+<title>Korean Beef Bibimbap — Cook Mode</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
@@ -257,11 +257,11 @@
 
 <header class="ck-header">
   <div>
-    <h1 class="ck-title">Spinach One-Pot Pasta with Sardines</h1>
+    <h1 class="ck-title">Korean Beef Bibimbap</h1>
     <div class="ck-meta">
       <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M5 21V8a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v13"/><path d="M3 21h18"/><path d="M9 8h6"/></svg><b>4</b> servings</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>5</b>m prep</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>20</b>m cook</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>30</b>m prep</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>30</b>m cook</span>
     </div>
   </div>
   <div class="wake-dot" id="wakeDot" title="Screen stays on while cooking"></div>
@@ -313,94 +313,158 @@
 // Also replace the {{...}} header placeholders above.
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 const RECIPE = {
-  "name": "Spinach One-Pot Pasta with Sardines",
+  "name": "Korean Beef Bibimbap",
   "servings": "4",
-  "prep_time": "5",
-  "cook_time": "20",
+  "prep_time": "30",
+  "cook_time": "30",
   "steps": [
     {
-      "text": "Bring a large pot of well-salted water to the boil. Put the spinach in a large colander in the sink. Drain the sardines and break into large chunks. Halve the lemon.",
-      "timer": null
+      "text": "Rinse 350g rice until the water runs clear. Add 420ml water, bring to the boil, cover and simmer on low.",
+      "timer": {
+        "label": "Rice",
+        "min": 12,
+        "sec": 0
+      }
     },
     {
-      "text": "Cook the pasta until just shy of al dente (about 1 minute less than the packet says). Scoop out 240ml pasta water before draining.",
+      "text": "Marinate the beef: toss the sliced sirloin with 2 tbsp soy, 1 tbsp sesame oil, the brown sugar, half the garlic and plenty of black pepper.",
       "timer": {
-        "label": "Pasta",
+        "label": "Marinate",
+        "min": 15,
+        "sec": 0
+      }
+    },
+    {
+      "text": "Take the rice off the heat and leave it covered to steam.",
+      "timer": {
+        "label": "Rice rest",
         "min": 10,
         "sec": 0
       }
     },
     {
-      "text": "Drain the pasta straight over the spinach in the colander. Drizzle with a little olive oil and toss so it doesn't stick.",
+      "text": "Whisk the sauce: gochujang, 1 tbsp sesame oil, rice vinegar, honey and 1–2 tbsp water.",
       "timer": null
     },
     {
-      "text": "Wipe out the pot and set over medium-high. Add 2 tbsp olive oil and the anchovies (careful, it spits). Stir until they melt, about 30 seconds.",
-      "timer": null
-    },
-    {
-      "text": "Add the sardine chunks and toss gently for 30 seconds to warm through.",
-      "timer": null
-    },
-    {
-      "text": "Tip the pasta and spinach back in with the Parmesan and chilli flakes. Stir until a glossy sauce forms and the spinach fully wilts. If it looks dry, add pasta water a splash at a time — a double batch usually needs more.",
+      "text": "Bring a pan of water to the boil. Blanch the beansprouts, lift out, then blanch the spinach for 30 seconds. Squeeze the spinach dry. Season each with a pinch of salt, a little sesame oil and the remaining garlic.",
       "timer": {
-        "label": "Toss & wilt",
+        "label": "Beansprouts",
+        "min": 1,
+        "sec": 0
+      }
+    },
+    {
+      "text": "Heat 1 tbsp rapeseed oil in a large pan over high. Stir-fry the carrots, then set aside.",
+      "timer": {
+        "label": "Carrots",
         "min": 2,
         "sec": 0
       }
     },
     {
-      "text": "Squeeze over the lemon, taste and season. Serve with extra Parmesan. Box two portions for tomorrow's office lunch (add a splash of water when reheating).",
+      "text": "Stir-fry the courgette with a pinch of salt, then set aside.",
+      "timer": {
+        "label": "Courgette",
+        "min": 2,
+        "sec": 0
+      }
+    },
+    {
+      "text": "Stir-fry the mushrooms with 1 tbsp soy until glossy, then set aside.",
+      "timer": {
+        "label": "Mushrooms",
+        "min": 3,
+        "sec": 0
+      }
+    },
+    {
+      "text": "Add the last 1 tbsp rapeseed oil, get the pan very hot and sear the beef in two batches until browned.",
+      "timer": {
+        "label": "Beef",
+        "min": 4,
+        "sec": 0
+      }
+    },
+    {
+      "text": "Fry 2 eggs for tonight. At the same time boil 2 eggs for the lunch boxes, then cool in cold water.",
+      "timer": {
+        "label": "Boiled eggs",
+        "min": 7,
+        "sec": 0
+      }
+    },
+    {
+      "text": "Build the bowls: rice, each topping in its own pile, beef in the middle, fried egg on top. Finish with sesame seeds, spring onions, gochujang sauce and kimchi. Pack 2 lunch boxes with a halved boiled egg and sauce on the side.",
       "timer": null
     }
   ],
   "ingredients": [
     {
       "stage": "Prep",
-      "hint": "Water on first",
+      "hint": "Rice on, beef marinating, veg cut",
       "items": [
         {
-          "amount": "450g",
-          "name": "spinach (baby or mature), in a big colander"
+          "amount": "350g",
+          "name": "short-grain or sushi rice, uncooked"
         },
         {
-          "amount": "2 tins (240g drained)",
-          "name": "sardines in olive oil, broken into chunks"
+          "amount": "500g",
+          "name": "lean sirloin, fat trimmed, thinly sliced"
         },
         {
-          "amount": "340g",
-          "name": "short pasta (orecchiette or fusilli)"
+          "amount": "2 tbsp + 1 tbsp",
+          "name": "low-sodium soy sauce (marinade + mushrooms)"
         },
         {
-          "amount": "to taste",
-          "name": "salt, for the pasta water"
+          "amount": "2.5 tbsp",
+          "name": "toasted sesame oil (marinade / sauce / veg)"
+        },
+        {
+          "amount": "2 tsp",
+          "name": "brown sugar"
+        },
+        {
+          "amount": "4 cloves",
+          "name": "garlic, grated (half beef, half veg)"
+        },
+        {
+          "amount": "—",
+          "name": "sauce: 3 tbsp gochujang + 1 tbsp rice vinegar + 1 tsp honey + water"
+        },
+        {
+          "amount": "2",
+          "name": "carrots, julienned"
+        },
+        {
+          "amount": "1",
+          "name": "courgette, julienned"
+        },
+        {
+          "amount": "200g",
+          "name": "shiitake or chestnut mushrooms, sliced"
         }
       ]
     },
     {
       "stage": "Cook",
-      "hint": "Same pot, wiped out",
+      "hint": "Blanch, then one pan in this order",
       "items": [
         {
-          "amount": "3 tbsp",
-          "name": "olive oil (2 for the pot, a drizzle for the pasta)"
+          "amount": "200g",
+          "name": "beansprouts"
         },
         {
-          "amount": "6",
-          "name": "oil-packed anchovy fillets"
+          "amount": "300g",
+          "name": "spinach"
         },
         {
-          "amount": "60g",
-          "name": "Parmesan, grated"
+          "amount": "2 tbsp",
+          "name": "rapeseed oil"
         },
         {
-          "amount": "1/2 tsp",
-          "name": "red chilli flakes"
-        },
-        {
-          "amount": "240ml",
-          "name": "reserved pasta water, as needed"
+          "amount": "4",
+          "name": "eggs (2 fried, 2 boiled for lunches)"
         }
       ]
     },
@@ -408,21 +472,29 @@ const RECIPE = {
       "stage": "Finish",
       "items": [
         {
-          "amount": "1",
-          "name": "lemon, juiced over the top"
+          "amount": "2 tbsp",
+          "name": "toasted sesame seeds"
         },
         {
-          "amount": "—",
-          "name": "extra Parmesan, to serve"
+          "amount": "4",
+          "name": "spring onions, sliced"
+        },
+        {
+          "amount": "to taste",
+          "name": "kimchi (optional)"
+        },
+        {
+          "amount": "2 boxes",
+          "name": "lunch portions for Sunday"
         }
       ]
     }
   ],
   "nutrition": {
-    "calories": 630,
-    "protein": 41,
-    "carbs": 71,
-    "fat": 20
+    "calories": 820,
+    "protein": 45,
+    "carbs": 95,
+    "fat": 28
   }
 };
 
