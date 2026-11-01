@@ -1,26 +1,20 @@
 [
   {
-    "date": "2026-10-21",
-    "meal": "lunch",
-    "name": "Sourdough Chicken & Avocado Sandwich (Wenqiao)",
-    "file": "meals/2026-10-21_lunch_sourdough-chicken-avocado-sandwich.html"
+    "date": "2026-11-02",
+    "meal": "dinner",
+    "name": "Three-Cup Chicken with Broccoli",
+    "file": "meals/2026-11-02_dinner_three-cup-chicken-broccoli.html"
   },
   {
-    "date": "2026-10-22",
+    "date": "2026-11-03",
     "meal": "dinner",
-    "name": "Sourdough Chicken & Avocado Sandwich",
-    "file": "meals/2026-10-22_dinner_sourdough-chicken-avocado-sandwich.html"
+    "name": "Salmon & Cherry Tomato Curry",
+    "file": "meals/2026-11-03_dinner_salmon-cherry-tomato-curry.html"
   },
   {
-    "date": "2026-10-23",
+    "date": "2026-11-04",
     "meal": "dinner",
-    "name": "Roasted Fish & Leeks Vinaigrette with Crushed Potatoes",
-    "file": "meals/2026-10-23_dinner_roasted-fish-leeks-vinaigrette.html"
-  },
-  {
-    "date": "2026-10-24",
-    "meal": "dinner",
-    "name": "Korean Beef Bibimbap",
-    "file": "meals/2026-10-24_dinner_korean-beef-bibimbap.html"
+    "name": "Masala Chickpeas with Tofu & Blistered Tomatoes",
+    "file": "meals/2026-11-04_dinner_masala-chickpeas-tofu.html"
   }
 ]

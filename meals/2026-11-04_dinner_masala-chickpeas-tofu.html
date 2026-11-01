@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Gourmet Sourdough Chicken & Avocado Sandwich — Cook Mode</title>
+<title>Masala Chickpeas with Tofu &amp; Blistered Tomatoes — Cook Mode</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
@@ -257,11 +257,11 @@
 
 <header class="ck-header">
   <div>
-    <h1 class="ck-title">Gourmet Sourdough Chicken & Avocado Sandwich</h1>
+    <h1 class="ck-title">Masala Chickpeas with Tofu &amp; Blistered Tomatoes</h1>
     <div class="ck-meta">
       <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M5 21V8a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v13"/><path d="M3 21h18"/><path d="M9 8h6"/></svg><b>4</b> servings</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>10</b>m prep</span>
-      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>20</b>m cook</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4h-4M12 4v4"/><circle cx="12" cy="14" r="7"/></svg><b>15</b>m prep</span>
+      <span class="pill"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2c1 3-2 4-2 6a2 2 0 0 0 4 0c0-1 1-2 1-2 2 2 3 4 3 7a6 6 0 0 1-12 0c0-3 3-6 6-11Z"/></svg><b>30</b>m cook</span>
     </div>
   </div>
   <div class="wake-dot" id="wakeDot" title="Screen stays on while cooking"></div>
@@ -313,117 +313,139 @@
 // Also replace the {{...}} header placeholders above.
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 const RECIPE = {
-  "name": "Gourmet Sourdough Chicken & Avocado Sandwich",
+  "name": "Masala Chickpeas with Tofu & Blistered Tomatoes",
   "servings": "4",
-  "prep_time": "10",
-  "cook_time": "20",
+  "prep_time": "15",
+  "cook_time": "30",
   "steps": [
     {
-      "text": "Butterfly or halve the chicken breasts so they're an even thickness. Rub with 1 tbsp olive oil, the garlic powder, paprika, salt and pepper.",
+      "text": "Start 300g basmati rice. Slice each tofu block in half horizontally and pat dry on a clean towel. Finely chop the red onions (keep a small handful raw for garnish) and grate the ginger and garlic.",
       "timer": null
     },
     {
-      "text": "Heat a large frying pan over medium-high. Cook the chicken, turning once, until golden and cooked through (no pink in the middle).",
+      "text": "Heat 1.5 tbsp oil in a large skillet over medium. Season the tofu with salt and pepper and sear without moving until browned, about 4 minutes, then flip and brown the other side, 4–5 minutes. Transfer to a plate.",
       "timer": {
-        "label": "Chicken",
-        "min": 12,
+        "label": "Sear tofu",
+        "min": 9,
         "sec": 0
       }
     },
     {
-      "text": "Rest the chicken on a board, then slice or shred it.",
+      "text": "Add 2.5 tbsp oil to the same pan. Cook the onions, stirring often, until translucent, about 4 minutes.",
       "timer": {
-        "label": "Rest",
+        "label": "Onions",
+        "min": 4,
+        "sec": 0
+      }
+    },
+    {
+      "text": "Add the ginger, garlic and masala. Season well with salt and pepper and stir until fragrant, 1–2 minutes. Stir in the chickpeas and cook until they sizzle, about 3 minutes.",
+      "timer": {
+        "label": "Chickpeas",
+        "min": 3,
+        "sec": 0
+      }
+    },
+    {
+      "text": "Turn the heat to medium-high. Add the remaining 1 tbsp oil, the cherry tomatoes and 1 tsp salt. Cook without stirring until they blister and pop, 4–5 minutes.",
+      "timer": {
+        "label": "Blister tomatoes",
         "min": 5,
         "sec": 0
       }
     },
     {
-      "text": "While it rests, lightly toast all 8 slices of sourdough and mix the pesto and mayonnaise into a spread.",
-      "timer": null
+      "text": "Stir in the spinach until wilted, then the mint or dill. Break the tofu into 1-inch pieces and toss through until warmed and coated, 2–3 minutes.",
+      "timer": {
+        "label": "Warm tofu",
+        "min": 3,
+        "sec": 0
+      }
     },
     {
-      "text": "Dinner: spread the pesto-mayo on 4 slices. On 2 of them layer a cheese slice, a quarter of the chicken, salt and pepper, half an avocado (sliced) and a handful of greens. Top with the other spread slices and cut in half.",
-      "timer": null
-    },
-    {
-      "text": "Side salad: toss the remaining greens with 1 tbsp olive oil and a squeeze of lemon. Serve with the sandwiches.",
-      "timer": null
-    },
-    {
-      "text": "Lunch boxes: pack the other half of the chicken, 2 slices of cheese and the spread separately. Keep the second avocado whole (or halved, squeezed with lemon and wrapped tight). Assemble with the remaining 4 slices in the morning so the bread doesn't go soggy.",
+      "text": "Taste and adjust salt, pepper and lime. Serve over rice, topped with the reserved raw onion, extra herbs and lime wedges. Pack two lunch portions.",
       "timer": null
     }
   ],
   "ingredients": [
     {
       "stage": "Prep",
-      "hint": "Season the chicken first",
+      "hint": "Rice on, tofu drying, aromatics ready",
       "items": [
         {
-          "amount": "600g",
-          "name": "chicken breasts (150g per sandwich), skinless"
+          "amount": "300g",
+          "name": "basmati rice, uncooked"
         },
         {
-          "amount": "1 tbsp",
-          "name": "olive oil"
+          "amount": "2 blocks (~800g)",
+          "name": "firm or extra-firm tofu, drained"
         },
         {
-          "amount": "1 tsp each",
-          "name": "garlic powder + smoked paprika"
+          "amount": "2",
+          "name": "red onions, finely chopped (reserve some for garnish)"
         },
         {
-          "amount": "to taste",
-          "name": "salt and black pepper"
+          "amount": "5cm",
+          "name": "fresh ginger, grated"
+        },
+        {
+          "amount": "4 cloves",
+          "name": "garlic, grated"
         }
       ]
     },
     {
       "stage": "Cook",
-      "hint": "One pan, then toast",
       "items": [
         {
-          "amount": "8 slices",
-          "name": "sourdough bread"
+          "amount": "5 tbsp",
+          "name": "rapeseed oil (split across steps)"
         },
         {
-          "amount": "4 tbsp + 4 tbsp",
-          "name": "pesto + mayonnaise, mixed into a spread"
+          "amount": "to taste",
+          "name": "salt and black pepper"
+        },
+        {
+          "amount": "2 tsp",
+          "name": "tandoori or garam masala"
+        },
+        {
+          "amount": "2 tins",
+          "name": "chickpeas, drained and rinsed"
+        },
+        {
+          "amount": "600g",
+          "name": "cherry tomatoes"
+        },
+        {
+          "amount": "200g",
+          "name": "baby spinach"
+        },
+        {
+          "amount": "15g",
+          "name": "fresh mint or dill, chopped"
         }
       ]
     },
     {
       "stage": "Finish",
-      "hint": "Build the sandwiches; pack lunches separately",
       "items": [
         {
-          "amount": "4 slices",
-          "name": "provolone or cheddar"
-        },
-        {
           "amount": "2",
-          "name": "ripe avocados"
+          "name": "limes, cut into wedges"
         },
         {
-          "amount": "200g",
-          "name": "mixed salad greens (sandwiches + side salad)"
-        },
-        {
-          "amount": "1 tbsp",
-          "name": "olive oil, for the side salad"
-        },
-        {
-          "amount": "1",
-          "name": "lemon"
+          "amount": "2 boxes",
+          "name": "lunch portions for tomorrow"
         }
       ]
     }
   ],
   "nutrition": {
-    "calories": 715,
-    "protein": 47,
-    "carbs": 44,
-    "fat": 37
+    "calories": 850,
+    "protein": 39,
+    "carbs": 92,
+    "fat": 34
   }
 };
 
